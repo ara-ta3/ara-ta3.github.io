@@ -1,5 +1,7 @@
 NPM=npm
 
+server:
+	$(NPM) run server
 
 build:
 	$(NPM) run build
