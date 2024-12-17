@@ -1,7 +1,17 @@
 import React from "react";
 
+import Header from "../components/Header";
+import Tools from "../components/Tools";
+
 const Home: React.FC = () => {
-  return <h1>Welcome to the Home Page</h1>;
+  return (
+    <>
+      <Header />
+      <main>
+        <Tools />
+      </main>
+    </>
+  );
 };
 
 export default Home;
