@@ -1,13 +1,14 @@
 import React from "react";
 
 import Header from "../components/Header";
+import { HourlyPieChart } from "../components/Schedule";
 
 const Schedules: React.FC = () => {
   return (
     <>
       <Header />
       <main>
-        <h1>This is the Schedules Page</h1>
+        <HourlyPieChart />
       </main>
     </>
   );
