@@ -1,15 +1,8 @@
 import React, { useEffect, useState } from "react";
-
-const calculateRER = (weight: number): number => {
-  return 70 * Math.pow(weight, 0.75);
-};
-
-const calculateDER = (rer: number, multiplier: number): number => {
-  return rer * multiplier;
-};
+import { CatCalorie as DomainCatCalorie } from "../domains/Cat.ts";
 
 const CalculatorForm: React.FC<
-  { setResults: (results: { rer: number; der: number }) => void }
+  { setResults: (results: { rer: number; der: number } | null) => void }
 > = ({ setResults }) => {
   const [weight, setWeight] = useState<string>("");
   const [multiplier, setMultiplier] = useState<number>(1);
@@ -17,8 +10,9 @@ const CalculatorForm: React.FC<
   useEffect(() => {
     const parsedWeight = parseFloat(weight);
     if (!isNaN(parsedWeight) && parsedWeight > 0 && multiplier > 0) {
-      const rer = calculateRER(parsedWeight);
-      const der = calculateDER(rer, multiplier);
+      const r = new DomainCatCalorie(parsedWeight);
+      const rer = r.calculateRER();
+      const der = r.calculateDER(multiplier);
       setResults({ rer, der });
     } else {
       setResults(null);
