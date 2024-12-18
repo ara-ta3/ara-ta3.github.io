@@ -74,7 +74,7 @@ const CatCalorie: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Cat Calorie Calculator</h1>
+      <h1 className="text-2xl font-bold mb-4">猫のカロリー計算</h1>
       <CalculatorForm setResults={setResults} />
       <Results results={results} />
     </div>
