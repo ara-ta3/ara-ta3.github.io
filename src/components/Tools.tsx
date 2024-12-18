@@ -10,6 +10,12 @@ const Tools: React.FC = () => {
       description: "1日のスケジュールを入力し、グラフで生成します。",
       navigate: () => navigate("/schedules"),
     },
+    {
+      id: 2,
+      name: "猫のカロリー計算",
+      description: "RER/DERの計算をします。",
+      navigate: () => navigate("/cat/calorie"),
+    },
   ];
   return (
     <section id="tools" className="py-12 bg-gray-50">
