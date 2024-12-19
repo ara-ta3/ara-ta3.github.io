@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CatCalorie as DomainCatCalorie } from "../domains/Cat.ts";
+import Header from "../components/Header.tsx";
 
 const CalculatorForm: React.FC<
   { setResults: (results: { rer: number; der: number } | null) => void }
@@ -67,11 +68,16 @@ const CatCalorie: React.FC = () => {
   );
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">猫のカロリー計算</h1>
-      <CalculatorForm setResults={setResults} />
-      <Results results={results} />
-    </div>
+    <>
+      <Header />
+      <main>
+        <div className="container mx-auto p-4">
+          <h1 className="text-2xl font-bold mb-4">猫のカロリー計算</h1>
+          <CalculatorForm setResults={setResults} />
+          <Results results={results} />
+        </div>
+      </main>
+    </>
   );
 };
 
