@@ -51,7 +51,13 @@ const CalculatorForm: React.FC<
 const Results: React.FC<{ results: { rer: number; der: number } | null }> = (
   { results },
 ) => {
-  if (!results) return null;
+  if (!results) {
+    return (
+      <div className="mt-4 p-4 bg-green-100 rounded">
+        <h2 className="text-lg font-bold">Results</h2>
+      </div>
+    );
+  }
 
   return (
     <div className="mt-4 p-4 bg-green-100 rounded">
