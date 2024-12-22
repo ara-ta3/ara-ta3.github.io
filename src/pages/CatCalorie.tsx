@@ -3,8 +3,11 @@ import { CatCalorie as DomainCatCalorie } from "../domains/Cat.ts";
 import Header from "../components/Header.tsx";
 
 const CalculatorForm: React.FC<
-  { setResults: (results: { rer: number; der: number } | null) => void }
-> = ({ setResults }) => {
+  {
+    setResults: (results: { rer: number; der: number } | null) => void;
+    results: { rer: number; der: number } | null;
+  }
+> = ({ setResults, results }) => {
   const [weight, setWeight] = useState<string>("");
   const [multiplier, setMultiplier] = useState<number>(1);
 
@@ -20,50 +23,67 @@ const CalculatorForm: React.FC<
     }
   }, [weight, multiplier, setResults]);
 
+  const multipliers = [{
+    name: "維持",
+    value: 1,
+  }, {
+    name: "活発",
+    value: 1.2,
+  }, {
+    name: "成長",
+    value: 1.4,
+  }].map((m) => {
+    return <option value={m.value}>{`${m.name}(係数: ${m.value})`}</option>;
+  });
   return (
-    <div className="p-4 bg-white shadow rounded">
-      <label className="block mb-2">
-        体重 (kg):
-        <input
-          type="number"
-          value={weight}
-          step="any"
-          onChange={(e) => setWeight(Number(e.target.value))}
-          className="w-full border rounded p-2 mt-1"
-        />
-      </label>
-      <label className="block mb-4">
-        活動レベル:
-        <select
-          value={multiplier}
-          onChange={(e) => setMultiplier(Number(e.target.value))}
-          className="w-full border rounded p-2 mt-1"
-        >
-          <option value={1}>維持</option>
-          <option value={1.2}>活発</option>
-          <option value={1.4}>成長</option>
-        </select>
-      </label>
-    </div>
-  );
-};
+    <div className="p-4 shadow rounded">
+      <dl className="divide-y divide-gray-200">
+        <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <dt className="text-sm/6 font-medium text-gray-900">
+            体重
+          </dt>
+          <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
+            <input
+              type="number"
+              value={weight}
+              step="any"
+              onChange={(e) => setWeight(e.target.value)}
+              className="w-full border rounded p-2 mt-1"
+            />
+          </dd>
+        </div>
+        <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <dt className="text-sm/6 font-medium text-gray-900">
+            活動レベル
+          </dt>
+          <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
+            <select
+              value={multiplier}
+              onChange={(e) => setMultiplier(Number(e.target.value))}
+              className="w-full border rounded p-2 mt-1"
+            >
+              {multipliers}
+            </select>
+          </dd>
+        </div>
 
-const Results: React.FC<{ results: { rer: number; der: number } | null }> = (
-  { results },
-) => {
-  if (!results) {
-    return (
-      <div className="mt-4 p-4 bg-green-100 rounded">
-        <h2 className="text-lg font-bold">Results</h2>
-      </div>
-    );
-  }
-
-  return (
-    <div className="mt-4 p-4 bg-green-100 rounded">
-      <h2 className="text-lg font-bold">Results</h2>
-      <p>RER: {results.rer.toFixed(2)} kcal/day</p>
-      <p>DER: {results.der.toFixed(2)} kcal/day</p>
+        <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <dt className="text-sm/6 font-medium text-gray-900">
+            RER
+          </dt>
+          <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
+            {(results?.rer ?? 0).toFixed(2) ?? 0} kcal/day
+          </dd>
+        </div>
+        <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
+          <dt className="text-sm/6 font-medium text-gray-900">
+            DER
+          </dt>
+          <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
+            {(results?.der ?? 0).toFixed(2)} kcal/day
+          </dd>
+        </div>
+      </dl>
     </div>
   );
 };
@@ -132,9 +152,9 @@ const CatCalorie: React.FC = () => {
       <Header />
       <main>
         <div className="container mx-auto p-4">
-          <h1 className="text-2xl font-bold mb-4">猫のカロリー計算</h1>
-          <CalculatorForm setResults={setResults} />
-          <Results results={results} />
+          <h1 className="text-2xl font-bold my-4">猫のカロリー計算</h1>
+          <CalculatorForm results={results} setResults={setResults} />
+          <h1 className="text-2xl font-bold my-4 ">餌</h1>
           <Feed der={results?.der ?? 0} />
         </div>
       </main>
