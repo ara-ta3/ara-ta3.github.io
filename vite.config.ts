@@ -8,4 +8,7 @@ export default defineConfig({
       vike({prerender: true})
   ],
   base: '/',
+  ssr: {
+      noExternal: [/^d3.*$/, /^@nivo.*$/],
+  }
 });
