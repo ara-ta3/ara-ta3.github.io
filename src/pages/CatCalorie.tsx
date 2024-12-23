@@ -10,6 +10,16 @@ const CalculatorForm: React.FC<
 > = ({ setResults, results }) => {
   const [weight, setWeight] = useState<string>("");
   const [multiplier, setMultiplier] = useState<number>(1);
+  useEffect(() => {
+    const s = localStorage.getItem("cat.weight");
+    if (s) {
+      setWeight(s);
+    }
+    const m = parseFloat(localStorage.getItem("cat.multiplier") ?? "");
+    if (!isNaN(m)) {
+      setMultiplier(m);
+    }
+  }, []);
 
   useEffect(() => {
     const parsedWeight = parseFloat(weight);
@@ -33,7 +43,11 @@ const CalculatorForm: React.FC<
     name: "成長",
     value: 1.4,
   }].map((m) => {
-    return <option value={m.value}>{`${m.name}(係数: ${m.value})`}</option>;
+    return (
+      <option key={m.name} value={m.value}>
+        {`${m.name}(係数: ${m.value})`}
+      </option>
+    );
   });
   return (
     <div className="p-4 shadow rounded">
@@ -47,7 +61,10 @@ const CalculatorForm: React.FC<
               type="number"
               value={weight}
               step="any"
-              onChange={(e) => setWeight(e.target.value)}
+              onChange={(e) => {
+                localStorage.setItem("cat.weight", e.target.value);
+                setWeight(e.target.value);
+              }}
               className="w-full border rounded p-2 mt-1"
             />
           </dd>
@@ -59,7 +76,10 @@ const CalculatorForm: React.FC<
           <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
             <select
               value={multiplier}
-              onChange={(e) => setMultiplier(Number(e.target.value))}
+              onChange={(e) => {
+                localStorage.setItem("cat.multiplier", e.target.value);
+                setMultiplier(Number(e.target.value));
+              }}
               className="w-full border rounded p-2 mt-1"
             >
               {multipliers}
