@@ -108,7 +108,7 @@ const CalorieCalculator: React.FC<
             <p className="text-xs text-gray-400">
               簡易式の場合 {(results?.simpleRER ?? 0).toFixed(2) ?? 0}{" "}
               kcal/day (= 体重 × 30 + 70)
-              こちらは計算結果のみで後の計算には使いません
+              簡易式は計算結果のみで後の計算には使いません
             </p>
           </dd>
         </div>
