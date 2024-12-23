@@ -1,20 +1,20 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 
 const Tools: React.FC = () => {
-  const navigate = useNavigate();
+  //  const navigate = useNavigate();
   const tools = [
     {
       id: 1,
       name: "24時間スケジューラー",
       description: "1日のスケジュールを入力し、グラフで生成します。",
-      navigate: () => navigate("/schedules"),
+      //      navigate: () => navigate("/schedules"),
     },
     {
       id: 2,
       name: "猫のカロリー計算",
       description: "RER/DERの計算をします。",
-      navigate: () => navigate("/cat/calorie"),
+      //      navigate: () => navigate("/cat/calorie"),
     },
   ];
   return (
@@ -26,7 +26,7 @@ const Tools: React.FC = () => {
             <div
               key={tool.id}
               className="bg-white shadow-md rounded-lg p-6 cursor-pointer hover:bg-gray-100 transition"
-              onClick={tool.navigate}
+              //              onClick={tool.navigate}
             >
               <h3 className="text-xl font-semibold mb-2">{tool.name}</h3>
               <p className="text-gray-600">{tool.description}</p>
