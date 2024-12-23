@@ -1,59 +1,60 @@
 import React from "react";
 
-const feeds = [
-  {
-    id: 1,
-    name: "ピュリナワン チキン",
-    kcalPer100: 413,
-    url: "https://nestle.jp/brand/one/cat/lineup/grainfree1/",
-  },
-];
+import { DryFoods, Food } from "../../domains/Cat.ts";
 
-interface Feed {
-  id: number;
-  name: string;
-  kcalPer100: number;
-  url: string;
-}
-
-const Feed: React.FC<{ feed: Feed; der: number }> = (
+const DryFoodTableBody: React.FC<{ feed: Food; der: number }> = (
   props,
 ) => {
   return (
-    <div>
-      <div className="px-4 sm:px-0">
-        <a href={props.feed.url} target="_blank">{props.feed.name}</a>
-      </div>
-      <div className="mt-6 border-t border-gray-100">
-        <dl className="divide-y divide-gray-100">
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm/6 font-medium text-gray-900">
-              カロリー(kcal/100g)
-            </dt>
-            <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
-              {props.feed.kcalPer100}
-            </dd>
-          </div>
-          <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-            <dt className="text-sm/6 font-medium text-gray-900">
-              必要グラム数
-            </dt>
-            <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
-              {Math.round(props.der / props.feed.kcalPer100 * 100)}
-            </dd>
-          </div>
-        </dl>
-      </div>
-    </div>
+    <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+      <td className="px-6 py-4">
+        <a
+          className="hover:underline text-blue-600"
+          href={props.feed.url}
+          target="_blank"
+        >
+          {props.feed.name}
+        </a>
+      </td>
+      <td className="px-6 py-4">{props.feed.kcalPer100}</td>
+      <td className="px-6 py-4">
+        {Math.round(props.der / props.feed.kcalPer100 * 100)}
+      </td>
+      <td className="px-6 py-4">{props.feed.nutrition.carbohydrate}</td>
+      <td className="px-6 py-4">{props.feed.nutrition.protein}</td>
+      <td className="px-6 py-4">{props.feed.nutrition.fat}</td>
+      <td className="px-6 py-4">{props.feed.nutrition.fiber}</td>
+      <td className="px-6 py-4">{props.feed.nutrition.ash}</td>
+      <td className="px-6 py-4">{props.feed.nutrition.moisture}</td>
+    </tr>
   );
 };
 
-const DryFoods: React.FC<{ der: number }> = (props: { der: number }) => {
+const DryFoodTable: React.FC<{ der: number }> = (props: { der: number }) => {
   return (
-    <div className="p-4 bg-white shadow rounded">
-      {feeds.map((f) => <Feed key={f.id} der={props.der} feed={f} />)}
+    <div className="relative overflow-x-auto">
+      <table className="w-full text-sm text-left">
+        <thead>
+          <tr>
+            <th className="px-6 py-3">名称</th>
+            <th className="px-6 py-3">カロリー(kcal/100g)</th>
+            <th className="px-6 py-3">必要グラム数</th>
+            <th className="px-6 py-3">糖質(概算)</th>
+            <th className="px-6 py-3">たんぱく質</th>
+            <th className="px-6 py-3">脂質</th>
+            <th className="px-6 py-3">粗繊維</th>
+            <th className="px-6 py-3">灰分</th>
+            <th className="px-6 py-3">水分</th>
+          </tr>
+        </thead>
+        <tbody>
+          {DryFoods.map((f) => (
+            <DryFoodTableBody key={f.id} der={props.der} feed={f} />
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
 
-export default DryFoods;
+export default DryFoodTable;
