@@ -1,11 +1,14 @@
 NPM=npm
+VITE=./node_modules/.bin/vite
 
 server:
 	$(NPM) run server
 
 build:
 	$(NPM) run build
-	cp -f dist/index.html dist/404.html
+
+preview:
+	$(VITE) preview
 
 deploy:
 	$(NPM) run deploy
