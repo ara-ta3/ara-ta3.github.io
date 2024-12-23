@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Header from "../../../components/Header.tsx";
 import Caution from "../../../components/cats/Caution.tsx";
 import CalorieCalculator from "../../../components/cats/CalorieCalculator.tsx";
 
@@ -12,16 +11,13 @@ const CatCalorie: React.FC = () => {
 
   return (
     <>
-      <Header />
-      <main>
-        <div className="container mx-auto p-4">
-          <h1 className="text-2xl font-bold my-4">猫のカロリー計算</h1>
-          <Caution />
-          <CalorieCalculator results={results} setResults={setResults} />
-          <h1 className="text-2xl font-bold my-4 ">ドライフード</h1>
-          <DryFoods der={results?.der ?? 0} />
-        </div>
-      </main>
+      <div className="container mx-auto p-4">
+        <h1 className="text-2xl font-bold my-4">猫のカロリー計算</h1>
+        <Caution />
+        <CalorieCalculator results={results} setResults={setResults} />
+        <h1 className="text-2xl font-bold my-4 ">ドライフード</h1>
+        <DryFoods der={results?.der ?? 0} />
+      </div>
     </>
   );
 };
