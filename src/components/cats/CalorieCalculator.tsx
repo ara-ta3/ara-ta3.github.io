@@ -97,32 +97,27 @@ const CalorieCalculator: React.FC<
             </div>
           </dd>
         </div>
-
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt className="text-sm/6 font-medium text-gray-900">
-            RER = 70 × (体重) ^ (3/4)
+            <p>安静時のエネルギー要求量 RER</p>
           </dt>
           <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
-            {(results?.rer ?? 0).toFixed(2) ?? 0} kcal/day
-          </dd>
-        </div>
-        <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-          <dt className="text-sm/6 font-medium text-gray-900">
-            <p>簡易版RER = 体重 × 30 + 70</p>
-            <p className="text-xs text-gray-400">
-              計算結果のみで後の計算には使いません
+            <p>
+              {(results?.rer ?? 0).toFixed(2) ?? 0} kcal/day (= 70 × 体重^(3/4))
             </p>
-          </dt>
-          <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
-            {(results?.simpleRER ?? 0).toFixed(2) ?? 0} kcal/day
+            <p className="text-xs text-gray-400">
+              簡易式の場合 {(results?.simpleRER ?? 0).toFixed(2) ?? 0}{" "}
+              kcal/day (= 体重 × 30 + 70)
+              こちらは計算結果のみで後の計算には使いません
+            </p>
           </dd>
         </div>
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
           <dt className="text-sm/6 font-medium text-gray-900">
-            DER = RER × 係数
+            1日当たりのエネルギー要求量 DER
           </dt>
           <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
-            {(results?.der ?? 0).toFixed(2)} kcal/day
+            {(results?.der ?? 0).toFixed(2)} kcal/day (= RER × 係数)
           </dd>
         </div>
         <div className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
