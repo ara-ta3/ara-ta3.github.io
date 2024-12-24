@@ -7,8 +7,9 @@ import "../index.css";
 const onRenderClient: OnRenderClientAsync = async (
   pageContext,
 ): ReturnType<OnRenderClientAsync> => {
-  const { Page, pageProps } = pageContext;
+  const { Page } = pageContext;
   const root = document.getElementById("root")!;
+  const pageProps = "pageProps" in pageContext && pageContext.pageProps;
 
   ReactDOM.createRoot(root).render(
     <React.StrictMode>
