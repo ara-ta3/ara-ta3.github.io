@@ -39,7 +39,7 @@ const DryFoodTableBody: React.FC<{ feed: Food; der: number }> = (props) => {
 
 const DryFoodTable: React.FC<{ der: number }> = (props: { der: number }) => {
   return (
-    <div className="relative overflow-x-auto">
+    <div>
       <h1 className="text-2xl font-bold my-4 ">ドライフード</h1>
       <Table>
         <Table.Head>

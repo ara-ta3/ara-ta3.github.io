@@ -4,8 +4,10 @@ import React from "react";
 export default () => {
   return (
     <div>
-      <h2 className="text-2xl my-2">参考</h2>
-      <Table hoverable className="shadow">
+      <Table>
+        <Table.Head>
+          <Table.HeadCell>参考</Table.HeadCell>
+        </Table.Head>
         <Table.Body>
           <Table.Row>
             <Table.Cell>
