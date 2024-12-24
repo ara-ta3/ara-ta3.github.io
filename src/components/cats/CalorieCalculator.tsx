@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CatCalorie as DomainCatCalorie } from "../../domains/Cat.ts";
-import { Card, FloatingLabel } from "flowbite-react";
+import { Alert, Card, FloatingLabel } from "flowbite-react";
 import { MultiplierForm } from "./calculator/Multiplier.tsx";
 
 const CalorieCalculator: React.FC<{
@@ -51,26 +51,24 @@ const CalorieCalculator: React.FC<{
         <MultiplierForm setMultiplier={setMultiplier} current={multiplier} />
       </div>
       <Card className="flex flex-col grid-item col-span-2">
-        <div className="p-4">
-          <dt className="text-sm/6 font-medium text-gray-900">
+        <div className="grid grid-cols-2">
+          <div className="flex flex-col grid-item col-span-1">
             <p>安静時のエネルギー要求量 RER</p>
-          </dt>
-          <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
-            <p>
-              {(results?.rer ?? 0).toFixed(2) ?? 0} kcal/day (= 70 × 体重^(3/4))
+            <p className="text-xl font-bold">
+              {(results?.rer ?? 0).toFixed(2) ?? 0} kcal/day
             </p>
-            <p className="text-xs text-gray-400">
-              簡易式の場合 {(results?.simpleRER ?? 0).toFixed(2) ?? 0} kcal/day
-              (= 体重 × 30 + 70) 簡易式は計算結果のみで後の計算には使いません
+          </div>
+          <div className="flex flex-col grid-item col-span-1">
+            <p>1日当たりのエネルギー要求量 DER</p>
+            <p className="text-xl font-bold">
+              {(results?.der ?? 0).toFixed(2)} kcal/day
             </p>
-          </dd>
-          <dt className="mt-4 text-sm/6 font-medium text-gray-900">
-            1日当たりのエネルギー要求量 DER
-          </dt>
-          <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
-            {(results?.der ?? 0).toFixed(2)} kcal/day (= RER × 係数)
-          </dd>
+          </div>
         </div>
+        <Alert color="info">
+          <p className="text-sm">RER = 70 × 体重^(3/4)</p>
+          <p className="text-sm mt-2">DER = RER × 係数</p>
+        </Alert>
       </Card>
     </div>
   );

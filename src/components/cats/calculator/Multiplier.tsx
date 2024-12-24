@@ -1,4 +1,4 @@
-import { FloatingLabel, Label, Radio } from "flowbite-react";
+import { Label, Radio } from "flowbite-react";
 import React from "react";
 
 const multipliers = [
@@ -26,7 +26,7 @@ export const MultiplierForm: React.FC<{
 }> = (props) => {
   return (
     <fieldset className="flex flex-col w-full">
-      <legend className="mb-2">係数</legend>
+      <legend className="text-sm mb-2 text-gray-500">係数</legend>
       {multipliers.map((m) => {
         return (
           <div key={m.name} className="w-full">
