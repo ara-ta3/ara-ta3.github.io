@@ -13,7 +13,9 @@ const PortfolioTop: React.FC = () => {
             ara-ta3
           </a>
         </h1>
-        <p className="text-lg text-gray-600 mt-4">portfolio</p>
+        <p className="text-lg text-gray-600 mt-4">
+          portfolioのように見える遊び場です
+        </p>
       </div>
     </div>
   );
