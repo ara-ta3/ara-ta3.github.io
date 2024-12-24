@@ -7,9 +7,11 @@ import DryFoods from "../components/cats/DryFoods.tsx";
 import Reference from "../components/cats/Reference.tsx";
 
 const CatCalorie: React.FC = () => {
-  const [results, setResults] = useState<{ rer: number; der: number } | null>(
-    null,
-  );
+  const [results, setResults] = useState<{
+    rer: number;
+    simpleRER: number;
+    der: number;
+  } | null>(null);
 
   return (
     <>
@@ -18,14 +20,7 @@ const CatCalorie: React.FC = () => {
         <div className="container mx-auto p-4">
           <h1 className="text-2xl font-bold my-4">猫のカロリー計算</h1>
           <Caution />
-          <div className="grid grid-cols-2">
-            <div className="flex items-center justify-center">
-              <CalorieCalculator results={results} setResults={setResults} />
-            </div>
-            <div className="bg-blue-100 flex items-center justify-center">
-              Results
-            </div>
-          </div>
+          <CalorieCalculator results={results} setResults={setResults} />
           <div>
             <DryFoods der={results?.der ?? 0} />
           </div>
