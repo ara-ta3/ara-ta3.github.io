@@ -30,7 +30,6 @@ const HourlyPieChart = () => {
     padAngle: 0.7,
     cornerRadius: 3,
     borderWidth: 1,
-    borderColor: { from: "color", modifiers: [["darker", 0.6]] },
     arcLinkLabelsSkipAngle: 10,
     arcLinkLabelsTextColor: "#333",
     arcLabelsTextColor: { from: "color", modifiers: [["darker", 2]] },
@@ -56,8 +55,7 @@ const HourlyPieChart = () => {
             enableArcLinkLabels={false}
             enableArcLabels={true}
             arcLabelsTextColor="#000"
-            arcLabel={(e) =>
-              `${e.label}`}
+            arcLabel={(e) => `${e.label}`}
           />
         </div>
         <div
