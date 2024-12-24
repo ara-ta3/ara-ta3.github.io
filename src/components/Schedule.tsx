@@ -1,7 +1,13 @@
 import React from "react";
 import { ResponsivePie } from "@nivo/pie";
 
-const HourlyPieChart = () => {
+interface Hourly {
+  id: string;
+  label: string;
+  value: number;
+}
+
+const HourlyPieChart: React.FC<{ hours: Hourly[] }> = (props) => {
   const getTimeColor = (hour: number) => {
     if (hour > 4 && hour < 12) return "#FFECB3";
     if (hour >= 12 && hour < 19) return "#FFD180";
@@ -14,14 +20,6 @@ const HourlyPieChart = () => {
     value: 1,
     color: getTimeColor(i),
   }));
-
-  const innerData = [
-    { id: "睡眠", label: "睡眠", value: 7.5 },
-    { id: "仕事", label: "仕事", value: 9.5 },
-    { id: "休憩", label: "休憩", value: 4 },
-    { id: "運動", label: "運動", value: 2 },
-    { id: "その他", label: "その他", value: 1 },
-  ];
 
   const chartOptions = {
     margin: { top: 20, right: 20, bottom: 40, left: 20 },
@@ -68,7 +66,7 @@ const HourlyPieChart = () => {
           }}
         >
           <ResponsivePie
-            data={innerData}
+            data={props.hours}
             {...chartOptions}
             colors={{ scheme: "nivo" }}
             enableArcLinkLabels={false}
