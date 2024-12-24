@@ -99,8 +99,8 @@ const CalorieCalculator: React.FC<{
           </dl>
         </div>
       </div>
-      <div className="bg-blue-50 flex flex-col">
-        <div className="p-4">
+      <div className="flex flex-col">
+        <div className="p-4 shadow rounded">
           <dt className="text-sm/6 font-medium text-gray-900">
             <p>安静時のエネルギー要求量 RER</p>
           </dt>
@@ -113,9 +113,7 @@ const CalorieCalculator: React.FC<{
               (= 体重 × 30 + 70) 簡易式は計算結果のみで後の計算には使いません
             </p>
           </dd>
-        </div>
-        <div className="p-4">
-          <dt className="text-sm/6 font-medium text-gray-900">
+          <dt className="mt-4 text-sm/6 font-medium text-gray-900">
             1日当たりのエネルギー要求量 DER
           </dt>
           <dd className="mt-1 text-sm/6 text-gray-700 sm:col-span-2 sm:mt-0">
