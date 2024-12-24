@@ -23,7 +23,7 @@ const CatCalorie: React.FC = () => {
               <CalorieCalculator results={results} setResults={setResults} />
             </div>
             <div className="bg-blue-100 flex items-center justify-center">
-              <CalorieCalculator results={results} setResults={setResults} />
+              Results
             </div>
           </div>
           <div>
