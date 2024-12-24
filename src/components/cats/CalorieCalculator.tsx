@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CatCalorie as DomainCatCalorie } from "../../domains/Cat.ts";
-import { Alert, Card, FloatingLabel } from "flowbite-react";
+import { Alert, Card, FloatingLabel, Tooltip } from "flowbite-react";
 import { MultiplierForm } from "./calculator/Multiplier.tsx";
 
 const CalorieCalculator: React.FC<{
@@ -53,22 +53,22 @@ const CalorieCalculator: React.FC<{
       <Card className="flex flex-col grid-item col-span-2">
         <div className="grid grid-cols-2">
           <div className="flex flex-col grid-item col-span-1">
-            <p>安静時のエネルギー要求量 RER</p>
+            <Tooltip content="70 × 体重^(3/4)">
+              <p className="underline">安静時のエネルギー要求量 RER</p>
+            </Tooltip>
             <p className="text-xl font-bold">
               {(results?.rer ?? 0).toFixed(2) ?? 0} kcal/day
             </p>
           </div>
           <div className="flex flex-col grid-item col-span-1">
-            <p>1日当たりのエネルギー要求量 DER</p>
+            <Tooltip content="RER × 係数">
+              <p className="underline">1日当たりのエネルギー要求量 DER</p>
+            </Tooltip>
             <p className="text-xl font-bold">
               {(results?.der ?? 0).toFixed(2)} kcal/day
             </p>
           </div>
         </div>
-        <Alert color="info">
-          <p className="text-sm">RER = 70 × 体重^(3/4)</p>
-          <p className="text-sm mt-2">DER = RER × 係数</p>
-        </Alert>
       </Card>
     </div>
   );
