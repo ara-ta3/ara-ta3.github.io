@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { CatCalorie as DomainCatCalorie } from "../../domains/Cat.ts";
-import { Alert, Card, FloatingLabel, Tooltip } from "flowbite-react";
+import { CatCalorie as DomainCatCalorie, DryFoods } from "../../domains/Cat.ts";
+import {
+  Alert,
+  Button,
+  Card,
+  FloatingLabel,
+  HR,
+  Label,
+  Select,
+  Tooltip,
+} from "flowbite-react";
 import { MultiplierForm } from "./calculator/Multiplier.tsx";
 
 const CalorieCalculator: React.FC<{
@@ -38,7 +47,7 @@ const CalorieCalculator: React.FC<{
     <div className="grid grid-cols-3">
       <div className="flex flex-col grid-item col-span-1 p-2">
         <FloatingLabel
-          variant="filled"
+          variant="outlined"
           label="体重"
           type="number"
           value={weight}
@@ -49,6 +58,21 @@ const CalorieCalculator: React.FC<{
           }}
         />
         <MultiplierForm setMultiplier={setMultiplier} current={multiplier} />
+        <HR />
+        <div>
+          <Label
+            htmlFor="dry-foods"
+            value="フードの必要g数の計算対象に追加する"
+          />
+          <div className="flex item-center gap-2">
+            <Select id="dry-foods">
+              {DryFoods.map((f) => {
+                return <option key={f.id}>{f.name}</option>;
+              })}
+            </Select>
+            <Button className="whitespace-nowrap">追加する</Button>
+          </div>
+        </div>
       </div>
       <Card className="flex flex-col grid-item col-span-2">
         <div className="grid grid-cols-2">
