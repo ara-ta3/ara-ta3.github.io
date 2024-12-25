@@ -11,6 +11,8 @@ import {
   Tooltip,
 } from "flowbite-react";
 import { MultiplierForm } from "./calculator/Multiplier.tsx";
+import useWeight from "../../hooks/cats/useWeight.ts";
+import useMultiplier from "../../hooks/cats/useMultiplier.ts";
 
 const CalorieCalculator: React.FC<{
   setResults: (
@@ -18,18 +20,8 @@ const CalorieCalculator: React.FC<{
   ) => void;
   results: { rer: number; simpleRER: number; der: number } | null;
 }> = ({ setResults, results }) => {
-  const [weight, setWeight] = useState<string>("");
-  const [multiplier, setMultiplier] = useState<number>(1);
-  useEffect(() => {
-    const s = localStorage.getItem("cat.weight");
-    if (s) {
-      setWeight(s);
-    }
-    const m = parseFloat(localStorage.getItem("cat.multiplier") ?? "");
-    if (!isNaN(m)) {
-      setMultiplier(m);
-    }
-  }, []);
+  const { weight, setWeight } = useWeight();
+  const { multiplier, setMultiplier } = useMultiplier();
 
   useEffect(() => {
     const parsedWeight = parseFloat(weight);
@@ -52,10 +44,7 @@ const CalorieCalculator: React.FC<{
           type="number"
           value={weight}
           step="any"
-          onChange={(e) => {
-            localStorage.setItem("cat.weight", e.target.value);
-            setWeight(e.target.value);
-          }}
+          onChange={(e) => setWeight(e.target.value)}
         />
         <MultiplierForm setMultiplier={setMultiplier} current={multiplier} />
         <HR />

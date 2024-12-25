@@ -36,10 +36,7 @@ export const MultiplierForm: React.FC<{
                 name={m.name}
                 value={m.value}
                 checked={m.value === props.current}
-                onChange={(e) => {
-                  localStorage.setItem("cat.multiplier", e.target.value);
-                  props.setMultiplier(Number(e.target.value));
-                }}
+                onChange={(e) => props.setMultiplier(Number(e.target.value))}
               />
               <Label htmlFor={m.name} className="whitespace-nowrap mx-2">
                 {m.name}({m.value})
