@@ -13,6 +13,8 @@ export interface CatCalculatorState {
     der: number;
     simpleRer: number;
   } | null;
+  calculateTargets: CalculateTarget[];
+  setCalculateTargets: (v: CalculateTarget[]) => void;
 }
 
 export interface CatCalculatedResultState {
@@ -21,12 +23,18 @@ export interface CatCalculatedResultState {
   simpleRer: number;
 }
 
+export interface CalculateTarget {
+  foodId: number;
+  grams: number;
+}
+
 export default function (): CatCalculatorState {
   const { weight, setWeight } = useWeight();
   const { multiplier, setMultiplier } = useMultiplier();
   const [calculated, setCalculated] = useState<CatCalculatedResultState | null>(
     null
   );
+  const [targets, setTargets] = useState<CalculateTarget[]>([]);
 
   useEffect(() => {
     const parsedWeight = parseFloat(weight);
@@ -47,5 +55,7 @@ export default function (): CatCalculatorState {
     multiplier,
     setMultiplier,
     calculated,
+    calculateTargets: targets,
+    setCalculateTargets: setTargets,
   };
 }

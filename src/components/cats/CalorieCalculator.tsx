@@ -43,8 +43,52 @@ const CalorieCalculator: React.FC<{
                 return <option key={f.id}>{f.name}</option>;
               })}
             </Select>
-            <Button className="whitespace-nowrap">追加する</Button>
+            <Button
+              className="whitespace-nowrap"
+              onClick={() =>
+                props.setCalculateTargets([{ foodId: 1, grams: 0 }])
+              }
+            >
+              追加する
+            </Button>
           </div>
+        </div>
+        <HR />
+        <div>
+          {props.calculateTargets.map((t) => {
+            const f = DryFoods.find((x) => x?.id === t.foodId);
+            if (f === undefined) {
+              return <></>;
+            }
+            return (
+              <div key={t.foodId} className="flex item-center gap-2 px-2">
+                <FloatingLabel
+                  className="w-full"
+                  variant="outlined"
+                  label={f.name + " g数"}
+                  type="number"
+                  value={t.grams}
+                  step="any"
+                  onChange={(e) => console.log(e.target.value)}
+                />
+                <Button
+                  className="whitespace-nowrap"
+                  onClick={() => {
+                    props.setCalculateTargets([
+                      {
+                        foodId: 1,
+                        grams: Math.round(
+                          ((props.calculated?.der ?? 0) / f.kcalPer100) * 100
+                        ),
+                      },
+                    ]);
+                  }}
+                >
+                  最大化
+                </Button>
+              </div>
+            );
+          })}
         </div>
       </div>
       <Card className="flex flex-col grid-item col-span-2">
