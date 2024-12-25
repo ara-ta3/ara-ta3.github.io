@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { CatCalorie as DomainCatCalorie, DryFoods } from "../../domains/Cat.ts";
+import React from "react";
+import { DryFoods } from "../../domains/Cat.ts";
 import {
   Alert,
   Button,
@@ -11,30 +11,11 @@ import {
   Tooltip,
 } from "flowbite-react";
 import { MultiplierForm } from "./calculator/Multiplier.tsx";
-import useWeight from "../../hooks/cats/useWeight.ts";
-import useMultiplier from "../../hooks/cats/useMultiplier.ts";
+import { CatCalculatorState } from "../../hooks/cats/useCatCalculator.ts";
 
 const CalorieCalculator: React.FC<{
-  setResults: (
-    results: { rer: number; simpleRER: number; der: number } | null
-  ) => void;
-  results: { rer: number; simpleRER: number; der: number } | null;
-}> = ({ setResults, results }) => {
-  const { weight, setWeight } = useWeight();
-  const { multiplier, setMultiplier } = useMultiplier();
-
-  useEffect(() => {
-    const parsedWeight = parseFloat(weight);
-    if (!isNaN(parsedWeight) && parsedWeight > 0 && multiplier > 0) {
-      const r = new DomainCatCalorie(parsedWeight);
-      const rer = r.calculateRER();
-      const simpleRER = r.calculateSimpleRER();
-      const der = r.calculateDER(multiplier);
-      setResults({ rer, simpleRER, der });
-    } else {
-      setResults(null);
-    }
-  }, [weight, multiplier, setResults]);
+  props: CatCalculatorState;
+}> = ({ props }) => {
   return (
     <div className="grid grid-cols-3">
       <div className="flex flex-col grid-item col-span-1 p-2">
@@ -42,11 +23,14 @@ const CalorieCalculator: React.FC<{
           variant="outlined"
           label="体重"
           type="number"
-          value={weight}
+          value={props.weight}
           step="any"
-          onChange={(e) => setWeight(e.target.value)}
+          onChange={(e) => props.setWeight(e.target.value)}
         />
-        <MultiplierForm setMultiplier={setMultiplier} current={multiplier} />
+        <MultiplierForm
+          setMultiplier={props.setMultiplier}
+          current={props.multiplier}
+        />
         <HR />
         <div>
           <Label
@@ -70,7 +54,7 @@ const CalorieCalculator: React.FC<{
               <p className="underline">安静時のエネルギー要求量 RER</p>
             </Tooltip>
             <p className="text-xl font-bold">
-              {(results?.rer ?? 0).toFixed(2) ?? 0} kcal/day
+              {(props.calculated?.rer ?? 0).toFixed(2) ?? 0} kcal/day
             </p>
           </div>
           <div className="flex flex-col grid-item col-span-1">
@@ -78,7 +62,7 @@ const CalorieCalculator: React.FC<{
               <p className="underline">1日当たりのエネルギー要求量 DER</p>
             </Tooltip>
             <p className="text-xl font-bold">
-              {(results?.der ?? 0).toFixed(2)} kcal/day
+              {(props.calculated?.der ?? 0).toFixed(2)} kcal/day
             </p>
           </div>
         </div>

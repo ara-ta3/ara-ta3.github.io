@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../components/Header.tsx";
 import Caution from "../components/cats/Caution.tsx";
 import CalorieCalculator from "../components/cats/CalorieCalculator.tsx";
@@ -6,14 +6,10 @@ import CalorieCalculator from "../components/cats/CalorieCalculator.tsx";
 import DryFoods from "../components/cats/DryFoods.tsx";
 import Reference from "../components/cats/Reference.tsx";
 import { Tabs } from "flowbite-react";
+import useCatCalculator from "../hooks/cats/useCatCalculator.ts";
 
 const CatCalorie: React.FC = () => {
-  const [results, setResults] = useState<{
-    rer: number;
-    simpleRER: number;
-    der: number;
-  } | null>(null);
-
+  const state = useCatCalculator();
   return (
     <>
       <Header />
@@ -23,10 +19,10 @@ const CatCalorie: React.FC = () => {
           <Caution />
           <Tabs variant="default">
             <Tabs.Item title="計算">
-              <CalorieCalculator results={results} setResults={setResults} />
+              <CalorieCalculator props={state} />
             </Tabs.Item>
             <Tabs.Item title="ドライフード">
-              <DryFoods der={results?.der ?? 0} />
+              <DryFoods der={state.calculated?.der ?? 0} />
             </Tabs.Item>
             <Tabs.Item title="参考">
               <Reference />
