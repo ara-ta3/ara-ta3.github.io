@@ -127,6 +127,19 @@ const CalorieCalculator: React.FC<{
             </p>
           </div>
         </div>
+        <div className="flex flex-col grid-item col-span-1">
+          <p>合計カロリー</p>
+          <p className="text-xl font-bold">
+            {Object.entries(props.calculateTargets).reduce(
+              (sum, [foodId, value]) => {
+                const f = DryFoods.find((x) => x.id === Number(foodId));
+                return sum + (value["gram"] * (f?.kcalPer100 || 0)) / 100;
+              },
+              0
+            )}{" "}
+            kcal/day
+          </p>
+        </div>
       </Card>
     </div>
   );
