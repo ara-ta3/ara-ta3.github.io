@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { DryFoods } from "../../domains/Cat.ts";
 import {
   Alert,
@@ -16,8 +16,12 @@ import { CatCalculatorState } from "../../hooks/cats/useCatCalculator.ts";
 const CalorieCalculator: React.FC<{
   props: CatCalculatorState;
 }> = ({ props }) => {
+  const [selectedFoodId, setSelectedFoodId] = useState<number | undefined>(
+    undefined
+  );
+
   return (
-    <div className="grid grid-cols-3">
+    <div className="grid grid-cols-2">
       <div className="flex flex-col grid-item col-span-1 p-2">
         <FloatingLabel
           variant="outlined"
@@ -38,16 +42,27 @@ const CalorieCalculator: React.FC<{
             value="フードの必要g数の計算対象に追加する"
           />
           <div className="flex item-center gap-2">
-            <Select id="dry-foods">
+            <Select
+              id="dry-foods"
+              value={selectedFoodId || ""}
+              onChange={(e) => setSelectedFoodId(Number(e.target.value))}
+            >
+              <option value={""} disabled>
+                選択してください
+              </option>
               {DryFoods.map((f) => {
-                return <option key={f.id}>{f.name}</option>;
+                return (
+                  <option key={f.id} value={f.id}>
+                    {f.name}
+                  </option>
+                );
               })}
             </Select>
             <Button
               className="whitespace-nowrap"
-              onClick={() =>
-                props.setCalculateTargets([{ foodId: 1, grams: 0 }])
-              }
+              onClick={() => {
+                selectedFoodId && props.addCalculateTarget(selectedFoodId);
+              }}
             >
               追加する
             </Button>
@@ -55,43 +70,45 @@ const CalorieCalculator: React.FC<{
         </div>
         <HR />
         <div>
-          {props.calculateTargets.map((t) => {
-            const f = DryFoods.find((x) => x?.id === t.foodId);
+          {Object.entries(props.calculateTargets).map(([id, value]) => {
+            const foodId = Number(id);
+            const f = DryFoods.find((x) => x?.id === Number(foodId));
             if (f === undefined) {
               return <></>;
             }
             return (
-              <div key={t.foodId} className="flex item-center gap-2 px-2">
-                <FloatingLabel
-                  className="w-full"
-                  variant="outlined"
-                  label={f.name + " g数"}
-                  type="number"
-                  value={t.grams}
-                  step="any"
-                  onChange={(e) => console.log(e.target.value)}
-                />
-                <Button
-                  className="whitespace-nowrap"
-                  onClick={() => {
-                    props.setCalculateTargets([
-                      {
-                        foodId: 1,
-                        grams: Math.round(
+              <div key={foodId} className="px-2 my-2">
+                <Label htmlFor={"Food" + f.id}>{f.name}</Label>
+                <div className="flex items-center gap-2">
+                  <FloatingLabel
+                    id={"Food" + f.id}
+                    variant="outlined"
+                    label="グラム数"
+                    type="number"
+                    value={value["gram"]}
+                    step="any"
+                    onChange={(e) => console.log(e.target.value)}
+                  />
+                  <Button
+                    className="whitespace-nowrap"
+                    onClick={() => {
+                      props.chagneCalculateTargetGram(
+                        foodId,
+                        Math.round(
                           ((props.calculated?.der ?? 0) / f.kcalPer100) * 100
-                        ),
-                      },
-                    ]);
-                  }}
-                >
-                  最大化
-                </Button>
+                        )
+                      );
+                    }}
+                  >
+                    最大化
+                  </Button>
+                </div>
               </div>
             );
           })}
         </div>
       </div>
-      <Card className="flex flex-col grid-item col-span-2">
+      <Card className="flex flex-col grid-item col-span-1">
         <div className="grid grid-cols-2">
           <div className="flex flex-col grid-item col-span-1">
             <Tooltip content="70 × 体重^(3/4)">
