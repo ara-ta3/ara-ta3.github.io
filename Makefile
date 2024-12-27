@@ -1,4 +1,5 @@
 NPM=npm
+TSC=./node_modules/.bin/tsc
 
 server:
 	$(NPM) run server
@@ -9,3 +10,9 @@ build:
 
 deploy:
 	$(NPM) run deploy
+
+compile:
+	$(TSC) --noEmit --strict
+
+test:
+	$(NPM) run test
