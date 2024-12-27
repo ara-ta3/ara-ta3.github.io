@@ -1,4 +1,4 @@
-import { Nutrition } from "./Nutriction.ts";
+import { Nutrition } from "./Nutrition.ts";
 
 export enum FoodType {
   Dry = "dry",
