@@ -1,9 +1,12 @@
 import React from "react";
 
-import { Foods, Food } from "../../domains/Cat.ts";
+import { Foods, Food, DryFood, WetFood, FoodType } from "../../domains/Cat.ts";
 import { Table } from "flowbite-react";
 
-const DryFoodTableBody: React.FC<{ feed: Food; der: number }> = (props) => {
+const DryFoodTableBody: React.FC<{ feed: DryFood | WetFood; der: number }> = (
+  props
+) => {
+  const food = props.feed;
   return (
     <Table.Row>
       <Table.Cell className="px-6 py-4">
@@ -15,9 +18,8 @@ const DryFoodTableBody: React.FC<{ feed: Food; der: number }> = (props) => {
           {props.feed.name}
         </a>
       </Table.Cell>
-      <Table.Cell className="px-6 py-4">{props.feed.kcalPer100}</Table.Cell>
       <Table.Cell className="px-6 py-4">
-        {Math.round((props.der / props.feed.kcalPer100) * 100)}
+        {food.type === FoodType.Dry ? food.kcalPer100 : food.kcalPerBag}
       </Table.Cell>
       <Table.Cell className="px-6 py-4">
         {props.feed.nutrition.carbohydrate}
@@ -45,9 +47,8 @@ const DryFoodTable: React.FC<{ der: number }> = (props: { der: number }) => {
         <Table.Head>
           <Table.HeadCell className="px-6 py-3">名称</Table.HeadCell>
           <Table.HeadCell className="px-6 py-3">
-            カロリー(kcal/100g)
+            kcal(/100g or /袋)
           </Table.HeadCell>
-          <Table.HeadCell className="px-6 py-3">必要グラム数</Table.HeadCell>
           <Table.HeadCell className="px-6 py-3">糖質(概算)</Table.HeadCell>
           <Table.HeadCell className="px-6 py-3">たんぱく質</Table.HeadCell>
           <Table.HeadCell className="px-6 py-3">脂質</Table.HeadCell>

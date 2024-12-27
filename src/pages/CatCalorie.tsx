@@ -3,7 +3,7 @@ import Header from "../components/Header.tsx";
 import Caution from "../components/cats/Caution.tsx";
 import CalorieCalculator from "../components/cats/CalorieCalculator.tsx";
 
-import DryFoods from "../components/cats/DryFoods.tsx";
+import DryFoods from "../components/cats/Foods.tsx";
 import Reference from "../components/cats/Reference.tsx";
 import { Tabs } from "flowbite-react";
 import useCatCalculator from "../hooks/cats/useCatCalculator.ts";

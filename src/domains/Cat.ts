@@ -51,8 +51,9 @@ class Nutrition {
     public readonly ash: number,
     public readonly moisture: number
   ) {
-    this.carbohydrate = Math.round(
-      100 - (protein + fat + fiber + ash + moisture)
+    this.carbohydrate = Math.max(
+      0,
+      Math.round(100 - (protein + fat + fiber + ash + moisture))
     );
   }
 }
