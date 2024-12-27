@@ -16,3 +16,6 @@ compile:
 
 test:
 	$(NPM) run test
+
+lint:
+	$(NPM) run prettier/check
