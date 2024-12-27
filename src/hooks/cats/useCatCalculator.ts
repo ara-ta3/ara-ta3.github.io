@@ -31,7 +31,7 @@ export interface CalculateTarget {
 
 function useCalculateTarget() {
   const [targets, setTargets] = useState<{ [key: FoodId]: { gram: number } }>(
-    {}
+    {},
   );
 
   const addTarget = (key: FoodId) => {
@@ -62,7 +62,7 @@ export default function (): CatCalculatorState {
   const { weight, setWeight } = useWeight();
   const { multiplier, setMultiplier } = useMultiplier();
   const [calculated, setCalculated] = useState<CatCalculatedResultState | null>(
-    null
+    null,
   );
   const { targets, addTarget, changeGram } = useCalculateTarget();
 
