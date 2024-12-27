@@ -1,4 +1,5 @@
 import { Nutrition } from "./Nutrition";
+import { describe, it, expect } from "vitest";
 
 describe("Nutrition", () => {
   it("炭水化物の概算を出せる", () => {
