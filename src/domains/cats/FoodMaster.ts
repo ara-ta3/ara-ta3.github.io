@@ -1,5 +1,5 @@
 import { DryFood, FoodType, WetFood } from "./Food.ts";
-import { Nutrition } from "./Nutriction.ts";
+import { Nutrition } from "./Nutrition.ts";
 
 const Foods: (DryFood | WetFood)[] = [
   {

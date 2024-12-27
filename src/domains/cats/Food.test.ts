@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { FoodType, sumOfCalories } from "./Food";
-import { Nutrition } from "./Nutriction";
+import { Nutrition } from "./Nutrition";
 
 describe("Food", () => {
   const dummyNutrition = new Nutrition(1, 1, 1, 1, 1);
