@@ -20,11 +20,22 @@ const CalorieCalculator: React.FC<{
   const [selectedFoodId, setSelectedFoodId] = useState<number | undefined>(
     undefined
   );
-  const currentSumGrams = useMemo(() => {
-    return Object.values(props.calculateTargets).reduce(
-      (sum, target) => sum + target.gram,
+  const sumCalorie: number = useMemo(() => {
+    const cal = Object.entries(props.calculateTargets).reduce(
+      (sum, [foodId, value]) => {
+        const f = Foods.find((x) => x.id === Number(foodId));
+        if (f?.type === FoodType.Wet) {
+          const cal = (value["gram"] / f.gramsPerBag) * f.kcalPerBag;
+          return sum + cal;
+        } else if (f?.type === FoodType.Dry) {
+          const cal = (value["gram"] * f.kcalPer100) / 100;
+          return sum + cal;
+        }
+        return sum;
+      },
       0
     );
+    return cal;
   }, [props.calculateTargets]);
 
   return (
@@ -87,7 +98,7 @@ const CalorieCalculator: React.FC<{
               <FoodAmount
                 key={foodId}
                 food={f}
-                currentSumGrams={currentSumGrams}
+                currentSumCalorie={sumCalorie}
                 grams={value["gram"]}
                 der={props.calculated?.der ?? 0}
                 changeGram={props.chagneCalculateTargetGram}
@@ -117,22 +128,7 @@ const CalorieCalculator: React.FC<{
         </div>
         <div className="flex flex-col grid-item col-span-1">
           <p>合計カロリー</p>
-          <p className="text-xl font-bold">
-            {Object.entries(props.calculateTargets).reduce(
-              (sum, [foodId, value]) => {
-                const f = Foods.find((x) => x.id === Number(foodId));
-                if (f?.type === FoodType.Wet) {
-                  const cal = (value["gram"] / f.gramsPerBag) * f.kcalPerBag;
-                  return sum + cal;
-                } else if (f?.type === FoodType.Dry) {
-                  return sum + (value["gram"] * (f?.kcalPer100 || 0)) / 100;
-                }
-                return sum;
-              },
-              0
-            )}{" "}
-            kcal/day
-          </p>
+          <p className="text-xl font-bold">{sumCalorie.toFixed(2)} kcal/day</p>
         </div>
       </Card>
     </div>

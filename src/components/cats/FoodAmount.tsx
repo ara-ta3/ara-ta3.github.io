@@ -7,9 +7,11 @@ const FoodAmount: React.FC<{
   grams: number;
   der: number;
   changeGram: (foodId: number, grams: number) => void;
-  currentSumGrams: number;
-}> = ({ food, grams, der, changeGram, currentSumGrams }) => {
+  currentSumCalorie: number;
+}> = ({ food, grams, der, changeGram, currentSumCalorie }) => {
   if (food.type === FoodType.Dry) {
+    const currentCalorieExceptThisFood =
+      currentSumCalorie - food.kcalPer100 * (grams / 100);
     return (
       <div className="px-2 my-2">
         <Label htmlFor={`Food${food.id}`}>{food.name}</Label>
@@ -30,7 +32,9 @@ const FoodAmount: React.FC<{
             onClick={() => {
               changeGram(
                 food.id,
-                Math.round(((der - currentSumGrams) / food.kcalPer100) * 100)
+                Math.round(
+                  ((der - currentCalorieExceptThisFood) / food.kcalPer100) * 100
+                )
               );
             }}
           >
