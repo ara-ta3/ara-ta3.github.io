@@ -11,7 +11,8 @@ const onRenderClient: OnRenderClientAsync = async (
   const root = document.getElementById("root")!;
   const pageProps = "pageProps" in pageContext && pageContext.pageProps;
 
-  ReactDOM.createRoot(root).render(
+  ReactDOM.hydrateRoot(
+    root,
     <React.StrictMode>
       <Page {...pageProps} />
     </React.StrictMode>,

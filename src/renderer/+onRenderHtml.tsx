@@ -44,7 +44,7 @@ const onRenderHtml: OnRenderHtmlAsync = async (
         <meta name="author" content="ara-ta3">
         <link rel="canonical" href="https://ara-ta3.github.io/">
       <body>
-        <div id="page-view">${viewHtml}</div>
+        <div id="root">${viewHtml}</div>
       </body>
     </html>`;
 };
