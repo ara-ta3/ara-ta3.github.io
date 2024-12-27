@@ -55,7 +55,7 @@ const FoodAmount: React.FC<{
             type="number"
             value={grams}
             step="any"
-            onChange={(e) => console.log(e.target.value)}
+            onChange={(e) => changeGram(food.id, Number(e.target.value))}
           />
           <Button
             className="whitespace-nowrap"

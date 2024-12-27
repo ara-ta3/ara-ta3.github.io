@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import useWeight from "./useWeight";
 import useMultiplier from "./useMultiplier";
 import { CatCalorie } from "../../domains/cats/CatCalorie";
+import { FoodId } from "../../domains/cats/Food";
 
 export interface CatCalculatorState {
   weight: string;
@@ -27,8 +28,6 @@ export interface CatCalculatedResultState {
 export interface CalculateTarget {
   [key: FoodId]: { gram: number };
 }
-
-type FoodId = number;
 
 function useCalculateTarget() {
   const [targets, setTargets] = useState<{ [key: FoodId]: { gram: number } }>(

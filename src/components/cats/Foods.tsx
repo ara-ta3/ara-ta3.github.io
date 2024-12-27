@@ -1,13 +1,8 @@
 import React from "react";
 
-import {
-  Foods,
-  Food,
-  DryFood,
-  WetFood,
-  FoodType,
-} from "../../domains/cats/CatCalorie.ts";
+import { DryFood, WetFood, FoodType } from "../../domains/cats/Food.ts";
 import { Table } from "flowbite-react";
+import FoodMaster from "../../domains/cats/FoodMaster.ts";
 
 const DryFoodTableBody: React.FC<{ feed: DryFood | WetFood; der: number }> = (
   props
@@ -63,7 +58,7 @@ const DryFoodTable: React.FC<{ der: number }> = (props: { der: number }) => {
           <Table.HeadCell className="px-6 py-3">水分</Table.HeadCell>
         </Table.Head>
         <Table.Body>
-          {Foods.map((f) => (
+          {FoodMaster.map((f) => (
             <DryFoodTableBody key={f.id} der={props.der} feed={f} />
           ))}
         </Table.Body>

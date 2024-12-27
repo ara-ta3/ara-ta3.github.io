@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { FoodType } from "../../domains/cats/Food.ts";
+import { FoodType, sumOfCalories } from "../../domains/cats/Food.ts";
 import {
   Button,
   Card,
@@ -20,23 +20,10 @@ const CalorieCalculator: React.FC<{
   const [selectedFoodId, setSelectedFoodId] = useState<number | undefined>(
     undefined
   );
-  const sumCalorie: number = useMemo(() => {
-    const cal = Object.entries(props.calculateTargets).reduce(
-      (sum, [foodId, value]) => {
-        const f = FoodMaster.find((x) => x.id === Number(foodId));
-        if (f?.type === FoodType.Wet) {
-          const cal = (value["gram"] / f.gramsPerBag) * f.kcalPerBag;
-          return sum + cal;
-        } else if (f?.type === FoodType.Dry) {
-          const cal = (value["gram"] * f.kcalPer100) / 100;
-          return sum + cal;
-        }
-        return sum;
-      },
-      0
-    );
-    return cal;
-  }, [props.calculateTargets]);
+  const sumCalorie: number = useMemo(
+    () => sumOfCalories(props.calculateTargets, FoodMaster),
+    [props.calculateTargets]
+  );
 
   return (
     <div className="grid grid-cols-2">
