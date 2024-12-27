@@ -21,8 +21,8 @@ const CatCalorie: React.FC = () => {
             <Tabs.Item title="計算">
               <CalorieCalculator props={state} />
             </Tabs.Item>
-            <Tabs.Item title="ドライフード">
-              <DryFoods der={state.calculated?.der ?? 0} />
+            <Tabs.Item title="フード">
+              <DryFoods />
             </Tabs.Item>
             <Tabs.Item title="参考">
               <Reference />

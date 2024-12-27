@@ -4,9 +4,7 @@ import { DryFood, WetFood, FoodType } from "../../domains/cats/Food.ts";
 import { Table } from "flowbite-react";
 import FoodMaster from "../../domains/cats/FoodMaster.ts";
 
-const DryFoodTableBody: React.FC<{ feed: DryFood | WetFood; der: number }> = (
-  props
-) => {
+const DryFoodTableBody: React.FC<{ feed: DryFood | WetFood }> = (props) => {
   const food = props.feed;
   return (
     <Table.Row>
@@ -40,10 +38,10 @@ const DryFoodTableBody: React.FC<{ feed: DryFood | WetFood; der: number }> = (
   );
 };
 
-const DryFoodTable: React.FC<{ der: number }> = (props: { der: number }) => {
+const DryFoodTable: React.FC = () => {
   return (
     <div>
-      <h1 className="text-2xl font-bold my-4 ">ドライフード</h1>
+      <h1 className="text-2xl font-bold my-4 ">フード</h1>
       <Table>
         <Table.Head>
           <Table.HeadCell className="px-6 py-3">名称</Table.HeadCell>
@@ -59,7 +57,7 @@ const DryFoodTable: React.FC<{ der: number }> = (props: { der: number }) => {
         </Table.Head>
         <Table.Body>
           {FoodMaster.map((f) => (
-            <DryFoodTableBody key={f.id} der={props.der} feed={f} />
+            <DryFoodTableBody key={f.id} feed={f} />
           ))}
         </Table.Body>
       </Table>
