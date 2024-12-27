@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { DryFoods } from "../../domains/Cat.ts";
+import React, { useMemo, useState } from "react";
+import { Foods } from "../../domains/Cat.ts";
 import {
   Alert,
   Button,
@@ -12,6 +12,7 @@ import {
 } from "flowbite-react";
 import { MultiplierForm } from "./calculator/Multiplier.tsx";
 import { CatCalculatorState } from "../../hooks/cats/useCatCalculator.ts";
+import FoodAmount from "./FoodAmount.tsx";
 
 const CalorieCalculator: React.FC<{
   props: CatCalculatorState;
@@ -19,6 +20,12 @@ const CalorieCalculator: React.FC<{
   const [selectedFoodId, setSelectedFoodId] = useState<number | undefined>(
     undefined
   );
+  const currentSumGrams = useMemo(() => {
+    return Object.values(props.calculateTargets).reduce(
+      (sum, target) => sum + target.gram,
+      0
+    );
+  }, [props.calculateTargets]);
 
   return (
     <div className="grid grid-cols-2">
@@ -50,7 +57,7 @@ const CalorieCalculator: React.FC<{
               <option value={""} disabled>
                 選択してください
               </option>
-              {DryFoods.map((f) => {
+              {Foods.map((f) => {
                 return (
                   <option key={f.id} value={f.id}>
                     {f.name}
@@ -72,38 +79,19 @@ const CalorieCalculator: React.FC<{
         <div>
           {Object.entries(props.calculateTargets).map(([id, value]) => {
             const foodId = Number(id);
-            const f = DryFoods.find((x) => x?.id === Number(foodId));
+            const f = Foods.find((x) => x?.id === Number(foodId));
             if (f === undefined) {
               return <></>;
             }
             return (
-              <div key={foodId} className="px-2 my-2">
-                <Label htmlFor={"Food" + f.id}>{f.name}</Label>
-                <div className="flex items-center gap-2">
-                  <FloatingLabel
-                    id={"Food" + f.id}
-                    variant="outlined"
-                    label="グラム数"
-                    type="number"
-                    value={value["gram"]}
-                    step="any"
-                    onChange={(e) => console.log(e.target.value)}
-                  />
-                  <Button
-                    className="whitespace-nowrap"
-                    onClick={() => {
-                      props.chagneCalculateTargetGram(
-                        foodId,
-                        Math.round(
-                          ((props.calculated?.der ?? 0) / f.kcalPer100) * 100
-                        )
-                      );
-                    }}
-                  >
-                    最大化
-                  </Button>
-                </div>
-              </div>
+              <FoodAmount
+                key={foodId}
+                food={f}
+                currentSumGrams={currentSumGrams}
+                grams={value["gram"]}
+                der={props.calculated?.der ?? 0}
+                changeGram={props.chagneCalculateTargetGram}
+              />
             );
           })}
         </div>
@@ -132,7 +120,7 @@ const CalorieCalculator: React.FC<{
           <p className="text-xl font-bold">
             {Object.entries(props.calculateTargets).reduce(
               (sum, [foodId, value]) => {
-                const f = DryFoods.find((x) => x.id === Number(foodId));
+                const f = Foods.find((x) => x.id === Number(foodId));
                 return sum + (value["gram"] * (f?.kcalPer100 || 0)) / 100;
               },
               0
