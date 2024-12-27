@@ -4,7 +4,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "server": "vite",
+    "server": "vite preview",
     "build": "vite build",
     "predeploy": "make build",
     "deploy": "gh-pages -d dist",
