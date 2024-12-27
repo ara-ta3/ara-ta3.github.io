@@ -5,6 +5,7 @@ on:
     branches:
       - master
 
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
@@ -23,7 +24,6 @@ on:
         with:
           path: dist/
 
-obs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
