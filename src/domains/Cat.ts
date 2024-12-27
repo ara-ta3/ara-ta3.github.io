@@ -27,9 +27,19 @@ export interface Food {
   id: number;
   type: FoodType;
   name: string;
-  kcalPer100: number;
   url: string;
   nutrition: Nutrition;
+}
+
+export interface DryFood extends Food {
+  type: FoodType.Dry;
+  kcalPer100: number;
+}
+
+export interface WetFood extends Food {
+  type: FoodType.Wet;
+  kcalPerBag: number;
+  gramsPerBag: number;
 }
 
 class Nutrition {
@@ -47,7 +57,7 @@ class Nutrition {
   }
 }
 
-export const Foods: Food[] = [
+export const Foods: (DryFood | WetFood)[] = [
   {
     id: 1,
     type: FoodType.Dry,
@@ -84,7 +94,6 @@ export const Foods: Food[] = [
   {
     id: 5,
     type: FoodType.Dry,
-
     name: "ニュートロ シュプレモ 成猫用 サーモン＆チキン",
     kcalPer100: 365,
     url: "https://marspetcare.jp/category/COND_C_DRY/SUPREMO_C_ADULT_SALMON_CHICKEN.html",
@@ -126,7 +135,8 @@ export const Foods: Food[] = [
     id: 10,
     type: FoodType.Wet,
     name: "ピュリナワン パウチ 室内飼い猫用 1歳以上 チキン グレービー仕立て 50g",
-    kcalPer100: 80,
+    kcalPerBag: 80,
+    gramsPerBag: 50,
     url: "https://nestle.jp/brand/one/cat/lineup/wet-indoor-th/",
     nutrition: new Nutrition(12.5, 3, 1, 2.5, 82),
   },
@@ -134,7 +144,8 @@ export const Foods: Food[] = [
     id: 11,
     type: FoodType.Wet,
     name: "ニュートロ キャット デイリー ディッシュ アダルト チキン＆ツナ グルメ仕立てのざく切りタイプ パウチ",
-    kcalPer100: (24 / 35) * 100,
+    kcalPerBag: 24,
+    gramsPerBag: 35,
     url: "https://marspetcare.jp/category/ITEM_C_WET/DD_ADULT_CHICKEN_TUNA_POUCH.html",
     nutrition: new Nutrition(8.5, 1, 0.5, 3, 87),
   },
@@ -142,7 +153,8 @@ export const Foods: Food[] = [
     id: 12,
     type: FoodType.Wet,
     name: "ニュートロ キャット デイリー ディッシュ アダルト チキン グルメ仕立てのざく切りタイプ パウチ",
-    kcalPer100: (23 / 35) * 100,
+    kcalPerBag: 23,
+    gramsPerBag: 35,
     url: "https://marspetcare.jp/category/ITEM_C_WET/DD_ADULT_CHICKEN_POUCH.html",
     nutrition: new Nutrition(8.5, 1, 0.5, 3, 88),
   },

@@ -1,9 +1,9 @@
 import React from "react";
 import { Button, FloatingLabel, Label } from "flowbite-react";
-import { Food, FoodType } from "../../domains/Cat";
+import { DryFood, FoodType, WetFood } from "../../domains/Cat";
 
 const FoodAmount: React.FC<{
-  food: Food;
+  food: DryFood | WetFood;
   grams: number;
   der: number;
   changeGram: (foodId: number, grams: number) => void;
@@ -52,7 +52,7 @@ const FoodAmount: React.FC<{
           <Button
             className="whitespace-nowrap"
             onClick={() => {
-              changeGram(food.id, 50);
+              changeGram(food.id, food.gramsPerBag);
             }}
           >
             1袋分
@@ -60,10 +60,18 @@ const FoodAmount: React.FC<{
           <Button
             className="whitespace-nowrap"
             onClick={() => {
-              changeGram(food.id, 25);
+              changeGram(food.id, food.gramsPerBag / 2);
             }}
           >
             半分
+          </Button>
+          <Button
+            className="whitespace-nowrap"
+            onClick={() => {
+              changeGram(food.id, 0);
+            }}
+          >
+            なし
           </Button>
         </div>
       </div>

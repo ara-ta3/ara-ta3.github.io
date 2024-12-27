@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { Foods } from "../../domains/Cat.ts";
+import { Foods, FoodType } from "../../domains/Cat.ts";
 import {
   Alert,
   Button,
@@ -121,7 +121,14 @@ const CalorieCalculator: React.FC<{
             {Object.entries(props.calculateTargets).reduce(
               (sum, [foodId, value]) => {
                 const f = Foods.find((x) => x.id === Number(foodId));
-                return sum + (value["gram"] * (f?.kcalPer100 || 0)) / 100;
+                if (f?.type === FoodType.Wet) {
+                  const cal = (value["gram"] / f.gramsPerBag) * f.kcalPerBag;
+                  console.log(cal);
+                  return sum + cal;
+                } else if (f?.type === FoodType.Dry) {
+                  return sum + (value["gram"] * (f?.kcalPer100 || 0)) / 100;
+                }
+                return sum;
               },
               0
             )}{" "}
