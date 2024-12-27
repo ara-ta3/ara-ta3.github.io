@@ -14,3 +14,5 @@ deploy:
 compile:
 	$(TSC) --noEmit --strict
 
+test:
+	$(NPM) run test
