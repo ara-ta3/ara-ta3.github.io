@@ -1,64 +1,7 @@
-export class CatCalorie {
-  readonly weight: number;
+import { DryFood, FoodType, WetFood } from "./Food";
+import { Nutrition } from "./Nutriction";
 
-  constructor(weight: number) {
-    this.weight = weight;
-  }
-
-  calculateRER(): number {
-    return 70 * Math.pow(this.weight, 0.75);
-  }
-
-  calculateSimpleRER(): number {
-    return this.weight * 30 + 70;
-  }
-
-  calculateDER(multiplier: number): number {
-    return this.calculateRER() * multiplier;
-  }
-}
-
-export enum FoodType {
-  Dry = "dry",
-  Wet = "wet",
-}
-
-export interface Food {
-  id: number;
-  type: FoodType;
-  name: string;
-  url: string;
-  nutrition: Nutrition;
-}
-
-export interface DryFood extends Food {
-  type: FoodType.Dry;
-  kcalPer100: number;
-}
-
-export interface WetFood extends Food {
-  type: FoodType.Wet;
-  kcalPerBag: number;
-  gramsPerBag: number;
-}
-
-class Nutrition {
-  readonly carbohydrate: number;
-  constructor(
-    public readonly protein: number,
-    public readonly fat: number,
-    public readonly fiber: number,
-    public readonly ash: number,
-    public readonly moisture: number
-  ) {
-    this.carbohydrate = Math.max(
-      0,
-      Math.round(100 - (protein + fat + fiber + ash + moisture))
-    );
-  }
-}
-
-export const Foods: (DryFood | WetFood)[] = [
+const Foods: (DryFood | WetFood)[] = [
   {
     id: 1,
     type: FoodType.Dry,
@@ -160,3 +103,5 @@ export const Foods: (DryFood | WetFood)[] = [
     nutrition: new Nutrition(8.5, 1, 0.5, 3, 88),
   },
 ];
+
+export default Foods;

@@ -1,6 +1,12 @@
 import React from "react";
 
-import { Foods, Food, DryFood, WetFood, FoodType } from "../../domains/Cat.ts";
+import {
+  Foods,
+  Food,
+  DryFood,
+  WetFood,
+  FoodType,
+} from "../../domains/cats/CatCalorie.ts";
 import { Table } from "flowbite-react";
 
 const DryFoodTableBody: React.FC<{ feed: DryFood | WetFood; der: number }> = (

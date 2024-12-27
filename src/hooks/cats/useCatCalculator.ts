@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import useWeight from "./useWeight";
 import useMultiplier from "./useMultiplier";
-import { CatCalorie } from "../../domains/Cat";
+import { CatCalorie } from "../../domains/cats/CatCalorie";
 
 export interface CatCalculatorState {
   weight: string;

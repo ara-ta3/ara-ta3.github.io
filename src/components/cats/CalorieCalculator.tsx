@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from "react";
-import { Foods, FoodType } from "../../domains/Cat.ts";
+import { FoodType } from "../../domains/cats/Food.ts";
 import {
-  Alert,
   Button,
   Card,
   FloatingLabel,
@@ -13,6 +12,7 @@ import {
 import { MultiplierForm } from "./calculator/Multiplier.tsx";
 import { CatCalculatorState } from "../../hooks/cats/useCatCalculator.ts";
 import FoodAmount from "./FoodAmount.tsx";
+import FoodMaster from "../../domains/cats/FoodMaster.ts";
 
 const CalorieCalculator: React.FC<{
   props: CatCalculatorState;
@@ -23,7 +23,7 @@ const CalorieCalculator: React.FC<{
   const sumCalorie: number = useMemo(() => {
     const cal = Object.entries(props.calculateTargets).reduce(
       (sum, [foodId, value]) => {
-        const f = Foods.find((x) => x.id === Number(foodId));
+        const f = FoodMaster.find((x) => x.id === Number(foodId));
         if (f?.type === FoodType.Wet) {
           const cal = (value["gram"] / f.gramsPerBag) * f.kcalPerBag;
           return sum + cal;
@@ -68,7 +68,7 @@ const CalorieCalculator: React.FC<{
               <option value={""} disabled>
                 選択してください
               </option>
-              {Foods.map((f) => {
+              {FoodMaster.map((f) => {
                 return (
                   <option key={f.id} value={f.id}>
                     {f.name}
@@ -90,7 +90,7 @@ const CalorieCalculator: React.FC<{
         <div>
           {Object.entries(props.calculateTargets).map(([id, value]) => {
             const foodId = Number(id);
-            const f = Foods.find((x) => x?.id === Number(foodId));
+            const f = FoodMaster.find((x) => x?.id === Number(foodId));
             if (f === undefined) {
               return <></>;
             }

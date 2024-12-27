@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, FloatingLabel, Label } from "flowbite-react";
-import { DryFood, FoodType, WetFood } from "../../domains/Cat";
+import { DryFood, FoodType, WetFood } from "../../domains/cats/Food";
 
 const FoodAmount: React.FC<{
   food: DryFood | WetFood;
