@@ -123,7 +123,6 @@ const CalorieCalculator: React.FC<{
                 const f = Foods.find((x) => x.id === Number(foodId));
                 if (f?.type === FoodType.Wet) {
                   const cal = (value["gram"] / f.gramsPerBag) * f.kcalPerBag;
-                  console.log(cal);
                   return sum + cal;
                 } else if (f?.type === FoodType.Dry) {
                   return sum + (value["gram"] * (f?.kcalPer100 || 0)) / 100;

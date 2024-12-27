@@ -21,13 +21,17 @@ const FoodAmount: React.FC<{
             type="number"
             value={grams}
             step="any"
-            onChange={(e) => console.log(e.target.value)}
+            onChange={(e) => {
+              changeGram(food.id, Number(e.target.value));
+            }}
           />
           <Button
             className="whitespace-nowrap"
             onClick={() => {
-              const rest = der - currentSumGrams;
-              changeGram(food.id, Math.round((rest / food.kcalPer100) * 100));
+              changeGram(
+                food.id,
+                Math.round(((der - currentSumGrams) / food.kcalPer100) * 100)
+              );
             }}
           >
             最大化
