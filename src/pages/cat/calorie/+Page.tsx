@@ -6,9 +6,14 @@ import DryFoods from "../../../components/cats/Foods.tsx";
 import Reference from "../../../components/cats/Reference.tsx";
 import { Tabs } from "flowbite-react";
 import useCatCalculator from "../../../hooks/cats/useCatCalculator.ts";
+import useClientSide from "../../../hooks/useClientSide.ts";
 
 const CatCalorie: React.FC = () => {
   const state = useCatCalculator();
+  const isClient = useClientSide();
+  if (!isClient) {
+    return null;
+  }
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold my-4">猫のカロリー計算</h1>

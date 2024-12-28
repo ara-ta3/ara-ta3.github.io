@@ -26,8 +26,8 @@ const Tools: React.FC = () => {
         <h2 className="text-3xl font-bold mb-4 text-center">Links</h2>
         <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {links.map((link) => (
-            <a href={link.href} target="_blank">
-              <Card key={link.name} className="w-full">
+            <a key={link.name} href={link.href} target="_blank">
+              <Card className="w-full">
                 <h5 className="text-base font-bold text-gray-900">
                   {link.name}
                 </h5>
