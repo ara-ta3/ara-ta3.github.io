@@ -1,7 +1,7 @@
 import React from "react";
 
-import Header from "../components/Header";
-import { HourlyPieChart } from "../components/Schedule";
+import Header from "../../components/Header";
+import { HourlyPieChart } from "../../components/Schedule";
 
 const innerData = [
   { id: "睡眠", label: "睡眠", value: 7.5 },
