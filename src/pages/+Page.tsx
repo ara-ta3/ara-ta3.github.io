@@ -1,8 +1,8 @@
 import React from "react";
 
+import Header from "../components/Header";
 import Tools from "../components/Tools";
 import Links from "../components/Links";
-import useClientSide from "../hooks/useClientSide";
 
 const PortfolioTop: React.FC = () => {
   return (
@@ -22,16 +22,14 @@ const PortfolioTop: React.FC = () => {
 };
 
 const Home: React.FC = () => {
-  const isClient = useClientSide();
-  if (!isClient) {
-    return null;
-  }
-
   return (
     <>
-      <PortfolioTop />
-      <Tools />
-      <Links />
+      <Header />
+      <main>
+        <PortfolioTop />
+        <Tools />
+        <Links />
+      </main>
     </>
   );
 };

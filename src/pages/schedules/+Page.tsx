@@ -1,7 +1,7 @@
 import React from "react";
 
+import Header from "../../components/Header";
 import { HourlyPieChart } from "../../components/Schedule";
-import useClientSide from "../../hooks/useClientSide";
 
 const innerData = [
   { id: "睡眠", label: "睡眠", value: 7.5 },
@@ -12,13 +12,9 @@ const innerData = [
 ];
 
 const Schedules: React.FC = () => {
-  const isClient = useClientSide();
-  if (!isClient) {
-    return null;
-  }
-
   return (
     <>
+      <Header />
       <main>
         <HourlyPieChart hours={innerData} />
       </main>

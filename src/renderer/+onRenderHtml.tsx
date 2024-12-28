@@ -12,10 +12,7 @@ const onRenderHtml: OnRenderHtmlAsync = async (
   const viewHtml = dangerouslySkipEscape(
     renderToString(
       <>
-        <Header />
-        <main>
-          <Page />
-        </main>
+        <Page />
       </>,
     ),
   );
