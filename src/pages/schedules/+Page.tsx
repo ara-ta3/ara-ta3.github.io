@@ -1,6 +1,5 @@
 import React from "react";
 
-import Header from "../../components/Header";
 import { HourlyPieChart } from "../../components/Schedule";
 
 const innerData = [
@@ -14,10 +13,7 @@ const innerData = [
 const Schedules: React.FC = () => {
   return (
     <>
-      <Header />
-      <main>
-        <HourlyPieChart hours={innerData} />
-      </main>
+      <HourlyPieChart hours={innerData} />
     </>
   );
 };
