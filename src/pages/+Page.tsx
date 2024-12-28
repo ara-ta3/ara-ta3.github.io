@@ -24,12 +24,9 @@ const PortfolioTop: React.FC = () => {
 const Home: React.FC = () => {
   return (
     <>
-      <Header />
-      <main>
-        <PortfolioTop />
-        <Tools />
-        <Links />
-      </main>
+      <PortfolioTop />
+      <Tools />
+      <Links />
     </>
   );
 };
