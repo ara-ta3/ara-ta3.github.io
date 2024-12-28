@@ -6,6 +6,7 @@ server:
 
 build:
 	$(NPM) run build
+	$(MAKE) dist/client/sitemap.txt
 
 deploy:
 	$(NPM) run deploy
@@ -18,3 +19,8 @@ test:
 
 lint:
 	$(NPM) run prettier/check
+
+dist/client/sitemap.txt:
+	@echo https://ara-ta3.github.io >> $@
+	@echo https://ara-ta3.github.io/cat/calorie/ >> $@
+	@echo https://ara-ta3.github.io/schedules/ >> $@
