@@ -1,4 +1,4 @@
-name: Deploy 
+name: Deploy
 
 on:
   push:
@@ -15,7 +15,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: "npm"
       - name: Install
         run: npm install
       - name: Build
@@ -24,7 +24,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/
+          path: dist/client
 
   deploy:
     runs-on: ubuntu-latest
