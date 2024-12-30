@@ -1,11 +1,9 @@
 import React from "react";
 
-import Common from "../components/headertags/Common.tsx";
-
 const Head: React.FC = () => {
   return (
     <>
-      <Common />
+      <link rel="canonical" href="https://ara-ta3.github.io/" />
     </>
   );
 };
