@@ -7,6 +7,7 @@ server:
 build:
 	$(NPM) run build
 	$(MAKE) dist/client/sitemap.txt
+	touch dist/client/.nojekyll
 
 deploy:
 	$(NPM) run deploy
