@@ -15,6 +15,17 @@
       "matchPackageNames": ["*"],
       "matchManagers": ["npm"],
       "groupName": "npm packages"
+    },
+    {
+      "matchPackageNames": [
+        "@types/react",
+        "@types/react-dom",
+        "react",
+        "react-dom"
+      ],
+      "allowedVersions": "^18.0.0",
+      "groupName": "raect packages",
+      "matchManagers": ["npm"]
     }
   ]
 }
