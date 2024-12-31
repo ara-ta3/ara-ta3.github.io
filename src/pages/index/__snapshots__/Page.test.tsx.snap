@@ -1,0 +1,181 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Home Snapshot Test > render Home 1`] = `
+<DocumentFragment>
+  <div
+    class="h-[25vh] flex items-center justify-center bg-gray-100"
+  >
+    <div
+      class="text-center"
+    >
+      <h1
+        class="text-5xl font-bold text-gray-800 underline"
+      >
+        <a
+          href="https://x.com/ara_ta3"
+          target="_blank"
+        >
+          ara-ta3
+        </a>
+      </h1>
+      <p
+        class="text-lg text-gray-600 mt-4"
+      >
+        portfolioのように見える遊び場です
+      </p>
+    </div>
+  </div>
+  <section
+    class="py-12 bg-gray-50"
+    id="tools"
+  >
+    <div
+      class="container mx-auto px-4"
+    >
+      <h2
+        class="text-3xl font-bold mb-4 text-center"
+      >
+        Tools
+      </h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+      >
+        <a
+          class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col hover:bg-gray-100 dark:hover:bg-gray-700 w-full"
+          data-testid="flowbite-card"
+          href="/schedules/"
+        >
+          <div
+            class="flex h-full flex-col justify-center gap-4 p-6"
+          >
+            <h5
+              class="text-2xl font-bold text-gray-900"
+            >
+              24時間スケジューラー
+            </h5>
+            <p
+              class="font-normal text-gray-700"
+            >
+              1日のスケジュールを入力し、グラフで生成します。
+            </p>
+          </div>
+        </a>
+        <a
+          class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col hover:bg-gray-100 dark:hover:bg-gray-700 w-full"
+          data-testid="flowbite-card"
+          href="/cat/calorie/"
+        >
+          <div
+            class="flex h-full flex-col justify-center gap-4 p-6"
+          >
+            <h5
+              class="text-2xl font-bold text-gray-900"
+            >
+              猫のカロリー計算
+            </h5>
+            <p
+              class="font-normal text-gray-700"
+            >
+              猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section
+    class="py-12 bg-gray-50"
+    id="links"
+  >
+    <div
+      class="container mx-auto px-4"
+    >
+      <h2
+        class="text-3xl font-bold mb-4 text-center"
+      >
+        Links
+      </h2>
+      <div
+        class="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-4"
+      >
+        <a
+          href="https://x.com/ara_ta3"
+          target="_blank"
+        >
+          <div
+            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full"
+            data-testid="flowbite-card"
+          >
+            <div
+              class="flex h-full flex-col justify-center gap-4 p-6"
+            >
+              <h5
+                class="text-base font-bold text-gray-900"
+              >
+                X(Twitter)
+              </h5>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://github.com/ara-ta3"
+          target="_blank"
+        >
+          <div
+            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full"
+            data-testid="flowbite-card"
+          >
+            <div
+              class="flex h-full flex-col justify-center gap-4 p-6"
+            >
+              <h5
+                class="text-base font-bold text-gray-900"
+              >
+                GitHub
+              </h5>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://zenn.dev/ara_ta3"
+          target="_blank"
+        >
+          <div
+            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full"
+            data-testid="flowbite-card"
+          >
+            <div
+              class="flex h-full flex-col justify-center gap-4 p-6"
+            >
+              <h5
+                class="text-base font-bold text-gray-900"
+              >
+                zenn.dev
+              </h5>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://arata.hatenadiary.com/"
+          target="_blank"
+        >
+          <div
+            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full"
+            data-testid="flowbite-card"
+          >
+            <div
+              class="flex h-full flex-col justify-center gap-4 p-6"
+            >
+              <h5
+                class="text-base font-bold text-gray-900"
+              >
+                はてなブログ
+              </h5>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
