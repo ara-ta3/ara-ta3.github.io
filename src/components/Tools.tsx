@@ -7,14 +7,14 @@ const Tools: React.FC = () => {
       id: 1,
       name: "24時間スケジューラー",
       description: "1日のスケジュールを入力し、グラフで生成します。",
-      href: "/schedules",
+      href: "/schedules/",
     },
     {
       id: 2,
       name: "猫のカロリー計算",
       description:
         "猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。",
-      href: "/cat/calorie",
+      href: "/cat/calorie/",
     },
   ];
   return (

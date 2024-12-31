@@ -12,7 +12,7 @@ const Header: React.FC = () => {
             <div className="space-y-4 p-4">
               <li>
                 <a
-                  href="/cat/calorie"
+                  href="/cat/calorie/"
                   className="hover:text-primary-600 dark:hover:text-primary-500"
                 >
                   猫のカロリー計算
