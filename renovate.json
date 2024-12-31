@@ -1,0 +1,16 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "automerge": true,
+  "timezone": "Asia/Tokyo",
+  "separateMajorMinor": false,
+  "packageRules": [
+    {
+      "groupName": "all-packages",
+      "matchPackageNames": ["*"]
+    }
+  ],
+  "lockFileMaintenance": {
+    "enabled": false
+  }
+}
