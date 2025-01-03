@@ -39,7 +39,7 @@ const DryFoodTableBody: React.FC<{ foods: DryFood[] }> = (props) => {
     <Table.Body>
       {props.foods.map((f) => {
         return (
-          <Table.Row>
+          <Table.Row key={f.id}>
             <Table.Cell className="px-6 py-4">
               <a
                 className="hover:underline text-blue-600"
@@ -72,7 +72,7 @@ const WetFoodTableBody: React.FC<{ foods: WetFood[] }> = (props) => {
     <Table.Body>
       {props.foods.map((f) => {
         return (
-          <Table.Row>
+          <Table.Row key={f.id}>
             <Table.Cell className="px-6 py-4">
               <a
                 className="hover:underline text-blue-600"
