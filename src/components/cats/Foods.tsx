@@ -4,65 +4,132 @@ import { DryFood, WetFood, FoodType } from "../../domains/cats/Food.ts";
 import { Table } from "flowbite-react";
 import FoodMaster from "../../domains/cats/FoodMaster.ts";
 
-const DryFoodTableBody: React.FC<{ feed: DryFood | WetFood }> = (props) => {
-  const food = props.feed;
+const DryFoodHeader: React.FC = () => {
   return (
-    <Table.Row>
-      <Table.Cell className="px-6 py-4">
-        <a
-          className="hover:underline text-blue-600"
-          href={props.feed.url}
-          target="_blank"
-        >
-          {props.feed.name}
-        </a>
-      </Table.Cell>
-      <Table.Cell className="px-6 py-4">
-        {food.type === FoodType.Dry ? food.kcalPer100 : food.kcalPerBag}
-      </Table.Cell>
-      <Table.Cell className="px-6 py-4">
-        {props.feed.nutrition.carbohydrate}
-      </Table.Cell>
-      <Table.Cell className="px-6 py-4">
-        {props.feed.nutrition.protein}
-      </Table.Cell>
-      <Table.Cell className="px-6 py-4">{props.feed.nutrition.fat}</Table.Cell>
-      <Table.Cell className="px-6 py-4">
-        {props.feed.nutrition.fiber}
-      </Table.Cell>
-      <Table.Cell className="px-6 py-4">{props.feed.nutrition.ash}</Table.Cell>
-      <Table.Cell className="px-6 py-4">
-        {props.feed.nutrition.moisture}
-      </Table.Cell>
-    </Table.Row>
+    <Table.Head>
+      <Table.HeadCell className="px-6 py-3">名称</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">kcal / 100g</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">糖質(概算)</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">たんぱく質</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">脂質</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">粗繊維</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">灰分</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">水分</Table.HeadCell>
+    </Table.Head>
   );
 };
 
-const DryFoodTable: React.FC = () => {
+const WetFoodHeader: React.FC = () => {
+  return (
+    <Table.Head>
+      <Table.HeadCell className="px-6 py-3">名称</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">kcal/袋</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">糖質(概算)</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">たんぱく質</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">脂質</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">粗繊維</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">灰分</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">水分</Table.HeadCell>
+    </Table.Head>
+  );
+};
+
+const DryFoodTableBody: React.FC<{ foods: DryFood[] }> = (props) => {
+  return (
+    <Table.Body>
+      {props.foods.map((f) => {
+        return (
+          <Table.Row>
+            <Table.Cell className="px-6 py-4">
+              <a
+                className="hover:underline text-blue-600"
+                href={f.url}
+                target="_blank"
+              >
+                {f.name}
+              </a>
+            </Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.kcalPer100}</Table.Cell>
+            <Table.Cell className="px-6 py-4">
+              {f.nutrition.carbohydrate}
+            </Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.nutrition.protein}</Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.nutrition.fat}</Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.nutrition.fiber}</Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.nutrition.ash}</Table.Cell>
+            <Table.Cell className="px-6 py-4">
+              {f.nutrition.moisture}
+            </Table.Cell>
+          </Table.Row>
+        );
+      })}
+    </Table.Body>
+  );
+};
+
+const WetFoodTableBody: React.FC<{ foods: WetFood[] }> = (props) => {
+  return (
+    <Table.Body>
+      {props.foods.map((f) => {
+        return (
+          <Table.Row>
+            <Table.Cell className="px-6 py-4">
+              <a
+                className="hover:underline text-blue-600"
+                href={f.url}
+                target="_blank"
+              >
+                {f.name}
+              </a>
+            </Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.kcalPerBag}</Table.Cell>
+            <Table.Cell className="px-6 py-4">
+              {f.nutrition.carbohydrate}
+            </Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.nutrition.protein}</Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.nutrition.fat}</Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.nutrition.fiber}</Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.nutrition.ash}</Table.Cell>
+            <Table.Cell className="px-6 py-4">
+              {f.nutrition.moisture}
+            </Table.Cell>
+          </Table.Row>
+        );
+      })}
+    </Table.Body>
+  );
+};
+
+const FoodTable: React.FC = () => {
+  const dryFoods = FoodMaster.filter((x) => x.type === FoodType.Dry);
+  const wetFoods = FoodMaster.filter((x) => x.type === FoodType.Wet);
   return (
     <div>
-      <h1 className="text-2xl font-bold my-4 ">フード</h1>
+      <h1 className="text-2xl font-bold my-4 ">対応しているフード</h1>
+      <p className="text-sm text-gray-500">
+        適宜追加していきますが、追加要望があれば
+        <a
+          className="hover:underline text-blue-600"
+          href="https://forms.gle/Ub7AofzTy4WJeVZPA"
+          target="_blank"
+        >
+          こちら
+        </a>
+        からリンクなどを送っていただけるとありがたいです。
+      </p>
+
+      <h2 className="text-1xl font-bold my-4 ">ドライフード</h2>
       <Table>
-        <Table.Head>
-          <Table.HeadCell className="px-6 py-3">名称</Table.HeadCell>
-          <Table.HeadCell className="px-6 py-3">
-            kcal(/100g or /袋)
-          </Table.HeadCell>
-          <Table.HeadCell className="px-6 py-3">糖質(概算)</Table.HeadCell>
-          <Table.HeadCell className="px-6 py-3">たんぱく質</Table.HeadCell>
-          <Table.HeadCell className="px-6 py-3">脂質</Table.HeadCell>
-          <Table.HeadCell className="px-6 py-3">粗繊維</Table.HeadCell>
-          <Table.HeadCell className="px-6 py-3">灰分</Table.HeadCell>
-          <Table.HeadCell className="px-6 py-3">水分</Table.HeadCell>
-        </Table.Head>
-        <Table.Body>
-          {FoodMaster.map((f) => (
-            <DryFoodTableBody key={f.id} feed={f} />
-          ))}
-        </Table.Body>
+        <DryFoodHeader />
+        <DryFoodTableBody foods={dryFoods} />
+      </Table>
+      <h2 className="text-1xl font-bold my-4 ">ウェットフード</h2>
+      <Table>
+        <WetFoodHeader />
+        <WetFoodTableBody foods={wetFoods} />
       </Table>
     </div>
   );
 };
 
-export default DryFoodTable;
+export default FoodTable;
