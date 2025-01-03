@@ -3,12 +3,12 @@ import React from "react";
 
 const Tools: React.FC = () => {
   const tools = [
-    {
-      id: 1,
-      name: "24時間スケジューラー",
-      description: "1日のスケジュールを入力し、グラフで生成します。",
-      href: "/schedules/",
-    },
+    //    {
+    //      id: 1,
+    //      name: "24時間スケジューラー",
+    //      description: "1日のスケジュールを入力し、グラフで生成します。",
+    //      href: "/schedules/",
+    //    },
     {
       id: 2,
       name: "猫のカロリー計算",

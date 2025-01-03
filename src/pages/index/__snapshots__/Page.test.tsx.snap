@@ -43,26 +43,6 @@ exports[`Home Snapshot Test > render Home 1`] = `
         <a
           class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col hover:bg-gray-100 dark:hover:bg-gray-700 w-full"
           data-testid="flowbite-card"
-          href="/schedules/"
-        >
-          <div
-            class="flex h-full flex-col justify-center gap-4 p-6"
-          >
-            <h5
-              class="text-2xl font-bold text-gray-900"
-            >
-              24時間スケジューラー
-            </h5>
-            <p
-              class="font-normal text-gray-700"
-            >
-              1日のスケジュールを入力し、グラフで生成します。
-            </p>
-          </div>
-        </a>
-        <a
-          class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col hover:bg-gray-100 dark:hover:bg-gray-700 w-full"
-          data-testid="flowbite-card"
           href="/cat/calorie/"
         >
           <div
