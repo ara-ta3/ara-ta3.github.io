@@ -30,7 +30,7 @@
     "@vitejs/plugin-react": "4.3.4",
     "@vitest/ui": "2.1.8",
     "autoprefixer": "10.4.20",
-    "gh-pages": "6.2.0",
+    "gh-pages": "6.3.0",
     "jsdom": "25.0.1",
     "postcss": "8.4.49",
     "prettier": "3.4.2",
@@ -38,7 +38,7 @@
     "typescript": "5.7.2",
     "vike": "0.4.211",
     "vike-react": "0.5.11",
-    "vite": "6.0.6",
+    "vite": "6.0.7",
     "vitest": "2.1.8"
   }
 }
