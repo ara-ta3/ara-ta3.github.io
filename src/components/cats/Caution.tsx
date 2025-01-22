@@ -17,9 +17,20 @@ const Caution: React.FC = () => {
           href="https://forms.gle/Ub7AofzTy4WJeVZPA"
           target="_blank"
         >
-          こちら
+          こちらのフォーム
         </a>
-        へ
+        へ投稿していただけると嬉しいです。
+      </p>
+      <p className="my-4 text-sm text-gray-500">
+        背景や計算については「
+        <a
+          className="hover:underline text-blue-600"
+          href="https://arata.hatenadiary.com/entry/2025/01/09/174000?utm_source=ara-ta3.github.io&utm_medium=referral"
+          target="_blank"
+        >
+          猫にあげる1日の餌のカロリー量とフードのグラム数を計算出来るツールを書いた
+        </a>
+        」の記事を参考にしてください。
       </p>
     </>
   );
