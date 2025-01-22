@@ -13,9 +13,9 @@ const CatCalorie: React.FC = () => {
     <>
       <div className="container mx-auto p-4">
         <h1 className="text-2xl font-bold my-4">猫のカロリー計算</h1>
-        <Caution />
         <Tabs variant="default">
           <Tabs.Item title="計算">
+            <Caution />
             <CalorieCalculator props={state} />
           </Tabs.Item>
           <Tabs.Item title="対応フード">
