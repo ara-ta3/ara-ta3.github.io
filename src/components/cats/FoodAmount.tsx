@@ -44,42 +44,50 @@ const FoodAmount: React.FC<{
       </div>
     );
   } else if (food.type === FoodType.Wet) {
+    const [bags, setBags] = React.useState<number>(grams / food.gramsPerBag || 0);
     return (
       <div className="px-2 my-2">
         <Label htmlFor={`Food${food.id}`}>{food.name}</Label>
         <div className="flex items-center gap-2">
           <FloatingLabel
-            id={`Food${food.id}`}
+            id={`bags-${food.id}`}
             variant="outlined"
-            label="グラム数"
+            label="袋数"
             type="number"
-            value={grams}
+            value={bags}
             step="any"
-            onChange={(e) => changeGram(food.id, Number(e.target.value))}
+            onChange={(e) => {
+              const newBags = Number(e.target.value);
+              setBags(newBags);
+              changeGram(food.id, newBags * food.gramsPerBag);
+            }}
           />
           <Button
             className="whitespace-nowrap"
             onClick={() => {
-              changeGram(food.id, food.gramsPerBag);
+              setBags(bags + 1);
+              changeGram(food.id, (bags + 1) * food.gramsPerBag);
             }}
           >
-            1袋分
+            +1袋
           </Button>
           <Button
             className="whitespace-nowrap"
             onClick={() => {
-              changeGram(food.id, food.gramsPerBag / 2);
+              setBags(bags + 0.5);
+              changeGram(food.id, (bags + 0.5) * food.gramsPerBag);
             }}
           >
-            半分
+            +0.5袋
           </Button>
           <Button
             className="whitespace-nowrap"
             onClick={() => {
+              setBags(0);
               changeGram(food.id, 0);
             }}
           >
-            なし
+            0袋
           </Button>
         </div>
       </div>
