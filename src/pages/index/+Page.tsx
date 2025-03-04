@@ -2,6 +2,7 @@ import React from "react";
 
 import Tools from "../../components/Tools";
 import Links from "../../components/Links";
+import RelatedArticles from "../../components/RelatedArticles";
 
 const PortfolioTop: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const Home: React.FC = () => {
       <PortfolioTop />
       <Tools />
       <Links />
+      <RelatedArticles />
     </>
   );
 };

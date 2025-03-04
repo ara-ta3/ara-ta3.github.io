@@ -157,5 +157,61 @@ exports[`Home Snapshot Test > render Home 1`] = `
       </div>
     </div>
   </section>
+  <section
+    class="py-12 bg-gray-50"
+    id="related-articles"
+  >
+    <div
+      class="container mx-auto px-4"
+    >
+      <h2
+        class="text-3xl font-bold mb-4 text-center"
+      >
+        Related Articles
+      </h2>
+      <div
+        class="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-4"
+      >
+        <a
+          href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-getting-started"
+          target="_blank"
+        >
+          <div
+            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full h-36"
+            data-testid="flowbite-card"
+          >
+            <div
+              class="flex h-full flex-col justify-center gap-4 p-6"
+            >
+              <h5
+                class="text-base font-bold text-gray-900"
+              >
+                TypeScript + Vike + SSG Getting Started
+              </h5>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://arata.hatenadiary.com/entry/2025/01/09/174000"
+          target="_blank"
+        >
+          <div
+            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full h-36"
+            data-testid="flowbite-card"
+          >
+            <div
+              class="flex h-full flex-col justify-center gap-4 p-6"
+            >
+              <h5
+                class="text-base font-bold text-gray-900"
+              >
+                猫にあげる1日の餌のカロリー量とフードのグラム数を計算出来るツールを書いた
+              </h5>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 </DocumentFragment>
 `;
