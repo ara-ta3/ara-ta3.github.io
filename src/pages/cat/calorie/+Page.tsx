@@ -6,6 +6,7 @@ import DryFoods from "../../../components/cats/Foods.tsx";
 import Reference from "../../../components/cats/Reference.tsx";
 import { Tabs } from "flowbite-react";
 import useCatCalculator from "../../../hooks/cats/useCatCalculator.ts";
+import { FoodTransitionPlanner } from "../../../components/FoodTransitionPlanner";
 
 const CatCalorie: React.FC = () => {
   const state = useCatCalculator();
@@ -17,6 +18,9 @@ const CatCalorie: React.FC = () => {
         <Tabs variant="default">
           <Tabs.Item title="計算">
             <CalorieCalculator props={state} />
+          </Tabs.Item>
+          <Tabs.Item title="フード切り替え">
+            <FoodTransitionPlanner />
           </Tabs.Item>
           <Tabs.Item title="対応フード">
             <DryFoods />
