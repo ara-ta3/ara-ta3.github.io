@@ -14,9 +14,12 @@ import { CatCalculatorState } from "../../hooks/cats/useCatCalculator.ts";
 import FoodAmount from "./FoodAmount.tsx";
 import FoodMaster from "../../domains/cats/FoodMaster.ts";
 
-const CalorieCalculator: React.FC<{
+interface CalorieCalculatorProps {
   props: CatCalculatorState;
-}> = ({ props }) => {
+  onTransitionClick?: () => void;
+}
+
+const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({ props, onTransitionClick }) => {
   const [selectedFoodId, setSelectedFoodId] = useState<number | undefined>(
     undefined
   );

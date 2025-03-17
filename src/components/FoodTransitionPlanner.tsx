@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { calculateFoodTransitionPlan, ContinuedFood } from '../domains/cats/FoodTransitionPlan';
 import { DryFood, FoodType, WetFood } from '../domains/cats/Food';
 import FoodMaster from '../domains/cats/FoodMaster';
 import { Select, Button } from 'flowbite-react';
 
-export const FoodTransitionPlanner = () => {
+interface FoodTransitionPlannerProps {
+    initialCalories?: number;
+}
+
+export const FoodTransitionPlanner: React.FC<FoodTransitionPlannerProps> = ({ initialCalories }) => {
     const [currentFoodId, setCurrentFoodId] = useState<number | undefined>(undefined);
     const [newFoodId, setNewFoodId] = useState<number | undefined>(undefined);
     const [requiredCalories, setRequiredCalories] = useState(0);
