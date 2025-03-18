@@ -63,11 +63,10 @@ export function calculateFoodTransitionPlan(
   );
 
   const transitionCalories = requiredCalories - continuedTotalCalories;
+  const dailyIncrease = targetPercentage / transitionDays;
 
-  for (let day = 0; day <= transitionDays; day++) {
-    const progress = day / transitionDays;
-    const currentPercentage = targetPercentage * progress;
-
+  for (let day = 1; day <= transitionDays; day++) {
+    const currentPercentage = dailyIncrease * day;
     const newFoodRatio = currentPercentage / 100;
     const currentFoodRatio = 1 - newFoodRatio;
 
