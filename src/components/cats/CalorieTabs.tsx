@@ -17,28 +17,6 @@ export const CalorieTabs: React.FC<CalorieTabsProps> = ({ defaultTab }) => {
   const state = useCatCalculator();
   const [activeTab, setActiveTab] = useState<TabName>(defaultTab);
 
-  // URLを更新する関数
-  const updateUrl = (tab: TabName) => {
-    let path = "/cat/calorie";
-    switch (tab) {
-      case "対応フード":
-        path = "/cat/calorie/foods";
-        break;
-      case "フード切り替え":
-        path = "/cat/calorie/transition";
-        break;
-      case "参考":
-        path = "/cat/calorie/reference";
-        break;
-    }
-    window.history.pushState({}, "", path);
-  };
-
-  // タブ変更時にURLも更新
-  useEffect(() => {
-    updateUrl(activeTab);
-  }, [activeTab]);
-
   return (
     <>
       <div className="container mx-auto p-4">
