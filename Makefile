@@ -21,7 +21,14 @@ test:
 lint:
 	$(NPM) run prettier/check
 
+lint/fix:
+	$(NPM) run prettier
+
+
 dist/client/sitemap.txt:
 	@echo https://ara-ta3.github.io/ >> $@
-	@echo https://ara-ta3.github.io/cat/calorie/ >> $@
-	@echo https://ara-ta3.github.io/schedules/ >> $@
+	@echo https://ara-ta3.github.io/cat/calorie >> $@
+	@echo https://ara-ta3.github.io/cat/calorie/foods >> $@
+	@echo https://ara-ta3.github.io/cat/calorie/transition >> $@
+	@echo https://ara-ta3.github.io/cat/calorie/reference >> $@
+	@echo https://ara-ta3.github.io/schedules >> $@
