@@ -7,6 +7,7 @@ server:
 build:
 	$(NPM) run build
 	$(MAKE) dist/client/sitemap.txt
+	$(MAKE) dist/client/robots.txt
 	touch dist/client/.nojekyll
 
 deploy:
@@ -32,3 +33,8 @@ dist/client/sitemap.txt:
 	@echo https://ara-ta3.github.io/cat/calorie/transition >> $@
 	@echo https://ara-ta3.github.io/cat/calorie/reference >> $@
 	@echo https://ara-ta3.github.io/schedules >> $@
+
+dist/client/robots.txt:
+	@echo "User-agent: *" >> $@
+	@echo "Allow: /" >> $@
+	@echo "Sitemap: https://ara-ta3.github.io/sitemap.txt" >> $@
