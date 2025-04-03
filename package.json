@@ -4,6 +4,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "predeploy": "make build",
     "deploy": "make deploy"
   },
