@@ -10,17 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
-      - uses: pnpm/action-setup@0609f0983b7a228f052f81ef4c3d6510cae254ad
-        with:
-          version: latest
+      - run: curl -fsSL https://get.pnpm.io/install.sh | bash -
+      - run: echo "/home/runner/.local/share/pnpm:$PATH" >> $GITHUB_PATH
       - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4
         with:
           node-version: 20
           cache: "pnpm"
-      - name: Install
-        run: make install
-      - name: Build
-        run: make build
+      - run: make install
+      - run: make build
       - name: Upload
         id: deployment
         uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
