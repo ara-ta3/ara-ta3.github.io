@@ -17,6 +17,11 @@
       "groupName": "npm packages"
     },
     {
+      "matchPackageNames": ["@vitest/ui", "vitest"],
+      "groupName": "vitest packages",
+      "matchManagers": ["npm"]
+    },
+    {
       "matchPackageNames": [
         "@types/react",
         "@types/react-dom",
