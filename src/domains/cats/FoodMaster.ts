@@ -100,7 +100,7 @@ const Foods: (DryFood | WetFood)[] = [
     nutrition: new Nutrition(38, 10, 5, 12, 10),
   },
   {
-    id: 14,
+    id: 13,
     type: FoodType.Dry,
     name: "ウェルネスコア(高たんぱく質・穀物不使用) 室内猫用(1歳以上) サーモン",
     kcalPer100: 329,
@@ -108,7 +108,31 @@ const Foods: (DryFood | WetFood)[] = [
     nutrition: new Nutrition(38, 10, 6, 12, 10),
   },
   {
+    id: 14,
+    type: FoodType.Dry,
+    name: "ボナペティ チキン＆シュリンプ",
+    kcalPer100: 333,
+    url: "https://www.tamaone.jp/item/TAC0100200.html",
+    nutrition: new Nutrition(32.5, 12.5, 7, 5.7, 10),
+  },
+  {
     id: 15,
+    type: FoodType.Dry,
+    name: "ボナペティ ラム&フィッシュ",
+    kcalPer100: 332,
+    url: "https://www.tamaone.jp/item/TAC0100070.html",
+    nutrition: new Nutrition(31, 15, 10, 6.5, 10),
+  },
+  {
+    id: 16,
+    type: FoodType.Dry,
+    name: "ボナペティ サーモン＆クリル",
+    kcalPer100: 332,
+    url: "https://www.tamaone.jp/item/TAC0100380.html",
+    nutrition: new Nutrition(31, 15, 9.5, 7, 10),
+  },
+  {
+    id: 17,
     type: FoodType.Wet,
     name: "ピュリナワン パウチ 室内飼い猫用 1歳以上 チキン グレービー仕立て 50g",
     kcalPerBag: 80,
@@ -117,7 +141,7 @@ const Foods: (DryFood | WetFood)[] = [
     nutrition: new Nutrition(12.5, 3, 1, 2.5, 82),
   },
   {
-    id: 16,
+    id: 18,
     type: FoodType.Wet,
     name: "ニュートロ キャット デイリー ディッシュ アダルト チキン＆ツナ グルメ仕立てのざく切りタイプ パウチ",
     kcalPerBag: 24,
@@ -126,7 +150,7 @@ const Foods: (DryFood | WetFood)[] = [
     nutrition: new Nutrition(8.5, 1, 0.5, 3, 87),
   },
   {
-    id: 17,
+    id: 19,
     type: FoodType.Wet,
     name: "ニュートロ キャット デイリー ディッシュ アダルト チキン グルメ仕立てのざく切りタイプ パウチ",
     kcalPerBag: 23,
@@ -135,7 +159,7 @@ const Foods: (DryFood | WetFood)[] = [
     nutrition: new Nutrition(8.5, 1, 0.5, 3, 88),
   },
   {
-    id: 18,
+    id: 20,
     type: FoodType.Wet,
     name: "デイリー ディッシュ サーモン＆ツナ グルメ仕立てのパテタイプ",
     kcalPerBag: 43 * 2,
@@ -144,7 +168,7 @@ const Foods: (DryFood | WetFood)[] = [
     nutrition: new Nutrition(11.5, 6, 1, 3, 78),
   },
   {
-    id: 19,
+    id: 21,
     type: FoodType.Wet,
     name: "デイリー ディッシュ サーモン＆チキン グルメ仕立てのパテタイプ",
     kcalPerBag: 37 * 2,
@@ -153,7 +177,7 @@ const Foods: (DryFood | WetFood)[] = [
     nutrition: new Nutrition(11.5, 4.5, 1, 3, 78),
   },
   {
-    id: 20,
+    id: 22,
     type: FoodType.Wet,
     name: "デイリー ディッシュ チキン＆エビ グルメ仕立てのパテタイプ",
     kcalPerBag: 42 * 2,
@@ -162,7 +186,7 @@ const Foods: (DryFood | WetFood)[] = [
     nutrition: new Nutrition(11.5, 5.5, 1, 3, 78),
   },
   {
-    id: 21,
+    id: 23,
     type: FoodType.Wet,
     name: "デイリー ディッシュ チキン グルメ仕立てのパテタイプ",
     kcalPerBag: 43 * 2,
@@ -171,7 +195,7 @@ const Foods: (DryFood | WetFood)[] = [
     nutrition: new Nutrition(11.5, 6, 1, 3, 78),
   },
   {
-    id: 22,
+    id: 24,
     type: FoodType.Wet,
     name: "デイリー ディッシュ ターキー グルメ仕立てのパテタイプ",
     kcalPerBag: 47 * 2,
@@ -180,7 +204,7 @@ const Foods: (DryFood | WetFood)[] = [
     nutrition: new Nutrition(11.5, 7, 1, 3, 78),
   },
   {
-    id: 23,
+    id: 25,
     type: FoodType.Wet,
     name: "デイリー ディッシュ ビーフ グルメ仕立てのパテタイプ",
     kcalPerBag: 48 * 2,
