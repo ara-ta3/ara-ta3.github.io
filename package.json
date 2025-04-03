@@ -11,7 +11,8 @@
     "test": "vitest --run",
     "test/watch": "vitest --watch",
     "prettier": "prettier --write 'src/**/*.{ts, tsx, json, css}'",
-    "prettier/check": "prettier --check 'src/**/*.{ts, tsx, json, css}'"
+    "prettier/check": "prettier --check 'src/**/*.{ts, tsx, json, css}'",
+    "postinstall": "flowbite-react patch"
   },
   "author": "",
   "license": "ISC",
