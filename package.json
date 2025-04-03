@@ -16,8 +16,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.1",
+    "@tailwindcss/postcss7-compat": "^2.2.17",
     "flowbite": "3.1.2",
-    "flowbite-react": "^0.11.7",
+    "flowbite-react": "^0.11.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
@@ -32,7 +34,7 @@
     "jsdom": "26.0.0",
     "postcss": "8.5.3",
     "prettier": "3.5.3",
-    "tailwindcss": "3.4.17",
+    "tailwindcss": "^3.3.3",
     "typescript": "5.8.2",
     "vike": "0.4.227",
     "vike-react": "^0.6.1",
