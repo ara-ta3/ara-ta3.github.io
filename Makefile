@@ -1,7 +1,8 @@
 NPX=npx
+PNPM=pnpm
 
 install:
-	npm install
+	$(PNPM) install
 
 server:
 	$(NPX) vike dev
