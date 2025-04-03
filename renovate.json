@@ -31,6 +31,18 @@
       "allowedVersions": "^18.0.0",
       "groupName": "raect packages",
       "matchManagers": ["npm"]
+    },
+    {
+      "matchPackageNames": ["flowbite-react"],
+      "allowedVersions": "<0.11.0",
+      "groupName": "flowbite-react",
+      "matchManagers": ["npm"]
+    },
+    {
+      "matchPackageNames": ["tailwindcss"],
+      "allowedVersions": "<4.0.0",
+      "groupName": "tailwindcss",
+      "matchManagers": ["npm"]
     }
   ]
 }
