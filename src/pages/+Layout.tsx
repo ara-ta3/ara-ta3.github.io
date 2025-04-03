@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
 import Header from "../components/Header";
 import "../index.css";
 
-function Layout({ children }): React.FC {
+function Layout({ children }): FC {
   return (
     <>
       <Header />

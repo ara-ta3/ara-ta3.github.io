@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 
 import { HourlyPieChart } from "../../components/Schedule";
 
@@ -10,7 +10,7 @@ const innerData = [
   { id: "その他", label: "その他", value: 1 },
 ];
 
-const Schedules: React.FC = () => {
+const Schedules: FC = () => {
   return (
     <>
       <HourlyPieChart hours={innerData} />

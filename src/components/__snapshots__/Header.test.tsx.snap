@@ -50,7 +50,7 @@ exports[`Header Snapshot Test > render headers 1`] = `
             aria-expanded="false"
             aria-haspopup="menu"
             class="flex w-full items-center justify-between"
-            id=":r1:"
+            id="«r1»"
             type="button"
           >
             Tools

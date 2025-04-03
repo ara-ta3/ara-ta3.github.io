@@ -1,6 +1,4 @@
-import React from "react";
-
-const Head: React.FC = () => {
+const Head: FC = () => {
   return (
     <>
       <link rel="canonical" href="https://ara-ta3.github.io/" />
