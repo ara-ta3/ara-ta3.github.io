@@ -1,5 +1,8 @@
 NPX=npx
 
+install:
+	npm install
+
 server:
 	$(NPX) vike dev
 
