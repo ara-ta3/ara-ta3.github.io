@@ -5,7 +5,7 @@ export default defineConfig({
   base: "/",
   plugins: [react()],
   ssr: {
-    noExternal: [/^d3.*$/, /^@nivo.*$/],
+    noExternal: [/^d3.*$/],
   },
   test: {
     globals: true,
