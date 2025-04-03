@@ -4,14 +4,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "server": "vike dev",
-    "build": "vike build",
     "predeploy": "make build",
-    "deploy": "gh-pages -d dist",
-    "test": "vitest --run",
-    "test/watch": "vitest --watch",
-    "prettier": "prettier --write 'src/**/*.{ts, tsx, json, css}'",
-    "prettier/check": "prettier --check 'src/**/*.{ts, tsx, json, css}'"
+    "deploy": "make deploy",
   },
   "author": "",
   "license": "ISC",

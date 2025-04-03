@@ -1,33 +1,31 @@
-NPM=npm
-TSC=./node_modules/.bin/tsc
+NPX=npx
 
 server:
-	$(NPM) run server
+	$(NPX) vike dev
 
 build:
-	$(NPM) run build
+	$(NPX) vike build
 	$(MAKE) dist/client/sitemap.txt
 	$(MAKE) dist/client/robots.txt
 	touch dist/client/.nojekyll
 
 deploy:
-	$(NPM) run deploy
+	$(NPX) gh-pages -d dist
 
 compile:
-	$(TSC) --noEmit --strict
+	$(NPX) tsc --noEmit --strict
 
 test:
-	$(NPM) run test
+	$(NPX) vitest --run
 
 test/watch:
-	$(NPM) run test/watch
-
+	$(NPX) vitest --watch
 
 lint:
-	$(NPM) run prettier/check
+	$(NPX) prettier --check 'src/**/*.{ts, tsx, json, css}'
 
 lint/fix:
-	$(NPM) run prettier
+	$(NPX) prettier --write 'src/**/*.{ts, tsx, json, css}'
 
 
 dist/client/sitemap.txt:
