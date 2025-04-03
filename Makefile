@@ -19,6 +19,10 @@ compile:
 test:
 	$(NPM) run test
 
+test/watch:
+	$(NPM) run test/watch
+
+
 lint:
 	$(NPM) run prettier/check
 

@@ -8,7 +8,8 @@
     "build": "vike build",
     "predeploy": "make build",
     "deploy": "gh-pages -d dist",
-    "test": "vitest",
+    "test": "vitest --run",
+    "test/watch": "vitest --watch",
     "prettier": "prettier --write 'src/**/*.{ts, tsx, json, css}'",
     "prettier/check": "prettier --check 'src/**/*.{ts, tsx, json, css}'"
   },
