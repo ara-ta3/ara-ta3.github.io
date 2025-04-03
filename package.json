@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "predeploy": "make build",
-    "deploy": "make deploy",
+    "deploy": "make deploy"
   },
   "author": "",
   "license": "ISC",
