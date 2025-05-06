@@ -40,7 +40,7 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
               <p className="underline">安静時のエネルギー要求量 RER</p>
             </Tooltip>
             <p className="text-xl font-bold">
-              {(props.calculated?.rer ?? 0).toFixed(2) ?? 0} kcal/day
+              {(props.calculated?.rer ?? 0).toFixed(2)} kcal/day
             </p>
           </div>
           <div className="flex flex-col grid-item col-span-1">
