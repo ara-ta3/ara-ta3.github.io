@@ -33,7 +33,7 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
 
   return (
     <div className="grid gap-4">
-      <Card className="flex flex-col grid-item col-span-1 sticky top-0">
+      <Card className="flex flex-col grid-item col-span-1 sticky top-0 z-10">
         <div className="grid grid-cols-2">
           <div className="flex flex-col grid-item col-span-1">
             <Tooltip content="70 × 体重^(3/4)">
@@ -57,6 +57,7 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
           <p className="text-xl font-bold">{sumCalorie.toFixed(2)} kcal/day</p>
         </div>
       </Card>
+      <HR />
       <div className="flex flex-col grid-item col-span-1 p-2 space-y-4">
         <FloatingLabel
           variant="outlined"
