@@ -15,7 +15,7 @@ export interface CatCalculatorState {
     simpleRer: number;
   } | null;
   calculateTargets: CalculateTarget;
-  addCalculateTarget: (key: FoodId) => void;
+  addCalculateTarget: (keys: FoodId[]) => void;
   chagneCalculateTargetGram: (key: FoodId, gramValue: number) => void;
 }
 
@@ -31,13 +31,25 @@ export interface CalculateTarget {
 
 function useCalculateTarget() {
   const [targets, setTargets] = useState<{ [key: FoodId]: { gram: number } }>(
-    {},
+    {}
   );
 
   const addTarget = (key: FoodId) => {
     setTargets((prev) => {
       if (key in prev) return prev;
       return { ...prev, [key]: { gram: 0 } };
+    });
+  };
+
+  const addTargets = (keys: FoodId[]) => {
+    setTargets((prev) => {
+      let newTargets = { ...prev };
+      keys.forEach((key) => {
+        if (!(key in newTargets)) {
+          newTargets[key] = { gram: 0 };
+        }
+      });
+      return newTargets;
     });
   };
 
@@ -54,6 +66,7 @@ function useCalculateTarget() {
   return {
     targets,
     addTarget,
+    addTargets,
     changeGram,
   };
 }
@@ -62,9 +75,9 @@ export default function (): CatCalculatorState {
   const { weight, setWeight } = useWeight();
   const { multiplier, setMultiplier } = useMultiplier();
   const [calculated, setCalculated] = useState<CatCalculatedResultState | null>(
-    null,
+    null
   );
-  const { targets, addTarget, changeGram } = useCalculateTarget();
+  const { targets, addTargets, changeGram } = useCalculateTarget();
 
   useEffect(() => {
     const parsedWeight = parseFloat(weight);
@@ -86,7 +99,7 @@ export default function (): CatCalculatorState {
     setMultiplier,
     calculated,
     calculateTargets: targets,
-    addCalculateTarget: addTarget,
+    addCalculateTarget: addTargets,
     chagneCalculateTargetGram: changeGram,
   };
 }
