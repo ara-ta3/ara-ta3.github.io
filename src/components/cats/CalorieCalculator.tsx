@@ -19,7 +19,10 @@ interface CalorieCalculatorProps {
   onTransitionClick?: () => void;
 }
 
-const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({ props, onTransitionClick }) => {
+const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
+  props,
+  onTransitionClick,
+}) => {
   const [selectedFoodId, setSelectedFoodId] = useState<number | undefined>(
     undefined
   );
@@ -29,8 +32,33 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({ props, onTransiti
   );
 
   return (
-    <div className="grid grid-cols-2">
-      <div className="flex flex-col grid-item col-span-1 p-2">
+    <div className="grid gap-4">
+      <Card className="flex flex-col grid-item col-span-1 sticky top-0 z-10">
+        <div className="grid grid-cols-2">
+          <div className="flex flex-col grid-item col-span-1">
+            <Tooltip content="70 × 体重^(3/4)">
+              <p className="underline">安静時のエネルギー要求量 RER</p>
+            </Tooltip>
+            <p className="text-xl font-bold">
+              {(props.calculated?.rer ?? 0).toFixed(2)} kcal/day
+            </p>
+          </div>
+          <div className="flex flex-col grid-item col-span-1">
+            <Tooltip content="RER × 係数">
+              <p className="underline">1日当たりのエネルギー要求量 DER</p>
+            </Tooltip>
+            <p className="text-xl font-bold">
+              {(props.calculated?.der ?? 0).toFixed(2)} kcal/day
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col grid-item col-span-1">
+          <p>合計カロリー</p>
+          <p className="text-xl font-bold">{sumCalorie.toFixed(2)} kcal/day</p>
+        </div>
+      </Card>
+      <HR />
+      <div className="flex flex-col grid-item col-span-1 p-2 space-y-4">
         <FloatingLabel
           variant="outlined"
           label="体重"
@@ -97,30 +125,6 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({ props, onTransiti
           })}
         </div>
       </div>
-      <Card className="flex flex-col grid-item col-span-1">
-        <div className="grid grid-cols-2">
-          <div className="flex flex-col grid-item col-span-1">
-            <Tooltip content="70 × 体重^(3/4)">
-              <p className="underline">安静時のエネルギー要求量 RER</p>
-            </Tooltip>
-            <p className="text-xl font-bold">
-              {(props.calculated?.rer ?? 0).toFixed(2) ?? 0} kcal/day
-            </p>
-          </div>
-          <div className="flex flex-col grid-item col-span-1">
-            <Tooltip content="RER × 係数">
-              <p className="underline">1日当たりのエネルギー要求量 DER</p>
-            </Tooltip>
-            <p className="text-xl font-bold">
-              {(props.calculated?.der ?? 0).toFixed(2)} kcal/day
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col grid-item col-span-1">
-          <p>合計カロリー</p>
-          <p className="text-xl font-bold">{sumCalorie.toFixed(2)} kcal/day</p>
-        </div>
-      </Card>
     </div>
   );
 };
