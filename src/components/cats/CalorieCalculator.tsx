@@ -56,6 +56,30 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
           <p>合計カロリー</p>
           <p className="text-xl font-bold">{sumCalorie.toFixed(2)} kcal/day</p>
         </div>
+        <HR />
+        <div className="flex flex-col grid-item col-span-1">
+          <p className="text-lg font-bold">選択中のフード</p>
+          {Object.entries(props.calculateTargets).map(([id, value]) => {
+            const foodId = Number(id);
+            const f = FoodMaster.find((x) => x?.id === Number(foodId));
+            if (f === undefined) {
+              return null;
+            }
+            let calorie = 0;
+            if (f.type === FoodType.Wet) {
+              calorie = (value["gram"] / f.gramsPerBag) * f.kcalPerBag;
+            } else if (f.type === FoodType.Dry) {
+              calorie = (value["gram"] * f.kcalPer100) / 100;
+            }
+            return (
+              <div key={foodId}>
+                <p>
+                  {f.name}: {value["gram"]}g ({calorie.toFixed(2)} kcal)
+                </p>
+              </div>
+            );
+          })}
+        </div>
       </Card>
       <HR />
       <div className="flex flex-col grid-item col-span-1 p-2 space-y-4">
