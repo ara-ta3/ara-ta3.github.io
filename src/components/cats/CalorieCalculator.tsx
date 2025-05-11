@@ -8,6 +8,7 @@ import {
   Label,
   Select,
   Tooltip,
+  Table, // Import Table component
 } from "flowbite-react";
 import { MultiplierForm } from "./calculator/Multiplier.tsx";
 import { CatCalculatorState } from "../../hooks/cats/useCatCalculator.ts";
@@ -24,7 +25,8 @@ interface CalorieCalculatorProps {
 const SelectedFoodItemDisplay: React.FC<{
   food: DryFood | WetFood;
   grams: number;
-}> = ({ food, grams }) => {
+  mealsPerDay: number;
+}> = ({ food, grams, mealsPerDay }) => {
   let calorie = 0;
   if (food.type === FoodType.Wet) {
     calorie = (grams / food.gramsPerBag) * food.kcalPerBag;
@@ -37,12 +39,58 @@ const SelectedFoodItemDisplay: React.FC<{
       ? `${(grams / food.gramsPerBag).toFixed(1)}袋 (${grams}g)`
       : `${grams}g`;
 
+  const displayAmountPerMeal =
+    mealsPerDay > 0
+      ? food.type === FoodType.Wet && food.gramsPerBag
+        ? `${(grams / food.gramsPerBag / mealsPerDay).toFixed(1)}袋 (${(grams / mealsPerDay).toFixed(1)}g)`
+        : `${(grams / mealsPerDay).toFixed(1)}g`
+      : "N/A"; // Handle division by zero
+
   return (
-    <div className="grid grid-cols-4 gap-2">
-      <p className="col-span-2">{food.name}</p>
-      <p className="col-span-1">{displayAmount}</p>
-      <p className="col-span-1">{calorie.toFixed(2)} kcal</p>
-    </div>
+    <Table.Row>
+      <Table.Cell>{food.name}</Table.Cell>
+      <Table.Cell>{displayAmountPerMeal}</Table.Cell>
+      <Table.Cell>{displayAmount}</Table.Cell>
+      <Table.Cell>{calorie.toFixed(2)} kcal</Table.Cell>
+    </Table.Row>
+  );
+};
+
+// Internal component for displaying the selected food table
+const SelectedFoodTableDisplay: React.FC<{
+  calculateTargets: {
+    [key: number]: { gram: number };
+  };
+  mealsPerDay: number;
+}> = ({ calculateTargets, mealsPerDay }) => {
+  return (
+    <Table>
+      <Table.Head>
+        <Table.Row>
+          <Table.HeadCell>フード名</Table.HeadCell>
+          <Table.HeadCell>1食あたり</Table.HeadCell>
+          <Table.HeadCell>合計量</Table.HeadCell>
+          <Table.HeadCell>カロリー</Table.HeadCell>
+        </Table.Row>
+      </Table.Head>
+      <Table.Body>
+        {Object.entries(calculateTargets).map(([id, value]) => {
+          const foodId = Number(id);
+          const f = FoodMaster.find((x) => x?.id === Number(foodId));
+          if (f === undefined) {
+            return null;
+          }
+          return (
+            <SelectedFoodItemDisplay
+              key={foodId}
+              food={f}
+              grams={value["gram"]}
+              mealsPerDay={mealsPerDay}
+            />
+          );
+        })}
+      </Table.Body>
+    </Table>
   );
 };
 
@@ -53,6 +101,8 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
   const [selectedFoodId, setSelectedFoodId] = useState<number | undefined>(
     undefined
   );
+  const [mealsPerDay, setMealsPerDay] = useState<number>(2); // New state for meals per day
+
   const sumCalorie: number = useMemo(
     () => sumOfCalories(props.calculateTargets, FoodMaster),
     [props.calculateTargets]
@@ -85,20 +135,10 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
         </div>
         <HR />
         <div className="flex flex-col grid-item col-span-1">
-          {Object.entries(props.calculateTargets).map(([id, value]) => {
-            const foodId = Number(id);
-            const f = FoodMaster.find((x) => x?.id === Number(foodId));
-            if (f === undefined) {
-              return null;
-            }
-            return (
-              <SelectedFoodItemDisplay
-                key={foodId}
-                food={f}
-                grams={value["gram"]}
-              />
-            );
-          })}
+          <SelectedFoodTableDisplay
+            calculateTargets={props.calculateTargets}
+            mealsPerDay={mealsPerDay}
+          />
         </div>
       </Card>
       <HR />
@@ -116,6 +156,15 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
           current={props.multiplier}
         />
         <HR />
+        <FloatingLabel
+          variant="outlined"
+          label="1日の食事回数"
+          type="number"
+          value={mealsPerDay}
+          step="1"
+          min="1"
+          onChange={(e) => setMealsPerDay(Number(e.target.value))}
+        />
         <div>
           <Label
             htmlFor="dry-foods"
