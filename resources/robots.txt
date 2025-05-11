@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ara-ta3.github.io/sitemap.txt
