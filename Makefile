@@ -31,8 +31,10 @@ lint:
 lint/fix:
 	$(NPX) prettier --write 'src/**/*.{ts, tsx, json, css}'
 
+dist/client/sitemap:
+	mkdir -p $@
 
-dist/client/sitemap.xml:
+dist/client/sitemap/sitemap.xml: dist/client/sitemap
 	cp -f ./resources/sitemap.xml $@
 
 dist/client/robots.txt:
