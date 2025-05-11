@@ -8,7 +8,7 @@ import {
   Label,
   Select,
   Tooltip,
-  Table, // Import Table component
+  Table,
 } from "flowbite-react";
 import { MultiplierForm } from "./calculator/Multiplier.tsx";
 import { CatCalculatorState } from "../../hooks/cats/useCatCalculator.ts";
@@ -55,7 +55,6 @@ const SelectedFoodItemDisplay: React.FC<{
   );
 };
 
-// Internal component for displaying the selected food table
 const SelectedFoodTableDisplay: React.FC<{
   calculateTargets: {
     [key: number]: { gram: number };
@@ -98,7 +97,7 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
   const [selectedFoodId, setSelectedFoodId] = useState<number | undefined>(
     undefined
   );
-  const [mealsPerDay, setMealsPerDay] = useState<number>(2); // New state for meals per day
+  const [mealsPerDay, setMealsPerDay] = useState<number>(2);
 
   const sumCalorie: number = useMemo(
     () => sumOfCalories(props.calculateTargets, FoodMaster),
