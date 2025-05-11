@@ -21,7 +21,6 @@ interface CalorieCalculatorProps {
   onTransitionClick?: () => void;
 }
 
-// Internal component for displaying a selected food item
 const SelectedFoodItemDisplay: React.FC<{
   food: DryFood | WetFood;
   grams: number;
@@ -44,10 +43,10 @@ const SelectedFoodItemDisplay: React.FC<{
       ? food.type === FoodType.Wet && food.gramsPerBag
         ? `${(grams / food.gramsPerBag / mealsPerDay).toFixed(1)}袋 (${(grams / mealsPerDay).toFixed(1)}g)`
         : `${(grams / mealsPerDay).toFixed(1)}g`
-      : "N/A"; // Handle division by zero
+      : "N/A";
 
   return (
-    <Table.Row>
+    <Table.Row key={food.id}>
       <Table.Cell>{food.name}</Table.Cell>
       <Table.Cell>{displayAmountPerMeal}</Table.Cell>
       <Table.Cell>{displayAmount}</Table.Cell>
@@ -66,12 +65,10 @@ const SelectedFoodTableDisplay: React.FC<{
   return (
     <Table>
       <Table.Head>
-        <Table.Row>
-          <Table.HeadCell>フード名</Table.HeadCell>
-          <Table.HeadCell>1食あたり</Table.HeadCell>
-          <Table.HeadCell>合計量</Table.HeadCell>
-          <Table.HeadCell>カロリー</Table.HeadCell>
-        </Table.Row>
+        <Table.HeadCell>フード名</Table.HeadCell>
+        <Table.HeadCell>1食あたり(1日{mealsPerDay}食)</Table.HeadCell>
+        <Table.HeadCell>合計量</Table.HeadCell>
+        <Table.HeadCell>カロリー</Table.HeadCell>
       </Table.Head>
       <Table.Body>
         {Object.entries(calculateTargets).map(([id, value]) => {
@@ -141,7 +138,6 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
           />
         </div>
       </Card>
-      <HR />
       <div className="flex flex-col grid-item col-span-1 p-2 space-y-4">
         <FloatingLabel
           variant="outlined"
@@ -155,7 +151,6 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
           setMultiplier={props.setMultiplier}
           current={props.multiplier}
         />
-        <HR />
         <FloatingLabel
           variant="outlined"
           label="1日の食事回数"
@@ -197,7 +192,6 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
             </Button>
           </div>
         </div>
-        <HR />
         <div>
           {Object.entries(props.calculateTargets).map(([id, value]) => {
             const foodId = Number(id);
