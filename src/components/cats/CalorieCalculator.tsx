@@ -13,11 +13,38 @@ import { MultiplierForm } from "./calculator/Multiplier.tsx";
 import { CatCalculatorState } from "../../hooks/cats/useCatCalculator.ts";
 import FoodAmount from "./FoodAmount.tsx";
 import FoodMaster from "../../domains/cats/FoodMaster.ts";
+import { DryFood, WetFood } from "../../domains/cats/Food.ts";
 
 interface CalorieCalculatorProps {
   props: CatCalculatorState;
   onTransitionClick?: () => void;
 }
+
+// Internal component for displaying a selected food item
+const SelectedFoodItemDisplay: React.FC<{
+  food: DryFood | WetFood;
+  grams: number;
+}> = ({ food, grams }) => {
+  let calorie = 0;
+  if (food.type === FoodType.Wet) {
+    calorie = (grams / food.gramsPerBag) * food.kcalPerBag;
+  } else if (food.type === FoodType.Dry) {
+    calorie = (grams * food.kcalPer100) / 100;
+  }
+
+  const displayAmount =
+    food.type === FoodType.Wet && food.gramsPerBag
+      ? `${(grams / food.gramsPerBag).toFixed(1)}袋 (${grams}g)`
+      : `${grams}g`;
+
+  return (
+    <div className="grid grid-cols-4 gap-2">
+      <p className="col-span-2">{food.name}</p>
+      <p className="col-span-1">{displayAmount}</p>
+      <p className="col-span-1">{calorie.toFixed(2)} kcal</p>
+    </div>
+  );
+};
 
 const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
   props,
@@ -58,25 +85,18 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
         </div>
         <HR />
         <div className="flex flex-col grid-item col-span-1">
-          <p className="text-lg font-bold">選択中のフード</p>
           {Object.entries(props.calculateTargets).map(([id, value]) => {
             const foodId = Number(id);
             const f = FoodMaster.find((x) => x?.id === Number(foodId));
             if (f === undefined) {
               return null;
             }
-            let calorie = 0;
-            if (f.type === FoodType.Wet) {
-              calorie = (value["gram"] / f.gramsPerBag) * f.kcalPerBag;
-            } else if (f.type === FoodType.Dry) {
-              calorie = (value["gram"] * f.kcalPer100) / 100;
-            }
             return (
-              <div key={foodId}>
-                <p>
-                  {f.name}: {value["gram"]}g ({calorie.toFixed(2)} kcal)
-                </p>
-              </div>
+              <SelectedFoodItemDisplay
+                key={foodId}
+                food={f}
+                grams={value["gram"]}
+              />
             );
           })}
         </div>
