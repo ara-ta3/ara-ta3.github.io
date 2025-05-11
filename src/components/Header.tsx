@@ -13,7 +13,7 @@ const Header: React.FC = () => {
               <li>
                 <a
                   href="/cat/calorie/"
-                  className="hover:text-primary-600 dark:hover:text-primary-500"
+                  className="hover:text-primary-600 dark:hover:text-primary-500 hover:font-bold"
                 >
                   猫のカロリー計算
                 </a>
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
               <li>
                 <a
                   href="/cat/calorie/foods/"
-                  className="hover:text-primary-600 dark:hover:text-primary-500 ml-4"
+                  className="hover:text-primary-600 dark:hover:text-primary-500 ml-4 hover:font-bold"
                 >
                   フード一覧
                 </a>
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
               <li>
                 <a
                   href="/cat/calorie/transition/"
-                  className="hover:text-primary-600 dark:hover:text-primary-500 ml-4"
+                  className="hover:text-primary-600 dark:hover:text-primary-500 ml-4 hover:font-bold"
                 >
                   切り替えプラン
                 </a>
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
               <li>
                 <a
                   href="/cat/calorie/reference/"
-                  className="hover:text-primary-600 dark:hover:text-primary-500 ml-4"
+                  className="hover:text-primary-600 dark:hover:text-primary-500 ml-4 hover:font-bold"
                 >
                   参考文献
                 </a>
