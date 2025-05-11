@@ -9,7 +9,7 @@ server:
 
 build:
 	$(NPX) vike build
-	$(MAKE) dist/client/sitemap.xml
+	$(MAKE) dist/client/sitemap/sitemap.xml
 	$(MAKE) dist/client/robots.txt
 	touch dist/client/.nojekyll
 
