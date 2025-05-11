@@ -18,6 +18,30 @@ const Header: React.FC = () => {
                   猫のカロリー計算
                 </a>
               </li>
+              <li>
+                <a
+                  href="/cat/calorie/foods/"
+                  className="hover:text-primary-600 dark:hover:text-primary-500 ml-4"
+                >
+                  フード一覧
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/cat/calorie/transition/"
+                  className="hover:text-primary-600 dark:hover:text-primary-500 ml-4"
+                >
+                  切り替えプラン
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/cat/calorie/reference/"
+                  className="hover:text-primary-600 dark:hover:text-primary-500 ml-4"
+                >
+                  参考文献
+                </a>
+              </li>
             </div>
           </ul>
         </MegaMenu.Dropdown>
