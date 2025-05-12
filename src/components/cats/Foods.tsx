@@ -7,7 +7,10 @@ import FoodMaster from "../../domains/cats/FoodMaster.ts";
 const DryFoodHeader: React.FC = () => {
   return (
     <Table.Head>
-      <Table.HeadCell className="px-6 py-3">名称</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">ブランド</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">シリーズ</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">対象</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">フレーバー</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">kcal / 100g</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">糖質(概算)</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">たんぱく質</Table.HeadCell>
@@ -22,7 +25,10 @@ const DryFoodHeader: React.FC = () => {
 const WetFoodHeader: React.FC = () => {
   return (
     <Table.Head>
-      <Table.HeadCell className="px-6 py-3">名称</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">ブランド</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">シリーズ</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">対象</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">フレーバー</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">kcal/袋</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">糖質(概算)</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">たんぱく質</Table.HeadCell>
@@ -46,9 +52,12 @@ const DryFoodTableBody: React.FC<{ foods: DryFood[] }> = (props) => {
                 href={f.url}
                 target="_blank"
               >
-                {`${f.brand} ${f.series}${f.target ? ` (${f.target})` : ""} - ${f.flavor}`}
+                {f.brand}
               </a>
             </Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.series}</Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.target}</Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.flavor}</Table.Cell>
             <Table.Cell className="px-6 py-4">{f.kcalPer100}</Table.Cell>
             <Table.Cell className="px-6 py-4">
               {f.nutrition.carbohydrate}
@@ -79,9 +88,12 @@ const WetFoodTableBody: React.FC<{ foods: WetFood[] }> = (props) => {
                 href={f.url}
                 target="_blank"
               >
-                {`${f.brand} ${f.series}${f.target ? ` (${f.target})` : ""} - ${f.flavor}`}
+                {f.brand}
               </a>
             </Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.series}</Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.target}</Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.flavor}</Table.Cell>
             <Table.Cell className="px-6 py-4">{f.kcalPerBag}</Table.Cell>
             <Table.Cell className="px-6 py-4">
               {f.nutrition.carbohydrate}
