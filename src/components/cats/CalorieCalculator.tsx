@@ -73,7 +73,7 @@ const SelectedFoodTableDisplay: React.FC<{
           <p>(1日{mealsPerDay}食)</p>
         </div>
         <div>合計量</div>
-        <div>カロリー</div>
+        <div>合計カロリー</div>
       </div>
       <div>
         {Object.entries(calculateTargets).map(([id, value]) => {
