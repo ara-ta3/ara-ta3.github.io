@@ -29,6 +29,7 @@ const WetFoodHeader: React.FC = () => {
       <Table.HeadCell className="px-6 py-3">シリーズ</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">対象</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">フレーバー</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">食感</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">kcal/袋</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">糖質(概算)</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">たんぱく質</Table.HeadCell>
@@ -94,6 +95,7 @@ const WetFoodTableBody: React.FC<{ foods: WetFood[] }> = (props) => {
             <Table.Cell className="px-6 py-4">{f.series}</Table.Cell>
             <Table.Cell className="px-6 py-4">{f.target}</Table.Cell>
             <Table.Cell className="px-6 py-4">{f.flavor}</Table.Cell>
+            <Table.Cell className="px-6 py-4">{f.texture}</Table.Cell>
             <Table.Cell className="px-6 py-4">{f.kcalPerBag}</Table.Cell>
             <Table.Cell className="px-6 py-4">
               {f.nutrition.carbohydrate}

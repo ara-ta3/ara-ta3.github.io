@@ -27,6 +27,7 @@ export interface WetFood extends Food {
   type: FoodType.Wet;
   kcalPerBag: number;
   gramsPerBag: number;
+  texture?: string;
 }
 
 export function sumOfCalories(
