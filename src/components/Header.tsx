@@ -37,10 +37,13 @@ const Header: React.FC = () => {
           <ul className="grid grid-cols-3">
             <div className="space-y-4 p-4">
               <MenuListItem href="/cat/calorie/" title="猫のカロリー計算" />
-              <SubMenuListItem href="/cat/calorie/foods/" title="フード一覧" />
+              <SubMenuListItem
+                href="/cat/calorie/foods/"
+                title="対応フード一覧"
+              />
               <SubMenuListItem
                 href="/cat/calorie/transition/"
-                title="切り替えプラン"
+                title="フード切り替えプラン"
               />
               <SubMenuListItem
                 href="/cat/calorie/reference/"
