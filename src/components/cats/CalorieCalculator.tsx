@@ -49,8 +49,8 @@ const SelectedFoodItemDisplay: React.FC<{
       : "N/A";
 
   return (
-    <div key={food.id} className="grid grid-cols-4 gap-4 py-2">
-      <div className="text-xs sm:text-base">{`${food.brand} ${food.flavor ?? ""}`}</div>
+    <div key={food.id} className="grid grid-cols-5 gap-4 py-2">
+      <div className="text-xs sm:text-base col-span-2">{`${food.brand} ${food.flavor ?? ""}`}</div>
       <div>{displayAmountPerMeal}</div>
       <div>{displayAmount}</div>
       <div>{calorie.toFixed(2)} kcal</div>
@@ -66,8 +66,8 @@ const SelectedFoodTableDisplay: React.FC<{
 }> = ({ calculateTargets, mealsPerDay }) => {
   return (
     <div className="overflow-x-auto w-full">
-      <div className="grid grid-cols-4 gap-4 border-b pb-2 text-sm">
-        <div>フード</div>
+      <div className="grid grid-cols-5 gap-4 border-b pb-2 text-sm">
+        <div className="col-span-2">フード</div>
         <div>
           <p>1食毎</p>
           <p>(1日{mealsPerDay}食)</p>
