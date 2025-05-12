@@ -24,11 +24,11 @@ const Tools: React.FC = () => {
     <section id="links" className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-4 text-center">Links</h2>
-        <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {links.map((link) => (
             <a key={link.name} href={link.href} target="_blank">
               <Card className="w-full">
-                <h5 className="text-base font-bold text-gray-900">
+                <h5 className="text-base md:text-lg text-center font-bold text-gray-900">
                   {link.name}
                 </h5>
               </Card>

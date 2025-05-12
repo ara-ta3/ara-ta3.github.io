@@ -15,12 +15,14 @@ const RelatedArticles: React.FC = () => {
   return (
     <section id="related-articles" className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-4 text-center">Related Articles</h2>
-        <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-4">
+        <h2 className="text-3xl font-bold mb-4 text-center">
+          Related Articles
+        </h2>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {articles.map((article) => (
             <a key={article.name} href={article.href} target="_blank">
               <Card className="w-full h-36">
-                <h5 className="text-base font-bold text-gray-900">
+                <h5 className="text-base md:text-lg font-bold text-gray-900">
                   {article.name}
                 </h5>
               </Card>

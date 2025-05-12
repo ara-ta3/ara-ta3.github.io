@@ -21,11 +21,15 @@ const Tools: React.FC = () => {
     <section id="tools" className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-4 text-center">Tools</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {tools.map((tool) => (
             <Card key={tool.id} className="w-full" href={tool.href}>
-              <h5 className="text-2xl font-bold text-gray-900">{tool.name}</h5>
-              <p className="font-normal text-gray-700">{tool.description}</p>
+              <h5 className="text-xl md:text-xl font-bold text-gray-900">
+                {tool.name}
+              </h5>
+              <p className="font-normal text-gray-700 md:text-base">
+                {tool.description}
+              </p>
             </Card>
           ))}
         </div>
