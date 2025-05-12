@@ -132,14 +132,6 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
           <p className="text-xl font-bold">{sumCalorie.toFixed(2)} kcal/day</p>
         </div>
       </Card>
-      <Card className="sticky top-0 z-20">
-        <div className="flex flex-col grid-item col-span-1">
-          <SelectedFoodTableDisplay
-            calculateTargets={props.calculateTargets}
-            mealsPerDay={mealsPerDay}
-          />
-        </div>
-      </Card>
       <div className="flex flex-col grid-item col-span-1 p-2 space-y-4">
         <FloatingLabel
           variant="outlined"
@@ -153,6 +145,15 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
           setMultiplier={props.setMultiplier}
           current={props.multiplier}
         />
+        <Card className="sticky top-0 z-20">
+          <div className="flex flex-col grid-item col-span-1">
+            <SelectedFoodTableDisplay
+              calculateTargets={props.calculateTargets}
+              mealsPerDay={mealsPerDay}
+            />
+          </div>
+        </Card>
+
         <FloatingLabel
           variant="outlined"
           label="1日の食事回数"
