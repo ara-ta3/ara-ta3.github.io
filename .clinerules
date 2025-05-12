@@ -1,0 +1,29 @@
+# .clinerules
+
+## プロジェクト概要
+
+- **名称**: ara-ta3.github.io
+- **目的**: ポートフォリオおよび技術・日常に関するブログを含む個人サイト
+- **使用技術**: React + TypeScript + Flowbite-React + tailwindcss
+- **言語**: 日本語（主にフォーマルな文体を使用）
+
+## コーディング規約
+
+### JavaScript / TypeScript
+- `const` / `let` を優先使用し、`var` は使用しない
+- 非同期処理には `async/await` を使用
+- ログ出力には `console.log` を極力使用しない（デバッグ時を除く）
+- lintはprettierに沿う
+- make lint/fixによってlintを行う
+
+### React
+
+- コンポーネント名は PascalCase
+- hooks はカスタムであっても `useXxx` の命名を守る
+- コンポーネントの責務は明確に（UI/ロジックの分離を意識）
+- JSX内のロジックは最小限に抑える（必要があれば外部関数へ）
+- あまり変更が大きくない場合はファイルを分けず変数のコンポーネントにする
+
+## その他
+
+- レスポンシブ対応を強く意識してUI調整を行う（Flowbite-React使用時含む）
