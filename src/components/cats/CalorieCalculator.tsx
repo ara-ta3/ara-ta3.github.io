@@ -50,7 +50,7 @@ const SelectedFoodItemDisplay: React.FC<{
 
   return (
     <div key={food.id} className="grid grid-cols-4 gap-4 py-2">
-      <div className="text-xs sm:text-base">{getFoodDisplayName(food)}</div>
+      <div className="text-xs sm:text-base">{`${food.brand} ${food.flavor ?? ""}`}</div>
       <div>{displayAmountPerMeal}</div>
       <div>{displayAmount}</div>
       <div>{calorie.toFixed(2)} kcal</div>
