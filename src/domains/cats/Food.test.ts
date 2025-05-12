@@ -10,12 +10,12 @@ describe("Food", () => {
         {
           id: 1,
           type: FoodType.Dry,
-          name: "food",
+          brand: "food",
           url: "url",
           kcalPer100: 30,
           nutrition: dummyNutrition,
         },
-      ]),
+      ])
     ).toBe(15);
   });
 
@@ -25,13 +25,13 @@ describe("Food", () => {
         {
           id: 1,
           type: FoodType.Wet,
-          name: "food",
+          brand: "food",
           url: "url",
           kcalPerBag: 80,
           gramsPerBag: 50,
           nutrition: dummyNutrition,
         },
-      ]),
+      ])
     ).toBe(40);
   });
 
@@ -41,7 +41,7 @@ describe("Food", () => {
         {
           id: 1,
           type: FoodType.Wet,
-          name: "food",
+          brand: "food",
           url: "url",
           kcalPerBag: 80,
           gramsPerBag: 50,
@@ -50,12 +50,12 @@ describe("Food", () => {
         {
           id: 2,
           type: FoodType.Dry,
-          name: "food",
+          brand: "food",
           url: "url",
           kcalPer100: 400,
           nutrition: dummyNutrition,
         },
-      ]),
+      ])
     ).toBe(280);
   });
 
@@ -65,13 +65,13 @@ describe("Food", () => {
         {
           id: 1,
           type: FoodType.Wet,
-          name: "food",
+          brand: "food",
           url: "url",
           kcalPerBag: 80,
           gramsPerBag: 50,
           nutrition: dummyNutrition,
         },
-      ]),
+      ])
     ).toBe(0);
   });
 });
