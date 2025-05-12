@@ -8,7 +8,6 @@ import {
   Label,
   Select,
   Tooltip,
-  Table,
 } from "flowbite-react";
 import { MultiplierForm } from "./calculator/Multiplier.tsx";
 import { CatCalculatorState } from "../../hooks/cats/useCatCalculator.ts";
@@ -46,12 +45,12 @@ const SelectedFoodItemDisplay: React.FC<{
       : "N/A";
 
   return (
-    <Table.Row key={food.id}>
-      <Table.Cell>{food.name}</Table.Cell>
-      <Table.Cell>{displayAmountPerMeal}</Table.Cell>
-      <Table.Cell>{displayAmount}</Table.Cell>
-      <Table.Cell>{calorie.toFixed(2)} kcal</Table.Cell>
-    </Table.Row>
+    <div key={food.id} className="grid grid-cols-4 gap-4 py-2">
+      <div className="text-xs sm:text-base">{food.name}</div>
+      <div>{displayAmountPerMeal}</div>
+      <div>{displayAmount}</div>
+      <div>{calorie.toFixed(2)} kcal</div>
+    </div>
   );
 };
 
@@ -63,31 +62,32 @@ const SelectedFoodTableDisplay: React.FC<{
 }> = ({ calculateTargets, mealsPerDay }) => {
   return (
     <div className="overflow-x-auto w-full">
-      <Table>
-        <Table.Head>
-          <Table.HeadCell>フード名</Table.HeadCell>
-          <Table.HeadCell>1食あたり(1日{mealsPerDay}食)</Table.HeadCell>
-          <Table.HeadCell>合計量</Table.HeadCell>
-          <Table.HeadCell>カロリー</Table.HeadCell>
-        </Table.Head>
-        <Table.Body>
-          {Object.entries(calculateTargets).map(([id, value]) => {
-            const foodId = Number(id);
-            const f = FoodMaster.find((x) => x?.id === Number(foodId));
-            if (f === undefined) {
-              return null;
-            }
-            return (
-              <SelectedFoodItemDisplay
-                key={foodId}
-                food={f}
-                grams={value["gram"]}
-                mealsPerDay={mealsPerDay}
-              />
-            );
-          })}
-        </Table.Body>
-      </Table>
+      <div className="grid grid-cols-4 gap-4 border-b pb-2 text-sm">
+        <div>フード</div>
+        <div>
+          <p>1食毎</p>
+          <p>(1日{mealsPerDay}食)</p>
+        </div>
+        <div>合計量</div>
+        <div>カロリー</div>
+      </div>
+      <div>
+        {Object.entries(calculateTargets).map(([id, value]) => {
+          const foodId = Number(id);
+          const f = FoodMaster.find((x) => x?.id === Number(foodId));
+          if (f === undefined) {
+            return null;
+          }
+          return (
+            <SelectedFoodItemDisplay
+              key={foodId}
+              food={f}
+              grams={value["gram"]}
+              mealsPerDay={mealsPerDay}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
@@ -108,7 +108,7 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
 
   return (
     <div className="grid gap-4">
-      <Card className="flex flex-col grid-item col-span-1 sticky top-0 z-10">
+      <Card className="flex flex-col grid-item col-span-1">
         <div className="grid grid-cols-2">
           <div className="flex flex-col grid-item col-span-1">
             <Tooltip content="70 × 体重^(3/4)">
@@ -131,7 +131,8 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
           <p>合計カロリー</p>
           <p className="text-xl font-bold">{sumCalorie.toFixed(2)} kcal/day</p>
         </div>
-        <HR />
+      </Card>
+      <Card className="sticky top-0 z-20">
         <div className="flex flex-col grid-item col-span-1">
           <SelectedFoodTableDisplay
             calculateTargets={props.calculateTargets}
