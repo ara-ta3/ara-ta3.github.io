@@ -33,7 +33,7 @@ export function sumOfCalories(
   targets: {
     [key: FoodId]: { gram: number };
   },
-  foods: (DryFood | WetFood)[]
+  foods: (DryFood | WetFood)[],
 ): number {
   return Object.entries(targets).reduce((sum, [foodId, value]) => {
     const f = foods.find((x) => x.id === Number(foodId));
