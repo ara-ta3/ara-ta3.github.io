@@ -7,7 +7,11 @@ import { Tabs } from "flowbite-react";
 import useCatCalculator from "../../hooks/cats/useCatCalculator.ts";
 import { FoodTransitionPlanner } from "../FoodTransitionPlanner";
 
-export type TabName = "計算" | "対応フード" | "フード切り替え" | "参考";
+export type TabName =
+  | "計算"
+  | "対応フード一覧"
+  | "フード切り替えプラン"
+  | "参考";
 
 interface CalorieTabsProps {
   defaultTab: TabName;
@@ -30,20 +34,20 @@ export const CalorieTabs: React.FC<CalorieTabsProps> = ({ defaultTab }) => {
           >
             <CalorieCalculator
               props={state}
-              onTransitionClick={() => setActiveTab("フード切り替え")}
+              onTransitionClick={() => setActiveTab("フード切り替えプラン")}
             />
           </Tabs.Item>
           <Tabs.Item
-            active={activeTab === "対応フード"}
-            title="対応フード"
-            onClick={() => setActiveTab("対応フード")}
+            active={activeTab === "対応フード一覧"}
+            title="対応フード一覧"
+            onClick={() => setActiveTab("対応フード一覧")}
           >
             <DryFoods />
           </Tabs.Item>
           <Tabs.Item
-            active={activeTab === "フード切り替え"}
-            title="フード切り替え"
-            onClick={() => setActiveTab("フード切り替え")}
+            active={activeTab === "フード切り替えプラン"}
+            title="フード切り替えプラン"
+            onClick={() => setActiveTab("フード切り替えプラン")}
           >
             <FoodTransitionPlanner initialCalories={state.calculated?.der} />
           </Tabs.Item>
@@ -58,4 +62,4 @@ export const CalorieTabs: React.FC<CalorieTabsProps> = ({ defaultTab }) => {
       </div>
     </>
   );
-}; 
+};

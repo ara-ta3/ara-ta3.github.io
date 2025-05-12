@@ -3,7 +3,12 @@ import {
   calculateFoodTransitionPlan,
   ContinuedFood,
 } from "../domains/cats/FoodTransitionPlan";
-import { DryFood, FoodType, WetFood } from "../domains/cats/Food";
+import {
+  DryFood,
+  FoodType,
+  getFoodDisplayName,
+  WetFood,
+} from "../domains/cats/Food";
 import FoodMaster from "../domains/cats/FoodMaster";
 import { Select, Button } from "flowbite-react";
 
@@ -15,7 +20,7 @@ export const FoodTransitionPlanner: React.FC<FoodTransitionPlannerProps> = ({
   initialCalories,
 }) => {
   const [currentFoodId, setCurrentFoodId] = useState<number | undefined>(
-    undefined,
+    undefined
   );
   const [newFoodId, setNewFoodId] = useState<number | undefined>(undefined);
   const [requiredCalories, setRequiredCalories] = useState(0);
@@ -27,13 +32,13 @@ export const FoodTransitionPlanner: React.FC<FoodTransitionPlannerProps> = ({
   const [selectedContinuedFoodAmount, setSelectedContinuedFoodAmount] =
     useState<number>(0);
   const [startDate, setStartDate] = useState(
-    new Date().toISOString().split("T")[0],
+    new Date().toISOString().split("T")[0]
   );
 
   const currentFood = FoodMaster.find((f) => f.id === currentFoodId);
   const newFood = FoodMaster.find((f) => f.id === newFoodId);
   const selectedContinuedFood = FoodMaster.find(
-    (f) => f.id === selectedContinuedFoodId,
+    (f) => f.id === selectedContinuedFoodId
   );
 
   const addContinuedFood = () => {
@@ -62,7 +67,7 @@ export const FoodTransitionPlanner: React.FC<FoodTransitionPlannerProps> = ({
           requiredCalories,
           transitionDays,
           100,
-          continuedFoods,
+          continuedFoods
         )
       : [];
 
@@ -81,15 +86,17 @@ export const FoodTransitionPlanner: React.FC<FoodTransitionPlannerProps> = ({
               className="mt-1 block w-full"
             >
               <option value="">選択してください</option>
-              {FoodMaster.map((food) => (
-                <option key={food.id} value={food.id}>
-                  {food.name} (
-                  {food.type === FoodType.Dry
-                    ? `${food.kcalPer100}kcal/100g`
-                    : `${food.kcalPerBag}kcal/${food.gramsPerBag}g`}
-                  )
-                </option>
-              ))}
+              {FoodMaster.map((food) => {
+                return (
+                  <option key={food.id} value={food.id}>
+                    {`${getFoodDisplayName(food)}`} (
+                    {food.type === FoodType.Dry
+                      ? `${food.kcalPer100}kcal/100g`
+                      : `${food.kcalPerBag}kcal/${food.gramsPerBag}g`}
+                    )
+                  </option>
+                );
+              })}
             </Select>
           </div>
         </div>
@@ -106,7 +113,7 @@ export const FoodTransitionPlanner: React.FC<FoodTransitionPlannerProps> = ({
               <option value="">選択してください</option>
               {FoodMaster.map((food) => (
                 <option key={food.id} value={food.id}>
-                  {food.name} (
+                  {getFoodDisplayName(food)} (
                   {food.type === FoodType.Dry
                     ? `${food.kcalPer100}kcal/100g`
                     : `${food.kcalPerBag}kcal/${food.gramsPerBag}g`}
@@ -133,7 +140,7 @@ export const FoodTransitionPlanner: React.FC<FoodTransitionPlannerProps> = ({
               <option value="">選択してください</option>
               {FoodMaster.map((food) => (
                 <option key={food.id} value={food.id}>
-                  {food.name} (
+                  {`${getFoodDisplayName(food)}`} (
                   {food.type === FoodType.Dry
                     ? `${food.kcalPer100}kcal/100g`
                     : `${food.kcalPerBag}kcal/${food.gramsPerBag}g`}
@@ -180,7 +187,7 @@ export const FoodTransitionPlanner: React.FC<FoodTransitionPlannerProps> = ({
                   className="flex items-center justify-between bg-gray-50 p-2 rounded"
                 >
                   <span>
-                    {cf.food.name} -{" "}
+                    {getFoodDisplayName(cf.food)}{" "}
                     {cf.food.type === FoodType.Wet
                       ? `${cf.amount}袋`
                       : `${cf.amount}g`}

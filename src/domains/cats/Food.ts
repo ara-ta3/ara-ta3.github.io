@@ -10,7 +10,10 @@ export type FoodId = number;
 interface Food {
   id: FoodId;
   type: FoodType;
-  name: string;
+  brand: string;
+  series?: string;
+  target?: string;
+  flavor?: string;
   url: string;
   nutrition: Nutrition;
 }
@@ -43,4 +46,24 @@ export function sumOfCalories(
     }
     return sum;
   }, 0);
+}
+
+export function getFoodDisplayName(food: DryFood | WetFood): string {
+  const parts: string[] = [food.brand];
+
+  if (food.series) {
+    parts.push(food.series);
+  }
+
+  if (food.target) {
+    parts.push(`(${food.target})`);
+  }
+
+  let displayName = parts.join(" ");
+
+  if (food.flavor) {
+    displayName += ` - ${food.flavor}`;
+  }
+
+  return displayName;
 }

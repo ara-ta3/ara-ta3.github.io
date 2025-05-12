@@ -1,5 +1,9 @@
 import React, { useMemo, useState } from "react";
-import { FoodType, sumOfCalories } from "../../domains/cats/Food.ts";
+import {
+  FoodType,
+  sumOfCalories,
+  getFoodDisplayName,
+} from "../../domains/cats/Food.ts";
 import {
   Button,
   Card,
@@ -45,8 +49,8 @@ const SelectedFoodItemDisplay: React.FC<{
       : "N/A";
 
   return (
-    <div key={food.id} className="grid grid-cols-4 gap-4 py-2">
-      <div className="text-xs sm:text-base">{food.name}</div>
+    <div key={food.id} className="grid grid-cols-5 gap-4 py-2">
+      <div className="text-xs sm:text-base col-span-2">{`${food.brand} ${food.flavor ?? ""}`}</div>
       <div>{displayAmountPerMeal}</div>
       <div>{displayAmount}</div>
       <div>{calorie.toFixed(2)} kcal</div>
@@ -62,14 +66,14 @@ const SelectedFoodTableDisplay: React.FC<{
 }> = ({ calculateTargets, mealsPerDay }) => {
   return (
     <div className="overflow-x-auto w-full">
-      <div className="grid grid-cols-4 gap-4 border-b pb-2 text-sm">
-        <div>フード</div>
+      <div className="grid grid-cols-5 gap-4 border-b pb-2 text-sm">
+        <div className="col-span-2">フード</div>
         <div>
           <p>1食毎</p>
           <p>(1日{mealsPerDay}食)</p>
         </div>
         <div>合計量</div>
-        <div>カロリー</div>
+        <div>合計カロリー</div>
       </div>
       <div>
         {Object.entries(calculateTargets).map(([id, value]) => {
@@ -180,7 +184,7 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
               {FoodMaster.map((f) => {
                 return (
                   <option key={f.id} value={f.id}>
-                    {f.name}
+                    {getFoodDisplayName(f)}
                   </option>
                 );
               })}
