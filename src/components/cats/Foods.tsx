@@ -46,7 +46,7 @@ const DryFoodTableBody: React.FC<{ foods: DryFood[] }> = (props) => {
                 href={f.url}
                 target="_blank"
               >
-                {f.name}
+                {`${f.brand} ${f.series}${f.target ? ` (${f.target})` : ""} - ${f.flavor}`}
               </a>
             </Table.Cell>
             <Table.Cell className="px-6 py-4">{f.kcalPer100}</Table.Cell>
@@ -79,7 +79,7 @@ const WetFoodTableBody: React.FC<{ foods: WetFood[] }> = (props) => {
                 href={f.url}
                 target="_blank"
               >
-                {f.name}
+                {`${f.brand} ${f.series}${f.target ? ` (${f.target})` : ""} - ${f.flavor}`}
               </a>
             </Table.Cell>
             <Table.Cell className="px-6 py-4">{f.kcalPerBag}</Table.Cell>

@@ -46,7 +46,7 @@ const SelectedFoodItemDisplay: React.FC<{
 
   return (
     <div key={food.id} className="grid grid-cols-4 gap-4 py-2">
-      <div className="text-xs sm:text-base">{food.name}</div>
+      <div className="text-xs sm:text-base">{`${food.brand} ${food.series}${food.target ? ` (${food.target})` : ""} - ${food.flavor}`}</div>
       <div>{displayAmountPerMeal}</div>
       <div>{displayAmount}</div>
       <div>{calorie.toFixed(2)} kcal</div>
@@ -180,7 +180,7 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
               {FoodMaster.map((f) => {
                 return (
                   <option key={f.id} value={f.id}>
-                    {f.name}
+                    {`${f.brand} ${f.series}${f.target ? ` (${f.target})` : ""} - ${f.flavor}`}
                   </option>
                 );
               })}

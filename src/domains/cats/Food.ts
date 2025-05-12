@@ -10,7 +10,10 @@ export type FoodId = number;
 interface Food {
   id: FoodId;
   type: FoodType;
-  name: string;
+  brand: string;
+  series?: string;
+  target?: string;
+  flavor?: string;
   url: string;
   nutrition: Nutrition;
 }
@@ -30,7 +33,7 @@ export function sumOfCalories(
   targets: {
     [key: FoodId]: { gram: number };
   },
-  foods: (DryFood | WetFood)[],
+  foods: (DryFood | WetFood)[]
 ): number {
   return Object.entries(targets).reduce((sum, [foodId, value]) => {
     const f = foods.find((x) => x.id === Number(foodId));
