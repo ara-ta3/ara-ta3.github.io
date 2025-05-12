@@ -18,6 +18,7 @@ const DryFoodHeader: React.FC = () => {
       <Table.HeadCell className="px-6 py-3">粗繊維</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">灰分</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">水分</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">公式サイト</Table.HeadCell>
     </Table.Head>
   );
 };
@@ -37,6 +38,7 @@ const WetFoodHeader: React.FC = () => {
       <Table.HeadCell className="px-6 py-3">粗繊維</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">灰分</Table.HeadCell>
       <Table.HeadCell className="px-6 py-3">水分</Table.HeadCell>
+      <Table.HeadCell className="px-6 py-3">公式サイト</Table.HeadCell>
     </Table.Head>
   );
 };
@@ -50,7 +52,7 @@ const DryFoodTableBody: React.FC<{ foods: DryFood[] }> = (props) => {
             <Table.Cell className="px-6 py-4">
               <a
                 className="hover:underline text-blue-600"
-                href={f.url}
+                href={`/cat/calorie?foodId=${f.id}`}
                 target="_blank"
               >
                 {f.brand}
@@ -70,6 +72,24 @@ const DryFoodTableBody: React.FC<{ foods: DryFood[] }> = (props) => {
             <Table.Cell className="px-6 py-4">
               {f.nutrition.moisture}
             </Table.Cell>
+            <Table.Cell className="px-6 py-4">
+              <a
+                className="hover:underline text-blue-600"
+                href={f.url}
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 inline-block"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413T19 21zm7-9l-1.4-1.4l4.6-4.6H12V3h9v9h-4v-4z"
+                  />
+                </svg>
+              </a>
+            </Table.Cell>
           </Table.Row>
         );
       })}
@@ -86,8 +106,7 @@ const WetFoodTableBody: React.FC<{ foods: WetFood[] }> = (props) => {
             <Table.Cell className="px-6 py-4">
               <a
                 className="hover:underline text-blue-600"
-                href={f.url}
-                target="_blank"
+                href={`/cat/calorie?foodId=${f.id}`}
               >
                 {f.brand}
               </a>
@@ -106,6 +125,24 @@ const WetFoodTableBody: React.FC<{ foods: WetFood[] }> = (props) => {
             <Table.Cell className="px-6 py-4">{f.nutrition.ash}</Table.Cell>
             <Table.Cell className="px-6 py-4">
               {f.nutrition.moisture}
+            </Table.Cell>
+            <Table.Cell className="px-6 py-4">
+              <a
+                className="hover:underline text-blue-600"
+                href={f.url}
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 inline-block"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413T19 21zm7-9l-1.4-1.4l4.6-4.6H12V3h9v9h-4v-4z"
+                  />
+                </svg>
+              </a>
             </Table.Cell>
           </Table.Row>
         );
