@@ -33,7 +33,7 @@ export function sumOfCalories(
   targets: {
     [key: FoodId]: { gram: number };
   },
-  foods: (DryFood | WetFood)[],
+  foods: (DryFood | WetFood)[]
 ): number {
   return Object.entries(targets).reduce((sum, [foodId, value]) => {
     const f = foods.find((x) => x.id === Number(foodId));
@@ -46,4 +46,24 @@ export function sumOfCalories(
     }
     return sum;
   }, 0);
+}
+
+export function getFoodDisplayName(food: DryFood | WetFood): string {
+  const parts: string[] = [food.brand];
+
+  if (food.series) {
+    parts.push(food.series);
+  }
+
+  if (food.target) {
+    parts.push(`(${food.target})`);
+  }
+
+  let displayName = parts.join(" ");
+
+  if (food.flavor) {
+    displayName += ` - ${food.flavor}`;
+  }
+
+  return displayName;
 }

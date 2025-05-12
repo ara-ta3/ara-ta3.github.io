@@ -3,7 +3,12 @@ import {
   calculateFoodTransitionPlan,
   ContinuedFood,
 } from "../domains/cats/FoodTransitionPlan";
-import { DryFood, FoodType, WetFood } from "../domains/cats/Food";
+import {
+  DryFood,
+  FoodType,
+  getFoodDisplayName,
+  WetFood,
+} from "../domains/cats/Food";
 import FoodMaster from "../domains/cats/FoodMaster";
 import { Select, Button } from "flowbite-react";
 
@@ -81,16 +86,17 @@ export const FoodTransitionPlanner: React.FC<FoodTransitionPlannerProps> = ({
               className="mt-1 block w-full"
             >
               <option value="">選択してください</option>
-              {FoodMaster.map((food) => (
-                <option key={food.id} value={food.id}>
-                  {`${food.brand} ${food.series}${food.target ? ` (${food.target})` : ""} - ${food.flavor}`}{" "}
-                  (
-                  {food.type === FoodType.Dry
-                    ? `${food.kcalPer100}kcal/100g`
-                    : `${food.kcalPerBag}kcal/${food.gramsPerBag}g`}
-                  )
-                </option>
-              ))}
+              {FoodMaster.map((food) => {
+                return (
+                  <option key={food.id} value={food.id}>
+                    {`${getFoodDisplayName(food)}`} (
+                    {food.type === FoodType.Dry
+                      ? `${food.kcalPer100}kcal/100g`
+                      : `${food.kcalPerBag}kcal/${food.gramsPerBag}g`}
+                    )
+                  </option>
+                );
+              })}
             </Select>
           </div>
         </div>
@@ -107,8 +113,7 @@ export const FoodTransitionPlanner: React.FC<FoodTransitionPlannerProps> = ({
               <option value="">選択してください</option>
               {FoodMaster.map((food) => (
                 <option key={food.id} value={food.id}>
-                  {`${food.brand} ${food.series}${food.target ? ` (${food.target})` : ""} - ${food.flavor}`}{" "}
-                  (
+                  {getFoodDisplayName(food)} (
                   {food.type === FoodType.Dry
                     ? `${food.kcalPer100}kcal/100g`
                     : `${food.kcalPerBag}kcal/${food.gramsPerBag}g`}
@@ -135,8 +140,7 @@ export const FoodTransitionPlanner: React.FC<FoodTransitionPlannerProps> = ({
               <option value="">選択してください</option>
               {FoodMaster.map((food) => (
                 <option key={food.id} value={food.id}>
-                  {`${food.brand} ${food.series}${food.target ? ` (${food.target})` : ""} - ${food.flavor}`}{" "}
-                  (
+                  {`${getFoodDisplayName(food)}`} (
                   {food.type === FoodType.Dry
                     ? `${food.kcalPer100}kcal/100g`
                     : `${food.kcalPerBag}kcal/${food.gramsPerBag}g`}
@@ -183,8 +187,7 @@ export const FoodTransitionPlanner: React.FC<FoodTransitionPlannerProps> = ({
                   className="flex items-center justify-between bg-gray-50 p-2 rounded"
                 >
                   <span>
-                    {`${cf.food.brand} ${cf.food.series}${cf.food.target ? ` (${cf.food.target})` : ""} - ${cf.food.flavor}`}{" "}
-                    -{" "}
+                    {getFoodDisplayName(cf.food)}{" "}
                     {cf.food.type === FoodType.Wet
                       ? `${cf.amount}袋`
                       : `${cf.amount}g`}
