@@ -119,15 +119,19 @@ const FoodTable: React.FC = () => {
       </p>
 
       <h2 className="text-1xl font-bold my-4 ">ドライフード</h2>
-      <Table>
-        <DryFoodHeader />
-        <DryFoodTableBody foods={dryFoods} />
-      </Table>
+      <div className="overflow-x-auto w-full">
+        <Table>
+          <DryFoodHeader />
+          <DryFoodTableBody foods={dryFoods} />
+        </Table>
+      </div>
       <h2 className="text-1xl font-bold my-4 ">ウェットフード</h2>
-      <Table>
-        <WetFoodHeader />
-        <WetFoodTableBody foods={wetFoods} />
-      </Table>
+      <div className="overflow-x-auto w-full">
+        <Table>
+          <WetFoodHeader />
+          <WetFoodTableBody foods={wetFoods} />
+        </Table>
+      </div>
     </div>
   );
 };

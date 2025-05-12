@@ -62,31 +62,33 @@ const SelectedFoodTableDisplay: React.FC<{
   mealsPerDay: number;
 }> = ({ calculateTargets, mealsPerDay }) => {
   return (
-    <Table>
-      <Table.Head>
-        <Table.HeadCell>フード名</Table.HeadCell>
-        <Table.HeadCell>1食あたり(1日{mealsPerDay}食)</Table.HeadCell>
-        <Table.HeadCell>合計量</Table.HeadCell>
-        <Table.HeadCell>カロリー</Table.HeadCell>
-      </Table.Head>
-      <Table.Body>
-        {Object.entries(calculateTargets).map(([id, value]) => {
-          const foodId = Number(id);
-          const f = FoodMaster.find((x) => x?.id === Number(foodId));
-          if (f === undefined) {
-            return null;
-          }
-          return (
-            <SelectedFoodItemDisplay
-              key={foodId}
-              food={f}
-              grams={value["gram"]}
-              mealsPerDay={mealsPerDay}
-            />
-          );
-        })}
-      </Table.Body>
-    </Table>
+    <div className="overflow-x-auto w-full">
+      <Table>
+        <Table.Head>
+          <Table.HeadCell>フード名</Table.HeadCell>
+          <Table.HeadCell>1食あたり(1日{mealsPerDay}食)</Table.HeadCell>
+          <Table.HeadCell>合計量</Table.HeadCell>
+          <Table.HeadCell>カロリー</Table.HeadCell>
+        </Table.Head>
+        <Table.Body>
+          {Object.entries(calculateTargets).map(([id, value]) => {
+            const foodId = Number(id);
+            const f = FoodMaster.find((x) => x?.id === Number(foodId));
+            if (f === undefined) {
+              return null;
+            }
+            return (
+              <SelectedFoodItemDisplay
+                key={foodId}
+                food={f}
+                grams={value["gram"]}
+                mealsPerDay={mealsPerDay}
+              />
+            );
+          })}
+        </Table.Body>
+      </Table>
+    </div>
   );
 };
 
