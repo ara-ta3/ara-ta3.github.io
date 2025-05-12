@@ -1,6 +1,11 @@
 import React from "react";
 import { Button, FloatingLabel, Label } from "flowbite-react";
-import { DryFood, FoodType, WetFood } from "../../domains/cats/Food";
+import {
+  DryFood,
+  FoodType,
+  getFoodDisplayName,
+  WetFood,
+} from "../../domains/cats/Food";
 
 const FoodAmount: React.FC<{
   food: DryFood | WetFood;
@@ -14,7 +19,7 @@ const FoodAmount: React.FC<{
       currentSumCalorie - food.kcalPer100 * (grams / 100);
     return (
       <div className="px-2 my-2">
-        <Label htmlFor={`Food${food.id}`}>{food.name}</Label>
+        <Label htmlFor={`Food${food.id}`}>{getFoodDisplayName(food)}</Label>
         <div className="flex items-center gap-2">
           <FloatingLabel
             id={`Food${food.id}`}
@@ -44,10 +49,12 @@ const FoodAmount: React.FC<{
       </div>
     );
   } else if (food.type === FoodType.Wet) {
-    const [bags, setBags] = React.useState<number>(grams / food.gramsPerBag || 0);
+    const [bags, setBags] = React.useState<number>(
+      grams / food.gramsPerBag || 0
+    );
     return (
       <div className="px-2 my-2">
-        <Label htmlFor={`Food${food.id}`}>{food.name}</Label>
+        <Label htmlFor={`Food${food.id}`}>{getFoodDisplayName(food)}</Label>
         <div className="flex items-center gap-2">
           <FloatingLabel
             id={`bags-${food.id}`}

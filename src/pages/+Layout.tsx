@@ -1,13 +1,18 @@
+import React from "react";
 import Header from "../components/Header";
 import "../index.css";
 
-function Layout({ children }): FC {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Header />
       <main>{children}</main>
     </>
   );
-}
+};
 
 export { Layout };

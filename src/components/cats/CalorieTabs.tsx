@@ -15,9 +15,13 @@ export type TabName =
 
 interface CalorieTabsProps {
   defaultTab: TabName;
+  initialFoodId: string | null;
 }
 
-export const CalorieTabs: React.FC<CalorieTabsProps> = ({ defaultTab }) => {
+export const CalorieTabs: React.FC<CalorieTabsProps> = ({
+  defaultTab,
+  initialFoodId,
+}) => {
   const state = useCatCalculator();
   const [activeTab, setActiveTab] = useState<TabName>(defaultTab);
 
@@ -35,6 +39,7 @@ export const CalorieTabs: React.FC<CalorieTabsProps> = ({ defaultTab }) => {
             <CalorieCalculator
               props={state}
               onTransitionClick={() => setActiveTab("フード切り替えプラン")}
+              initialFoodId={initialFoodId}
             />
           </Tabs.Item>
           <Tabs.Item

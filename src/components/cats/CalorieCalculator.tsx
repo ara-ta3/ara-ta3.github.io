@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import {
   FoodType,
   sumOfCalories,
@@ -22,6 +22,7 @@ import { DryFood, WetFood } from "../../domains/cats/Food.ts";
 interface CalorieCalculatorProps {
   props: CatCalculatorState;
   onTransitionClick?: () => void;
+  initialFoodId: string | null;
 }
 
 const SelectedFoodItemDisplay: React.FC<{
@@ -99,6 +100,7 @@ const SelectedFoodTableDisplay: React.FC<{
 const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
   props,
   onTransitionClick,
+  initialFoodId,
 }) => {
   const [selectedFoodId, setSelectedFoodId] = useState<number | undefined>(
     undefined
@@ -109,6 +111,13 @@ const CalorieCalculator: React.FC<CalorieCalculatorProps> = ({
     () => sumOfCalories(props.calculateTargets, FoodMaster),
     [props.calculateTargets]
   );
+
+  useEffect(() => {
+    if (initialFoodId) {
+      const id = Number(initialFoodId);
+      if (!isNaN(id)) props.addCalculateTarget(id);
+    }
+  }, [initialFoodId, props.addCalculateTarget]);
 
   return (
     <div className="grid gap-4">
