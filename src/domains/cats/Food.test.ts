@@ -15,7 +15,7 @@ describe("Food", () => {
           kcalPer100: 30,
           nutrition: dummyNutrition,
         },
-      ])
+      ]),
     ).toBe(15);
   });
 
@@ -31,7 +31,7 @@ describe("Food", () => {
           gramsPerBag: 50,
           nutrition: dummyNutrition,
         },
-      ])
+      ]),
     ).toBe(40);
   });
 
@@ -55,7 +55,7 @@ describe("Food", () => {
           kcalPer100: 400,
           nutrition: dummyNutrition,
         },
-      ])
+      ]),
     ).toBe(280);
   });
 
@@ -71,7 +71,7 @@ describe("Food", () => {
           gramsPerBag: 50,
           nutrition: dummyNutrition,
         },
-      ])
+      ]),
     ).toBe(0);
   });
 });
