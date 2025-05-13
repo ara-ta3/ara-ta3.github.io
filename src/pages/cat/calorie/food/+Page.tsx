@@ -1,5 +1,5 @@
 import React from "react";
-import { CalorieTabs } from "../../../../../components/cats/CalorieTabs";
+import { CalorieTabs } from "../../../../components/cats/CalorieTabs";
 import { usePageContext } from "vike-react/usePageContext";
 
 const CatCalorieFood: React.FC = () => {
