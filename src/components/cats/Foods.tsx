@@ -52,7 +52,7 @@ const DryFoodTableBody: React.FC<{ foods: DryFood[] }> = (props) => {
             <Table.Cell className="px-6 py-4">
               <a
                 className="hover:underline text-blue-600"
-                href={`/cat/calorie?foodId=${f.id}`}
+                href={`/cat/calorie/food/${f.id}/`}
                 target="_blank"
               >
                 {f.brand}
@@ -106,7 +106,8 @@ const WetFoodTableBody: React.FC<{ foods: WetFood[] }> = (props) => {
             <Table.Cell className="px-6 py-4">
               <a
                 className="hover:underline text-blue-600"
-                href={`/cat/calorie?foodId=${f.id}`}
+                href={`/cat/calorie/food/${f.id}/`}
+                target="_blank"
               >
                 {f.brand}
               </a>
