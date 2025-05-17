@@ -15,6 +15,10 @@ build:
 
 deploy:
 	$(NPX) gh-pages -d dist
+	mkdir -p dist/cat/calorie/foods
+	mkdir -p dist/cat/calorie/transition
+	mkdir -p dist/cat/calorie/reference
+	cp -r dist/client/* dist/
 
 compile:
 	$(NPX) tsc --noEmit --strict

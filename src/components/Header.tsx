@@ -36,17 +36,20 @@ const Header: React.FC = () => {
         <MegaMenu.Dropdown toggle={<>Tools</>}>
           <ul className="grid grid-cols-3">
             <div className="space-y-4 p-4">
-              <MenuListItem href="/cat/calorie/" title="猫のカロリー計算" />
+              <MenuListItem
+                href="https://nekometry.web.app/"
+                title="猫のカロリー計算"
+              />
               <SubMenuListItem
-                href="/cat/calorie/foods/"
+                href="https://nekometry.web.app/calorie/foods/"
                 title="対応フード一覧"
               />
               <SubMenuListItem
-                href="/cat/calorie/transition/"
+                href="https://nekometry.web.app/calorie/transition/"
                 title="フード切り替えプラン"
               />
               <SubMenuListItem
-                href="/cat/calorie/reference/"
+                href="https://nekometry.web.app/calorie/reference/"
                 title="参考文献"
               />
             </div>

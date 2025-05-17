@@ -14,7 +14,7 @@ const Tools: React.FC = () => {
       name: "猫のカロリー計算",
       description:
         "猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。",
-      href: "/cat/calorie/",
+      href: "https://nekometry.web.app/",
     },
   ];
   return (
