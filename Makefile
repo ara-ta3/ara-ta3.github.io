@@ -12,13 +12,13 @@ build:
 	$(MAKE) dist/client/sitemap/sitemap.xml
 	$(MAKE) dist/client/robots.txt
 	touch dist/client/.nojekyll
-
-deploy:
-	$(NPX) gh-pages -d dist
 	mkdir -p dist/cat/calorie/foods
 	mkdir -p dist/cat/calorie/transition
 	mkdir -p dist/cat/calorie/reference
 	cp -r dist/client/* dist/
+
+deploy:
+	$(NPX) gh-pages -d dist
 
 compile:
 	$(NPX) tsc --noEmit --strict
