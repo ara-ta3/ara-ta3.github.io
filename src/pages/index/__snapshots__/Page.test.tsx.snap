@@ -43,7 +43,7 @@ exports[`Home Snapshot Test > render Home 1`] = `
         <a
           class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col hover:bg-gray-100 dark:hover:bg-gray-700 w-full"
           data-testid="flowbite-card"
-          href="/cat/calorie/"
+          href="https://nekometry.web.app/"
         >
           <div
             class="flex h-full flex-col justify-center gap-4 p-6"
