@@ -26,11 +26,21 @@ test:
 test/watch:
 	$(NPX) vitest --watch
 
-lint:
-	$(NPX) prettier --check 'src/**/*.{ts, tsx, json, css}'
+lint/eslint:
+	$(NPX) eslint .
 
-lint/fix:
-	$(NPX) prettier --write 'src/**/*.{ts, tsx, json, css}'
+lint/prettier:
+	$(NPX) prettier --check 'src/**/*.{ts,tsx,json,css}'
+
+lint: lint/eslint lint/prettier
+
+lint/eslint/fix:
+	$(NPX) eslint . --fix
+
+lint/prettier/fix:
+	$(NPX) prettier --write 'src/**/*.{ts,tsx,json,css}'
+
+lint/fix: lint/eslint/fix lint/prettier/fix
 
 dist/client/sitemap:
 	mkdir -p $@
