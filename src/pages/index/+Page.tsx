@@ -1,9 +1,9 @@
 import React from "react";
 
+import { Tooltip } from "flowbite-react";
 import Projects from "@/components/Projects";
 import Links from "@/components/Links";
 import RelatedArticles from "@/components/RelatedArticles";
-import { Tooltip } from "flowbite-react";
 
 const PortfolioTop: React.FC = () => {
   return (
