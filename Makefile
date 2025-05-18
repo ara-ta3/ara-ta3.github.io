@@ -12,10 +12,7 @@ build:
 	$(MAKE) dist/client/sitemap/sitemap.xml
 	$(MAKE) dist/client/robots.txt
 	touch dist/client/.nojekyll
-	mkdir -p dist/cat/calorie/foods
-	mkdir -p dist/cat/calorie/transition
-	mkdir -p dist/cat/calorie/reference
-	cp -r dist/client/* dist/
+	cp -r resources/cat dist/client/cat
 
 deploy:
 	$(NPX) gh-pages -d dist
