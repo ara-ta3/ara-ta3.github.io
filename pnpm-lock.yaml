@@ -51,6 +51,9 @@ importers:
       autoprefixer:
         specifier: 10.4.21
         version: 10.4.21(postcss@8.5.3)
+      eslint:
+        specifier: ^9.27.0
+        version: 9.27.0(jiti@1.21.7)
       eslint-import-resolver-typescript:
         specifier: ^4.3.5
         version: 4.3.5(eslint-plugin-import@2.31.0)(eslint@9.27.0(jiti@1.21.7))
