@@ -3,7 +3,7 @@
 exports[`Header Snapshot Test > render headers 1`] = `
 <DocumentFragment>
   <nav
-    class="bg-white px-2 py-2.5 dark:border-gray-700 dark:bg-gray-800 sm:px-4 rounded"
+    class="px-2 py-2.5 dark:border-gray-700 dark:bg-gray-800 sm:px-4 rounded bg-base text-primary-500"
   >
     <div
       class="mx-auto flex flex-wrap items-center justify-between"
@@ -11,8 +11,16 @@ exports[`Header Snapshot Test > render headers 1`] = `
       <a
         class="flex items-center"
         href="/"
+      />
+      <a
+        class="flex items-center"
+        href="/"
       >
-        ara-ta3の物置
+        <img
+          alt="ara-ta3 page Logo"
+          class="mr-3 h-6 sm:h-9"
+          src="/src/assets/images/logo.png"
+        />
       </a>
       <button
         class="inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
@@ -74,8 +82,9 @@ exports[`Header Snapshot Test > render headers 1`] = `
           </button>
           <li>
             <a
-              class="block py-2 pl-3 pr-4 md:p-0 border-b border-gray-100 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-cyan-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
+              class="block py-2 pl-3 pr-4 md:p-0 border-b border-gray-100 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-cyan-700 md:dark:hover:bg-transparent md:dark:hover:text-white text-primary-500 hover:text-secondary-500"
               href="https://github.com/ara-ta3/ara-ta3.github.io"
+              target="_blank"
             >
               GitHub
             </a>
