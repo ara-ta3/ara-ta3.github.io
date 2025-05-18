@@ -6,7 +6,7 @@ const MenuListItem: React.FC<{ href: string; title: string }> = (props) => {
     <li>
       <a
         href={props.href}
-        className="hover:text-primary-600 dark:hover:text-primary-500 hover:font-bold"
+        className="hover:text-secondary-500 hover:font-bold text-primary-500"
       >
         {props.title}
       </a>
@@ -19,7 +19,7 @@ const SubMenuListItem: React.FC<{ href: string; title: string }> = (props) => {
     <li>
       <a
         href={props.href}
-        className="hover:text-primary-600 dark:hover:text-primary-500 ml-4 hover:font-bold"
+        className="text-primary-700 hover:text-secondary-700 ml-4 hover:font-bold"
       >
         {props.title}
       </a>
@@ -29,7 +29,7 @@ const SubMenuListItem: React.FC<{ href: string; title: string }> = (props) => {
 
 const Header: React.FC = () => {
   return (
-    <Navbar fluid rounded>
+    <Navbar fluid rounded className="bg-base text-primary-500">
       <Navbar.Brand href="/">ara-ta3の物置</Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
@@ -55,7 +55,11 @@ const Header: React.FC = () => {
             </div>
           </ul>
         </MegaMenu.Dropdown>
-        <Navbar.Link href="https://github.com/ara-ta3/ara-ta3.github.io">
+        <Navbar.Link
+          href="https://github.com/ara-ta3/ara-ta3.github.io"
+          target="_blank"
+          className="text-primary-500 hover:text-secondary-500"
+        >
           GitHub
         </Navbar.Link>
       </Navbar.Collapse>

@@ -21,14 +21,16 @@ const Tools: React.FC = () => {
     },
   ];
   return (
-    <section id="links" className="py-12 bg-gray-50">
+    <section id="links" className="py-12 bg-base">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-4 text-center">Links</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center text-primary-500">
+          Links
+        </h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {links.map((link) => (
             <a key={link.name} href={link.href} target="_blank">
               <Card className="w-full">
-                <h5 className="text-base md:text-lg text-center font-bold text-gray-900">
+                <h5 className="text-base md:text-lg text-center font-bold text-primary-700">
                   {link.name}
                 </h5>
               </Card>

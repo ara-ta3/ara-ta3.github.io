@@ -1,7 +1,7 @@
 import React from "react";
 import { Card } from "flowbite-react";
 
-const Tools: React.FC = () => {
+const Projects: React.FC = () => {
   const tools = [
     //    {
     //      id: 1,
@@ -10,24 +10,26 @@ const Tools: React.FC = () => {
     //      href: "/schedules/",
     //    },
     {
-      id: 2,
-      name: "猫のカロリー計算",
+      id: 1,
+      name: "Nekometry",
       description:
         "猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。",
       href: "https://nekometry.web.app/",
     },
   ];
   return (
-    <section id="tools" className="py-12 bg-gray-50">
+    <section id="projects" className="py-12 bg-base">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-4 text-center">Tools</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <h2 className="text-3xl font-bold mb-4 text-center text-primary-500">
+          Personal Projects
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
           {tools.map((tool) => (
             <Card key={tool.id} className="w-full" href={tool.href}>
-              <h5 className="text-xl md:text-xl font-bold text-gray-900">
+              <h5 className="text-xl md:text-xl font-bold text-primary-500">
                 {tool.name}
               </h5>
-              <p className="font-normal text-gray-700 md:text-base">
+              <p className="font-normal text-gray-700 text-primary-700">
                 {tool.description}
               </p>
             </Card>
@@ -38,4 +40,4 @@ const Tools: React.FC = () => {
   );
 };
 
-export default Tools;
+export default Projects;
