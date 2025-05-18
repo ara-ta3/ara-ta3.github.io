@@ -1,5 +1,6 @@
 import React from "react";
 import { MegaMenu, Navbar } from "flowbite-react";
+import Logo from "@/assets/images/logo.png";
 
 const MenuListItem: React.FC<{ href: string; title: string }> = (props) => {
   return (
@@ -30,7 +31,11 @@ const SubMenuListItem: React.FC<{ href: string; title: string }> = (props) => {
 const Header: React.FC = () => {
   return (
     <Navbar fluid rounded className="bg-base text-primary-500">
-      <Navbar.Brand href="/">ara-ta3の物置</Navbar.Brand>
+      <Navbar.Brand href="/">
+        <Navbar.Brand href="/">
+          <img src={Logo} className="mr-3 h-6 sm:h-9" alt="ara-ta3 page Logo" />
+        </Navbar.Brand>
+      </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
         <MegaMenu.Dropdown toggle={<>Tools</>}>
