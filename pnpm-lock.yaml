@@ -22,13 +22,13 @@ importers:
         version: 19.1.0(react@19.1.0)
     devDependencies:
       '@eslint/js':
-        specifier: ^9.27.0
+        specifier: 9.27.0
         version: 9.27.0
       '@testing-library/react':
         specifier: 16.3.0
         version: 16.3.0(@testing-library/dom@10.4.0)(@types/react-dom@19.1.1(@types/react@19.1.0))(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@types/node':
-        specifier: ^22.15.18
+        specifier: 22.15.18
         version: 22.15.18
       '@types/react':
         specifier: 19.1.0
@@ -37,10 +37,10 @@ importers:
         specifier: 19.1.1
         version: 19.1.1(@types/react@19.1.0)
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.32.1
+        specifier: 8.32.1
         version: 8.32.1(@typescript-eslint/parser@8.32.1(eslint@9.27.0(jiti@1.21.7))(typescript@5.8.3))(eslint@9.27.0(jiti@1.21.7))(typescript@5.8.3)
       '@typescript-eslint/parser':
-        specifier: ^8.32.1
+        specifier: 8.32.1
         version: 8.32.1(eslint@9.27.0(jiti@1.21.7))(typescript@5.8.3)
       '@vitejs/plugin-react':
         specifier: 4.4.1
@@ -52,13 +52,13 @@ importers:
         specifier: 10.4.21
         version: 10.4.21(postcss@8.5.3)
       eslint:
-        specifier: ^9.27.0
+        specifier: 9.27.0
         version: 9.27.0(jiti@1.21.7)
       eslint-import-resolver-typescript:
-        specifier: ^4.3.5
+        specifier: 4.3.5
         version: 4.3.5(eslint-plugin-import@2.31.0)(eslint@9.27.0(jiti@1.21.7))
       eslint-plugin-import:
-        specifier: ^2.31.0
+        specifier: 2.31.0
         version: 2.31.0(@typescript-eslint/parser@8.32.1(eslint@9.27.0(jiti@1.21.7))(typescript@5.8.3))(eslint-import-resolver-typescript@4.3.5)(eslint@9.27.0(jiti@1.21.7))
       gh-pages:
         specifier: 6.3.0
@@ -79,7 +79,7 @@ importers:
         specifier: 5.8.3
         version: 5.8.3
       typescript-eslint:
-        specifier: ^8.32.1
+        specifier: 8.32.1
         version: 8.32.1(eslint@9.27.0(jiti@1.21.7))(typescript@5.8.3)
       vike:
         specifier: 0.4.229
