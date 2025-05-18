@@ -1,6 +1,6 @@
 import React from "react";
 
-import Gtm from "./Gtm.tsx";
+import Gtm from "@/components/headertags/Gtm.tsx";
 
 export default () => {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 
-import Tools from "../../components/Tools";
-import Links from "../../components/Links";
-import RelatedArticles from "../../components/RelatedArticles";
+import Tools from "@/components/Tools";
+import Links from "@/components/Links";
+import RelatedArticles from "@/components/RelatedArticles";
 
 const PortfolioTop: React.FC = () => {
   return (

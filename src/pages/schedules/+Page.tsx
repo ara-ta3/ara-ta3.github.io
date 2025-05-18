@@ -1,7 +1,6 @@
 import React from "react";
-import { FC } from "react";
 
-import { HourlyPieChart } from "../../components/Schedule";
+import { HourlyPieChart } from "@/components/Schedule";
 
 const innerData = [
   { id: "睡眠", label: "睡眠", value: 7.5 },
