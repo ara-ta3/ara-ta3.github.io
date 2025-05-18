@@ -21,7 +21,7 @@ const Tools: React.FC = () => {
     },
   ];
   return (
-    <section id="links" className="py-12 bg-base">
+    <section id="links" className="py-8 bg-base">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-4 text-center text-primary-500">
           Links

@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
     },
   ];
   return (
-    <section id="projects" className="py-12 bg-base">
+    <section id="projects" className="py-8 bg-base">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-4 text-center text-primary-500">
           Personal Projects
