@@ -12,6 +12,7 @@ const Projects: React.FC = () => {
     {
       id: 1,
       name: "Nekometry",
+      ruby: "ネコメトリー",
       description:
         "猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。",
       href: "https://nekometry.web.app/",
@@ -24,16 +25,33 @@ const Projects: React.FC = () => {
           Personal Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-          {tools.map((tool) => (
-            <Card key={tool.id} className="w-full" href={tool.href}>
-              <h5 className="text-xl md:text-xl font-bold text-primary-500">
-                {tool.name}
-              </h5>
-              <p className="font-normal text-gray-700 text-primary-700">
-                {tool.description}
-              </p>
-            </Card>
-          ))}
+          {tools.map((tool) => {
+            if (tool.ruby !== undefined) {
+              return (
+                <Card key={tool.id} className="w-full" href={tool.href}>
+                  <ruby>
+                    <h5 className="text-xl md:text-xl font-bold text-primary-500">
+                      {tool.name}
+                    </h5>
+                    <rt className="text-sm text-primary-700">{tool.ruby}</rt>
+                  </ruby>
+                  <p className="font-normal text-gray-700 text-primary-700">
+                    {tool.description}
+                  </p>
+                </Card>
+              );
+            }
+            return (
+              <Card key={tool.id} className="w-full" href={tool.href}>
+                <h5 className="text-xl md:text-xl font-bold text-primary-500">
+                  {tool.name}
+                </h5>
+                <p className="font-normal text-gray-700 text-primary-700">
+                  {tool.description}
+                </p>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
