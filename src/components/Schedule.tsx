@@ -7,7 +7,7 @@ interface Hourly {
   value: number;
 }
 
-const HourlyPieChart: React.FC<{ hours: Hourly[] }> = (props) => {
+const HourlyPieChart: React.FC<{ hours: Hourly[] }> = () => {
   // const getTimeColor = (hour: number) => {
   //   if (hour > 4 && hour < 12) return "#FFECB3";
   //   if (hour >= 12 && hour < 19) return "#FFD180";
@@ -21,9 +21,7 @@ const HourlyPieChart: React.FC<{ hours: Hourly[] }> = (props) => {
   //   color: getTimeColor(i),
   // }));
 
-  return (
-    <div>Chart functionality removed</div>
-  );
+  return <div>Chart functionality removed</div>;
 };
 
 export { HourlyPieChart };
