@@ -33,8 +33,8 @@ const Home: React.FC = () => {
     <>
       <PortfolioTop />
       <Projects />
-      <Links />
       <RelatedArticles />
+      <Links />
     </>
   );
 };
