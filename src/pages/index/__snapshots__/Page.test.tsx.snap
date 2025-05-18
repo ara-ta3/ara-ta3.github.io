@@ -74,16 +74,79 @@ exports[`Home Snapshot Test > render Home 1`] = `
           <div
             class="flex h-full flex-col justify-center gap-4 p-6"
           >
-            <h5
-              class="text-xl md:text-xl font-bold text-primary-500"
-            >
-              Nekometry
-            </h5>
+            <ruby>
+              <h5
+                class="text-xl md:text-xl font-bold text-primary-500"
+              >
+                Nekometry
+              </h5>
+              <rt
+                class="text-sm text-primary-700"
+              >
+                ネコメトリー
+              </rt>
+            </ruby>
             <p
               class="font-normal text-gray-700 text-primary-700"
             >
               猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。
             </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section
+    class="py-8 bg-base"
+    id="related-articles"
+  >
+    <div
+      class="container mx-auto px-4"
+    >
+      <h2
+        class="text-3xl font-bold mb-4 text-center text-primary-500"
+      >
+        Related Articles
+      </h2>
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-4"
+      >
+        <a
+          href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-getting-started"
+          target="_blank"
+        >
+          <div
+            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full h-36"
+            data-testid="flowbite-card"
+          >
+            <div
+              class="flex h-full flex-col justify-center gap-4 p-6"
+            >
+              <h5
+                class="text-base md:text-lg font-bold text-primary-700"
+              >
+                TypeScript + Vike + SSG Getting Started
+              </h5>
+            </div>
+          </div>
+        </a>
+        <a
+          href="https://arata.hatenadiary.com/entry/2025/01/09/174000"
+          target="_blank"
+        >
+          <div
+            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full h-36"
+            data-testid="flowbite-card"
+          >
+            <div
+              class="flex h-full flex-col justify-center gap-4 p-6"
+            >
+              <h5
+                class="text-base md:text-lg font-bold text-primary-700"
+              >
+                猫にあげる1日の餌のカロリー量とフードのグラム数を計算出来るツールを書いた
+              </h5>
+            </div>
           </div>
         </a>
       </div>
@@ -176,62 +239,6 @@ exports[`Home Snapshot Test > render Home 1`] = `
                 class="text-base md:text-lg text-center font-bold text-primary-700"
               >
                 はてなブログ
-              </h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section
-    class="py-8 bg-base"
-    id="related-articles"
-  >
-    <div
-      class="container mx-auto px-4"
-    >
-      <h2
-        class="text-3xl font-bold mb-4 text-center text-primary-500"
-      >
-        Related Articles
-      </h2>
-      <div
-        class="grid grid-cols-1 lg:grid-cols-2 gap-4"
-      >
-        <a
-          href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-getting-started"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full h-36"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg font-bold text-primary-700"
-              >
-                TypeScript + Vike + SSG Getting Started
-              </h5>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://arata.hatenadiary.com/entry/2025/01/09/174000"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full h-36"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg font-bold text-primary-700"
-              >
-                猫にあげる1日の餌のカロリー量とフードのグラム数を計算出来るツールを書いた
               </h5>
             </div>
           </div>
