@@ -1,52 +1,54 @@
-NPX=npx
+WEB_DIR=web
+DIST_DIR=$(WEB_DIR)/dist
+
 PNPM=pnpm
 
 install:
 	$(PNPM) install
 
 server:
-	$(NPX) vike dev
+	$(PNPM) -C $(WEB_DIR) exec vike dev
 
 build:
-	$(NPX) vike build
-	$(MAKE) dist/client/sitemap/sitemap.xml
-	$(MAKE) dist/client/robots.txt
-	touch dist/client/.nojekyll
-	cp -r resources/cat dist/client/cat
+	$(PNPM) -C $(WEB_DIR) exec vike build
+	$(MAKE) $(DIST_DIR)/client/sitemap/sitemap.xml
+	$(MAKE) $(DIST_DIR)/client/robots.txt
+	touch $(DIST_DIR)/client/.nojekyll
+	cp -r $(WEB_DIR)/resources/cat $(DIST_DIR)/client/cat
 
 deploy:
-	$(NPX) gh-pages -d dist
+	$(PNPM) exec gh-pages -d $(DIST_DIR)
 
 compile:
-	$(NPX) tsc --noEmit --strict
+	$(PNPM) -C $(WEB_DIR) exec tsc --noEmit --strict
 
 test:
-	$(NPX) vitest --run
+	$(PNPM) -C $(WEB_DIR) exec vitest --run
 
 test/watch:
-	$(NPX) vitest --watch
+	$(PNPM) -C $(WEB_DIR) exec vitest --watch
 
 lint/eslint:
-	$(NPX) eslint .
+	$(PNPM) -C $(WEB_DIR) exec eslint .
 
 lint/prettier:
-	$(NPX) prettier --check 'src/**/*.{ts,tsx,json,css}'
+	$(PNPM) -C $(WEB_DIR) exec prettier --check 'src/**/*.{ts,tsx,json,css}'
 
 lint: lint/eslint lint/prettier
 
 lint/eslint/fix:
-	$(NPX) eslint . --fix
+	$(PNPM) -C $(WEB_DIR) exec eslint . --fix
 
 lint/prettier/fix:
-	$(NPX) prettier --write 'src/**/*.{ts,tsx,json,css}'
+	$(PNPM) -C $(WEB_DIR) exec prettier --write 'src/**/*.{ts,tsx,json,css}'
 
 lint/fix: lint/eslint/fix lint/prettier/fix
 
-dist/client/sitemap:
+$(DIST_DIR)/client/sitemap:
 	mkdir -p $@
 
-dist/client/sitemap/sitemap.xml: dist/client/sitemap
-	cp -f ./resources/sitemap.xml $@
+$(DIST_DIR)/client/sitemap/sitemap.xml: $(DIST_DIR)/client/sitemap
+	cp -f ./$(WEB_DIR)/resources/sitemap.xml $@
 
-dist/client/robots.txt:
-	cp -f ./resources/robots.txt $@
+$(DIST_DIR)/client/robots.txt:
+	cp -f ./$(WEB_DIR)/resources/robots.txt $@
