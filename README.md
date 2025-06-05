@@ -1,4 +1,8 @@
 ara-ta3の物置
 ---
 
-https://ara-ta3.github.io/  
+https://ara-ta3.github.io/
+
+## ディレクトリ構成
+
+フロントエンドのコードは `web/` ディレクトリ以下に配置されています。pnpm のワークスペース機能を利用して管理しています。
