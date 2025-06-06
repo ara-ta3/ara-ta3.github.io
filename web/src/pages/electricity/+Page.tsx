@@ -111,7 +111,8 @@ const ElectricityComparison: React.FC = () => {
 
   const handleChange = (index: number, value: string) => {
     const updated = [...usage];
-    updated[index] = Number(value);
+    const numeric = parseFloat(value);
+    updated[index] = Number.isNaN(numeric) ? 0 : numeric;
     setUsage(updated);
   };
 
@@ -205,9 +206,8 @@ const ElectricityComparison: React.FC = () => {
               {usage.map((u, idx) => (
                 <Table.Cell key={idx}>
                   <input
-                    type="number"
-                    min="0"
-                    value={u}
+                    type="text"
+                    value={u === 0 ? "" : String(u)}
                     onChange={(e) => handleChange(idx, e.target.value)}
                     className="w-20 border rounded p-1"
                   />
