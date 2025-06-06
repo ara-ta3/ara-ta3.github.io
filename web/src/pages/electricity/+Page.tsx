@@ -64,6 +64,23 @@ const calcCharge = (kWh: number, p: CompanyParam): ChargeBreakdown => {
   return { basicTier, fuel, renewable, capacity, total };
 };
 
+const calcMonthlyTotals = (usage: number[], p: CompanyParam): number[] =>
+  usage.map((u) => calcCharge(u, p).total);
+
+const calcStats = (
+  usage: number[],
+  p: CompanyParam,
+): { average: number; median: number; sum: number } => {
+  const totals = calcMonthlyTotals(usage, p);
+  const sum = totals.reduce((acc, v) => acc + v, 0);
+  const average = totals.length ? sum / totals.length : 0;
+  const sorted = [...totals].sort((a, b) => a - b);
+  const mid = Math.floor(sorted.length / 2);
+  const median =
+    sorted.length % 2 === 0 ? (sorted[mid - 1] + sorted[mid]) / 2 : sorted[mid];
+  return { average, median, sum };
+};
+
 const companies: CompanyParam[] = [
   {
     name: "A社",
@@ -87,6 +104,9 @@ const companies: CompanyParam[] = [
 
 const ElectricityComparison: React.FC = () => {
   const [usage, setUsage] = useState<number[]>(Array(12).fill(0));
+  const [sortKey, setSortKey] = useState<"none" | "average" | "median" | "sum">(
+    "none",
+  );
 
   const handleChange = (index: number, value: string) => {
     const updated = [...usage];
@@ -94,11 +114,36 @@ const ElectricityComparison: React.FC = () => {
     setUsage(updated);
   };
 
+  const sortedCompanies = [...companies].sort((a, b) => {
+    if (sortKey === "none") return 0;
+    const aStats = calcStats(usage, a)[sortKey];
+    const bStats = calcStats(usage, b)[sortKey];
+    return bStats - aStats;
+  });
+
   return (
     <section className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-4 text-center text-primary-500">
         電気代比較ツール
       </h1>
+      <div className="mb-4 text-right">
+        <label className="mr-2" htmlFor="sort">
+          ソート
+        </label>
+        <select
+          id="sort"
+          value={sortKey}
+          onChange={(e) =>
+            setSortKey(e.target.value as "none" | "average" | "median" | "sum")
+          }
+          className="border rounded p-1"
+        >
+          <option value="none">--</option>
+          <option value="average">平均</option>
+          <option value="median">中央値</option>
+          <option value="sum">合計</option>
+        </select>
+      </div>
       <div className="overflow-x-auto">
         <Table>
           <Table.Head>
@@ -124,31 +169,36 @@ const ElectricityComparison: React.FC = () => {
                 </Table.Cell>
               ))}
             </Table.Row>
-            {companies.map((c) => (
-              <Table.Row key={c.name} className="bg-white">
-                <Table.Cell className="whitespace-nowrap font-medium text-gray-900">
-                  {c.name}
-                </Table.Cell>
-                {usage.map((u, idx) => {
-                  const result = calcCharge(u, c);
-                  return (
-                    <Table.Cell key={idx} className="align-top">
-                      <div>{Math.round(result.total).toLocaleString()}円</div>
-                      <div className="text-xs text-gray-600">
-                        基本+段階:{" "}
-                        {Math.round(result.basicTier).toLocaleString()}円<br />
-                        燃料費調整: {Math.round(result.fuel).toLocaleString()}円
-                        <br />
-                        再エネ賦課金:{" "}
-                        {Math.round(result.renewable).toLocaleString()}円<br />
-                        容量拠出金:{" "}
-                        {Math.round(result.capacity).toLocaleString()}円
-                      </div>
-                    </Table.Cell>
-                  );
-                })}
-              </Table.Row>
-            ))}
+            {sortedCompanies.map((c) => {
+              const stats = calcStats(usage, c);
+              return (
+                <Table.Row key={c.name} className="bg-white">
+                  <Table.Cell className="whitespace-nowrap font-medium text-gray-900">
+                    {`${c.name} (平均: ${Math.round(stats.average).toLocaleString()}円 / 中央: ${Math.round(stats.median).toLocaleString()}円 / 合計: ${Math.round(stats.sum).toLocaleString()}円)`}
+                  </Table.Cell>
+                  {usage.map((u, idx) => {
+                    const result = calcCharge(u, c);
+                    return (
+                      <Table.Cell key={idx} className="align-top">
+                        <div>{Math.round(result.total).toLocaleString()}円</div>
+                        <div className="text-xs text-gray-600">
+                          基本+段階:{" "}
+                          {Math.round(result.basicTier).toLocaleString()}円
+                          <br />
+                          燃料費調整: {Math.round(result.fuel).toLocaleString()}
+                          円<br />
+                          再エネ賦課金:{" "}
+                          {Math.round(result.renewable).toLocaleString()}円
+                          <br />
+                          容量拠出金:{" "}
+                          {Math.round(result.capacity).toLocaleString()}円
+                        </div>
+                      </Table.Cell>
+                    );
+                  })}
+                </Table.Row>
+              );
+            })}
           </Table.Body>
         </Table>
       </div>
