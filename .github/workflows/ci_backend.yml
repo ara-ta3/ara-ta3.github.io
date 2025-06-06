@@ -1,4 +1,4 @@
-name: Backend Compile
+name: CI Backend
 
 on:
   push:
