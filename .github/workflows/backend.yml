@@ -1,0 +1,29 @@
+name: Backend Compile
+
+on:
+  push:
+    branches:
+      - "*"
+  pull_request:
+    branches:
+      - "*"
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: Install sbt
+        run: |
+          curl -L -o sbt.tgz https://github.com/sbt/sbt/releases/download/v1.9.7/sbt-1.9.7.tgz
+          sudo tar -xzf sbt.tgz -C /usr/local
+          echo "/usr/local/sbt/bin" >> $GITHUB_PATH
+      - name: Compile Backend
+        run: sbt -Dsbt.supershell=false compile
+        working-directory: backend
