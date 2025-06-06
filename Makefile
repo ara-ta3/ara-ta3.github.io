@@ -1,4 +1,4 @@
-WEB_DIR=web
+WEB_DIR=frontend
 DIST_DIR=$(WEB_DIR)/dist
 
 PNPM=pnpm

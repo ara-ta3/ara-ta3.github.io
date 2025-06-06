@@ -8,7 +8,7 @@ importers:
 
   .: {}
 
-  web:
+  frontend:
     dependencies:
       flowbite:
         specifier: 3.1.2
