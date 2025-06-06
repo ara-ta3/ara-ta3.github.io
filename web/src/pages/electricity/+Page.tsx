@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Table } from "flowbite-react";
+import useLocalStorage from "@/hooks/useLocalStorage";
 
 interface ChargeBreakdown {
   basicTier: number;
@@ -29,6 +30,8 @@ const months = Array.from({ length: 12 }, (_, i) => {
   date.setMonth(date.getMonth() - (i + 1));
   return `${date.getFullYear()}年${date.getMonth() + 1}月`;
 });
+
+const STORAGE_USAGE_KEY = "electricityUsage";
 
 const calcBasicTier = (
   kWh: number,
@@ -103,24 +106,29 @@ const companies: CompanyParam[] = [
   },
 ];
 
+type UsageMap = Record<string, number>;
+
 const ElectricityComparison: React.FC = () => {
-  const [usage, setUsage] = useState<number[]>(Array(12).fill(0));
+  const [usage, setUsage] = useLocalStorage<UsageMap>(STORAGE_USAGE_KEY, {});
   const [sort, setSort] = useState<{
     key: "average" | "median" | "sum" | null;
     order: "asc" | "desc";
   }>({ key: null, order: "desc" });
+  const usageArray = months.map((m) => usage[m] ?? 0);
 
   const handleChange = (index: number, value: string) => {
-    const updated = [...usage];
+    const key = months[index];
     const numeric = parseFloat(value);
-    updated[index] = Number.isNaN(numeric) ? 0 : numeric;
-    setUsage(updated);
+    setUsage((prev) => ({
+      ...prev,
+      [key]: Number.isNaN(numeric) ? 0 : numeric,
+    }));
   };
 
   const sortedCompanies = [...companies].sort((a, b) => {
     if (!sort.key) return 0;
-    const aStats = calcStats(usage, a)[sort.key];
-    const bStats = calcStats(usage, b)[sort.key];
+    const aStats = calcStats(usageArray, a)[sort.key];
+    const bStats = calcStats(usageArray, b)[sort.key];
     return sort.order === "desc" ? bStats - aStats : aStats - bStats;
   });
 
@@ -204,11 +212,11 @@ const ElectricityComparison: React.FC = () => {
               <Table.Cell />
               <Table.Cell />
               <Table.Cell />
-              {usage.map((u, idx) => (
-                <Table.Cell key={idx}>
+              {months.map((m, idx) => (
+                <Table.Cell key={m}>
                   <input
                     type="text"
-                    value={u === 0 ? "" : String(u)}
+                    value={usage[m] ? String(usage[m]) : ""}
                     onChange={(e) => handleChange(idx, e.target.value)}
                     className="w-20 border rounded p-1"
                   />
@@ -216,7 +224,7 @@ const ElectricityComparison: React.FC = () => {
               ))}
             </Table.Row>
             {sortedCompanies.map((c) => {
-              const stats = calcStats(usage, c);
+              const stats = calcStats(usageArray, c);
               return (
                 <Table.Row key={c.name} className="bg-white">
                   <Table.Cell className="whitespace-nowrap font-medium text-gray-900">
@@ -231,7 +239,7 @@ const ElectricityComparison: React.FC = () => {
                   <Table.Cell>
                     {Math.round(stats.sum).toLocaleString()}円
                   </Table.Cell>
-                  {usage.map((u, idx) => {
+                  {usageArray.map((u, idx) => {
                     const result = calcCharge(u, c);
                     return (
                       <Table.Cell key={idx} className="align-top">
