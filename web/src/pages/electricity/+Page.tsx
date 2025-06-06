@@ -104,9 +104,10 @@ const companies: CompanyParam[] = [
 
 const ElectricityComparison: React.FC = () => {
   const [usage, setUsage] = useState<number[]>(Array(12).fill(0));
-  const [sortKey, setSortKey] = useState<"none" | "average" | "median" | "sum">(
-    "none",
-  );
+  const [sort, setSort] = useState<{
+    key: "average" | "median" | "sum" | null;
+    order: "asc" | "desc";
+  }>({ key: null, order: "desc" });
 
   const handleChange = (index: number, value: string) => {
     const updated = [...usage];
@@ -115,10 +116,10 @@ const ElectricityComparison: React.FC = () => {
   };
 
   const sortedCompanies = [...companies].sort((a, b) => {
-    if (sortKey === "none") return 0;
-    const aStats = calcStats(usage, a)[sortKey];
-    const bStats = calcStats(usage, b)[sortKey];
-    return bStats - aStats;
+    if (!sort.key) return 0;
+    const aStats = calcStats(usage, a)[sort.key];
+    const bStats = calcStats(usage, b)[sort.key];
+    return sort.order === "desc" ? bStats - aStats : aStats - bStats;
   });
 
   return (
@@ -126,28 +127,69 @@ const ElectricityComparison: React.FC = () => {
       <h1 className="text-3xl font-bold mb-4 text-center text-primary-500">
         電気代比較ツール
       </h1>
-      <div className="mb-4 text-right">
-        <label className="mr-2" htmlFor="sort">
-          ソート
-        </label>
-        <select
-          id="sort"
-          value={sortKey}
-          onChange={(e) =>
-            setSortKey(e.target.value as "none" | "average" | "median" | "sum")
-          }
-          className="border rounded p-1"
-        >
-          <option value="none">--</option>
-          <option value="average">平均</option>
-          <option value="median">中央値</option>
-          <option value="sum">合計</option>
-        </select>
-      </div>
       <div className="overflow-x-auto">
         <Table>
           <Table.Head>
             <Table.HeadCell>会社</Table.HeadCell>
+            <Table.HeadCell>
+              <button
+                type="button"
+                onClick={() =>
+                  setSort((prev) => ({
+                    key: "average",
+                    order:
+                      prev.key === "average" && prev.order === "desc"
+                        ? "asc"
+                        : "desc",
+                  }))
+                }
+              >
+                平均
+                {sort.key === "average"
+                  ? sort.order === "desc"
+                    ? "▼"
+                    : "▲"
+                  : ""}
+              </button>
+            </Table.HeadCell>
+            <Table.HeadCell>
+              <button
+                type="button"
+                onClick={() =>
+                  setSort((prev) => ({
+                    key: "median",
+                    order:
+                      prev.key === "median" && prev.order === "desc"
+                        ? "asc"
+                        : "desc",
+                  }))
+                }
+              >
+                中央値
+                {sort.key === "median"
+                  ? sort.order === "desc"
+                    ? "▼"
+                    : "▲"
+                  : ""}
+              </button>
+            </Table.HeadCell>
+            <Table.HeadCell>
+              <button
+                type="button"
+                onClick={() =>
+                  setSort((prev) => ({
+                    key: "sum",
+                    order:
+                      prev.key === "sum" && prev.order === "desc"
+                        ? "asc"
+                        : "desc",
+                  }))
+                }
+              >
+                合計
+                {sort.key === "sum" ? (sort.order === "desc" ? "▼" : "▲") : ""}
+              </button>
+            </Table.HeadCell>
             {months.map((m) => (
               <Table.HeadCell key={m}>{m}</Table.HeadCell>
             ))}
@@ -174,7 +216,16 @@ const ElectricityComparison: React.FC = () => {
               return (
                 <Table.Row key={c.name} className="bg-white">
                   <Table.Cell className="whitespace-nowrap font-medium text-gray-900">
-                    {`${c.name} (平均: ${Math.round(stats.average).toLocaleString()}円 / 中央: ${Math.round(stats.median).toLocaleString()}円 / 合計: ${Math.round(stats.sum).toLocaleString()}円)`}
+                    {c.name}
+                  </Table.Cell>
+                  <Table.Cell>
+                    {Math.round(stats.average).toLocaleString()}円
+                  </Table.Cell>
+                  <Table.Cell>
+                    {Math.round(stats.median).toLocaleString()}円
+                  </Table.Cell>
+                  <Table.Cell>
+                    {Math.round(stats.sum).toLocaleString()}円
                   </Table.Cell>
                   {usage.map((u, idx) => {
                     const result = calcCharge(u, c);
@@ -182,15 +233,16 @@ const ElectricityComparison: React.FC = () => {
                       <Table.Cell key={idx} className="align-top">
                         <div>{Math.round(result.total).toLocaleString()}円</div>
                         <div className="text-xs text-gray-600">
-                          基本+段階:{" "}
+                          基本+段階:
                           {Math.round(result.basicTier).toLocaleString()}円
                           <br />
                           燃料費調整: {Math.round(result.fuel).toLocaleString()}
-                          円<br />
-                          再エネ賦課金:{" "}
+                          円
+                          <br />
+                          再エネ賦課金:
                           {Math.round(result.renewable).toLocaleString()}円
                           <br />
-                          容量拠出金:{" "}
+                          容量拠出金:
                           {Math.round(result.capacity).toLocaleString()}円
                         </div>
                       </Table.Cell>
