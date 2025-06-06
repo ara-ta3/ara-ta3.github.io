@@ -25,7 +25,7 @@ const renewableRate = 3; // yen per kWh, common for all companies
 
 const months = Array.from({ length: 12 }, (_, i) => {
   const date = new Date();
-  date.setMonth(date.getMonth() - (11 - i));
+  date.setMonth(date.getMonth() - i);
   return `${date.getFullYear()}年${date.getMonth() + 1}月`;
 });
 
@@ -199,6 +199,9 @@ const ElectricityComparison: React.FC = () => {
               <Table.Cell className="font-medium text-gray-900">
                 使用量(kWh)
               </Table.Cell>
+              <Table.Cell />
+              <Table.Cell />
+              <Table.Cell />
               {usage.map((u, idx) => (
                 <Table.Cell key={idx}>
                   <input
