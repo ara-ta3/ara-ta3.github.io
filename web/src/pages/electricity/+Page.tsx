@@ -25,7 +25,8 @@ const renewableRate = 3; // yen per kWh, common for all companies
 
 const months = Array.from({ length: 12 }, (_, i) => {
   const date = new Date();
-  date.setMonth(date.getMonth() - i);
+  // 今月ではなく先月から12か月分を表示する
+  date.setMonth(date.getMonth() - (i + 1));
   return `${date.getFullYear()}年${date.getMonth() + 1}月`;
 });
 
@@ -235,18 +236,19 @@ const ElectricityComparison: React.FC = () => {
                     return (
                       <Table.Cell key={idx} className="align-top">
                         <div>{Math.round(result.total).toLocaleString()}円</div>
-                        <div className="text-xs text-gray-600">
-                          基本+段階:
-                          {Math.round(result.basicTier).toLocaleString()}円
-                          <br />
-                          燃料費調整: {Math.round(result.fuel).toLocaleString()}
-                          円
-                          <br />
-                          再エネ賦課金:
-                          {Math.round(result.renewable).toLocaleString()}円
-                          <br />
-                          容量拠出金:
-                          {Math.round(result.capacity).toLocaleString()}円
+                        <div className="text-xs text-gray-600 space-y-1">
+                          <div>
+                            基本+段階:
+                            {Math.round(result.basicTier).toLocaleString()}円 /
+                            燃料費調整:
+                            {Math.round(result.fuel).toLocaleString()}円
+                          </div>
+                          <div>
+                            再エネ賦課金:
+                            {Math.round(result.renewable).toLocaleString()}円 /
+                            容量拠出金:
+                            {Math.round(result.capacity).toLocaleString()}円
+                          </div>
                         </div>
                       </Table.Cell>
                     );
