@@ -1,5 +1,10 @@
 {
   "name": "ara-ta3-monorepo",
   "private": true,
-  "workspaces": ["frontend"]
+  "workspaces": [
+    "frontend"
+  ],
+  "dependencies": {
+    "react-icons": "^5.5.0"
+  }
 }
