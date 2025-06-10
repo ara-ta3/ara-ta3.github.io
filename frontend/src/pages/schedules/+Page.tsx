@@ -1,6 +1,7 @@
 import React from "react";
 
 import { HourlyPieChart } from "@/components/Schedule";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const innerData = [
   { id: "睡眠", label: "睡眠", value: 7.5 },
@@ -12,9 +13,12 @@ const innerData = [
 
 const Schedules: React.FC = () => {
   return (
-    <>
+    <div className="container mx-auto px-4 py-8">
+      <Breadcrumb
+        items={[{ name: "スケジュール管理", url: "/schedules/", isLast: true }]}
+      />
       <HourlyPieChart hours={innerData} />
-    </>
+    </div>
   );
 };
 

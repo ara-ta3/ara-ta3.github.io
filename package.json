@@ -1,5 +1,7 @@
 {
   "name": "ara-ta3-monorepo",
   "private": true,
-  "workspaces": ["frontend"]
+  "workspaces": [
+    "frontend"
+  ]
 }
