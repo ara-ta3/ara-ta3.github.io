@@ -11,6 +11,10 @@ const RelatedArticles: React.FC = () => {
       name: "猫にあげる1日の餌のカロリー量とフードのグラム数を計算出来るツールを書いた",
       href: "https://arata.hatenadiary.com/entry/2025/01/09/174000",
     },
+    {
+      name: "TypeScript + Vite + Vikeの動的ルーティングのページにメタ情報を含めてSSGする",
+      href: "https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-with-dynamic-routing",
+    },
   ];
   return (
     <section id="related-articles" className="py-8 bg-base">
