@@ -149,6 +149,25 @@ exports[`Home Snapshot Test > render Home 1`] = `
             </div>
           </div>
         </a>
+        <a
+          href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-with-dynamic-routing"
+          target="_blank"
+        >
+          <div
+            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full h-36"
+            data-testid="flowbite-card"
+          >
+            <div
+              class="flex h-full flex-col justify-center gap-4 p-6"
+            >
+              <h5
+                class="text-base md:text-lg font-bold text-primary-700"
+              >
+                TypeScript + Vite + Vikeの動的ルーティングのページにメタ情報を含めてSSGする
+              </h5>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </section>
