@@ -21,7 +21,7 @@ const RelatedArticles: React.FC = () => {
   ];
 
   return (
-    <div id="articles">
+    <div id="articles" className="py-4">
       <HeadingTitle title="記事" />
       {articles.map((article) => (
         <a href={article.href} target="_blank" key={article.name}>

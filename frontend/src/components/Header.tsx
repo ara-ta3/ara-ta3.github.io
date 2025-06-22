@@ -17,7 +17,7 @@ const HeaderMenuItem: React.FC<{ href: string; children: string }> = ({
 
 const Header: React.FC = () => {
   return (
-    <header className="flex items-center justify-between border-b border-solid border-b px-8 py-4 ">
+    <header className="flex items-center justify-between border-b border-solid border-b px-8 py-4 sticky top-0 z-50 bg-white">
       <div className="flex items-center gap-4 ">
         <div>
           <img src={Logo} alt="Logo" className="w-24" />

@@ -4,7 +4,6 @@ import Profile from "@/components/Profile";
 import Projects from "@/components/Projects";
 import RelatedArticles from "@/components/RelatedArticles";
 import Contact from "@/components/Links";
-import Footer from "@/components/Footer";
 
 const Home: React.FC = () => {
   return (
@@ -21,7 +20,6 @@ const Home: React.FC = () => {
             <Contact />
           </div>
         </div>
-        <Footer />
       </div>
     </div>
   );

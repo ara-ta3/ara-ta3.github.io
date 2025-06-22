@@ -2,7 +2,7 @@ import React from "react";
 
 const Profile: React.FC = () => {
   return (
-    <div className="flex p-4 ">
+    <div className="flex p-4">
       <div className="flex w-full flex-col gap-4 items-center">
         <div className="flex gap-4 flex-col items-center">
           <div

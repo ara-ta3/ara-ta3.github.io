@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <div id="projects">
+    <div id="projects" className="py-4">
       <HeadingTitle title="プロジェクト" />
       <div className="grid grid-cols-2 md:grid-cols-2 gap-4 p-4">
         {projects.map((project) => (
