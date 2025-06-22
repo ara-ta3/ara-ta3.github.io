@@ -1,74 +1,37 @@
 import React from "react";
-import { MegaMenu, Navbar } from "flowbite-react";
 import Logo from "@/assets/images/logo.png";
 
-const MenuListItem: React.FC<{ href: string; title: string }> = (props) => {
+const HeaderMenuItem: React.FC<{ href: string; children: string }> = ({
+  href,
+  children,
+}) => {
   return (
-    <li>
-      <a
-        href={props.href}
-        className="hover:text-secondary-500 hover:font-bold text-primary-500"
-      >
-        {props.title}
-      </a>
-    </li>
-  );
-};
-
-const SubMenuListItem: React.FC<{ href: string; title: string }> = (props) => {
-  return (
-    <li>
-      <a
-        href={props.href}
-        className="text-primary-700 hover:text-secondary-700 ml-4 hover:font-bold"
-      >
-        {props.title}
-      </a>
-    </li>
+    <a
+      className="text-primary-500 hover:text-primary-700 text-sm font-medium leading-normal"
+      href={href}
+    >
+      {children}
+    </a>
   );
 };
 
 const Header: React.FC = () => {
   return (
-    <Navbar fluid rounded className="bg-base text-primary-500">
-      <Navbar.Brand href="/">
-        <Navbar.Brand href="/">
-          <img src={Logo} className="mr-3 h-6 sm:h-9" alt="ara-ta3 page Logo" />
-        </Navbar.Brand>
-      </Navbar.Brand>
-      <Navbar.Toggle />
-      <Navbar.Collapse>
-        <MegaMenu.Dropdown toggle={<>Tools</>}>
-          <ul className="grid grid-cols-3">
-            <div className="space-y-4 p-4">
-              <MenuListItem
-                href="https://nekometry.web.app/"
-                title="猫のカロリー計算"
-              />
-              <SubMenuListItem
-                href="https://nekometry.web.app/calorie/foods/"
-                title="対応フード一覧"
-              />
-              <SubMenuListItem
-                href="https://nekometry.web.app/calorie/transition/"
-                title="フード切り替えプラン"
-              />
-              <SubMenuListItem
-                href="https://nekometry.web.app/calorie/reference/"
-                title="参考文献"
-              />
-            </div>
-          </ul>
-        </MegaMenu.Dropdown>
-        <Navbar.Link
-          href="https://github.com/ara-ta3/ara-ta3.github.io"
-          target="_blank"
-          className="text-primary-500 hover:text-secondary-500"
-        >
-          GitHub
-        </Navbar.Link>
-      </Navbar.Collapse>
-    </Navbar>
+    <header className="flex items-center justify-between border-b border-solid border-b px-8 py-4 sticky top-0 z-50 bg-white">
+      <div className="flex items-center gap-4 ">
+        <div>
+          <img src={Logo} alt="Logo" className="w-24" />
+        </div>
+      </div>
+      <div className="flex flex-1 justify-end gap-8">
+        <div className="flex items-center gap-9">
+          <HeaderMenuItem href="#project">プロジェクト</HeaderMenuItem>
+          <HeaderMenuItem href="#articles">記事</HeaderMenuItem>
+          <HeaderMenuItem href="#contact">SNSアカウント</HeaderMenuItem>
+        </div>
+      </div>
+    </header>
   );
 };
+
 export default Header;

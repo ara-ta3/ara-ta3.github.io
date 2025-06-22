@@ -1,45 +1,55 @@
 import React from "react";
-import { Card } from "flowbite-react";
+import { FaBook, FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { HeadingTitle } from "@/components/Heading";
 
-const Tools: React.FC = () => {
-  const links = [
+const Contact: React.FC = () => {
+  const socialLinks = [
     {
-      name: "X(Twitter)",
+      name: "X (Twitter)",
       href: "https://x.com/ara_ta3",
+      icon: <FaXTwitter />,
     },
     {
       name: "GitHub",
       href: "https://github.com/ara-ta3",
+      icon: <FaGithub />,
     },
     {
-      name: "zenn.dev",
+      name: "Zenn",
       href: "https://zenn.dev/ara_ta3",
-    },
-    {
-      name: "はてなブログ",
-      href: "https://arata.hatenadiary.com/",
+      icon: <FaBook />,
     },
   ];
+
   return (
-    <section id="links" className="py-8 bg-base">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-4 text-center text-primary-500">
-          Links
-        </h2>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-          {links.map((link) => (
+    <div id="contact" className="py-4">
+      <HeadingTitle title="アカウント" />
+      <div className="@container">
+        <div className="gap-2 px-4 flex flex-wrap justify-start">
+          {socialLinks.map((link) => (
             <a key={link.name} href={link.href} target="_blank">
-              <Card className="w-full">
-                <h5 className="text-base md:text-lg text-center font-bold text-primary-700">
+              <div className="flex flex-col items-center gap-2 py-2 text-center w-24 ">
+                <div className="rounded-full bg-secondary-100 p-4">
+                  <div
+                    className="text-primary-1000"
+                    data-icon="SocialIcon"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    {link.icon}
+                  </div>
+                </div>
+                <p className="text-primary-700 text-sm font-medium">
                   {link.name}
-                </h5>
-              </Card>
+                </p>
+              </div>
             </a>
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default Tools;
+export default Contact;

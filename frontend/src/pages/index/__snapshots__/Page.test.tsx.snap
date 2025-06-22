@@ -3,267 +3,376 @@
 exports[`Home Snapshot Test > render Home 1`] = `
 <DocumentFragment>
   <div
-    class="h-[16vh] flex items-center justify-center bg-background"
+    class="flex size-full min-h-screen flex-col group/design-root overflow-x-hidden"
+    style="font-family: "Work Sans", "Noto Sans", sans-serif;"
   >
     <div
-      class="text-center justify-center"
+      class="flex h-full grow flex-col min-h-screen"
     >
-      <h1
-        class="text-5xl font-bold text-primary-500 underline hover:text-secondary-500 flex justify-center"
+      <div
+        class="px-4 flex flex-1 justify-center py-4"
       >
         <div
-          class="w-fit"
-          data-testid="flowbite-tooltip-target"
-        >
-          <a
-            href="https://x.com/ara_ta3"
-            target="_blank"
-          >
-            ara-ta3
-          </a>
-        </div>
-        <div
-          class="absolute z-10 rounded-lg px-3 py-2 text-sm font-medium shadow-sm transition-opacity duration-300 invisible opacity-0 bg-gray-900 text-white dark:bg-gray-700 block text-center"
-          data-testid="flowbite-tooltip"
-          id="«r0»"
-          role="tooltip"
-          style="position: absolute; top: 0px; left: 0px;"
-          tabindex="-1"
+          class="flex flex-col max-w-[960px] flex-1"
         >
           <div
-            class="relative z-20"
+            class="flex p-4"
           >
-            Xに飛びます
+            <div
+              class="flex w-full flex-col gap-4 items-center"
+            >
+              <div
+                class="flex gap-4 flex-col items-center"
+              >
+                <div
+                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
+                  style="background-image: url(https://github.com/ara-ta3.png);"
+                />
+                <div
+                  class="flex flex-col items-center justify-center justify-center"
+                >
+                  <p
+                    class="text-primary-700 text-[22px] font-bold leading-tight tracking-[-0.015em] text-center"
+                  >
+                    ara-ta3
+                  </p>
+                  <p
+                    class="text-primary-900 font-normal leading-normal text-center"
+                  >
+                    Scala、TypeScript、Goなどの型付言語が好きなWebエンジニアです。
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <div
-            class="absolute z-10 h-2 w-2 rotate-45 bg-gray-900 dark:bg-gray-700"
-            data-testid="flowbite-tooltip-arrow"
-            style="bottom: -4px;"
+            class="py-4"
+            id="projects"
           >
-             
+            <h2
+              class="text-primary-700 text-xl font-bold px-4 py-2 "
+            >
+              プロジェクト
+            </h2>
+            <div
+              class="grid grid-cols-2 md:grid-cols-2 gap-4 p-4"
+            >
+              <div
+                class="flex flex-col gap-4 p-4 shadow-md hover:shadow-lg"
+              >
+                <a
+                  href="https://nekometry.web.app/"
+                  target="_blank"
+                >
+                  <h3
+                    class="text-primary-700 text-lg font-medium mb-2"
+                  >
+                    Nekometry
+                  </h3>
+                  <img
+                    alt="Nekometry"
+                    class="w-full h-auto rounded-lg "
+                    src="/src/assets/images/nekometry.jpg"
+                  />
+                  <div>
+                    <p
+                      class="text-primary-900 text-sm font-normal py-2"
+                    >
+                      猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="py-4"
+            id="articles"
+          >
+            <h2
+              class="text-primary-700 text-xl font-bold px-4 py-2 "
+            >
+              記事
+            </h2>
+            <a
+              href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-getting-started"
+              target="_blank"
+            >
+              <div
+                class="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between hover:shadow-lg transition-all duration-200"
+              >
+                <div
+                  class="flex flex-col justify-center"
+                >
+                  <p
+                    class="text-primary-700 text-base font-medium"
+                  >
+                    TypeScript + Vike + SSG Getting Started
+                  </p>
+                  <p
+                    class="text-primary-900 text-sm font-normal"
+                  >
+                    Vikeを使った静的サイト生成について
+                  </p>
+                </div>
+                <div
+                  class="shrink-0"
+                >
+                  <div
+                    class="text-primary-900 flex size-8 items-center justify-center"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="24px"
+                      viewBox="0 0 256 256"
+                      width="24px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://arata.hatenadiary.com/entry/2025/01/09/174000"
+              target="_blank"
+            >
+              <div
+                class="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between hover:shadow-lg transition-all duration-200"
+              >
+                <div
+                  class="flex flex-col justify-center"
+                >
+                  <p
+                    class="text-primary-700 text-base font-medium"
+                  >
+                    猫のカロリー計算ツールの開発
+                  </p>
+                  <p
+                    class="text-primary-900 text-sm font-normal"
+                  >
+                    ペットの健康管理アプリケーション開発記
+                  </p>
+                </div>
+                <div
+                  class="shrink-0"
+                >
+                  <div
+                    class="text-primary-900 flex size-8 items-center justify-center"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="24px"
+                      viewBox="0 0 256 256"
+                      width="24px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-with-dynamic-routing"
+              target="_blank"
+            >
+              <div
+                class="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between hover:shadow-lg transition-all duration-200"
+              >
+                <div
+                  class="flex flex-col justify-center"
+                >
+                  <p
+                    class="text-primary-700 text-base font-medium"
+                  >
+                    動的ルーティングでのSSG実装
+                  </p>
+                  <p
+                    class="text-primary-900 text-sm font-normal"
+                  >
+                    メタ情報を含む静的サイト生成のノウハウ
+                  </p>
+                </div>
+                <div
+                  class="shrink-0"
+                >
+                  <div
+                    class="text-primary-900 flex size-8 items-center justify-center"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="24px"
+                      viewBox="0 0 256 256"
+                      width="24px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div
+            class="py-4"
+            id="contact"
+          >
+            <h2
+              class="text-primary-700 text-xl font-bold px-4 py-2 "
+            >
+              アカウント
+            </h2>
+            <div
+              class="@container"
+            >
+              <div
+                class="gap-2 px-4 flex flex-wrap justify-start"
+              >
+                <a
+                  href="https://x.com/ara_ta3"
+                  target="_blank"
+                >
+                  <div
+                    class="flex flex-col items-center gap-2 py-2 text-center w-24 "
+                  >
+                    <div
+                      class="rounded-full bg-secondary-100 p-4"
+                    >
+                      <div
+                        class="text-primary-1000"
+                        data-icon="SocialIcon"
+                        data-size="24px"
+                        data-weight="regular"
+                      >
+                        <svg
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p
+                      class="text-primary-700 text-sm font-medium"
+                    >
+                      X (Twitter)
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/ara-ta3"
+                  target="_blank"
+                >
+                  <div
+                    class="flex flex-col items-center gap-2 py-2 text-center w-24 "
+                  >
+                    <div
+                      class="rounded-full bg-secondary-100 p-4"
+                    >
+                      <div
+                        class="text-primary-1000"
+                        data-icon="SocialIcon"
+                        data-size="24px"
+                        data-weight="regular"
+                      >
+                        <svg
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 496 512"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p
+                      class="text-primary-700 text-sm font-medium"
+                    >
+                      GitHub
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://zenn.dev/ara_ta3"
+                  target="_blank"
+                >
+                  <div
+                    class="flex flex-col items-center gap-2 py-2 text-center w-24 "
+                  >
+                    <div
+                      class="rounded-full bg-secondary-100 p-4"
+                    >
+                      <div
+                        class="text-primary-1000"
+                        data-icon="SocialIcon"
+                        data-size="24px"
+                        data-weight="regular"
+                      >
+                        <svg
+                          fill="currentColor"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 448 512"
+                          width="1em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p
+                      class="text-primary-700 text-sm font-medium"
+                    >
+                      Zenn
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </h1>
-      <p
-        class="text-lg text-primary-700 mt-4"
-      >
-        portfolioのように見える遊び場です
-      </p>
+      </div>
     </div>
+    <footer
+      class="flex justify-center py-12 bg-primary-50"
+    >
+      <div
+        class="flex flex-1 flex-col"
+      >
+        <div
+          class="flex flex-col gap-6 text-center @container"
+        >
+          <p
+            class="text-primary-900 text-base font-normal leading-normal"
+          >
+            © 2025 ara-ta3. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
   </div>
-  <section
-    class="py-8 bg-base"
-    id="projects"
-  >
-    <div
-      class="container mx-auto px-4"
-    >
-      <h2
-        class="text-3xl font-bold mb-4 text-center text-primary-500"
-      >
-        Personal Projects
-      </h2>
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4"
-      >
-        <a
-          class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col hover:bg-gray-100 dark:hover:bg-gray-700 w-full"
-          data-testid="flowbite-card"
-          href="https://nekometry.web.app/"
-        >
-          <div
-            class="flex h-full flex-col justify-center gap-4 p-6"
-          >
-            <ruby>
-              <h5
-                class="text-xl md:text-xl font-bold text-primary-500"
-              >
-                Nekometry
-              </h5>
-              <rt
-                class="text-sm text-primary-700"
-              >
-                ネコメトリー
-              </rt>
-            </ruby>
-            <p
-              class="font-normal text-gray-700 text-primary-700"
-            >
-              猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。
-            </p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section
-    class="py-8 bg-base"
-    id="related-articles"
-  >
-    <div
-      class="container mx-auto px-4"
-    >
-      <h2
-        class="text-3xl font-bold mb-4 text-center text-primary-500"
-      >
-        Related Articles
-      </h2>
-      <div
-        class="grid grid-cols-1 lg:grid-cols-2 gap-4"
-      >
-        <a
-          href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-getting-started"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full h-36"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg font-bold text-primary-700"
-              >
-                TypeScript + Vike + SSG Getting Started
-              </h5>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://arata.hatenadiary.com/entry/2025/01/09/174000"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full h-36"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg font-bold text-primary-700"
-              >
-                猫にあげる1日の餌のカロリー量とフードのグラム数を計算出来るツールを書いた
-              </h5>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-with-dynamic-routing"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full h-36"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg font-bold text-primary-700"
-              >
-                TypeScript + Vite + Vikeの動的ルーティングのページにメタ情報を含めてSSGする
-              </h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section
-    class="py-8 bg-base"
-    id="links"
-  >
-    <div
-      class="container mx-auto px-4"
-    >
-      <h2
-        class="text-3xl font-bold mb-4 text-center text-primary-500"
-      >
-        Links
-      </h2>
-      <div
-        class="grid grid-cols-2 lg:grid-cols-4 gap-4"
-      >
-        <a
-          href="https://x.com/ara_ta3"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg text-center font-bold text-primary-700"
-              >
-                X(Twitter)
-              </h5>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://github.com/ara-ta3"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg text-center font-bold text-primary-700"
-              >
-                GitHub
-              </h5>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://zenn.dev/ara_ta3"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg text-center font-bold text-primary-700"
-              >
-                zenn.dev
-              </h5>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://arata.hatenadiary.com/"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg text-center font-bold text-primary-700"
-              >
-                はてなブログ
-              </h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
 </DocumentFragment>
 `;
