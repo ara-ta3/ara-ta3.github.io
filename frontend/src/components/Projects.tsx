@@ -1,5 +1,6 @@
 import React from "react";
 import Nekometry from "@/assets/images/nekometry.jpg";
+import { HeadingTitle } from "./Heading";
 
 const Projects: React.FC = () => {
   const projects = [
@@ -15,9 +16,7 @@ const Projects: React.FC = () => {
 
   return (
     <div id="projects">
-      <h2 className="text-primary-700 text-xl font-bold px-4 py-2 ">
-        プロジェクト
-      </h2>
+      <HeadingTitle title="プロジェクト" />
       <div className="grid grid-cols-2 md:grid-cols-2 gap-4 p-4">
         {projects.map((project) => (
           <div

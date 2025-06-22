@@ -1,4 +1,5 @@
 import React from "react";
+import { HeadingTitle } from "@/components/Heading";
 
 const RelatedArticles: React.FC = () => {
   const articles = [
@@ -21,30 +22,20 @@ const RelatedArticles: React.FC = () => {
 
   return (
     <div id="articles">
-      <h2 className="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-        記事
-      </h2>
+      <HeadingTitle title="記事" />
       {articles.map((article) => (
-        <div
-          key={article.name}
-          className="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2 justify-between"
-        >
-          <div className="flex flex-col justify-center">
-            <p className="text-[#121416] text-base font-medium leading-normal line-clamp-1">
-              {article.name}
-            </p>
-            <p className="text-[#6a7581] text-sm font-normal leading-normal line-clamp-2">
-              {article.description}
-            </p>
-          </div>
-          <div className="shrink-0">
-            <a href={article.href} target="_blank" rel="noopener noreferrer">
-              <div
-                className="text-[#121416] flex size-7 items-center justify-center"
-                data-icon="ArrowRight"
-                data-size="24px"
-                data-weight="regular"
-              >
+        <a href={article.href} target="_blank" key={article.name}>
+          <div className="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between hover:shadow-lg transition-all duration-200">
+            <div className="flex flex-col justify-center">
+              <p className="text-primary-700 text-base font-medium">
+                {article.name}
+              </p>
+              <p className="text-primary-900 text-sm font-normal">
+                {article.description}
+              </p>
+            </div>
+            <div className="shrink-0">
+              <div className="text-primary-900 flex size-8 items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24px"
@@ -55,9 +46,9 @@ const RelatedArticles: React.FC = () => {
                   <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
                 </svg>
               </div>
-            </a>
+            </div>
           </div>
-        </div>
+        </a>
       ))}
     </div>
   );
