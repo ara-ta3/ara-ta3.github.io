@@ -34,10 +34,7 @@ const ProjectPage: React.FC = () => {
       { label: "Deployment", value: "GitHub Pages" },
       { label: "CI/CD", value: "GitHub Actions" },
     ],
-    screenshots: [
-      "https://placehold.co/800x600/3b82f6/ffffff?text=Main+Page",
-      "https://placehold.co/400x300/10b981/ffffff?text=Articles+Section",
-    ],
+    screenshots: [],
     demoUrl: "https://ara-ta3.github.io",
   };
 
@@ -47,7 +44,6 @@ const ProjectPage: React.FC = () => {
       style={{ fontFamily: 'Inter, "Noto Sans", sans-serif' }}
     >
       <div className="layout-container flex h-full grow flex-col">
-        <Header />
         <div className="px-40 flex flex-1 justify-center py-5">
           <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
             <ProjectHeader
