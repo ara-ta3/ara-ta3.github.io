@@ -22,7 +22,7 @@ const RelatedArticles: React.FC = () => {
   return (
     <div id="articles">
       <h2 className="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-        アーティクル
+        記事
       </h2>
       {articles.map((article) => (
         <div

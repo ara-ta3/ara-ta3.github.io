@@ -1,20 +1,12 @@
 import React from "react";
+import Logo from "@/assets/images/logo.png";
 
 const Header: React.FC = () => {
   return (
     <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3">
       <div className="flex items-center gap-4 text-[#121416]">
         <div className="size-4">
-          <svg
-            viewBox="0 0 48 48"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"
-              fill="currentColor"
-            ></path>
-          </svg>
+          <img src={Logo} alt="Logo" />
         </div>
         <h2 className="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em]">
           ara-ta3のポートフォリオ
@@ -30,21 +22,15 @@ const Header: React.FC = () => {
           </a>
           <a
             className="text-[#121416] text-sm font-medium leading-normal"
-            href="#skills"
-          >
-            スキル
-          </a>
-          <a
-            className="text-[#121416] text-sm font-medium leading-normal"
             href="#articles"
           >
-            アーティクル
+            記事
           </a>
           <a
             className="text-[#121416] text-sm font-medium leading-normal"
             href="#contact"
           >
-            お問い合わせ
+            SNSアカウント
           </a>
         </div>
       </div>

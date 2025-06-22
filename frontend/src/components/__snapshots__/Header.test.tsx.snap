@@ -42,21 +42,15 @@ exports[`Header Snapshot Test > render headers 1`] = `
         </a>
         <a
           class="text-[#121416] text-sm font-medium leading-normal"
-          href="#skills"
-        >
-          スキル
-        </a>
-        <a
-          class="text-[#121416] text-sm font-medium leading-normal"
           href="#articles"
         >
-          アーティクル
+          記事
         </a>
         <a
           class="text-[#121416] text-sm font-medium leading-normal"
           href="#contact"
         >
-          お問い合わせ
+          SNSアカウント
         </a>
       </div>
     </div>

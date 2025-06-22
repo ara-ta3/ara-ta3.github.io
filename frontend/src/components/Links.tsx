@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
   return (
     <div id="contact">
       <h2 className="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-        お問い合わせ
+        SNSアカウント
       </h2>
       <div className="@container">
         <div className="gap-2 px-4 flex flex-wrap justify-start">
