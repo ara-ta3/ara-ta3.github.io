@@ -15,23 +15,26 @@ const Projects: React.FC = () => {
 
   return (
     <div id="projects">
-      <h2 className="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+      <h2 className="text-primary-700 text-xl font-bold px-4 py-2 ">
         プロジェクト
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 p-4">
+      <div className="grid grid-cols-2 md:grid-cols-2 gap-4 p-4">
         {projects.map((project) => (
-          <div key={project.id} className="flex flex-col gap-3 pb-3">
-            <h3>Nekometry</h3>
+          <div
+            key={project.id}
+            className="flex flex-col gap-4 p-4 shadow-md hover:shadow-lg"
+          >
             <a href={project.href} target="_blank">
-              <div
-                className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                style={{ backgroundImage: `url("${project.imageUrl}")` }}
-              ></div>
+              <h3 className="text-primary-700 text-lg font-medium mb-2">
+                {project.name}
+              </h3>
+              <img
+                src={project.imageUrl}
+                alt={project.name}
+                className="w-full h-auto rounded-lg "
+              />
               <div>
-                <p className="text-[#121416] text-base font-medium leading-normal">
-                  {project.name}
-                </p>
-                <p className="text-[#6a7581] text-sm font-normal leading-normal">
+                <p className="text-primary-900 text-sm font-normal py-2">
                   {project.description}
                 </p>
               </div>
