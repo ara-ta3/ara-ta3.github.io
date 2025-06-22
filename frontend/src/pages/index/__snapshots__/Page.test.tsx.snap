@@ -3,73 +3,20 @@
 exports[`Home Snapshot Test > render Home 1`] = `
 <DocumentFragment>
   <div
-    class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
+    class="flex size-full min-h-screen flex-col group/design-root overflow-x-hidden"
     style="font-family: "Work Sans", "Noto Sans", sans-serif;"
   >
     <div
-      class="layout-container flex h-full grow flex-col"
+      class="flex h-full grow flex-col min-h-screen"
     >
-      <header
-        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3"
-      >
-        <div
-          class="flex items-center gap-4 text-[#121416]"
-        >
-          <div
-            class="size-4"
-          >
-            <svg
-              fill="none"
-              viewBox="0 0 48 48"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"
-                fill="currentColor"
-              />
-            </svg>
-          </div>
-          <h2
-            class="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em]"
-          >
-            ara-ta3のポートフォリオ
-          </h2>
-        </div>
-        <div
-          class="flex flex-1 justify-end gap-8"
-        >
-          <div
-            class="flex items-center gap-9"
-          >
-            <a
-              class="text-[#121416] text-sm font-medium leading-normal"
-              href="#projects"
-            >
-              プロジェクト
-            </a>
-            <a
-              class="text-[#121416] text-sm font-medium leading-normal"
-              href="#articles"
-            >
-              記事
-            </a>
-            <a
-              class="text-[#121416] text-sm font-medium leading-normal"
-              href="#contact"
-            >
-              SNSアカウント
-            </a>
-          </div>
-        </div>
-      </header>
       <div
-        class="px-40 flex flex-1 justify-center py-5"
+        class="px-4 flex flex-1 justify-center py-4"
       >
         <div
-          class="layout-content-container flex flex-col max-w-[960px] flex-1"
+          class="flex flex-col max-w-[960px] flex-1"
         >
           <div
-            class="flex p-4 @container"
+            class="flex p-4"
           >
             <div
               class="flex w-full flex-col gap-4 items-center"
@@ -85,115 +32,94 @@ exports[`Home Snapshot Test > render Home 1`] = `
                   class="flex flex-col items-center justify-center justify-center"
                 >
                   <p
-                    class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center"
+                    class="text-primary-700 text-[22px] font-bold leading-tight tracking-[-0.015em] text-center"
                   >
                     ara-ta3
                   </p>
                   <p
-                    class="text-[#6a7581] text-base font-normal leading-normal text-center"
+                    class="text-primary-900 font-normal leading-normal text-center"
                   >
-                    ソフトウェアエンジニア
-                  </p>
-                  <p
-                    class="text-[#6a7581] text-base font-normal leading-normal text-center"
-                  >
-                    スケーラブルでユーザーフレンドリーなアプリケーションの構築に情熱を持つソフトウェアエンジニアです。React、Scala、ZIOなど様々な技術を使って開発しています。
+                    Scala、TypeScript、Goなどの型付言語が好きなWebエンジニアです。
                   </p>
                 </div>
               </div>
             </div>
           </div>
           <div
+            class="py-4"
             id="projects"
           >
             <h2
-              class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+              class="text-primary-700 text-xl font-bold px-4 py-2 "
             >
               プロジェクト
             </h2>
             <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-3 p-4"
+              class="grid grid-cols-2 md:grid-cols-2 gap-4 p-4"
             >
               <div
-                class="flex flex-col gap-3 pb-3"
+                class="flex flex-col gap-4 p-4 shadow-md hover:shadow-lg"
               >
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style="background-image: url(https://images.unsplash.com/photo-1518086834179-0d11d2b376c3?w=400&h=300&fit=crop);"
-                />
-                <div>
-                  <p
-                    class="text-[#121416] text-base font-medium leading-normal"
+                <a
+                  href="https://nekometry.web.app/"
+                  target="_blank"
+                >
+                  <h3
+                    class="text-primary-700 text-lg font-medium mb-2"
                   >
                     Nekometry
-                  </p>
-                  <p
-                    class="text-[#6a7581] text-sm font-normal leading-normal"
-                  >
-                    猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。
-                  </p>
-                </div>
-              </div>
-              <div
-                class="flex flex-col gap-3 pb-3"
-              >
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style="background-image: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop);"
-                />
-                <div>
-                  <p
-                    class="text-[#121416] text-base font-medium leading-normal"
-                  >
-                    個人ウェブサイト
-                  </p>
-                  <p
-                    class="text-[#6a7581] text-sm font-normal leading-normal"
-                  >
-                    React、Vike、TypeScriptを使用した静的サイト生成。
-                  </p>
-                </div>
+                  </h3>
+                  <img
+                    alt="Nekometry"
+                    class="w-full h-auto rounded-lg "
+                    src="/src/assets/images/nekometry.jpg"
+                  />
+                  <div>
+                    <p
+                      class="text-primary-900 text-sm font-normal py-2"
+                    >
+                      猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
           <div
+            class="py-4"
             id="articles"
           >
             <h2
-              class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+              class="text-primary-700 text-xl font-bold px-4 py-2 "
             >
               記事
             </h2>
-            <div
-              class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2 justify-between"
+            <a
+              href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-getting-started"
+              target="_blank"
             >
               <div
-                class="flex flex-col justify-center"
+                class="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between hover:shadow-lg transition-all duration-200"
               >
-                <p
-                  class="text-[#121416] text-base font-medium leading-normal line-clamp-1"
+                <div
+                  class="flex flex-col justify-center"
                 >
-                  TypeScript + Vike + SSG Getting Started
-                </p>
-                <p
-                  class="text-[#6a7581] text-sm font-normal leading-normal line-clamp-2"
-                >
-                  Vikeを使った静的サイト生成について
-                </p>
-              </div>
-              <div
-                class="shrink-0"
-              >
-                <a
-                  href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-getting-started"
-                  rel="noopener noreferrer"
-                  target="_blank"
+                  <p
+                    class="text-primary-700 text-base font-medium"
+                  >
+                    TypeScript + Vike + SSG Getting Started
+                  </p>
+                  <p
+                    class="text-primary-900 text-sm font-normal"
+                  >
+                    Vikeを使った静的サイト生成について
+                  </p>
+                </div>
+                <div
+                  class="shrink-0"
                 >
                   <div
-                    class="text-[#121416] flex size-7 items-center justify-center"
-                    data-icon="ArrowRight"
-                    data-size="24px"
-                    data-weight="regular"
+                    class="text-primary-900 flex size-8 items-center justify-center"
                   >
                     <svg
                       fill="currentColor"
@@ -207,39 +133,35 @@ exports[`Home Snapshot Test > render Home 1`] = `
                       />
                     </svg>
                   </div>
-                </a>
+                </div>
               </div>
-            </div>
-            <div
-              class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2 justify-between"
+            </a>
+            <a
+              href="https://arata.hatenadiary.com/entry/2025/01/09/174000"
+              target="_blank"
             >
               <div
-                class="flex flex-col justify-center"
+                class="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between hover:shadow-lg transition-all duration-200"
               >
-                <p
-                  class="text-[#121416] text-base font-medium leading-normal line-clamp-1"
+                <div
+                  class="flex flex-col justify-center"
                 >
-                  猫のカロリー計算ツールの開発
-                </p>
-                <p
-                  class="text-[#6a7581] text-sm font-normal leading-normal line-clamp-2"
-                >
-                  ペットの健康管理アプリケーション開発記
-                </p>
-              </div>
-              <div
-                class="shrink-0"
-              >
-                <a
-                  href="https://arata.hatenadiary.com/entry/2025/01/09/174000"
-                  rel="noopener noreferrer"
-                  target="_blank"
+                  <p
+                    class="text-primary-700 text-base font-medium"
+                  >
+                    猫のカロリー計算ツールの開発
+                  </p>
+                  <p
+                    class="text-primary-900 text-sm font-normal"
+                  >
+                    ペットの健康管理アプリケーション開発記
+                  </p>
+                </div>
+                <div
+                  class="shrink-0"
                 >
                   <div
-                    class="text-[#121416] flex size-7 items-center justify-center"
-                    data-icon="ArrowRight"
-                    data-size="24px"
-                    data-weight="regular"
+                    class="text-primary-900 flex size-8 items-center justify-center"
                   >
                     <svg
                       fill="currentColor"
@@ -253,39 +175,35 @@ exports[`Home Snapshot Test > render Home 1`] = `
                       />
                     </svg>
                   </div>
-                </a>
+                </div>
               </div>
-            </div>
-            <div
-              class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2 justify-between"
+            </a>
+            <a
+              href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-with-dynamic-routing"
+              target="_blank"
             >
               <div
-                class="flex flex-col justify-center"
+                class="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between hover:shadow-lg transition-all duration-200"
               >
-                <p
-                  class="text-[#121416] text-base font-medium leading-normal line-clamp-1"
+                <div
+                  class="flex flex-col justify-center"
                 >
-                  動的ルーティングでのSSG実装
-                </p>
-                <p
-                  class="text-[#6a7581] text-sm font-normal leading-normal line-clamp-2"
-                >
-                  メタ情報を含む静的サイト生成のノウハウ
-                </p>
-              </div>
-              <div
-                class="shrink-0"
-              >
-                <a
-                  href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-with-dynamic-routing"
-                  rel="noopener noreferrer"
-                  target="_blank"
+                  <p
+                    class="text-primary-700 text-base font-medium"
+                  >
+                    動的ルーティングでのSSG実装
+                  </p>
+                  <p
+                    class="text-primary-900 text-sm font-normal"
+                  >
+                    メタ情報を含む静的サイト生成のノウハウ
+                  </p>
+                </div>
+                <div
+                  class="shrink-0"
                 >
                   <div
-                    class="text-[#121416] flex size-7 items-center justify-center"
-                    data-icon="ArrowRight"
-                    data-size="24px"
-                    data-weight="regular"
+                    class="text-primary-900 flex size-8 items-center justify-center"
                   >
                     <svg
                       fill="currentColor"
@@ -299,17 +217,18 @@ exports[`Home Snapshot Test > render Home 1`] = `
                       />
                     </svg>
                   </div>
-                </a>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
           <div
+            class="py-4"
             id="contact"
           >
             <h2
-              class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+              class="text-primary-700 text-xl font-bold px-4 py-2 "
             >
-              SNSアカウント
+              アカウント
             </h2>
             <div
               class="@container"
@@ -319,36 +238,37 @@ exports[`Home Snapshot Test > render Home 1`] = `
               >
                 <a
                   href="https://x.com/ara_ta3"
-                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   <div
-                    class="flex flex-col items-center gap-2 bg-white py-2.5 text-center w-20"
+                    class="flex flex-col items-center gap-2 py-2 text-center w-24 "
                   >
                     <div
-                      class="rounded-full bg-[#f1f2f4] p-2.5"
+                      class="rounded-full bg-secondary-100 p-4"
                     >
                       <div
-                        class="text-[#121416]"
+                        class="text-primary-1000"
                         data-icon="SocialIcon"
-                        data-size="20px"
+                        data-size="24px"
                         data-weight="regular"
                       >
                         <svg
                           fill="currentColor"
-                          height="20px"
-                          viewBox="0 0 256 256"
-                          width="20px"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          width="1em"
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
-                            d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
                           />
                         </svg>
                       </div>
                     </div>
                     <p
-                      class="text-[#121416] text-sm font-medium leading-normal"
+                      class="text-primary-700 text-sm font-medium"
                     >
                       X (Twitter)
                     </p>
@@ -356,36 +276,37 @@ exports[`Home Snapshot Test > render Home 1`] = `
                 </a>
                 <a
                   href="https://github.com/ara-ta3"
-                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   <div
-                    class="flex flex-col items-center gap-2 bg-white py-2.5 text-center w-20"
+                    class="flex flex-col items-center gap-2 py-2 text-center w-24 "
                   >
                     <div
-                      class="rounded-full bg-[#f1f2f4] p-2.5"
+                      class="rounded-full bg-secondary-100 p-4"
                     >
                       <div
-                        class="text-[#121416]"
+                        class="text-primary-1000"
                         data-icon="SocialIcon"
-                        data-size="20px"
+                        data-size="24px"
                         data-weight="regular"
                       >
                         <svg
                           fill="currentColor"
-                          height="20px"
-                          viewBox="0 0 256 256"
-                          width="20px"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 496 512"
+                          width="1em"
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
-                            d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
                           />
                         </svg>
                       </div>
                     </div>
                     <p
-                      class="text-[#121416] text-sm font-medium leading-normal"
+                      class="text-primary-700 text-sm font-medium"
                     >
                       GitHub
                     </p>
@@ -393,36 +314,37 @@ exports[`Home Snapshot Test > render Home 1`] = `
                 </a>
                 <a
                   href="https://zenn.dev/ara_ta3"
-                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   <div
-                    class="flex flex-col items-center gap-2 bg-white py-2.5 text-center w-20"
+                    class="flex flex-col items-center gap-2 py-2 text-center w-24 "
                   >
                     <div
-                      class="rounded-full bg-[#f1f2f4] p-2.5"
+                      class="rounded-full bg-secondary-100 p-4"
                     >
                       <div
-                        class="text-[#121416]"
+                        class="text-primary-1000"
                         data-icon="SocialIcon"
-                        data-size="20px"
+                        data-size="24px"
                         data-weight="regular"
                       >
                         <svg
                           fill="currentColor"
-                          height="20px"
-                          viewBox="0 0 256 256"
-                          width="20px"
+                          height="1em"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 448 512"
+                          width="1em"
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
-                            d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"
+                            d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"
                           />
                         </svg>
                       </div>
                     </div>
                     <p
-                      class="text-[#121416] text-sm font-medium leading-normal"
+                      class="text-primary-700 text-sm font-medium"
                     >
                       Zenn
                     </p>
@@ -433,24 +355,24 @@ exports[`Home Snapshot Test > render Home 1`] = `
           </div>
         </div>
       </div>
-      <footer
-        class="flex justify-center"
+    </div>
+    <footer
+      class="flex justify-center py-12 bg-primary-50"
+    >
+      <div
+        class="flex flex-1 flex-col"
       >
         <div
-          class="flex max-w-[960px] flex-1 flex-col"
+          class="flex flex-col gap-6 text-center @container"
         >
-          <div
-            class="flex flex-col gap-6 px-5 py-10 text-center @container"
+          <p
+            class="text-primary-900 text-base font-normal leading-normal"
           >
-            <p
-              class="text-[#6a7581] text-base font-normal leading-normal"
-            >
-              © 2024 ara-ta3. All rights reserved.
-            </p>
-          </div>
+            © 2025 ara-ta3. All rights reserved.
+          </p>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </div>
 </DocumentFragment>
 `;
