@@ -1,60 +1,66 @@
 import React from "react";
-import { Card } from "flowbite-react";
 
 const Projects: React.FC = () => {
-  const tools = [
-    //    {
-    //      id: 1,
-    //      name: "24時間スケジューラー",
-    //      description: "1日のスケジュールを入力し、グラフで生成します。",
-    //      href: "/schedules/",
-    //    },
+  const projects = [
     {
       id: 1,
+      name: "個人ウェブサイト",
+      description: "React、Vike、TypeScriptを使用した静的サイト生成。",
+      imageUrl:
+        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
+      href: "https://github.com/ara-ta3/ara-ta3.github.io",
+    },
+    {
+      id: 2,
       name: "Nekometry",
-      ruby: "ネコメトリー",
       description:
         "猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。",
+      imageUrl:
+        "https://images.unsplash.com/photo-1518086834179-0d11d2b376c3?w=400&h=300&fit=crop",
       href: "https://nekometry.web.app/",
     },
+    {
+      id: 3,
+      name: "電力使用量可視化",
+      description: "D3.jsを使用したインタラクティブなデータ可視化ツール。",
+      imageUrl:
+        "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=300&fit=crop",
+      href: "/electricity/",
+    },
+    {
+      id: 4,
+      name: "スケジュール管理",
+      description: "効率的なスケジュール管理のためのウェブアプリケーション。",
+      imageUrl:
+        "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop",
+      href: "/schedules/",
+    },
   ];
+
   return (
-    <section id="projects" className="py-8 bg-base">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-4 text-center text-primary-500">
-          Personal Projects
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-          {tools.map((tool) => {
-            if (tool.ruby !== undefined) {
-              return (
-                <Card key={tool.id} className="w-full" href={tool.href}>
-                  <ruby>
-                    <h5 className="text-xl md:text-xl font-bold text-primary-500">
-                      {tool.name}
-                    </h5>
-                    <rt className="text-sm text-primary-700">{tool.ruby}</rt>
-                  </ruby>
-                  <p className="font-normal text-gray-700 text-primary-700">
-                    {tool.description}
-                  </p>
-                </Card>
-              );
-            }
-            return (
-              <Card key={tool.id} className="w-full" href={tool.href}>
-                <h5 className="text-xl md:text-xl font-bold text-primary-500">
-                  {tool.name}
-                </h5>
-                <p className="font-normal text-gray-700 text-primary-700">
-                  {tool.description}
-                </p>
-              </Card>
-            );
-          })}
-        </div>
+    <div id="projects">
+      <h2 className="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+        プロジェクト
+      </h2>
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+        {projects.map((project) => (
+          <div key={project.id} className="flex flex-col gap-3 pb-3">
+            <div
+              className="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+              style={{ backgroundImage: `url("${project.imageUrl}")` }}
+            ></div>
+            <div>
+              <p className="text-[#121416] text-base font-medium leading-normal">
+                {project.name}
+              </p>
+              <p className="text-[#6a7581] text-sm font-normal leading-normal">
+                {project.description}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 

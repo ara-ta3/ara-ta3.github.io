@@ -1,41 +1,33 @@
 import React from "react";
 
-import { Tooltip } from "flowbite-react";
+import Header from "@/components/Header";
+import Profile from "@/components/Profile";
 import Projects from "@/components/Projects";
-import Links from "@/components/Links";
+import Skills from "@/components/Skills";
 import RelatedArticles from "@/components/RelatedArticles";
-
-const PortfolioTop: React.FC = () => {
-  return (
-    <div className="h-[16vh] flex items-center justify-center bg-background">
-      <div className="text-center justify-center">
-        <h1 className="text-5xl font-bold text-primary-500 underline hover:text-secondary-500 flex justify-center">
-          <Tooltip
-            content={"Xに飛びます"}
-            placement="top"
-            className="block text-center"
-          >
-            <a href="https://x.com/ara_ta3" target="_blank">
-              ara-ta3
-            </a>
-          </Tooltip>
-        </h1>
-        <p className="text-lg text-primary-700 mt-4">
-          portfolioのように見える遊び場です
-        </p>
-      </div>
-    </div>
-  );
-};
+import Contact from "@/components/Links";
+import Footer from "@/components/Footer";
 
 const Home: React.FC = () => {
   return (
-    <>
-      <PortfolioTop />
-      <Projects />
-      <RelatedArticles />
-      <Links />
-    </>
+    <div
+      className="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
+      style={{ fontFamily: '"Work Sans", "Noto Sans", sans-serif' }}
+    >
+      <div className="layout-container flex h-full grow flex-col">
+        <Header />
+        <div className="px-40 flex flex-1 justify-center py-5">
+          <div className="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <Profile />
+            <Projects />
+            <Skills />
+            <RelatedArticles />
+            <Contact />
+          </div>
+        </div>
+        <Footer />
+      </div>
+    </div>
   );
 };
 

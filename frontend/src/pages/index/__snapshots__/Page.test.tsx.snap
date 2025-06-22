@@ -3,267 +3,729 @@
 exports[`Home Snapshot Test > render Home 1`] = `
 <DocumentFragment>
   <div
-    class="h-[16vh] flex items-center justify-center bg-background"
+    class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden"
+    style="font-family: "Work Sans", "Noto Sans", sans-serif;"
   >
     <div
-      class="text-center justify-center"
+      class="layout-container flex h-full grow flex-col"
     >
-      <h1
-        class="text-5xl font-bold text-primary-500 underline hover:text-secondary-500 flex justify-center"
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3"
       >
         <div
-          class="w-fit"
-          data-testid="flowbite-tooltip-target"
+          class="flex items-center gap-4 text-[#121416]"
         >
-          <a
-            href="https://x.com/ara_ta3"
-            target="_blank"
+          <div
+            class="size-4"
           >
-            ara-ta3
-          </a>
+            <svg
+              fill="none"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <h2
+            class="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em]"
+          >
+            ara-ta3のポートフォリオ
+          </h2>
         </div>
         <div
-          class="absolute z-10 rounded-lg px-3 py-2 text-sm font-medium shadow-sm transition-opacity duration-300 invisible opacity-0 bg-gray-900 text-white dark:bg-gray-700 block text-center"
-          data-testid="flowbite-tooltip"
-          id="«r0»"
-          role="tooltip"
-          style="position: absolute; top: 0px; left: 0px;"
-          tabindex="-1"
+          class="flex flex-1 justify-end gap-8"
         >
           <div
-            class="relative z-20"
+            class="flex items-center gap-9"
           >
-            Xに飛びます
-          </div>
-          <div
-            class="absolute z-10 h-2 w-2 rotate-45 bg-gray-900 dark:bg-gray-700"
-            data-testid="flowbite-tooltip-arrow"
-            style="bottom: -4px;"
-          >
-             
+            <a
+              class="text-[#121416] text-sm font-medium leading-normal"
+              href="#projects"
+            >
+              プロジェクト
+            </a>
+            <a
+              class="text-[#121416] text-sm font-medium leading-normal"
+              href="#skills"
+            >
+              スキル
+            </a>
+            <a
+              class="text-[#121416] text-sm font-medium leading-normal"
+              href="#articles"
+            >
+              アーティクル
+            </a>
+            <a
+              class="text-[#121416] text-sm font-medium leading-normal"
+              href="#contact"
+            >
+              お問い合わせ
+            </a>
           </div>
         </div>
-      </h1>
-      <p
-        class="text-lg text-primary-700 mt-4"
+      </header>
+      <div
+        class="px-40 flex flex-1 justify-center py-5"
       >
-        portfolioのように見える遊び場です
-      </p>
+        <div
+          class="layout-content-container flex flex-col max-w-[960px] flex-1"
+        >
+          <div
+            class="flex p-4 @container"
+          >
+            <div
+              class="flex w-full flex-col gap-4 items-center"
+            >
+              <div
+                class="flex gap-4 flex-col items-center"
+              >
+                <div
+                  class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
+                  style="background-image: url(https://github.com/ara-ta3.png);"
+                />
+                <div
+                  class="flex flex-col items-center justify-center justify-center"
+                >
+                  <p
+                    class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center"
+                  >
+                    ara-ta3
+                  </p>
+                  <p
+                    class="text-[#6a7581] text-base font-normal leading-normal text-center"
+                  >
+                    ソフトウェアエンジニア
+                  </p>
+                  <p
+                    class="text-[#6a7581] text-base font-normal leading-normal text-center"
+                  >
+                    スケーラブルでユーザーフレンドリーなアプリケーションの構築に情熱を持つソフトウェアエンジニアです。React、Scala、ZIOなど様々な技術を使って開発しています。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="projects"
+          >
+            <h2
+              class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              プロジェクト
+            </h2>
+            <div
+              class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+            >
+              <div
+                class="flex flex-col gap-3 pb-3"
+              >
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style="background-image: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop);"
+                />
+                <div>
+                  <p
+                    class="text-[#121416] text-base font-medium leading-normal"
+                  >
+                    個人ウェブサイト
+                  </p>
+                  <p
+                    class="text-[#6a7581] text-sm font-normal leading-normal"
+                  >
+                    React、Vike、TypeScriptを使用した静的サイト生成。
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-3 pb-3"
+              >
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style="background-image: url(https://images.unsplash.com/photo-1518086834179-0d11d2b376c3?w=400&h=300&fit=crop);"
+                />
+                <div>
+                  <p
+                    class="text-[#121416] text-base font-medium leading-normal"
+                  >
+                    Nekometry
+                  </p>
+                  <p
+                    class="text-[#6a7581] text-sm font-normal leading-normal"
+                  >
+                    猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-3 pb-3"
+              >
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style="background-image: url(https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=300&fit=crop);"
+                />
+                <div>
+                  <p
+                    class="text-[#121416] text-base font-medium leading-normal"
+                  >
+                    電力使用量可視化
+                  </p>
+                  <p
+                    class="text-[#6a7581] text-sm font-normal leading-normal"
+                  >
+                    D3.jsを使用したインタラクティブなデータ可視化ツール。
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-3 pb-3"
+              >
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style="background-image: url(https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop);"
+                />
+                <div>
+                  <p
+                    class="text-[#121416] text-base font-medium leading-normal"
+                  >
+                    スケジュール管理
+                  </p>
+                  <p
+                    class="text-[#6a7581] text-sm font-normal leading-normal"
+                  >
+                    効率的なスケジュール管理のためのウェブアプリケーション。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="skills"
+          >
+            <h2
+              class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              スキル
+            </h2>
+            <div
+              class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+            >
+              <div
+                class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 flex-col"
+              >
+                <div
+                  class="text-[#121416]"
+                  data-icon="SkillIcon"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="24px"
+                    viewBox="0 0 256 256"
+                    width="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M223.68,66.15,135.68,18a15.94,15.94,0,0,0-15.36,0l-88,48.18a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM168,152v50.09l-32,17.52V132.74l80-43.8v32l-43.84,24A8,8,0,0,0,168,152Zm-84.16-7L40,121v-32l80,43.8v86.87L88,202.09V152A8,8,0,0,0,83.84,145Zm-.7-88.41,41,22.45a8,8,0,0,0,7.68,0l41-22.45,34.48,18.87L128,118.88,48.66,75.44ZM128,32h0l28.2,15.44L128,62.89,99.8,47.45ZM40,139.22l32,17.52v36.59L40,175.82Zm144,54.11V156.74l32-17.52v36.6Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex flex-col gap-1"
+                >
+                  <h2
+                    class="text-[#121416] text-base font-bold leading-tight"
+                  >
+                    React
+                  </h2>
+                  <p
+                    class="text-[#6a7581] text-sm font-normal leading-normal"
+                  >
+                    ユーザーインターフェイスを構築するためのJavaScriptライブラリ。
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 flex-col"
+              >
+                <div
+                  class="text-[#121416]"
+                  data-icon="SkillIcon"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="24px"
+                    viewBox="0 0 256 256"
+                    width="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29L15.38,141.85a8,8,0,0,1,0-12.29L58.88,97.85a8,8,0,0,1,10.24,12.3Zm176,27.7-43.5-31.85a8,8,0,1,0-9.24,13.12L232,128l-39.64,24.88a8,8,0,0,0,9.24,13.12l43.5-31.85a8,8,0,0,0,0-13.3ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex flex-col gap-1"
+                >
+                  <h2
+                    class="text-[#121416] text-base font-bold leading-tight"
+                  >
+                    TypeScript
+                  </h2>
+                  <p
+                    class="text-[#6a7581] text-sm font-normal leading-normal"
+                  >
+                    型安全性を提供するJavaScriptのスーパーセット。
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 flex-col"
+              >
+                <div
+                  class="text-[#121416]"
+                  data-icon="SkillIcon"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="24px"
+                    viewBox="0 0 256 256"
+                    width="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M32,64a8,8,0,0,1,8-8H216a8,8,0,0,1,0,16H40A8,8,0,0,1,32,64Zm8,32H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,112H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,32H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Zm0,32H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex flex-col gap-1"
+                >
+                  <h2
+                    class="text-[#121416] text-base font-bold leading-tight"
+                  >
+                    Scala
+                  </h2>
+                  <p
+                    class="text-[#6a7581] text-sm font-normal leading-normal"
+                  >
+                    関数型プログラミングとオブジェクト指向を融合した言語。
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 flex-col"
+              >
+                <div
+                  class="text-[#121416]"
+                  data-icon="SkillIcon"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="24px"
+                    viewBox="0 0 256 256"
+                    width="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M128,24C74.17,24,32,48.6,32,80v96c0,31.4,42.17,56,96,56s96-24.6,96-56V80C224,48.6,181.83,24,128,24Zm80,104c0,9.62-7.88,19.43-21.61,26.92C170.93,163.35,150.19,168,128,168s-42.93-4.65-58.39-13.08C55.88,147.43,48,137.62,48,128V111.36c17.06,15.25,67.23,24.64,80,24.64s62.94-9.39,80-24.64ZM208,80c0,22.09-35.82,40-80,40S48,102.09,48,80s35.82-40,80-40S208,57.91,208,80ZM208,176c0,9.62-7.88,19.43-21.61,26.92C170.93,211.35,150.19,216,128,216s-42.93-4.65-58.39-13.08C55.88,195.43,48,185.62,48,176V159.36c17.06,15.25,67.23,24.64,80,24.64s62.94-9.39,80-24.64Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex flex-col gap-1"
+                >
+                  <h2
+                    class="text-[#121416] text-base font-bold leading-tight"
+                  >
+                    ZIO
+                  </h2>
+                  <p
+                    class="text-[#6a7581] text-sm font-normal leading-normal"
+                  >
+                    Scala用の非同期・並行プログラミングライブラリ。
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 flex-col"
+              >
+                <div
+                  class="text-[#121416]"
+                  data-icon="SkillIcon"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="24px"
+                    viewBox="0 0 256 256"
+                    width="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M160,40A88.09,88.09,0,0,0,81.29,88.67,64,64,0,0,0,72,216h88a88,88,0,0,0,0-176ZM160,200H72a48,48,0,0,1,0-96,8,8,0,0,0,8-8,72,72,0,0,1,144,0,72.08,72.08,0,0,1-64,71.6Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex flex-col gap-1"
+                >
+                  <h2
+                    class="text-[#121416] text-base font-bold leading-tight"
+                  >
+                    AWS
+                  </h2>
+                  <p
+                    class="text-[#6a7581] text-sm font-normal leading-normal"
+                  >
+                    クラウドコンピューティングサービスとインフラストラクチャ。
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 flex-col"
+              >
+                <div
+                  class="text-[#121416]"
+                  data-icon="SkillIcon"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="24px"
+                    viewBox="0 0 256 256"
+                    width="24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M236.55,149.42,194.05,120l42.5-29.42a8,8,0,0,0,0-13.16l-52-36a8,8,0,0,0-9.1,0L128,74.27,80.55,41.42a8,8,0,0,0-9.1,0l-52,36a8,8,0,0,0,0,13.16L62,120l-42.5,29.42a8,8,0,0,0,0,13.16l52,36a8,8,0,0,0,9.1,0L128,165.73l47.45,32.85a8,8,0,0,0,9.1,0l52-36a8,8,0,0,0,0-13.16ZM128,146.27,90.05,120l38-26.27L166,120Zm52-88.54L218,84,180,110.27,142.05,84Zm-104,0L114,84,76,110.27,38.05,84Zm0,124.54L38.05,156l38-26.27L114,156Zm104,0L142.05,156,180,129.73,218,156Zm-21.53,24.64a8,8,0,0,1-2,11.13l-23.89,16.54a8,8,0,0,1-9.1,0L99.56,218a8,8,0,0,1,9.1-13.16L128,218.27l19.34-13.39A8,8,0,0,1,158.47,206.91Z"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="flex flex-col gap-1"
+                >
+                  <h2
+                    class="text-[#121416] text-base font-bold leading-tight"
+                  >
+                    Docker
+                  </h2>
+                  <p
+                    class="text-[#6a7581] text-sm font-normal leading-normal"
+                  >
+                    アプリケーションをコンテナ化するためのプラットフォーム。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="articles"
+          >
+            <h2
+              class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              アーティクル
+            </h2>
+            <div
+              class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2 justify-between"
+            >
+              <div
+                class="flex flex-col justify-center"
+              >
+                <p
+                  class="text-[#121416] text-base font-medium leading-normal line-clamp-1"
+                >
+                  TypeScript + Vike + SSG Getting Started
+                </p>
+                <p
+                  class="text-[#6a7581] text-sm font-normal leading-normal line-clamp-2"
+                >
+                  Vikeを使った静的サイト生成について
+                </p>
+              </div>
+              <div
+                class="shrink-0"
+              >
+                <a
+                  href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-getting-started"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    class="text-[#121416] flex size-7 items-center justify-center"
+                    data-icon="ArrowRight"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="24px"
+                      viewBox="0 0 256 256"
+                      width="24px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2 justify-between"
+            >
+              <div
+                class="flex flex-col justify-center"
+              >
+                <p
+                  class="text-[#121416] text-base font-medium leading-normal line-clamp-1"
+                >
+                  猫のカロリー計算ツールの開発
+                </p>
+                <p
+                  class="text-[#6a7581] text-sm font-normal leading-normal line-clamp-2"
+                >
+                  ペットの健康管理アプリケーション開発記
+                </p>
+              </div>
+              <div
+                class="shrink-0"
+              >
+                <a
+                  href="https://arata.hatenadiary.com/entry/2025/01/09/174000"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    class="text-[#121416] flex size-7 items-center justify-center"
+                    data-icon="ArrowRight"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="24px"
+                      viewBox="0 0 256 256"
+                      width="24px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2 justify-between"
+            >
+              <div
+                class="flex flex-col justify-center"
+              >
+                <p
+                  class="text-[#121416] text-base font-medium leading-normal line-clamp-1"
+                >
+                  動的ルーティングでのSSG実装
+                </p>
+                <p
+                  class="text-[#6a7581] text-sm font-normal leading-normal line-clamp-2"
+                >
+                  メタ情報を含む静的サイト生成のノウハウ
+                </p>
+              </div>
+              <div
+                class="shrink-0"
+              >
+                <a
+                  href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-with-dynamic-routing"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    class="text-[#121416] flex size-7 items-center justify-center"
+                    data-icon="ArrowRight"
+                    data-size="24px"
+                    data-weight="regular"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="24px"
+                      viewBox="0 0 256 256"
+                      width="24px"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            id="contact"
+          >
+            <h2
+              class="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+            >
+              お問い合わせ
+            </h2>
+            <div
+              class="@container"
+            >
+              <div
+                class="gap-2 px-4 flex flex-wrap justify-start"
+              >
+                <a
+                  href="https://x.com/ara_ta3"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    class="flex flex-col items-center gap-2 bg-white py-2.5 text-center w-20"
+                  >
+                    <div
+                      class="rounded-full bg-[#f1f2f4] p-2.5"
+                    >
+                      <div
+                        class="text-[#121416]"
+                        data-icon="SocialIcon"
+                        data-size="20px"
+                        data-weight="regular"
+                      >
+                        <svg
+                          fill="currentColor"
+                          height="20px"
+                          viewBox="0 0 256 256"
+                          width="20px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p
+                      class="text-[#121416] text-sm font-medium leading-normal"
+                    >
+                      X (Twitter)
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/ara-ta3"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    class="flex flex-col items-center gap-2 bg-white py-2.5 text-center w-20"
+                  >
+                    <div
+                      class="rounded-full bg-[#f1f2f4] p-2.5"
+                    >
+                      <div
+                        class="text-[#121416]"
+                        data-icon="SocialIcon"
+                        data-size="20px"
+                        data-weight="regular"
+                      >
+                        <svg
+                          fill="currentColor"
+                          height="20px"
+                          viewBox="0 0 256 256"
+                          width="20px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p
+                      class="text-[#121416] text-sm font-medium leading-normal"
+                    >
+                      GitHub
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://zenn.dev/ara_ta3"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    class="flex flex-col items-center gap-2 bg-white py-2.5 text-center w-20"
+                  >
+                    <div
+                      class="rounded-full bg-[#f1f2f4] p-2.5"
+                    >
+                      <div
+                        class="text-[#121416]"
+                        data-icon="SocialIcon"
+                        data-size="20px"
+                        data-weight="regular"
+                      >
+                        <svg
+                          fill="currentColor"
+                          height="20px"
+                          viewBox="0 0 256 256"
+                          width="20px"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <p
+                      class="text-[#121416] text-sm font-medium leading-normal"
+                    >
+                      Zenn
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="flex justify-center"
+      >
+        <div
+          class="flex max-w-[960px] flex-1 flex-col"
+        >
+          <footer
+            class="flex flex-col gap-6 px-5 py-10 text-center @container"
+          >
+            <p
+              class="text-[#6a7581] text-base font-normal leading-normal"
+            >
+              © 2024 ara-ta3. All rights reserved.
+            </p>
+          </footer>
+        </div>
+      </footer>
     </div>
   </div>
-  <section
-    class="py-8 bg-base"
-    id="projects"
-  >
-    <div
-      class="container mx-auto px-4"
-    >
-      <h2
-        class="text-3xl font-bold mb-4 text-center text-primary-500"
-      >
-        Personal Projects
-      </h2>
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4"
-      >
-        <a
-          class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col hover:bg-gray-100 dark:hover:bg-gray-700 w-full"
-          data-testid="flowbite-card"
-          href="https://nekometry.web.app/"
-        >
-          <div
-            class="flex h-full flex-col justify-center gap-4 p-6"
-          >
-            <ruby>
-              <h5
-                class="text-xl md:text-xl font-bold text-primary-500"
-              >
-                Nekometry
-              </h5>
-              <rt
-                class="text-sm text-primary-700"
-              >
-                ネコメトリー
-              </rt>
-            </ruby>
-            <p
-              class="font-normal text-gray-700 text-primary-700"
-            >
-              猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。
-            </p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section
-    class="py-8 bg-base"
-    id="related-articles"
-  >
-    <div
-      class="container mx-auto px-4"
-    >
-      <h2
-        class="text-3xl font-bold mb-4 text-center text-primary-500"
-      >
-        Related Articles
-      </h2>
-      <div
-        class="grid grid-cols-1 lg:grid-cols-2 gap-4"
-      >
-        <a
-          href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-getting-started"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full h-36"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg font-bold text-primary-700"
-              >
-                TypeScript + Vike + SSG Getting Started
-              </h5>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://arata.hatenadiary.com/entry/2025/01/09/174000"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full h-36"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg font-bold text-primary-700"
-              >
-                猫にあげる1日の餌のカロリー量とフードのグラム数を計算出来るツールを書いた
-              </h5>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-with-dynamic-routing"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full h-36"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg font-bold text-primary-700"
-              >
-                TypeScript + Vite + Vikeの動的ルーティングのページにメタ情報を含めてSSGする
-              </h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <section
-    class="py-8 bg-base"
-    id="links"
-  >
-    <div
-      class="container mx-auto px-4"
-    >
-      <h2
-        class="text-3xl font-bold mb-4 text-center text-primary-500"
-      >
-        Links
-      </h2>
-      <div
-        class="grid grid-cols-2 lg:grid-cols-4 gap-4"
-      >
-        <a
-          href="https://x.com/ara_ta3"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg text-center font-bold text-primary-700"
-              >
-                X(Twitter)
-              </h5>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://github.com/ara-ta3"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg text-center font-bold text-primary-700"
-              >
-                GitHub
-              </h5>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://zenn.dev/ara_ta3"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg text-center font-bold text-primary-700"
-              >
-                zenn.dev
-              </h5>
-            </div>
-          </div>
-        </a>
-        <a
-          href="https://arata.hatenadiary.com/"
-          target="_blank"
-        >
-          <div
-            class="flex rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col w-full"
-            data-testid="flowbite-card"
-          >
-            <div
-              class="flex h-full flex-col justify-center gap-4 p-6"
-            >
-              <h5
-                class="text-base md:text-lg text-center font-bold text-primary-700"
-              >
-                はてなブログ
-              </h5>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
 </DocumentFragment>
 `;

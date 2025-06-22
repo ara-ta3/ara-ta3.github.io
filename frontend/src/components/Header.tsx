@@ -1,74 +1,55 @@
 import React from "react";
-import { MegaMenu, Navbar } from "flowbite-react";
-import Logo from "@/assets/images/logo.png";
-
-const MenuListItem: React.FC<{ href: string; title: string }> = (props) => {
-  return (
-    <li>
-      <a
-        href={props.href}
-        className="hover:text-secondary-500 hover:font-bold text-primary-500"
-      >
-        {props.title}
-      </a>
-    </li>
-  );
-};
-
-const SubMenuListItem: React.FC<{ href: string; title: string }> = (props) => {
-  return (
-    <li>
-      <a
-        href={props.href}
-        className="text-primary-700 hover:text-secondary-700 ml-4 hover:font-bold"
-      >
-        {props.title}
-      </a>
-    </li>
-  );
-};
 
 const Header: React.FC = () => {
   return (
-    <Navbar fluid rounded className="bg-base text-primary-500">
-      <Navbar.Brand href="/">
-        <Navbar.Brand href="/">
-          <img src={Logo} className="mr-3 h-6 sm:h-9" alt="ara-ta3 page Logo" />
-        </Navbar.Brand>
-      </Navbar.Brand>
-      <Navbar.Toggle />
-      <Navbar.Collapse>
-        <MegaMenu.Dropdown toggle={<>Tools</>}>
-          <ul className="grid grid-cols-3">
-            <div className="space-y-4 p-4">
-              <MenuListItem
-                href="https://nekometry.web.app/"
-                title="猫のカロリー計算"
-              />
-              <SubMenuListItem
-                href="https://nekometry.web.app/calorie/foods/"
-                title="対応フード一覧"
-              />
-              <SubMenuListItem
-                href="https://nekometry.web.app/calorie/transition/"
-                title="フード切り替えプラン"
-              />
-              <SubMenuListItem
-                href="https://nekometry.web.app/calorie/reference/"
-                title="参考文献"
-              />
-            </div>
-          </ul>
-        </MegaMenu.Dropdown>
-        <Navbar.Link
-          href="https://github.com/ara-ta3/ara-ta3.github.io"
-          target="_blank"
-          className="text-primary-500 hover:text-secondary-500"
-        >
-          GitHub
-        </Navbar.Link>
-      </Navbar.Collapse>
-    </Navbar>
+    <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f1f2f4] px-10 py-3">
+      <div className="flex items-center gap-4 text-[#121416]">
+        <div className="size-4">
+          <svg
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+        <h2 className="text-[#121416] text-lg font-bold leading-tight tracking-[-0.015em]">
+          ara-ta3のポートフォリオ
+        </h2>
+      </div>
+      <div className="flex flex-1 justify-end gap-8">
+        <div className="flex items-center gap-9">
+          <a
+            className="text-[#121416] text-sm font-medium leading-normal"
+            href="#projects"
+          >
+            プロジェクト
+          </a>
+          <a
+            className="text-[#121416] text-sm font-medium leading-normal"
+            href="#skills"
+          >
+            スキル
+          </a>
+          <a
+            className="text-[#121416] text-sm font-medium leading-normal"
+            href="#articles"
+          >
+            アーティクル
+          </a>
+          <a
+            className="text-[#121416] text-sm font-medium leading-normal"
+            href="#contact"
+          >
+            お問い合わせ
+          </a>
+        </div>
+      </div>
+    </header>
   );
 };
+
 export default Header;
