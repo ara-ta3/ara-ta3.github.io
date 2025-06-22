@@ -1,6 +1,6 @@
 import React from "react";
 import Nekometry from "@/assets/images/nekometry.jpg";
-import { HeadingTitle } from "./Heading";
+import { HeadingTitle } from "@/components/Heading";
 
 const Projects: React.FC = () => {
   const projects = [
