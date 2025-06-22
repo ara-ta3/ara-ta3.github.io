@@ -1,9 +1,5 @@
 import React from "react";
-
-interface ProjectDetail {
-  label: string;
-  value: string;
-}
+import type { ProjectDetail } from "@/types/project";
 
 interface ProjectDetailsProps {
   details: ProjectDetail[];
