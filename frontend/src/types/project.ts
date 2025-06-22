@@ -10,7 +10,7 @@ export interface Project {
   overview: string;
   technologies: string[];
   details: ProjectDetail[];
-  screenshots: string[];
+  imageUrl?: string;
   demoUrl?: string;
   buttonText?: string;
 }

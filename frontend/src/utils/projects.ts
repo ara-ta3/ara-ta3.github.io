@@ -1,8 +1,8 @@
 import type { Project } from "@/types/project";
-import projectsData from "@/data/projects.json";
+import { projects } from "@/data/projects";
 
 export function getAllProjects(): Project[] {
-  return projectsData as Project[];
+  return projects;
 }
 
 export function getProjectById(id: string): Project | undefined {

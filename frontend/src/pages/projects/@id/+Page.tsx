@@ -27,7 +27,7 @@ const ProjectDetailPage: React.FC = () => {
             />
             <TechnologiesSection technologies={project.technologies} />
             <ProjectDetails details={project.details} />
-            <ScreenshotGallery screenshots={project.screenshots} />
+            <ScreenshotGallery imageUrl={project.imageUrl} />
             <DemoButton
               demoUrl={project.demoUrl}
               buttonText={project.buttonText}
