@@ -61,16 +61,16 @@ exports[`Home Snapshot Test > render Home 1`] = `
                 class="flex flex-col gap-4 p-4 shadow-md hover:shadow-lg"
               >
                 <a
-                  href="https://nekometry.web.app/"
+                  href="projects/nekometry"
                   target="_blank"
                 >
                   <h3
                     class="text-primary-700 text-lg font-medium mb-2"
                   >
-                    Nekometry
+                    キャットフードカロリー計算ツール(Nekometry)
                   </h3>
                   <img
-                    alt="Nekometry"
+                    alt="キャットフードカロリー計算ツール(Nekometry)"
                     class="w-full h-auto rounded-lg "
                     src="/src/assets/images/nekometry.jpg"
                   />
@@ -78,7 +78,7 @@ exports[`Home Snapshot Test > render Home 1`] = `
                     <p
                       class="text-primary-900 text-sm font-normal py-2"
                     >
-                      猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。
+                      ペットの健康管理を支援するWebアプリケーション
                     </p>
                   </div>
                 </a>
