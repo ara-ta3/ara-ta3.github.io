@@ -19,19 +19,15 @@ const Header: React.FC = () => {
   return (
     <header className="flex items-center justify-between border-b border-solid border-b px-8 py-4 sticky top-0 z-50 bg-white">
       <div className="flex items-center gap-4 ">
-        <a href="/">
-          <img
-            src={Logo}
-            alt="Logo"
-            className="w-24 hover:opacity-80 transition-opacity"
-          />
-        </a>
+        <div>
+          <img src={Logo} alt="Logo" className="w-24" />
+        </div>
       </div>
       <div className="flex flex-1 justify-end gap-8">
         <div className="flex items-center gap-9">
-          <HeaderMenuItem href="/projects">プロジェクト</HeaderMenuItem>
-          <HeaderMenuItem href="/#articles">記事</HeaderMenuItem>
-          <HeaderMenuItem href="/#contact">SNSアカウント</HeaderMenuItem>
+          <HeaderMenuItem href="#project">プロジェクト</HeaderMenuItem>
+          <HeaderMenuItem href="#articles">記事</HeaderMenuItem>
+          <HeaderMenuItem href="#contact">SNSアカウント</HeaderMenuItem>
         </div>
       </div>
     </header>
