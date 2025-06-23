@@ -61,7 +61,7 @@ exports[`Home Snapshot Test > render Home 1`] = `
                 class="flex flex-col gap-4 p-4 shadow-md hover:shadow-lg"
               >
                 <a
-                  href="projects/nekometry"
+                  href="https://nekometry.web.app/"
                   target="_blank"
                 >
                   <h3
@@ -78,7 +78,7 @@ exports[`Home Snapshot Test > render Home 1`] = `
                     <p
                       class="text-primary-900 text-sm font-normal py-2"
                     >
-                      ペットの健康管理を支援するWebアプリケーション
+                      猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。
                     </p>
                   </div>
                 </a>
