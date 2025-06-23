@@ -39,6 +39,7 @@ export const projects: Project[] = [
       "Tailwind CSS",
       "Flowbite",
       "Firebase",
+      "FireStore"
     ],
     details: [
       { label: "Project Type", value: "健康管理ツール" },

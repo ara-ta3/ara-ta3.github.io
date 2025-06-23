@@ -6,8 +6,8 @@ interface TechnologiesSectionProps {
 
 const TechnologyTag: React.FC<{ technology: string }> = ({ technology }) => {
   return (
-    <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f5] pl-4 pr-4">
-      <p className="text-[#111418] text-sm font-medium leading-normal">
+    <div className="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary-100 pl-4 pr-4">
+      <p className="text-primary-700 text-sm font-medium leading-normal">
         {technology}
       </p>
     </div>
@@ -19,10 +19,10 @@ const TechnologiesSection: React.FC<TechnologiesSectionProps> = ({
 }) => {
   return (
     <div className="flex flex-col gap-3">
-      <h3 className="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">
+      <h3 className="text-primary-900 text-xl font-bold leading-tight px-4 py-2">
         Technologies Used
       </h3>
-      <div className="flex gap-3 p-3 flex-wrap pr-4">
+      <div className="flex gap-3 p-2 flex-wrap px-4">
         {technologies.map((tech) => (
           <TechnologyTag key={tech} technology={tech} />
         ))}
