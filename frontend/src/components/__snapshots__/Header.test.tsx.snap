@@ -32,13 +32,13 @@ exports[`Header Snapshot Test > render headers 1`] = `
         </a>
         <a
           class="text-primary-500 hover:text-primary-700 text-sm font-medium leading-normal"
-          href="#articles"
+          href="/#articles"
         >
           記事
         </a>
         <a
           class="text-primary-500 hover:text-primary-700 text-sm font-medium leading-normal"
-          href="#contact"
+          href="/#contact"
         >
           SNSアカウント
         </a>

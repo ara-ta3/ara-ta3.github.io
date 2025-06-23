@@ -10,7 +10,7 @@ const ScreenshotGallery: React.FC<ScreenshotGalleryProps> = ({ imageUrl }) => {
   return (
     <div className="flex flex-col gap-3">
       <h3 className="text-primary-900 text-xl font-bold leading-tight px-4 py-4">
-        Image
+        イメージ
       </h3>
       <div className="flex w-full grow bg-white @container p-4">
         <div className="w-full gap-1 overflow-hidden bg-white rounded-lg grid grid-cols-1">

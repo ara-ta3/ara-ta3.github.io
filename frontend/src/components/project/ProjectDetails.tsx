@@ -22,7 +22,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ details }) => {
   return (
     <div className="flex flex-col gap-3">
       <h3 className="text-primary-900 text-xl font-bold leading-tight px-4 py-4">
-        Project Details
+        プロジェクトについて
       </h3>
       <div className="grid grid-cols-2 gap-x-4 px-4">
         {details.map((detail, index) => (

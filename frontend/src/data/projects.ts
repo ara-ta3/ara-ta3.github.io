@@ -45,7 +45,7 @@ export const projects: Project[] = [
       { label: "Project Type", value: "健康管理ツール" },
       { label: "Hosting", value: "Firebase Hosting" },
       { label: "CI/CD", value: "GitHub Actions" },
-      { label: "Target Users", value: "猫の飼い主" },
+      { label: "対象ユーザ", value: "猫の飼い主" },
     ],
     imageUrl: Nekometry as string,
     demoUrl: "https://nekometry.web.app/",
