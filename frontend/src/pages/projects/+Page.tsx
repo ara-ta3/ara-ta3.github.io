@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { getAllProjects } from "@/utils/projects";
 import type { Project } from "@/types/project";
 
@@ -74,6 +75,16 @@ const ProjectsPage: React.FC = () => {
         <div className="px-40 flex flex-1 justify-center py-4">
           <div className="flex flex-col gap-6 p-4">
             <div className="text-center">
+              <Breadcrumb
+                items={[
+                  {
+                    name: "プロジェクト",
+                    url: "/projects/",
+                    isLast: true,
+                  },
+                ]}
+              />
+
               <h1 className="text-3xl font-bold text-primary-900">
                 趣味プロジェクト一覧
               </h1>
