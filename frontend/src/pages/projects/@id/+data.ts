@@ -1,4 +1,4 @@
-import { getProjectById, getAllProjectIds } from "@/utils/projects";
+import { getProjectById } from "@/utils/projects";
 import type { Project } from "@/types/project";
 
 export type Data = {
@@ -16,9 +16,4 @@ export default function data(pageContext: { routeParams: { id: string } }) {
   return {
     project,
   };
-}
-
-export function prerender() {
-  const projectIds = getAllProjectIds();
-  return projectIds.map((id) => `/projects/${id}`);
 }
