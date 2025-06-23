@@ -1,9 +1,19 @@
 import React from "react";
 import { HeadingTitle } from "@/components/Heading";
-import { getAllProjects } from "@/utils/projects";
+import Nekometry from "@/assets/images/nekometry.jpg";
 
 const Projects: React.FC = () => {
-  const projects = getAllProjects().filter((p) => p.imageUrl !== undefined);
+  const projects = [
+    {
+      id: 1,
+      name: "Nekometry",
+      description:
+        "猫の体重と活動レベルからRER/DERとごはんの必要な量を計算します。",
+      imageUrl: Nekometry as string,
+      href: "https://nekometry.web.app/",
+    },
+  ];
+
   return (
     <div id="projects" className="py-4">
       <HeadingTitle title="プロジェクト" />
@@ -13,13 +23,13 @@ const Projects: React.FC = () => {
             key={project.id}
             className="flex flex-col gap-4 p-4 shadow-md hover:shadow-lg"
           >
-            <a href={`projects/${project.id}`} target="_blank">
+            <a href={project.href} target="_blank">
               <h3 className="text-primary-700 text-lg font-medium mb-2">
-                {project.title}
+                {project.name}
               </h3>
               <img
                 src={project.imageUrl}
-                alt={project.title}
+                alt={project.name}
                 className="w-full h-auto rounded-lg "
               />
               <div>
