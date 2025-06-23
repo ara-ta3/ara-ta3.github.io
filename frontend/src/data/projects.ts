@@ -4,7 +4,7 @@ import Nekometry from "@/assets/images/nekometry.jpg";
 export const projects: Project[] = [
   {
     id: "personal-website",
-    title: "個人ウェブサイト（ara-ta3.github.io）",
+    title: "個人ウェブサイト(ara-ta3.github.io)",
     description: "Vite+Vikeを使用したSSGによる個人ポートフォリオサイト",
     overview:
       "このサイトは個人のポートフォリオを紹介する気持ちを持ちながら、フロントエンドの技術をお試しするページです。",
@@ -27,8 +27,9 @@ export const projects: Project[] = [
   },
   {
     id: "nekometry",
-    title: "キャットフードカロリー計算ツール(Nekometry)",
+    title: "Nekometry",
     description: "ペットの健康管理を支援するWebアプリケーション",
+
     overview:
       "猫の健康管理をサポートするカロリー計算ツールです。猫の体重、年齢、活動レベルに基づいて適切な一日の摂取カロリーを計算し、飼い主がペットの健康状態を把握できるよう支援します。",
     technologies: [
