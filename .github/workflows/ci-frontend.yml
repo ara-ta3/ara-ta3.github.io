@@ -17,14 +17,10 @@ jobs:
       - run: echo "/home/runner/.local/share/pnpm:$PATH" >> $GITHUB_PATH
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
-          node-version: 20
+          node-version: 22
           cache: "pnpm"
 
-      - name: Install
-        run: make install
-
-      - name: Lint
-        run: make lint
-
-      - name: Test
-        run: make test
+      - run: make install
+      - run: make lint
+      - run: make test
+      - run: make build
