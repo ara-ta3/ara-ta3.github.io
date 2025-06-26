@@ -1,7 +1,6 @@
-import React from "react";
-import Footer from "@/components/Footer";
-import Breadcrumb from "@/components/Breadcrumb";
+import React, { useEffect } from "react";
 import { getAllProjects } from "@/utils/projects";
+import { useBreadcrumbStore } from "@/stores/breadcrumbStore";
 import type { Project } from "@/types/project";
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
@@ -68,37 +67,33 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
 
 const ProjectsPage: React.FC = () => {
   const projects = getAllProjects();
+  const setBreadcrumbItems = useBreadcrumbStore(
+    (state) => state.setBreadcrumbItems,
+  );
+
+  useEffect(() => {
+    setBreadcrumbItems([
+      {
+        name: "プロジェクト",
+        url: "/projects/",
+        isLast: true,
+      },
+    ]);
+  }, [setBreadcrumbItems]);
 
   return (
-    <div className="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
-      <div className="layout-container flex h-full grow flex-col">
-        <div className="px-40 flex flex-1 justify-center py-4">
-          <div className="flex flex-col gap-6 p-4">
-            <div className="text-center">
-              <Breadcrumb
-                items={[
-                  {
-                    name: "プロジェクト",
-                    url: "/projects/",
-                    isLast: true,
-                  },
-                ]}
-              />
-
-              <h1 className="text-3xl font-bold text-primary-900">
-                趣味プロジェクト一覧
-              </h1>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {projects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-              ))}
-            </div>
-          </div>
-        </div>
+    <>
+      <div className="text-center mb-6">
+        <h1 className="text-3xl font-bold text-primary-900">
+          趣味プロジェクト一覧
+        </h1>
       </div>
-      <Footer />
-    </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
+      </div>
+    </>
   );
 };
 

@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
             key={project.id}
             className="flex flex-col gap-4 p-4 shadow-md hover:shadow-lg"
           >
-            <a href={`projects/${project.id}`} target="_blank">
+            <a href={`projects/${project.id}`}>
               <h3 className="text-primary-700 text-lg font-medium mb-2">
                 {project.title}
               </h3>
