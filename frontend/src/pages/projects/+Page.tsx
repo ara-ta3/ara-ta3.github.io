@@ -1,6 +1,6 @@
-import React from "react";
-import Breadcrumb from "@/components/Breadcrumb";
+import React, { useEffect } from "react";
 import { getAllProjects } from "@/utils/projects";
+import { useBreadcrumbStore } from "@/stores/breadcrumbStore";
 import type { Project } from "@/types/project";
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
@@ -67,19 +67,22 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
 
 const ProjectsPage: React.FC = () => {
   const projects = getAllProjects();
+  const setBreadcrumbItems = useBreadcrumbStore(
+    (state) => state.setBreadcrumbItems,
+  );
+
+  useEffect(() => {
+    setBreadcrumbItems([
+      {
+        name: "プロジェクト",
+        url: "/projects/",
+        isLast: true,
+      },
+    ]);
+  }, [setBreadcrumbItems]);
 
   return (
     <>
-      <Breadcrumb
-        items={[
-          {
-            name: "プロジェクト",
-            url: "/projects/",
-            isLast: true,
-          },
-        ]}
-      />
-
       <div className="text-center mb-6">
         <h1 className="text-3xl font-bold text-primary-900">
           趣味プロジェクト一覧
