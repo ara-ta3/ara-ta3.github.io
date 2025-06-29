@@ -42,7 +42,9 @@ export async function fetchAllArticles(): Promise<Article[]> {
   return fetchAllArticlesWithLimit(10);
 }
 
-export async function fetchAllArticlesWithLimit(limit: number): Promise<Article[]> {
+export async function fetchAllArticlesWithLimit(
+  limit: number,
+): Promise<Article[]> {
   const allArticlesPromises = RSS_FEEDS.map(({ url, source }) =>
     fetchRSSFeed(url, source),
   );

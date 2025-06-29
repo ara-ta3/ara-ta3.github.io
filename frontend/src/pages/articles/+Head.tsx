@@ -8,10 +8,7 @@ export function Head() {
         name="description"
         content="ara-ta3の技術ブログ記事一覧。はてなブログとZennで投稿した記事をまとめて表示しています。"
       />
-      <meta
-        property="og:title"
-        content="記事一覧 | ara-ta3のページ"
-      />
+      <meta property="og:title" content="記事一覧 | ara-ta3のページ" />
       <meta
         property="og:description"
         content="ara-ta3の技術ブログ記事一覧。はてなブログとZennで投稿した記事をまとめて表示しています。"
