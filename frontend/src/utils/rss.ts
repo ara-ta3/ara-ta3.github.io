@@ -39,6 +39,12 @@ async function fetchRSSFeed(
 }
 
 export async function fetchAllArticles(): Promise<Article[]> {
+  return fetchAllArticlesWithLimit(10);
+}
+
+export async function fetchAllArticlesWithLimit(
+  limit: number,
+): Promise<Article[]> {
   const allArticlesPromises = RSS_FEEDS.map(({ url, source }) =>
     fetchRSSFeed(url, source),
   );
@@ -54,5 +60,5 @@ export async function fetchAllArticles(): Promise<Article[]> {
 
   return allArticles
     .sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime())
-    .slice(0, 10);
+    .slice(0, limit);
 }
