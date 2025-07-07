@@ -9,6 +9,9 @@ install:
 server:
 	$(PNPM) -C $(WEB_DIR) exec vike dev
 
+server/build: build
+	$(PNPM) -C $(WEB_DIR) exec http-server dist/client -p 3000
+
 build:
 	$(PNPM) -C $(WEB_DIR) exec vike build
 	$(MAKE) $(DIST_DIR)/client/sitemap/sitemap.xml
