@@ -1,12 +1,7 @@
 import React from "react";
 import { Breadcrumb as FlowbiteBreadcrumb } from "flowbite-react";
 import { HiHome } from "react-icons/hi";
-
-interface BreadcrumbItem {
-  name: string;
-  url: string;
-  isLast?: boolean;
-}
+import { BreadcrumbItem } from "@/hooks/useBreadcrumbs";
 
 interface BreadcrumbProps {
   items: BreadcrumbItem[];

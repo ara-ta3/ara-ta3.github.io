@@ -16,12 +16,6 @@ const Head: React.FC = () => {
           description: "時間配分を円グラフで視覚化するスケジュール管理ツール",
           url: "https://ara-ta3.github.io/schedules/",
           type: "SoftwareApplication",
-          breadcrumbs: [
-            {
-              name: "スケジュール管理",
-              url: "https://ara-ta3.github.io/schedules/",
-            },
-          ],
         }}
       />
     </>

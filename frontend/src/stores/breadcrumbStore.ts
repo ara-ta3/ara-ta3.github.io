@@ -1,10 +1,5 @@
 import { create } from "zustand";
-
-export interface BreadcrumbItem {
-  name: string;
-  url: string;
-  isLast: boolean;
-}
+import { BreadcrumbItem } from "@/hooks/useBreadcrumbs";
 
 interface BreadcrumbState {
   items: BreadcrumbItem[];

@@ -1,15 +1,9 @@
 import React from "react";
 
-interface BreadcrumbItem {
-  name: string;
-  url: string;
-}
-
 interface WebPageData {
   title: string;
   description: string;
   url: string;
-  breadcrumbs?: BreadcrumbItem[];
   type?: "WebSite" | "WebPage" | "Person" | "SoftwareApplication";
 }
 
@@ -48,19 +42,6 @@ const StructuredData: React.FC<StructuredDataProps> = ({ data }) => {
     },
   };
 
-  const breadcrumbSchema = data.breadcrumbs
-    ? {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        itemListElement: data.breadcrumbs.map((item, index) => ({
-          "@type": "ListItem",
-          position: index + 1,
-          name: item.name,
-          item: item.url,
-        })),
-      }
-    : null;
-
   return (
     <>
       <script
@@ -75,14 +56,6 @@ const StructuredData: React.FC<StructuredDataProps> = ({ data }) => {
           __html: JSON.stringify(webPageSchema),
         }}
       />
-      {breadcrumbSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(breadcrumbSchema),
-          }}
-        />
-      )}
     </>
   );
 };
