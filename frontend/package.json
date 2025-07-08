@@ -44,7 +44,7 @@
     "typescript-eslint": "8.36.0",
     "vike": "0.4.235",
     "vike-react": "0.6.4",
-    "vite": "7.0.2",
+    "vite": "7.0.3",
     "vitest": "3.2.4"
   }
 }
