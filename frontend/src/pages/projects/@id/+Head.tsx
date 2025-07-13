@@ -9,7 +9,7 @@ const Head: React.FC = () => {
   return (
     <>
       <Common />
-      <title>{project.title} | ara-ta3.github.io</title>
+      <title>{`${project.title} | ara-ta3.github.io`}</title>
       <meta name="description" content={project.description} />
       <meta
         property="og:title"

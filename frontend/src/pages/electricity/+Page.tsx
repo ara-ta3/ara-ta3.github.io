@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Table } from "flowbite-react";
-import Breadcrumb from "@/components/Breadcrumb";
+import BreadcrumbWithSchema from "@/components/BreadcrumbWithSchema";
 import useLocalStorage from "@/hooks/useLocalStorage";
 
 interface ChargeBreakdown {
@@ -135,11 +135,7 @@ const ElectricityComparison: React.FC = () => {
 
   return (
     <section className="container mx-auto px-4 py-8">
-      <Breadcrumb
-        items={[
-          { name: "電気代比較ツール", url: "/electricity/", isLast: true },
-        ]}
-      />
+      <BreadcrumbWithSchema pathname="/electricity/" />
       <h1 className="text-3xl font-bold mb-4 text-center text-primary-500">
         電気代比較ツール
       </h1>
