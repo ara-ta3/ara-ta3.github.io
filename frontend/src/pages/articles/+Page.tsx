@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useData } from "vike-react/useData";
-import { useBreadcrumbStore } from "@/stores/breadcrumbStore";
+import BreadcrumbWithSchema from "@/components/BreadcrumbWithSchema";
 import type { Data } from "@/pages/articles/+data";
 import type { Article } from "@/utils/rss";
 
@@ -55,22 +55,10 @@ const ArticleCard: React.FC<{ article: Article }> = ({ article }) => {
 
 const ArticlesPage: React.FC = () => {
   const { articles } = useData<Data>();
-  const setBreadcrumbItems = useBreadcrumbStore(
-    (state) => state.setBreadcrumbItems,
-  );
-
-  useEffect(() => {
-    setBreadcrumbItems([
-      {
-        name: "記事一覧",
-        url: "/articles/",
-        isLast: true,
-      },
-    ]);
-  }, [setBreadcrumbItems]);
 
   return (
     <>
+      <BreadcrumbWithSchema pathname="/articles/" />
       <div className="text-center mb-6">
         <h1 className="text-3xl font-bold text-primary-900">記事一覧</h1>
         <p className="text-primary-500 mt-2">

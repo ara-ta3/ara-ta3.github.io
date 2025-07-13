@@ -13,20 +13,12 @@ const BreadcrumbSchema: React.FC<BreadcrumbSchemaProps> = ({ items }) => {
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "ホーム",
-        item: baseUrl,
-      },
-      ...items.map((item, index) => ({
-        "@type": "ListItem",
-        position: index + 2,
-        name: item.name,
-        item: item.url.startsWith("http") ? item.url : `${baseUrl}${item.url}`,
-      })),
-    ],
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url.startsWith("http") ? item.url : `${baseUrl}${item.url}`,
+    })),
   };
 
   return (

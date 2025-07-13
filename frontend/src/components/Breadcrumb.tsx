@@ -13,14 +13,12 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
   return (
     <nav className="mb-4">
       <FlowbiteBreadcrumb>
-        <FlowbiteBreadcrumb.Item href="/" icon={HiHome}>
-          ホーム
-        </FlowbiteBreadcrumb.Item>
         {items.map((item, index) => (
           <FlowbiteBreadcrumb.Item
             key={index}
             href={item.isLast ? undefined : item.url}
             className={item.isLast ? "text-gray-500" : ""}
+            icon={index === 0 ? HiHome : undefined}
           >
             {item.name}
           </FlowbiteBreadcrumb.Item>
