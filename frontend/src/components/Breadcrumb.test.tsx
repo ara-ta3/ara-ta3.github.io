@@ -1,7 +1,7 @@
 import React from "react";
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
-import Breadcrumb from "./Breadcrumb";
+import Breadcrumb from "@/components/Breadcrumb";
 import type { BreadcrumbItem } from "@/hooks/useBreadcrumbs";
 
 describe("Breadcrumb", () => {
@@ -46,7 +46,7 @@ describe("Breadcrumb", () => {
 
     const lastItem = screen.getByText("現在のページ");
     expect(lastItem.closest("a")).toBeNull();
-    
+
     const homeLink = screen.getByText("ホーム").closest("a");
     expect(homeLink).toHaveAttribute("href", "/");
   });

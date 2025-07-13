@@ -1,7 +1,7 @@
 import React from "react";
 import { describe, it, expect } from "vitest";
 import { render } from "@testing-library/react";
-import BreadcrumbSchema from "./BreadcrumbSchema";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import type { BreadcrumbItem } from "@/hooks/useBreadcrumbs";
 
 describe("BreadcrumbSchema", () => {
@@ -18,12 +18,14 @@ describe("BreadcrumbSchema", () => {
     ];
 
     const { container } = render(<BreadcrumbSchema items={items} />);
-    
-    const scriptTag = container.querySelector('script[type="application/ld+json"]');
+
+    const scriptTag = container.querySelector(
+      'script[type="application/ld+json"]',
+    );
     expect(scriptTag).toBeInTheDocument();
-    
+
     const jsonLD = JSON.parse(scriptTag?.textContent || "{}");
-    
+
     expect(jsonLD).toEqual({
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
@@ -56,10 +58,12 @@ describe("BreadcrumbSchema", () => {
     ];
 
     const { container } = render(<BreadcrumbSchema items={items} />);
-    
-    const scriptTag = container.querySelector('script[type="application/ld+json"]');
+
+    const scriptTag = container.querySelector(
+      'script[type="application/ld+json"]',
+    );
     const jsonLD = JSON.parse(scriptTag?.textContent || "{}");
-    
+
     expect(jsonLD.itemListElement).toHaveLength(1);
     expect(jsonLD.itemListElement[0]).toEqual({
       "@type": "ListItem",
@@ -75,10 +79,12 @@ describe("BreadcrumbSchema", () => {
     ];
 
     const { container } = render(<BreadcrumbSchema items={items} />);
-    
-    const scriptTag = container.querySelector('script[type="application/ld+json"]');
+
+    const scriptTag = container.querySelector(
+      'script[type="application/ld+json"]',
+    );
     const jsonLD = JSON.parse(scriptTag?.textContent || "{}");
-    
+
     expect(jsonLD.itemListElement[0].item).toBe("https://example.com");
   });
 
@@ -91,14 +97,18 @@ describe("BreadcrumbSchema", () => {
     ];
 
     const { container } = render(<BreadcrumbSchema items={items} />);
-    
-    const scriptTag = container.querySelector('script[type="application/ld+json"]');
+
+    const scriptTag = container.querySelector(
+      'script[type="application/ld+json"]',
+    );
     const jsonLD = JSON.parse(scriptTag?.textContent || "{}");
-    
+
     expect(jsonLD.itemListElement).toHaveLength(4);
-    jsonLD.itemListElement.forEach((item: any, index: number) => {
-      expect(item.position).toBe(index + 1);
-    });
+    jsonLD.itemListElement.forEach(
+      (item: { position: number }, index: number) => {
+        expect(item.position).toBe(index + 1);
+      },
+    );
   });
 
   it("application/ld+json形式のscriptタグを生成する", () => {
@@ -107,7 +117,7 @@ describe("BreadcrumbSchema", () => {
     ];
 
     const { container } = render(<BreadcrumbSchema items={items} />);
-    
+
     const scriptTag = container.querySelector("script");
     expect(scriptTag).toHaveAttribute("type", "application/ld+json");
   });
