@@ -41,7 +41,7 @@ lint/eslint:
 	$(PNPM) -C $(WEB_DIR) exec eslint .
 
 lint/prettier:
-	$(PNPM) -C $(WEB_DIR) exec prettier --check 'src/**/*.{ts,tsx,json,css}'
+	$(PNPM) -C $(WEB_DIR) exec prettier --check 'src/**/*.{ts,tsx,json,css}' 'tests/**/*.{ts,json}'
 
 lint: lint/eslint lint/prettier
 
@@ -49,7 +49,7 @@ lint/eslint/fix:
 	$(PNPM) -C $(WEB_DIR) exec eslint . --fix
 
 lint/prettier/fix:
-	$(PNPM) -C $(WEB_DIR) exec prettier --write 'src/**/*.{ts,tsx,json,css}'
+	$(PNPM) -C $(WEB_DIR) exec prettier --write 'src/**/*.{ts,tsx,json,css}' 'tests/**/*.{ts,json}'
 
 lint/fix: lint/eslint/fix lint/prettier/fix
 
