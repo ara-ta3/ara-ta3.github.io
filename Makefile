@@ -6,11 +6,14 @@ PNPM=pnpm
 install:
 	$(PNPM) install
 
+install/playwright:
+	$(PNPM) -C $(WEB_DIR) exec playwright install
+
 server:
 	$(PNPM) -C $(WEB_DIR) exec vike dev
 
 server/build: build
-	$(PNPM) -C $(WEB_DIR) exec http-server dist/client -p 3000
+	$(PNPM) -C $(WEB_DIR) exec serve dist/client -l 3000
 
 build:
 	$(PNPM) -C $(WEB_DIR) exec vike build
@@ -31,11 +34,17 @@ test:
 test/watch:
 	$(PNPM) -C $(WEB_DIR) exec vitest --watch
 
+test/e2e:
+	$(PNPM) -C $(WEB_DIR) exec playwright test
+
+test/e2e/ui:
+	$(PNPM) -C $(WEB_DIR) exec playwright test --ui
+
 lint/eslint:
 	$(PNPM) -C $(WEB_DIR) exec eslint .
 
 lint/prettier:
-	$(PNPM) -C $(WEB_DIR) exec prettier --check 'src/**/*.{ts,tsx,json,css}'
+	$(PNPM) -C $(WEB_DIR) exec prettier --check 'src/**/*.{ts,tsx,json,css}' 'tests/**/*.{ts,json}'
 
 lint: lint/eslint lint/prettier
 
@@ -43,7 +52,7 @@ lint/eslint/fix:
 	$(PNPM) -C $(WEB_DIR) exec eslint . --fix
 
 lint/prettier/fix:
-	$(PNPM) -C $(WEB_DIR) exec prettier --write 'src/**/*.{ts,tsx,json,css}'
+	$(PNPM) -C $(WEB_DIR) exec prettier --write 'src/**/*.{ts,tsx,json,css}' 'tests/**/*.{ts,json}'
 
 lint/fix: lint/eslint/fix lint/prettier/fix
 
