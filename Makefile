@@ -10,7 +10,7 @@ server:
 	$(PNPM) -C $(WEB_DIR) exec vike dev
 
 server/build: build
-	$(PNPM) -C $(WEB_DIR) exec http-server dist/client -p 3000
+	$(PNPM) -C $(WEB_DIR) exec serve dist/client -l 3000
 
 build:
 	$(PNPM) -C $(WEB_DIR) exec vike build
