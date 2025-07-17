@@ -6,6 +6,9 @@ PNPM=pnpm
 install:
 	$(PNPM) install
 
+install/playwright:
+	$(PNPM) -C $(WEB_DIR) exec playwright install
+
 server:
 	$(PNPM) -C $(WEB_DIR) exec vike dev
 

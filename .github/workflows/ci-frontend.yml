@@ -24,3 +24,5 @@ jobs:
       - run: make lint
       - run: make test
       - run: make build
+      - run: make install/playwright
+      - run: make test/e2e
