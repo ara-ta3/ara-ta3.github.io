@@ -31,6 +31,12 @@ test:
 test/watch:
 	$(PNPM) -C $(WEB_DIR) exec vitest --watch
 
+test/e2e:
+	$(PNPM) -C $(WEB_DIR) exec playwright test
+
+test/e2e/ui:
+	$(PNPM) -C $(WEB_DIR) exec playwright test --ui
+
 lint/eslint:
 	$(PNPM) -C $(WEB_DIR) exec eslint .
 
