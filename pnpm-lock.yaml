@@ -33,7 +33,7 @@ importers:
         specifier: 9.31.0
         version: 9.31.0
       '@playwright/test':
-        specifier: ^1.54.1
+        specifier: 1.54.1
         version: 1.54.1
       '@testing-library/jest-dom':
         specifier: 6.6.3
@@ -87,7 +87,7 @@ importers:
         specifier: 3.6.2
         version: 3.6.2
       serve:
-        specifier: ^14.2.4
+        specifier: 14.2.4
         version: 14.2.4
       tailwindcss:
         specifier: 3.4.17
