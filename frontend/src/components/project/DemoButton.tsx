@@ -13,9 +13,9 @@ const DemoButton: React.FC<DemoButtonProps> = ({
 
   return (
     <div className="flex flex-col gap-2">
-      <h3 className="text-primary-900 text-xl font-bold leading-tight px-4 py-4">
+      <h2 className="text-primary-900 text-xl font-bold leading-tight px-4 py-4">
         Demo
-      </h3>
+      </h2>
       <div className="flex px-4 justify-start">
         <a
           href={demoUrl}

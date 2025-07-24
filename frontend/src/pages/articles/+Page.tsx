@@ -10,9 +10,9 @@ const ArticleCard: React.FC<{ article: Article }> = ({ article }) => {
       <div className="bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 p-6 h-[200px] flex flex-col overflow-hidden">
         <div className="flex items-start justify-between flex-1 min-w-0">
           <div className="flex-1 flex flex-col min-w-0">
-            <h3 className="text-xl font-bold text-primary-700 mb-2 line-clamp-2 break-words">
+            <h2 className="text-xl font-bold text-primary-700 mb-2 line-clamp-2 break-words">
               {article.title}
-            </h3>
+            </h2>
             {article.contentSnippet && (
               <p className="text-primary-500 text-sm mb-4 line-clamp-3 flex-1 break-words">
                 {article.contentSnippet}

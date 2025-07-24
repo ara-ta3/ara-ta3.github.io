@@ -21,9 +21,9 @@ const ProjectDetailRow: React.FC<{ detail: ProjectDetail }> = ({ detail }) => {
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({ details }) => {
   return (
     <div className="flex flex-col gap-3">
-      <h3 className="text-primary-900 text-xl font-bold leading-tight px-4 py-4">
+      <h2 className="text-primary-900 text-xl font-bold leading-tight px-4 py-4">
         プロジェクトについて
-      </h3>
+      </h2>
       <div className="grid grid-cols-2 gap-x-4 px-4">
         {details.map((detail, index) => (
           <ProjectDetailRow key={index} detail={detail} />

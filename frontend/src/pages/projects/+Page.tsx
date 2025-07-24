@@ -7,9 +7,9 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   return (
     <div className="bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
       <div className="p-6">
-        <h3 className="text-xl font-bold text-primary-700 mb-2">
+        <h2 className="text-xl font-bold text-primary-700 mb-2">
           {project.title}
-        </h3>
+        </h2>
         <p className="text-primary-500 text-sm mb-4">{project.description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.slice(0, 3).map((tech) => (

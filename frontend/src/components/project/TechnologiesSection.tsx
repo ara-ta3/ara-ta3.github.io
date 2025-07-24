@@ -19,9 +19,9 @@ const TechnologiesSection: React.FC<TechnologiesSectionProps> = ({
 }) => {
   return (
     <div className="flex flex-col gap-3">
-      <h3 className="text-primary-900 text-xl font-bold leading-tight px-4 py-2">
+      <h2 className="text-primary-900 text-xl font-bold leading-tight px-4 py-2">
         技術スタック
-      </h3>
+      </h2>
       <div className="flex gap-3 p-2 flex-wrap px-4">
         {technologies.map((tech) => (
           <TechnologyTag key={tech} technology={tech} />
