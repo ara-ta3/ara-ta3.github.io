@@ -1,4 +1,5 @@
 import React from "react";
+import StructuredData, { type SkillData } from "@/components/StructuredData";
 
 const Skills: React.FC = () => {
   const skills = [
@@ -95,37 +96,46 @@ const Skills: React.FC = () => {
     },
   ];
 
+  const skillsData: SkillData[] = skills.map((skill) => ({
+    name: skill.name,
+    description: skill.description,
+    category: "Programming Skills",
+  }));
+
   return (
-    <div id="skills">
-      <h2 className="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
-        スキル
-      </h2>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-        {skills.map((skill) => (
-          <div
-            key={skill.name}
-            className="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 flex-col"
-          >
+    <>
+      <StructuredData skills={skillsData} />
+      <div id="skills">
+        <h2 className="text-[#121416] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+          スキル
+        </h2>
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+          {skills.map((skill) => (
             <div
-              className="text-[#121416]"
-              data-icon="SkillIcon"
-              data-size="24px"
-              data-weight="regular"
+              key={skill.name}
+              className="flex flex-1 gap-3 rounded-lg border border-[#dde0e3] bg-white p-4 flex-col"
             >
-              {skill.icon}
+              <div
+                className="text-[#121416]"
+                data-icon="SkillIcon"
+                data-size="24px"
+                data-weight="regular"
+              >
+                {skill.icon}
+              </div>
+              <div className="flex flex-col gap-1">
+                <h2 className="text-[#121416] text-base font-bold leading-tight">
+                  {skill.name}
+                </h2>
+                <p className="text-[#6a7581] text-sm font-normal leading-normal">
+                  {skill.description}
+                </p>
+              </div>
             </div>
-            <div className="flex flex-col gap-1">
-              <h2 className="text-[#121416] text-base font-bold leading-tight">
-                {skill.name}
-              </h2>
-              <p className="text-[#6a7581] text-sm font-normal leading-normal">
-                {skill.description}
-              </p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
