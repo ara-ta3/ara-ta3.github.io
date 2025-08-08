@@ -15,7 +15,16 @@ const Head: React.FC = () => {
           title: "電気代比較ツール",
           description: "電力会社の料金を比較して最適なプランを見つけるツール",
           url: "https://ara-ta3.github.io/electricity/",
-          type: "SoftwareApplication",
+          type: "WebPage",
+        }}
+        softwareApp={{
+          name: "電気代比較ツール",
+          description: "電力会社の料金を比較して最適なプランを見つけるツール",
+          url: "/electricity/",
+          applicationCategory: "WebApplication",
+          operatingSystem: "Web",
+          authorName: "ara-ta3",
+          offers: { price: "0", priceCurrency: "JPY" },
         }}
       />
     </>

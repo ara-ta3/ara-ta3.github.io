@@ -15,7 +15,16 @@ const Head: React.FC = () => {
           title: "スケジュール管理",
           description: "時間配分を円グラフで視覚化するスケジュール管理ツール",
           url: "https://ara-ta3.github.io/schedules/",
-          type: "SoftwareApplication",
+          type: "WebPage",
+        }}
+        softwareApp={{
+          name: "スケジュール管理",
+          description: "時間配分を円グラフで視覚化するスケジュール管理ツール",
+          url: "/schedules/",
+          applicationCategory: "WebApplication",
+          operatingSystem: "Web",
+          authorName: "ara-ta3",
+          offers: { price: "0", priceCurrency: "JPY" },
         }}
       />
     </>

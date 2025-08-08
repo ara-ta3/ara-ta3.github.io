@@ -33,11 +33,29 @@ interface WebPageData {
   type?: "WebSite" | "WebPage" | "Person" | "SoftwareApplication";
 }
 
+interface OfferData {
+  price: string;
+  priceCurrency: string;
+}
+
+interface SoftwareApplicationData {
+  name: string;
+  description: string;
+  image?: string;
+  url: string; // canonical page or app URL
+  applicationCategory?: string; // defaults to WebApplication
+  operatingSystem?: string; // defaults to Web
+  authorName?: string;
+  offers?: OfferData; // e.g. { price: "0", priceCurrency: "JPY" }
+}
+
 interface StructuredDataProps {
   data?: WebPageData;
   person?: PersonData;
   projects?: ProjectData[];
   skills?: SkillData[];
+  includeWebsite?: boolean;
+  softwareApp?: SoftwareApplicationData;
 }
 
 const StructuredData: React.FC<StructuredDataProps> = ({
@@ -45,12 +63,15 @@ const StructuredData: React.FC<StructuredDataProps> = ({
   person,
   projects,
   skills,
+  includeWebsite = false,
+  softwareApp,
 }) => {
   const baseUrl = "https://ara-ta3.github.io";
 
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${baseUrl}/#website`,
     name: "ara-ta3のポートフォリオ",
     alternateName: "ara-ta3.github.io",
     url: baseUrl,
@@ -67,6 +88,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({
     ? {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": `${baseUrl}/#person`,
         name: person.name,
         description: person.description,
         image: person.image,
@@ -76,6 +98,9 @@ const StructuredData: React.FC<StructuredDataProps> = ({
         knowsAbout: person.knowsAbout,
       }
     : null;
+
+  const toAbsoluteUrl = (value?: string) =>
+    value ? (value.startsWith("http") ? value : `${baseUrl}${value}`) : undefined;
 
   const projectsSchema =
     projects && projects.length > 0
@@ -91,8 +116,8 @@ const StructuredData: React.FC<StructuredDataProps> = ({
               "@type": "SoftwareApplication",
               name: project.name,
               description: project.description,
-              image: project.image,
-              url: project.url,
+              image: toAbsoluteUrl(project.image),
+              url: toAbsoluteUrl(project.url),
               author: {
                 "@type": "Person",
                 name: project.author,
@@ -129,6 +154,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({
     ? {
         "@context": "https://schema.org",
         "@type": data.type || "WebPage",
+        "@id": `${data.url}#webpage`,
         name: data.title,
         description: data.description,
         url: data.url,
@@ -137,17 +163,55 @@ const StructuredData: React.FC<StructuredDataProps> = ({
           name: "ara-ta3のポートフォリオ",
           url: baseUrl,
         },
+        ...(softwareApp
+          ? {
+              mainEntity: {
+                "@id": `${toAbsoluteUrl(softwareApp.url)}#software`,
+              },
+            }
+          : {}),
+      }
+    : null;
+
+  const softwareAppSchema = softwareApp
+    ? {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "@id": `${toAbsoluteUrl(softwareApp.url)}#software`,
+        name: softwareApp.name,
+        description: softwareApp.description,
+        url: toAbsoluteUrl(softwareApp.url),
+        image: toAbsoluteUrl(softwareApp.image),
+        applicationCategory: softwareApp.applicationCategory || "WebApplication",
+        operatingSystem: softwareApp.operatingSystem || "Web",
+        ...(softwareApp.authorName
+          ? { author: { "@type": "Person", name: softwareApp.authorName } }
+          : {}),
+        ...(data?.url
+          ? { mainEntityOfPage: { "@id": `${data.url}#webpage` } }
+          : {}),
+        ...(softwareApp.offers
+          ? {
+              offers: {
+                "@type": "Offer",
+                price: softwareApp.offers.price,
+                priceCurrency: softwareApp.offers.priceCurrency,
+              },
+            }
+          : {}),
       }
     : null;
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(websiteSchema),
-        }}
-      />
+      {includeWebsite && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+      )}
       {webPageSchema && (
         <script
           type="application/ld+json"
@@ -177,6 +241,14 @@ const StructuredData: React.FC<StructuredDataProps> = ({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(skillsSchema),
+          }}
+        />
+      )}
+      {softwareAppSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(softwareAppSchema),
           }}
         />
       )}

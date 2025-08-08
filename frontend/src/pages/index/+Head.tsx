@@ -8,6 +8,7 @@ const Head: React.FC = () => {
       <meta name="description" content="portfolioのように見える遊び場です" />
       <link rel="canonical" href="https://ara-ta3.github.io/" />
       <StructuredData
+        includeWebsite
         data={{
           title: "ara-ta3の個人ページ",
           description: "portfolioのように見える遊び場です",
