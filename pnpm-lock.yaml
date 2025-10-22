@@ -99,11 +99,11 @@ importers:
         specifier: 8.46.2
         version: 8.46.2(eslint@9.38.0(jiti@1.21.7))(typescript@5.9.3)
       vike:
-        specifier: 0.4.243
-        version: 0.4.243(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.11(@types/node@22.18.12)(jiti@1.21.7)(yaml@2.7.1))
+        specifier: 0.4.244
+        version: 0.4.244(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.11(@types/node@22.18.12)(jiti@1.21.7)(yaml@2.7.1))
       vike-react:
         specifier: 0.6.10
-        version: 0.6.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vike@0.4.243(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.11(@types/node@22.18.12)(jiti@1.21.7)(yaml@2.7.1)))
+        version: 0.6.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vike@0.4.244(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.11(@types/node@22.18.12)(jiti@1.21.7)(yaml@2.7.1)))
       vite:
         specifier: 7.1.11
         version: 7.1.11(@types/node@22.18.12)(jiti@1.21.7)(yaml@2.7.1)
@@ -2769,8 +2769,8 @@ packages:
       react-dom: '>=19'
       vike: '>=0.4.182'
 
-  vike@0.4.243:
-    resolution: {integrity: sha512-q8iGg8PVS1ZebiEwEcLNkcnLJk7zBq3tIuz/HhKVTUeVs0sFeb2nRQDCscoSzZL+B1cPRslq7Ghg9wnK9dfpPw==}
+  vike@0.4.244:
+    resolution: {integrity: sha512-Cq9Xye5l7k/J6QF3/PI3KklAh5BKi6a956GpfVH5pIeznOWRu80DIUHHZFwKceDZscgLnb9ZKxQ5G0UeZk/yCA==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -5816,14 +5816,14 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vike-react@0.6.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vike@0.4.243(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.11(@types/node@22.18.12)(jiti@1.21.7)(yaml@2.7.1))):
+  vike-react@0.6.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vike@0.4.244(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.11(@types/node@22.18.12)(jiti@1.21.7)(yaml@2.7.1))):
     dependencies:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       react-streaming: 0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      vike: 0.4.243(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.11(@types/node@22.18.12)(jiti@1.21.7)(yaml@2.7.1))
+      vike: 0.4.244(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.11(@types/node@22.18.12)(jiti@1.21.7)(yaml@2.7.1))
 
-  vike@0.4.243(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.11(@types/node@22.18.12)(jiti@1.21.7)(yaml@2.7.1)):
+  vike@0.4.244(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.11(@types/node@22.18.12)(jiti@1.21.7)(yaml@2.7.1)):
     dependencies:
       '@brillout/import': 0.2.6
       '@brillout/json-serializer': 0.5.21
