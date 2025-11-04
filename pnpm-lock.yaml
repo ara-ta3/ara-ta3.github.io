@@ -99,11 +99,11 @@ importers:
         specifier: 8.46.3
         version: 8.46.3(eslint@9.39.1(jiti@1.21.7))(typescript@5.9.3)
       vike:
-        specifier: 0.4.244
-        version: 0.4.244(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.12(@types/node@22.19.0)(jiti@1.21.7)(yaml@2.7.1))
+        specifier: 0.4.245
+        version: 0.4.245(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.12(@types/node@22.19.0)(jiti@1.21.7)(yaml@2.7.1))
       vike-react:
         specifier: 0.6.10
-        version: 0.6.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vike@0.4.244(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.12(@types/node@22.19.0)(jiti@1.21.7)(yaml@2.7.1)))
+        version: 0.6.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vike@0.4.245(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.12(@types/node@22.19.0)(jiti@1.21.7)(yaml@2.7.1)))
       vite:
         specifier: 7.1.12
         version: 7.1.12(@types/node@22.19.0)(jiti@1.21.7)(yaml@2.7.1)
@@ -508,9 +508,6 @@ packages:
   '@jridgewell/resolve-uri@3.1.2':
     resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
     engines: {node: '>=6.0.0'}
-
-  '@jridgewell/sourcemap-codec@1.5.0':
-    resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
@@ -1976,9 +1973,6 @@ packages:
     resolution: {integrity: sha512-h5bgJWpxJNswbU7qCrV0tIKQCaS3blPDrqKWx+QxzuzL1zGUzij9XCWLrSLsJPu5t+eWA/ycetzYAO5IOMcWAQ==}
     hasBin: true
 
-  magic-string@0.30.17:
-    resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
-
   magic-string@0.30.19:
     resolution: {integrity: sha512-2N21sPY9Ws53PZvsEpVtNuSW+ScYbQdp4b9qUaL+9QkHUrGFKo56Lg9Emg5s9V/qrtNBmiR01sYhUOwu3H+VOw==}
 
@@ -2492,10 +2486,6 @@ packages:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
 
-  sirv@3.0.1:
-    resolution: {integrity: sha512-FoqMu0NCGBLCcAkS1qA+XJIQTR6/JHfQXl+uGteNCQ76T91DMUjPa9xfmeqMY3z80nLSg9yQmNjK0Px6RWsH/A==}
-    engines: {node: '>=18'}
-
   sirv@3.0.2:
     resolution: {integrity: sha512-2wcC/oGxHis/BoHkkPwldgiPSYcpZK3JU28WoMVv55yHJgcZ8rlXvuG9iZggz+sU1d4bRgIGASwyWqjxu3FM0g==}
     engines: {node: '>=18'}
@@ -2755,8 +2745,8 @@ packages:
       react-dom: '>=19'
       vike: '>=0.4.182'
 
-  vike@0.4.244:
-    resolution: {integrity: sha512-Cq9Xye5l7k/J6QF3/PI3KklAh5BKi6a956GpfVH5pIeznOWRu80DIUHHZFwKceDZscgLnb9ZKxQ5G0UeZk/yCA==}
+  vike@0.4.245:
+    resolution: {integrity: sha512-WqqVBO3y+1JHpFcie97MmuJ/Te22uRHyup5yFzTSSdNGA2p/TrGWuIMP5a60oVaQcxZ0t+5XnVcWQlQ87cc8gg==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -3303,8 +3293,6 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.29
 
   '@jridgewell/resolve-uri@3.1.2': {}
-
-  '@jridgewell/sourcemap-codec@1.5.0': {}
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
@@ -4958,10 +4946,6 @@ snapshots:
 
   lz-string@1.5.0: {}
 
-  magic-string@0.30.17:
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.0
-
   magic-string@0.30.19:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
@@ -5478,12 +5462,6 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  sirv@3.0.1:
-    dependencies:
-      '@polka/url': 1.0.0-next.28
-      mrmime: 2.0.1
-      totalist: 3.0.1
-
   sirv@3.0.2:
     dependencies:
       '@polka/url': 1.0.0-next.28
@@ -5790,14 +5768,14 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vike-react@0.6.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vike@0.4.244(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.12(@types/node@22.19.0)(jiti@1.21.7)(yaml@2.7.1))):
+  vike-react@0.6.10(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vike@0.4.245(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.12(@types/node@22.19.0)(jiti@1.21.7)(yaml@2.7.1))):
     dependencies:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       react-streaming: 0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      vike: 0.4.244(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.12(@types/node@22.19.0)(jiti@1.21.7)(yaml@2.7.1))
+      vike: 0.4.245(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.12(@types/node@22.19.0)(jiti@1.21.7)(yaml@2.7.1))
 
-  vike@0.4.244(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.12(@types/node@22.19.0)(jiti@1.21.7)(yaml@2.7.1)):
+  vike@0.4.245(react-streaming@0.4.11(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(vite@7.1.12(@types/node@22.19.0)(jiti@1.21.7)(yaml@2.7.1)):
     dependencies:
       '@brillout/import': 0.2.6
       '@brillout/json-serializer': 0.5.21
@@ -5809,10 +5787,10 @@ snapshots:
       es-module-lexer: 1.7.0
       esbuild: 0.25.2
       json5: 2.2.3
-      magic-string: 0.30.17
+      magic-string: 0.30.19
       picomatch: 4.0.3
       semver: 7.7.1
-      sirv: 3.0.1
+      sirv: 3.0.2
       source-map-support: 0.5.21
       tinyglobby: 0.2.15
     optionalDependencies:
