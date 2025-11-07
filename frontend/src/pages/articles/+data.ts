@@ -1,7 +1,4 @@
-import {
-  fetchAllArticlesWithLimit,
-  type Article,
-} from "@/utils/rss";
+import { fetchAllArticlesWithLimit, type Article } from "@/utils/rss";
 import {
   buildArticleStats,
   type MonthlyStat,

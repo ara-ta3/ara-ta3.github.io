@@ -21,13 +21,10 @@ export type MonthlyStat = {
 };
 
 const createEmptyTotals = (): SourceTotals =>
-  ARTICLE_SOURCES.reduce(
-    (acc, source) => {
-      acc[source] = 0;
-      return acc;
-    },
-    {} as SourceTotals,
-  );
+  ARTICLE_SOURCES.reduce((acc, source) => {
+    acc[source] = 0;
+    return acc;
+  }, {} as SourceTotals);
 
 const incrementTotals = (totals: SourceTotals, source: ArticleSource) => {
   totals[source] += 1;
