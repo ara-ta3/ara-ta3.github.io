@@ -17,7 +17,7 @@ server/build: build
 
 build:
 	$(PNPM) -C $(WEB_DIR) exec vike build
-	$(MAKE) $(DIST_DIR)/client/sitemap/sitemap.xml
+	$(MAKE) $(DIST_DIR)/client/sitemap.xml
 	$(MAKE) $(DIST_DIR)/client/robots.txt
 	touch $(DIST_DIR)/client/.nojekyll
 	cp -r $(WEB_DIR)/resources/cat $(DIST_DIR)/client/cat
@@ -59,7 +59,7 @@ lint/fix: lint/eslint/fix lint/prettier/fix
 $(DIST_DIR)/client/sitemap:
 	mkdir -p $@
 
-$(DIST_DIR)/client/sitemap/sitemap.xml: $(DIST_DIR)/client/sitemap
+$(DIST_DIR)/client/sitemap.xml: $(DIST_DIR)/client/sitemap
 	cp -f ./$(WEB_DIR)/resources/sitemap.xml $@
 
 $(DIST_DIR)/client/robots.txt:
