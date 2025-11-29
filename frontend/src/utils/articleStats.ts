@@ -97,7 +97,14 @@ export const buildMonthlyStats = (
   return months > 0 ? sorted.slice(-months) : sorted;
 };
 
-export const buildArticleStats = (articles: Article[]) => ({
-  yearlyStats: buildYearlyStats(articles),
-  monthlyStats: buildMonthlyStats(articles),
-});
+export const buildArticleStats = (
+  articles: Article[],
+  options: { monthlyMonths?: number } = {},
+) => {
+  const { monthlyMonths } = options;
+
+  return {
+    yearlyStats: buildYearlyStats(articles),
+    monthlyStats: buildMonthlyStats(articles, { months: monthlyMonths }),
+  };
+};
