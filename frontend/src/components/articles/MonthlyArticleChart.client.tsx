@@ -20,9 +20,7 @@ const MonthlyArticleChartClient: React.FC<Props> = ({ stats }) => {
   const [startIndex, setStartIndex] = useState(() =>
     Math.max(stats.length - 12, 0),
   );
-  const [endIndex, setEndIndex] = useState(() =>
-    Math.max(stats.length - 1, 0),
-  );
+  const [endIndex, setEndIndex] = useState(() => Math.max(stats.length - 1, 0));
 
   const clampIndex = (index: number) => {
     if (stats.length === 0) return 0;
