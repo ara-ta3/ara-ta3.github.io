@@ -13,7 +13,9 @@ export type Data = {
 
 export default async function data(): Promise<Data> {
   const articles = await fetchAllArticlesWithLimit(200);
-  const { yearlyStats, monthlyStats } = buildArticleStats(articles);
+  const { yearlyStats, monthlyStats } = buildArticleStats(articles, {
+    monthlyMonths: 0,
+  });
   return {
     articles,
     yearlyStats,
