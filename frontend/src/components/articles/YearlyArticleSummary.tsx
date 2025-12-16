@@ -1,5 +1,5 @@
 import React from "react";
-import type { YearlyStat } from "@/utils/articleStats";
+import type { YearlyStat } from "@/domains/articles/types";
 
 const SOURCE_META = {
   hatena: {

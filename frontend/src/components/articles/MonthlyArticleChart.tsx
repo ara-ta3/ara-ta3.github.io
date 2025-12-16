@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import type { MonthlyStat } from "@/utils/articleStats";
+import type { MonthlyStat } from "@/domains/articles/types";
 
 type Props = {
   stats: MonthlyStat[];
@@ -9,7 +9,7 @@ type ClientChart = React.ComponentType<Props>;
 
 const MonthlyArticleChart: React.FC<Props> = (props) => {
   const [ClientComponent, setClientComponent] = useState<ClientChart | null>(
-    null,
+    null
   );
 
   useEffect(() => {

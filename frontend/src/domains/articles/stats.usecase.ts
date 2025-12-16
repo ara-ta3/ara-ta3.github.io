@@ -1,31 +1,14 @@
-import type { Article } from "@/utils/rss";
-
-type ArticleSource = Article["source"];
-
-const ARTICLE_SOURCES: ArticleSource[] = ["hatena", "zenn"];
-const TOKYO_TIMEZONE = "Asia/Tokyo";
-
-const tokyoYearMonthFormatter = new Intl.DateTimeFormat("ja-JP", {
-  timeZone: TOKYO_TIMEZONE,
-  year: "numeric",
-  month: "2-digit",
-});
-
-export type SourceTotals = Record<ArticleSource, number>;
-
-export type YearlyStat = {
-  year: number;
-  totals: SourceTotals;
-  sum: number;
-};
-
-export type MonthlyStat = {
-  year: number;
-  month: number;
-  label: string;
-  totals: SourceTotals;
-  sum: number;
-};
+import { Article } from "@/utils/rss";
+import {
+  ARTICLE_SOURCES,
+  tokyoYearMonthFormatter,
+} from "@/domains/articles/constants";
+import {
+  ArticleSource,
+  MonthlyStat,
+  SourceTotals,
+  YearlyStat,
+} from "@/domains/articles/types";
 
 const createEmptyTotals = (): SourceTotals =>
   ARTICLE_SOURCES.reduce((acc, source) => {
@@ -76,7 +59,7 @@ export const buildYearlyStats = (articles: Article[]): YearlyStat[] => {
 
 export const buildMonthlyStats = (
   articles: Article[],
-  options: { months?: number } = {},
+  options: { months?: number } = {}
 ): MonthlyStat[] => {
   const { months = 12 } = options;
   const monthlyMap = new Map<
@@ -119,7 +102,7 @@ export const buildMonthlyStats = (
 
 export const buildArticleStats = (
   articles: Article[],
-  options: { monthlyMonths?: number } = {},
+  options: { monthlyMonths?: number } = {}
 ) => {
   const { monthlyMonths } = options;
 
