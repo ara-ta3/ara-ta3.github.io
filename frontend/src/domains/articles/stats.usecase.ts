@@ -85,19 +85,47 @@ export const buildMonthlyStats = (
     incrementTotals(entry.totals, article.source);
   });
 
-  const sorted = Array.from(monthlyMap.values())
-    .map((entry) => ({
-      ...entry,
-      sum: sumTotals(entry.totals),
-    }))
-    .sort((a, b) => {
-      if (a.year === b.year) {
-        return a.month - b.month;
-      }
-      return a.year - b.year;
+  const entries = Array.from(monthlyMap.values()).sort((a, b) => {
+    if (a.year === b.year) {
+      return a.month - b.month;
+    }
+    return a.year - b.year;
+  });
+
+  if (entries.length === 0) {
+    return [];
+  }
+
+  const filledStats: MonthlyStat[] = [];
+  const lastEntry = entries[entries.length - 1];
+
+  let currentYear = entries[0].year;
+  let currentMonth = entries[0].month;
+
+  while (
+    currentYear < lastEntry.year ||
+    (currentYear === lastEntry.year && currentMonth <= lastEntry.month)
+  ) {
+    const key = `${currentYear}-${currentMonth}`;
+    const totals = monthlyMap.get(key)?.totals ?? createEmptyTotals();
+
+    filledStats.push({
+      year: currentYear,
+      month: currentMonth,
+      label: buildMonthLabel(currentYear, currentMonth),
+      totals,
+      sum: sumTotals(totals),
     });
 
-  return months > 0 ? sorted.slice(-months) : sorted;
+    if (currentMonth === 12) {
+      currentYear += 1;
+      currentMonth = 1;
+    } else {
+      currentMonth += 1;
+    }
+  }
+
+  return months > 0 ? filledStats.slice(-months) : filledStats;
 };
 
 export const buildArticleStats = (
