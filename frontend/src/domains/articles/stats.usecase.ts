@@ -1,4 +1,3 @@
-import { Article } from "@/utils/rss";
 import {
   ARTICLE_SOURCES,
   tokyoYearMonthFormatter,
@@ -9,6 +8,7 @@ import {
   SourceTotals,
   YearlyStat,
 } from "@/domains/articles/types";
+import { Article } from "@/utils/rss";
 
 const createEmptyTotals = (): SourceTotals =>
   ARTICLE_SOURCES.reduce((acc, source) => {
@@ -59,7 +59,7 @@ export const buildYearlyStats = (articles: Article[]): YearlyStat[] => {
 
 export const buildMonthlyStats = (
   articles: Article[],
-  options: { months?: number } = {}
+  options: { months?: number } = {},
 ): MonthlyStat[] => {
   const { months = 12 } = options;
   const monthlyMap = new Map<
@@ -102,7 +102,7 @@ export const buildMonthlyStats = (
 
 export const buildArticleStats = (
   articles: Article[],
-  options: { monthlyMonths?: number } = {}
+  options: { monthlyMonths?: number } = {},
 ) => {
   const { monthlyMonths } = options;
 

@@ -9,7 +9,7 @@ type ClientChart = React.ComponentType<Props>;
 
 const MonthlyArticleChart: React.FC<Props> = (props) => {
   const [ClientComponent, setClientComponent] = useState<ClientChart | null>(
-    null
+    null,
   );
 
   useEffect(() => {

@@ -18,7 +18,7 @@ type Props = {
 
 const MonthlyArticleChartClient: React.FC<Props> = ({ stats }) => {
   const [startIndex, setStartIndex] = useState(() =>
-    Math.max(stats.length - 12, 0)
+    Math.max(stats.length - 12, 0),
   );
   const [endIndex, setEndIndex] = useState(() => Math.max(stats.length - 1, 0));
 
@@ -32,7 +32,7 @@ const MonthlyArticleChartClient: React.FC<Props> = ({ stats }) => {
 
   const selectedStats = useMemo(
     () => stats.slice(clampedStart, clampedEnd + 1),
-    [stats, clampedStart, clampedEnd]
+    [stats, clampedStart, clampedEnd],
   );
 
   const handleStartChange = (value: number) => {

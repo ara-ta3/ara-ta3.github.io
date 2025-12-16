@@ -1,4 +1,4 @@
-import { ArticleSource } from "./types";
+import { ArticleSource } from "@/domains/articles/types";
 
 export const ARTICLE_SOURCES: ArticleSource[] = ["hatena", "zenn"];
 const TOKYO_TIMEZONE = "Asia/Tokyo";
