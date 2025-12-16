@@ -1,9 +1,6 @@
+import { buildArticleStats } from "@/domains/articles/stats.usecase";
+import { MonthlyStat, YearlyStat } from "@/domains/articles/types";
 import { fetchAllArticlesWithLimit, type Article } from "@/utils/rss";
-import {
-  buildArticleStats,
-  type MonthlyStat,
-  type YearlyStat,
-} from "@/utils/articleStats";
 
 export type Data = {
   articles: Article[];

@@ -1,5 +1,8 @@
 import { afterEach, describe, expect, it } from "vitest";
-import { buildMonthlyStats, buildYearlyStats } from "@/utils/articleStats";
+import {
+  buildMonthlyStats,
+  buildYearlyStats,
+} from "@/domains/articles/stats.usecase";
 import type { Article } from "@/utils/rss";
 
 const createArticle = (overrides: Partial<Article>): Article => ({

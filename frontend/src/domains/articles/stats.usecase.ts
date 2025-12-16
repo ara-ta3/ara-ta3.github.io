@@ -1,31 +1,14 @@
-import type { Article } from "@/utils/rss";
-
-type ArticleSource = Article["source"];
-
-const ARTICLE_SOURCES: ArticleSource[] = ["hatena", "zenn"];
-const TOKYO_TIMEZONE = "Asia/Tokyo";
-
-const tokyoYearMonthFormatter = new Intl.DateTimeFormat("ja-JP", {
-  timeZone: TOKYO_TIMEZONE,
-  year: "numeric",
-  month: "2-digit",
-});
-
-export type SourceTotals = Record<ArticleSource, number>;
-
-export type YearlyStat = {
-  year: number;
-  totals: SourceTotals;
-  sum: number;
-};
-
-export type MonthlyStat = {
-  year: number;
-  month: number;
-  label: string;
-  totals: SourceTotals;
-  sum: number;
-};
+import {
+  ARTICLE_SOURCES,
+  tokyoYearMonthFormatter,
+} from "@/domains/articles/constants";
+import {
+  ArticleSource,
+  MonthlyStat,
+  SourceTotals,
+  YearlyStat,
+} from "@/domains/articles/types";
+import { Article } from "@/utils/rss";
 
 const createEmptyTotals = (): SourceTotals =>
   ARTICLE_SOURCES.reduce((acc, source) => {
