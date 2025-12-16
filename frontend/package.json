@@ -22,7 +22,7 @@
     "rss-parser": "^3.13.0"
   },
   "devDependencies": {
-    "@eslint/js": "9.39.1",
+    "@eslint/js": "9.39.2",
     "@playwright/test": "1.57.0",
     "@testing-library/jest-dom": "6.9.1",
     "@testing-library/react": "16.3.0",
@@ -34,7 +34,7 @@
     "@vitejs/plugin-react": "5.1.2",
     "@vitest/ui": "4.0.15",
     "autoprefixer": "10.4.22",
-    "eslint": "9.39.1",
+    "eslint": "9.39.2",
     "eslint-import-resolver-typescript": "4.4.4",
     "eslint-plugin-import": "2.32.0",
     "gh-pages": "6.3.0",
