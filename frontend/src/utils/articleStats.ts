@@ -3,6 +3,13 @@ import type { Article } from "@/utils/rss";
 type ArticleSource = Article["source"];
 
 const ARTICLE_SOURCES: ArticleSource[] = ["hatena", "zenn"];
+const TOKYO_TIMEZONE = "Asia/Tokyo";
+
+const tokyoYearMonthFormatter = new Intl.DateTimeFormat("ja-JP", {
+  timeZone: TOKYO_TIMEZONE,
+  year: "numeric",
+  month: "2-digit",
+});
 
 export type SourceTotals = Record<ArticleSource, number>;
 
@@ -33,11 +40,26 @@ const incrementTotals = (totals: SourceTotals, source: ArticleSource) => {
 const sumTotals = (totals: SourceTotals): number =>
   ARTICLE_SOURCES.reduce((sum, source) => sum + totals[source], 0);
 
+const getTokyoYearMonth = (date: Date) => {
+  const parts = tokyoYearMonthFormatter.formatToParts(date);
+  const year = parts.find((part) => part.type === "year")?.value;
+  const month = parts.find((part) => part.type === "month")?.value;
+
+  if (!year || !month) {
+    return { year: date.getFullYear(), month: date.getMonth() + 1 };
+  }
+
+  return { year: Number(year), month: Number(month) };
+};
+
+const buildMonthLabel = (year: number, month: number): string =>
+  `${year}年${month.toString().padStart(2, "0")}月`;
+
 export const buildYearlyStats = (articles: Article[]): YearlyStat[] => {
   const yearlyMap = new Map<number, SourceTotals>();
 
   articles.forEach((article) => {
-    const year = article.pubDate.getFullYear();
+    const { year } = getTokyoYearMonth(article.pubDate);
     const totals = yearlyMap.get(year) ?? createEmptyTotals();
     incrementTotals(totals, article.source);
     yearlyMap.set(year, totals);
@@ -63,11 +85,9 @@ export const buildMonthlyStats = (
   >();
 
   articles.forEach((article) => {
-    const date = article.pubDate;
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1;
+    const { year, month } = getTokyoYearMonth(article.pubDate);
     const key = `${year}-${month}`;
-    const label = `${year}年${month.toString().padStart(2, "0")}月`;
+    const label = buildMonthLabel(year, month);
 
     if (!monthlyMap.has(key)) {
       monthlyMap.set(key, {
