@@ -16,7 +16,7 @@ const createArticle = (overrides: Partial<Article>): Article => ({
 
 const createArticleByDate = (
   date: string,
-  source: Article["source"] = "hatena"
+  source: Article["source"] = "hatena",
 ): Article =>
   createArticle({
     title: `title-${date}`,
@@ -47,7 +47,7 @@ describe("articleStats", () => {
             pubDate: new Date("2024-11-15T12:00:00+09:00"),
           }),
         ],
-        { months: 0 }
+        { months: 0 },
       );
 
       expect(stats.map((stat) => stat.label)).toEqual([
@@ -55,7 +55,7 @@ describe("articleStats", () => {
         "2024年12月",
       ]);
       expect(
-        stats.find((stat) => stat.label === "2024年12月")?.totals.hatena
+        stats.find((stat) => stat.label === "2024年12月")?.totals.hatena,
       ).toBe(1);
     });
 
