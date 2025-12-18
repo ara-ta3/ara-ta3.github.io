@@ -7,7 +7,7 @@ https://ara-ta3.github.io/
 
 フロントエンドのコードは `frontend/` ディレクトリ以下に配置されています。pnpm のワークスペース機能を利用して管理しています。
 
-バックエンドのコードは `backend/` ディレクトリ以下に Scala で構成されています。
+バックエンドは `backend/` に Scala で置く構想がありますが、今のところやりたいことが不明確で未実装です。  
 
 ## 技術構成図
 
@@ -16,24 +16,35 @@ graph TD
   Dev[DEV] -->|pnpm / make build| FE[frontend/ - Vike + React + TS]
   FE --> Dist[frontend/dist]
   Dist -->|gh-pages へデプロイ| Pages[GitHub Pages]
-  Dev -->|sbt run| BE[backend/ - ZIO + zio-http]
-  Dev -.->|ローカルAPI利用| BE
+  Dev -.->|検討中| BE[backend/ - ZIO + zio-http（構想段階、未連携）]
 ```
 
 ## フロントエンド構成図
 
-```mermaid
-graph TD
-  Root[frontend/] --> Src[src/]
-  Src --> Pages[pages/ - ルーティング]
-  Src --> Components[components/ - 再利用コンポーネント]
-  Src --> Data[data/ - コンテンツデータ]
-  Src --> Assets[assets/ - 画像など]
-  Src --> Utils[utils/ - 共通ユーティリティ]
-  Src --> Hooks[hooks/ - カスタムフック]
-  Root --> Resources[resources/ - sitemap・robotsなど静的]
-  Root --> Tests[tests/ - Unit/DOM]
-  Tests --> E2E[tests/e2e/ - Playwright]
-  Root -.-> Dist[dist/ - ビルド成果物]
-  Root -.-> TestResults[test-results/ - 生成物]
+```
+frontend/
+├─ package.json
+├─ vite.config.ts
+├─ resources/ (sitemap・robots・cat assets)
+├─ src/
+│  ├─ pages/ (Vike ルーティング)
+│  │  ├─ +Layout.tsx
+│  │  ├─ +Head.tsx
+│  │  ├─ +config.ts
+│  │  ├─ index/
+│  │  ├─ articles/
+│  │  ├─ projects/
+│  │  │  ├─ +Page.tsx
+│  │  │  └─ @id/ (+Page.tsx, +onBeforePrerenderStart.ts など)
+│  │  ├─ schedules/
+│  │  └─ electricity/
+│  ├─ components/ (project/headertags/articles など UI)
+│  ├─ data/
+│  ├─ assets/
+│  ├─ domains/
+│  ├─ hooks/
+│  ├─ utils/
+│  └─ types/
+└─ tests/ (Vitest/Playwright)
+   └─ e2e/
 ```
