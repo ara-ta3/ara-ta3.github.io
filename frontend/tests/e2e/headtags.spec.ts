@@ -16,13 +16,13 @@ test.describe("head タグの重複チェック", () => {
       const descriptions = await page
         .locator('meta[name="description"]')
         .evaluateAll((elements) =>
-          elements.map((el) => el.getAttribute("content") ?? "")
+          elements.map((el) => el.getAttribute("content") ?? ""),
         );
 
       expect(titles.length, `title tags: ${titles.join("\n")}`).toBe(1);
       expect(
         descriptions.length,
-        `meta descriptions: ${descriptions.join("\n")}`
+        `meta descriptions: ${descriptions.join("\n")}`,
       ).toBe(1);
     });
   }

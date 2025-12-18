@@ -1,7 +1,14 @@
 import React from "react";
+import { usePageContext } from "vike-react/usePageContext";
 import Common from "@/components/headertags/Common";
 
 const Head: React.FC = () => {
+  const pageContext = usePageContext();
+  const isDetailPage = Boolean(pageContext.routeParams?.id);
+  if (isDetailPage) {
+    return null;
+  }
+
   return (
     <>
       <Common />
