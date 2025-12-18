@@ -1,11 +1,12 @@
 import path from "path";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import vike from "vike/plugin";
 import "vitest/config";
 
 export default defineConfig({
   base: "/",
-  plugins: [react()],
+  plugins: [react(), vike()],
   ssr: {
     noExternal: [/^d3.*$/],
   },
