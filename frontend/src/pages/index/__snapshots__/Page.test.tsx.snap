@@ -55,7 +55,7 @@ exports[`Home Snapshot Test > render Home 1`] = `
               プロジェクト
             </h2>
             <div
-              class="grid grid-cols-2 md:grid-cols-2 gap-4 p-4"
+              class="grid grid-cols-1 md:grid-cols-2 gap-6"
             >
               <div
                 class="flex flex-col gap-4 p-4 shadow-md hover:shadow-lg"
@@ -94,7 +94,7 @@ exports[`Home Snapshot Test > render Home 1`] = `
               <h2
                 class="text-primary-700 text-xl font-bold px-4 py-2 "
               >
-                記事
+                最新記事
               </h2>
               <a
                 class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-primary-700 bg-primary-50 rounded-lg hover:bg-primary-100 focus:ring-4 focus:outline-none focus:ring-primary-300 transition-colors"
@@ -118,110 +118,126 @@ exports[`Home Snapshot Test > render Home 1`] = `
                 </svg>
               </a>
             </div>
-            <a
-              href="https://example.com/1"
-              target="_blank"
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-6"
             >
-              <div
-                class="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between hover:shadow-lg transition-all duration-200"
+              <a
+                href="https://example.com/1"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <div
-                  class="flex flex-col justify-center"
-                >
-                  <p
-                    class="text-primary-700 text-base font-medium"
-                  >
-                    テスト記事1
-                  </p>
-                  <div
-                    class="flex items-center gap-2 text-primary-900 text-sm font-normal"
-                  >
-                    <span
-                      class="px-2 py-1 rounded text-xs font-medium bg-orange-100 text-orange-800"
-                    >
-                      はてなブログ
-                    </span>
-                    <span>
-                      •
-                    </span>
-                    <span>
-                      2025/1/15
-                    </span>
-                  </div>
-                </div>
-                <div
-                  class="shrink-0"
+                <article
+                  class="bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex h-full flex-col"
                 >
                   <div
-                    class="text-primary-900 flex size-8 items-center justify-center"
+                    aria-hidden="true"
+                    class="rounded-md border border-secondary-200 bg-secondary-100 w-full aspect-video rounded-none flex items-center justify-center text-secondary-400"
                   >
                     <svg
+                      class="size-6"
                       fill="currentColor"
-                      height="24px"
                       viewBox="0 0 256 256"
-                      width="24px"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+                        d="M216,48H40A16,16,0,0,0,24,64V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48ZM40,64H216V192H40ZM168,116a12,12,0,1,1-12-12A12,12,0,0,1,168,116Zm44,60H44l44-48,28,32,20-24,76,88Z"
                       />
                     </svg>
                   </div>
-                </div>
-              </div>
-            </a>
-            <a
-              href="https://example.com/2"
-              target="_blank"
-            >
-              <div
-                class="flex items-center gap-4 px-4 min-h-[72px] py-2 justify-between hover:shadow-lg transition-all duration-200"
-              >
-                <div
-                  class="flex flex-col justify-center"
-                >
-                  <p
-                    class="text-primary-700 text-base font-medium"
-                  >
-                    テスト記事2
-                  </p>
                   <div
-                    class="flex items-center gap-2 text-primary-900 text-sm font-normal"
+                    class="p-5 flex flex-1 flex-col min-w-0"
                   >
-                    <span
-                      class="px-2 py-1 rounded text-xs font-medium bg-blue-100 text-blue-800"
+                    <h2
+                      class="text-xl font-bold text-primary-700 line-clamp-2 break-words"
                     >
-                      Zenn
-                    </span>
-                    <span>
-                      •
-                    </span>
-                    <span>
-                      2025/1/14
-                    </span>
+                      テスト記事1
+                    </h2>
+                    <p
+                      class="text-primary-500 text-sm mt-2 line-clamp-3 break-words"
+                    >
+                      テスト記事の説明
+                    </p>
+                    <div
+                      class="flex items-center gap-2 text-sm mt-auto pt-4 flex-wrap"
+                    >
+                      <span
+                        class="px-2 py-1 rounded text-xs font-medium flex-shrink-0 bg-orange-100 text-orange-800"
+                      >
+                        はてなブログ
+                      </span>
+                      <span
+                        class="text-primary-500 flex-shrink-0"
+                      >
+                        •
+                      </span>
+                      <span
+                        class="text-primary-500 break-words"
+                      >
+                        2025/1/15
+                      </span>
+                    </div>
                   </div>
-                </div>
-                <div
-                  class="shrink-0"
+                </article>
+              </a>
+              <a
+                href="https://example.com/2"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <article
+                  class="bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex h-full flex-col"
                 >
                   <div
-                    class="text-primary-900 flex size-8 items-center justify-center"
+                    aria-hidden="true"
+                    class="rounded-md border border-secondary-200 bg-secondary-100 w-full aspect-video rounded-none flex items-center justify-center text-secondary-400"
                   >
                     <svg
+                      class="size-6"
                       fill="currentColor"
-                      height="24px"
                       viewBox="0 0 256 256"
-                      width="24px"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+                        d="M216,48H40A16,16,0,0,0,24,64V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48ZM40,64H216V192H40ZM168,116a12,12,0,1,1-12-12A12,12,0,0,1,168,116Zm44,60H44l44-48,28,32,20-24,76,88Z"
                       />
                     </svg>
                   </div>
-                </div>
-              </div>
-            </a>
+                  <div
+                    class="p-5 flex flex-1 flex-col min-w-0"
+                  >
+                    <h2
+                      class="text-xl font-bold text-primary-700 line-clamp-2 break-words"
+                    >
+                      テスト記事2
+                    </h2>
+                    <p
+                      class="text-primary-500 text-sm mt-2 line-clamp-3 break-words"
+                    >
+                      もう一つのテスト記事
+                    </p>
+                    <div
+                      class="flex items-center gap-2 text-sm mt-auto pt-4 flex-wrap"
+                    >
+                      <span
+                        class="px-2 py-1 rounded text-xs font-medium flex-shrink-0 bg-blue-100 text-blue-800"
+                      >
+                        Zenn
+                      </span>
+                      <span
+                        class="text-primary-500 flex-shrink-0"
+                      >
+                        •
+                      </span>
+                      <span
+                        class="text-primary-500 break-words"
+                      >
+                        2025/1/14
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
           </div>
           <div
             class="py-4"
