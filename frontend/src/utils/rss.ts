@@ -55,7 +55,9 @@ const extractMediaUrl = (value: unknown): string | undefined => {
   return toNonEmptyString(value);
 };
 
-const extractImageUrlFromHtml = (html: string | undefined): string | undefined => {
+const extractImageUrlFromHtml = (
+  html: string | undefined,
+): string | undefined => {
   if (!html) {
     return undefined;
   }

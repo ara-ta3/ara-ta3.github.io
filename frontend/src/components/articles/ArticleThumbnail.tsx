@@ -11,7 +11,10 @@ const ArticleThumbnail: React.FC<ArticleThumbnailProps> = ({
   url,
   className,
 }) => {
-  const classes = ["rounded-md border border-secondary-200 bg-secondary-100", className]
+  const classes = [
+    "rounded-md border border-secondary-200 bg-secondary-100",
+    className,
+  ]
     .filter(Boolean)
     .join(" ");
 
