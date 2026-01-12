@@ -91,11 +91,11 @@ exports[`Home Snapshot Test > render Home 1`] = `
             <div
               class="flex items-center justify-between mb-4"
             >
-            <h2
-              class="text-primary-700 text-xl font-bold px-4 py-2 "
-            >
-              最新記事
-            </h2>
+              <h2
+                class="text-primary-700 text-xl font-bold px-4 py-2 "
+              >
+                最新記事
+              </h2>
               <a
                 class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-primary-700 bg-primary-50 rounded-lg hover:bg-primary-100 focus:ring-4 focus:outline-none focus:ring-primary-300 transition-colors"
                 href="/articles"
