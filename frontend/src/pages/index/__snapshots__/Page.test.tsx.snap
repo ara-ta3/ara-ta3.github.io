@@ -47,7 +47,7 @@ exports[`Home Snapshot Test > render Home 1`] = `
                 class="flex flex-wrap items-center justify-center gap-3"
               >
                 <a
-                  class="group inline-flex flex-col items-center justify-center gap-1 rounded-2xl border border-secondary-200 bg-white px-3 py-2 text-primary-700 shadow-sm transition hover:bg-primary-50 hover:text-primary-900"
+                  class="group inline-flex w-16 flex-col items-center justify-center gap-1 rounded-2xl border border-secondary-200 bg-white px-3 py-2 text-primary-700 shadow-sm transition hover:bg-primary-50 hover:text-primary-900"
                   href="https://x.com/ara_ta3"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -70,13 +70,13 @@ exports[`Home Snapshot Test > render Home 1`] = `
                     </svg>
                   </span>
                   <span
-                    class="text-xs font-medium text-primary-700"
+                    class="text-center text-xs font-medium text-primary-700"
                   >
                     X
                   </span>
                 </a>
                 <a
-                  class="group inline-flex flex-col items-center justify-center gap-1 rounded-2xl border border-secondary-200 bg-white px-3 py-2 text-primary-700 shadow-sm transition hover:bg-primary-50 hover:text-primary-900"
+                  class="group inline-flex w-16 flex-col items-center justify-center gap-1 rounded-2xl border border-secondary-200 bg-white px-3 py-2 text-primary-700 shadow-sm transition hover:bg-primary-50 hover:text-primary-900"
                   href="https://github.com/ara-ta3"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -99,13 +99,13 @@ exports[`Home Snapshot Test > render Home 1`] = `
                     </svg>
                   </span>
                   <span
-                    class="text-xs font-medium text-primary-700"
+                    class="text-center text-xs font-medium text-primary-700"
                   >
                     GitHub
                   </span>
                 </a>
                 <a
-                  class="group inline-flex flex-col items-center justify-center gap-1 rounded-2xl border border-secondary-200 bg-white px-3 py-2 text-primary-700 shadow-sm transition hover:bg-primary-50 hover:text-primary-900"
+                  class="group inline-flex w-16 flex-col items-center justify-center gap-1 rounded-2xl border border-secondary-200 bg-white px-3 py-2 text-primary-700 shadow-sm transition hover:bg-primary-50 hover:text-primary-900"
                   href="https://zenn.dev/ara_ta3"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -128,13 +128,13 @@ exports[`Home Snapshot Test > render Home 1`] = `
                     </svg>
                   </span>
                   <span
-                    class="text-xs font-medium text-primary-700"
+                    class="text-center text-xs font-medium text-primary-700"
                   >
                     Zenn
                   </span>
                 </a>
                 <a
-                  class="group inline-flex flex-col items-center justify-center gap-1 rounded-2xl border border-secondary-200 bg-white px-3 py-2 text-primary-700 shadow-sm transition hover:bg-primary-50 hover:text-primary-900"
+                  class="group inline-flex w-16 flex-col items-center justify-center gap-1 rounded-2xl border border-secondary-200 bg-white px-3 py-2 text-primary-700 shadow-sm transition hover:bg-primary-50 hover:text-primary-900"
                   href="https://arata.hatenadiary.com/"
                   rel="noopener noreferrer"
                   target="_blank"
@@ -157,9 +157,9 @@ exports[`Home Snapshot Test > render Home 1`] = `
                     </svg>
                   </span>
                   <span
-                    class="text-xs font-medium text-primary-700"
+                    class="text-center text-xs font-medium text-primary-700"
                   >
-                    はてなブログ
+                    ブログ
                   </span>
                 </a>
               </div>
