@@ -4,7 +4,6 @@ import { useData } from "vike-react/useData";
 import Profile from "@/components/Profile";
 import Projects from "@/components/Projects";
 import RelatedArticles from "@/components/RelatedArticles";
-import Contact from "@/components/Links";
 import Footer from "@/components/Footer";
 import type { Data } from "@/pages/index/+data";
 
@@ -21,7 +20,6 @@ const Home: React.FC = () => {
             <Profile />
             <Projects />
             <RelatedArticles articles={articles} />
-            <Contact />
           </div>
         </div>
       </div>
