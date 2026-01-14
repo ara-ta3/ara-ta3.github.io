@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBook, FaGithub, FaRss } from "react-icons/fa";
+import { FaBook, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const socialLinks = [
