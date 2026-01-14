@@ -19,7 +19,7 @@ const socialLinks = [
     icon: <FaBook />,
   },
   {
-    name: "はてなブログ",
+    name: "ブログ",
     href: "https://arata.hatenadiary.com/",
     icon: <FaBook />,
   },
@@ -50,12 +50,12 @@ const Profile: React.FC = () => {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex flex-col items-center justify-center gap-1 rounded-2xl border border-secondary-200 bg-white px-3 py-2 text-primary-700 shadow-sm transition hover:bg-primary-50 hover:text-primary-900"
+              className="group inline-flex w-16 flex-col items-center justify-center gap-1 rounded-2xl border border-secondary-200 bg-white px-3 py-2 text-primary-700 shadow-sm transition hover:bg-primary-50 hover:text-primary-900"
             >
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-secondary-100 text-primary-700 transition group-hover:bg-primary-100">
                 {link.icon}
               </span>
-              <span className="text-xs font-medium text-primary-700">
+              <span className="text-center text-xs font-medium text-primary-700">
                 {link.name}
               </span>
             </a>
