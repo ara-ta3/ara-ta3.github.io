@@ -31,7 +31,6 @@ const Header: React.FC = () => {
         <div className="flex items-center gap-9">
           <HeaderMenuItem href="/projects">プロジェクト</HeaderMenuItem>
           <HeaderMenuItem href="/articles">記事一覧</HeaderMenuItem>
-          <HeaderMenuItem href="/#contact">SNSアカウント</HeaderMenuItem>
         </div>
       </div>
     </header>
