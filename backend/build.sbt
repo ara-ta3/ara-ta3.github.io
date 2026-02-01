@@ -5,5 +5,5 @@ scalaVersion := "3.8.1"
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "3.2.19" % Test,
   "dev.zio" %% "zio" % "2.1.24",
-  "dev.zio" %% "zio-http" % "3.8.0"
+  "dev.zio" %% "zio-http" % "3.8.1"
 )
