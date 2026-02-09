@@ -17,10 +17,7 @@ const Head: React.FC = () => {
         name="description"
         content="開発した個人開発の一覧。Webアプリケーション、ツール、ライブラリなど様々な技術を活用した開発事例をご紹介。"
       />
-      <meta
-        property="og:title"
-        content="個人開発一覧 | ara-ta3.github.io"
-      />
+      <meta property="og:title" content="個人開発一覧 | ara-ta3.github.io" />
       <meta
         property="og:description"
         content="開発した個人開発の一覧。Webアプリケーション、ツール、ライブラリなど様々な技術を活用した開発事例をご紹介。"
