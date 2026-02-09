@@ -26,7 +26,7 @@ describe("BreadcrumbWithSchema", () => {
   it("BreadcrumbとBreadcrumbSchemaの両方を表示する", () => {
     const mockBreadcrumbs = [
       { name: "ホーム", url: "/", isLast: false },
-      { name: "プロジェクト", url: "/projects/", isLast: true },
+      { name: "個人開発", url: "/projects/", isLast: true },
     ];
 
     mockUseBreadcrumbs.mockReturnValue(mockBreadcrumbs);
@@ -36,7 +36,7 @@ describe("BreadcrumbWithSchema", () => {
     );
 
     expect(screen.getByText("ホーム")).toBeInTheDocument();
-    expect(screen.getByText("プロジェクト")).toBeInTheDocument();
+    expect(screen.getByText("個人開発")).toBeInTheDocument();
 
     const scriptTag = container.querySelector(
       'script[type="application/ld+json"]',
@@ -80,7 +80,7 @@ describe("BreadcrumbWithSchema", () => {
   it("3階層のパンくずリストで全階層を表示しJSON-LDに反映する", () => {
     const mockBreadcrumbs = [
       { name: "ホーム", url: "/", isLast: false },
-      { name: "プロジェクト", url: "/projects/", isLast: false },
+      { name: "個人開発", url: "/projects/", isLast: false },
       {
         name: "個人ウェブサイト",
         url: "/projects/personal-website",
@@ -95,7 +95,7 @@ describe("BreadcrumbWithSchema", () => {
     );
 
     expect(screen.getByText("ホーム")).toBeInTheDocument();
-    expect(screen.getByText("プロジェクト")).toBeInTheDocument();
+    expect(screen.getByText("個人開発")).toBeInTheDocument();
     expect(screen.getByText("個人ウェブサイト")).toBeInTheDocument();
 
     const scriptTag = container.querySelector(
@@ -106,6 +106,6 @@ describe("BreadcrumbWithSchema", () => {
     expect(jsonLD.itemListElement).toHaveLength(3);
     expect(
       jsonLD.itemListElement.map((item: { name: string }) => item.name),
-    ).toEqual(["ホーム", "プロジェクト", "個人ウェブサイト"]);
+    ).toEqual(["ホーム", "個人開発", "個人ウェブサイト"]);
   });
 });

@@ -13,21 +13,21 @@ describe("Breadcrumb", () => {
   it("パンくずリストの全アイテムがDOMに表示される", () => {
     const items: BreadcrumbItem[] = [
       { name: "ホーム", url: "/", isLast: false },
-      { name: "プロジェクト", url: "/projects/", isLast: false },
-      { name: "プロジェクト詳細", url: "/projects/test", isLast: true },
+      { name: "個人開発", url: "/projects/", isLast: false },
+      { name: "個人開発詳細", url: "/projects/test", isLast: true },
     ];
 
     render(<Breadcrumb items={items} />);
 
     expect(screen.getByText("ホーム")).toBeInTheDocument();
-    expect(screen.getByText("プロジェクト")).toBeInTheDocument();
-    expect(screen.getByText("プロジェクト詳細")).toBeInTheDocument();
+    expect(screen.getByText("個人開発")).toBeInTheDocument();
+    expect(screen.getByText("個人開発詳細")).toBeInTheDocument();
   });
 
   it("ホームアイテムにリンクが設定される", () => {
     const items: BreadcrumbItem[] = [
       { name: "ホーム", url: "/", isLast: false },
-      { name: "プロジェクト", url: "/projects/", isLast: true },
+      { name: "個人開発", url: "/projects/", isLast: true },
     ];
 
     render(<Breadcrumb items={items} />);

@@ -72,9 +72,7 @@ const ProjectsPage: React.FC = () => {
     <>
       <BreadcrumbWithSchema pathname="/projects/" />
       <div className="text-center mb-6">
-        <h1 className="text-3xl font-bold text-primary-900">
-          趣味プロジェクト一覧
-        </h1>
+        <h1 className="text-3xl font-bold text-primary-900">個人開発</h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {projects.map((project) => (
