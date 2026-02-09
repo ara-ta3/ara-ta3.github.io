@@ -13,14 +13,14 @@ async function getBreadcrumbSchema(page) {
 }
 
 test.describe("パンくずリストのJSON+LDスキーマテスト", () => {
-  test("プロジェクトページにパンくずリストのJSON+LDスキーマが存在する", async ({
+  test("個人開発ページにパンくずリストのJSON+LDスキーマが存在する", async ({
     page,
   }) => {
     await page.goto("/projects/");
 
     const schema = await getBreadcrumbSchema(page);
     expect(schema.itemListElement.length).toBe(2);
-    expect(schema.itemListElement[1].name).toBe("プロジェクト");
+    expect(schema.itemListElement[1].name).toBe("個人開発");
   });
 
   test("記事一覧ページにパンくずリストのJSON+LDスキーマが存在する", async ({
@@ -33,7 +33,7 @@ test.describe("パンくずリストのJSON+LDスキーマテスト", () => {
     expect(schema.itemListElement[1].name).toBe("記事一覧");
   });
 
-  test("プロジェクト詳細ページ（personal-website）にパンくずリストのJSON+LDスキーマが存在する", async ({
+  test("個人開発詳細ページ（personal-website）にパンくずリストのJSON+LDスキーマが存在する", async ({
     page,
   }) => {
     await page.goto("/projects/personal-website");
@@ -45,7 +45,7 @@ test.describe("パンくずリストのJSON+LDスキーマテスト", () => {
     );
   });
 
-  test("プロジェクト詳細ページ（nekometry）にパンくずリストのJSON+LDスキーマが存在する", async ({
+  test("個人開発詳細ページ（nekometry）にパンくずリストのJSON+LDスキーマが存在する", async ({
     page,
   }) => {
     await page.goto("/projects/nekometry");

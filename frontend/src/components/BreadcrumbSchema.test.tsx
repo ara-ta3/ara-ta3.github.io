@@ -13,8 +13,8 @@ describe("BreadcrumbSchema", () => {
   it("Schema.org BreadcrumbList仕様に準拠したJSON-LDを生成する", () => {
     const items: BreadcrumbItem[] = [
       { name: "ホーム", url: "/", isLast: false },
-      { name: "プロジェクト", url: "/projects/", isLast: false },
-      { name: "プロジェクト詳細", url: "/projects/test", isLast: true },
+      { name: "個人開発", url: "/projects/", isLast: false },
+      { name: "個人開発詳細", url: "/projects/test", isLast: true },
     ];
 
     const { container } = render(<BreadcrumbSchema items={items} />);
@@ -39,13 +39,13 @@ describe("BreadcrumbSchema", () => {
         {
           "@type": "ListItem",
           position: 2,
-          name: "プロジェクト",
+          name: "個人開発",
           item: "https://ara-ta3.github.io/projects/",
         },
         {
           "@type": "ListItem",
           position: 3,
-          name: "プロジェクト詳細",
+          name: "個人開発詳細",
           item: "https://ara-ta3.github.io/projects/test",
         },
       ],

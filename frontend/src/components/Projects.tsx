@@ -6,7 +6,7 @@ const Projects: React.FC = () => {
   const projects = getAllProjects().filter((p) => p.imageUrl !== undefined);
   return (
     <div id="projects" className="py-4">
-      <HeadingTitle title="プロジェクト" />
+      <HeadingTitle title="個人開発" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project) => (
           <div

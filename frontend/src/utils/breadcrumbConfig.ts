@@ -8,7 +8,7 @@ export const breadcrumbConfig: Record<string, BreadcrumbConfig> = {
     name: "ホーム",
   },
   "/projects/": {
-    name: "プロジェクト",
+    name: "個人開発",
     parent: "/",
   },
   "/articles/": {
@@ -35,11 +35,11 @@ export const getDynamicBreadcrumbConfig = (
   const exactMatch = breadcrumbConfig[pathname];
   if (exactMatch) return exactMatch;
 
-  // プロジェクト詳細ページ（/projects/id）の場合
+  // 個人開発詳細ページ（/projects/id）の場合
   if (segments.length === 2 && segments[0] === "projects") {
     const projectId = segments[1];
 
-    // プロジェクト名を動的に取得
+    // 個人開発名を動的に取得
     const getProjectName = (id: string): string => {
       const projects = [
         {
@@ -49,7 +49,7 @@ export const getDynamicBreadcrumbConfig = (
         { id: "nekometry", title: "Nekometry" },
       ];
       const project = projects.find((p) => p.id === id);
-      return project ? project.title : "プロジェクト詳細";
+      return project ? project.title : "個人開発詳細";
     };
 
     return {
