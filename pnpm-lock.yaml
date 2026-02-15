@@ -7,7 +7,7 @@ settings:
 overrides:
   brace-expansion@^1.1.0: 5.0.2
   brace-expansion@^2.0.0: 5.0.2
-  glob: 13.0.2
+  glob: 13.0.3
   js-yaml: 4.1.1
 
 importers:
