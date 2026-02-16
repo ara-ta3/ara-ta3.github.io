@@ -3,7 +3,9 @@ import { HeadingTitle } from "@/components/Heading";
 import { getAllProjects } from "@/utils/projects";
 
 const Projects: React.FC = () => {
-  const projects = getAllProjects().filter((p) => p.imageUrl !== undefined);
+  const projects = getAllProjects().filter(
+    (project) => project.id !== "personal-website",
+  );
   return (
     <div id="projects" className="py-4">
       <HeadingTitle title="個人開発" />
@@ -17,11 +19,13 @@ const Projects: React.FC = () => {
               <h3 className="text-primary-700 text-lg font-medium mb-2">
                 {project.title}
               </h3>
-              <img
-                src={project.imageUrl}
-                alt={project.title}
-                className="w-full h-auto rounded-lg "
-              />
+              {project.imageUrl && (
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="w-full h-auto rounded-lg "
+                />
+              )}
               <div>
                 <p className="text-primary-900 text-sm font-normal py-2">
                   {project.description}
