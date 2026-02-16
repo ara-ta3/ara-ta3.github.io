@@ -42,11 +42,12 @@ export const getDynamicBreadcrumbConfig = (
     // 個人開発名を動的に取得
     const getProjectName = (id: string): string => {
       const projects = [
+        { id: "appricity", title: "Appricity" },
+        { id: "nekometry", title: "Nekometry" },
         {
           id: "personal-website",
           title: "個人ウェブサイト(ara-ta3.github.io)",
         },
-        { id: "nekometry", title: "Nekometry" },
       ];
       const project = projects.find((p) => p.id === id);
       return project ? project.title : "個人開発詳細";
