@@ -3,7 +3,9 @@ import { HeadingTitle } from "@/components/Heading";
 import { getAllProjects } from "@/utils/projects";
 
 const Projects: React.FC = () => {
-  const projects = getAllProjects();
+  const projects = getAllProjects().filter(
+    (project) => project.id !== "personal-website",
+  );
   return (
     <div id="projects" className="py-4">
       <HeadingTitle title="個人開発" />

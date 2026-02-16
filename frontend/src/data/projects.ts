@@ -1,4 +1,5 @@
 import type { Project } from "@/types/project";
+import Appricity from "@/assets/images/appricity.png";
 import Nekometry from "@/assets/images/nekometry.jpg";
 
 export const projects: Project[] = [
@@ -18,6 +19,7 @@ export const projects: Project[] = [
       { label: "Hosting", value: "Vercel" },
       { label: "対象ユーザ", value: "便利なツールを探す/共有したい人" },
     ],
+    imageUrl: Appricity as string,
     demoUrl: "https://appricity.vercel.app/",
     buttonText: "サービスを見る",
   },

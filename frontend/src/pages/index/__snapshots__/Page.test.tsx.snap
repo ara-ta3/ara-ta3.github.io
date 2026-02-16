@@ -188,6 +188,11 @@ exports[`Home Snapshot Test > render Home 1`] = `
                   >
                     Appricity
                   </h3>
+                  <img
+                    alt="Appricity"
+                    class="w-full h-auto rounded-lg "
+                    src="/src/assets/images/appricity.png"
+                  />
                   <div>
                     <p
                       class="text-primary-900 text-sm font-normal py-2"
@@ -218,26 +223,6 @@ exports[`Home Snapshot Test > render Home 1`] = `
                       class="text-primary-900 text-sm font-normal py-2"
                     >
                       ペットの健康管理を支援するWebアプリケーション
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div
-                class="flex flex-col gap-4 p-4 shadow-md hover:shadow-lg"
-              >
-                <a
-                  href="projects/personal-website"
-                >
-                  <h3
-                    class="text-primary-700 text-lg font-medium mb-2"
-                  >
-                    個人ウェブサイト(ara-ta3.github.io)
-                  </h3>
-                  <div>
-                    <p
-                      class="text-primary-900 text-sm font-normal py-2"
-                    >
-                      Vite+Vikeを使用したSSGによる個人ポートフォリオサイト
                     </p>
                   </div>
                 </a>
