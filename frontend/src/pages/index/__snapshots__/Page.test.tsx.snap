@@ -175,57 +175,175 @@ exports[`Home Snapshot Test > render Home 1`] = `
               個人開発
             </h2>
             <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-6"
+              class="grid grid-cols-1 md:grid-cols-2 gap-4"
             >
               <div
-                class="flex flex-col gap-4 p-4 shadow-md hover:shadow-lg"
+                class="bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
               >
-                <a
-                  href="projects/appricity"
+                <div
+                  class="h-48 border-b border-secondary-100 rounded-t-lg overflow-hidden bg-secondary-50"
                 >
-                  <h3
-                    class="text-primary-700 text-lg font-medium mb-2"
-                  >
-                    Appricity
-                  </h3>
                   <img
-                    alt="Appricity"
-                    class="w-full h-auto rounded-lg "
+                    alt="Appricity のプロジェクト画像"
+                    class="w-full h-full object-cover"
                     src="/src/assets/images/appricity.png"
                   />
-                  <div>
-                    <p
-                      class="text-primary-900 text-sm font-normal py-2"
+                </div>
+                <div
+                  class="p-6"
+                >
+                  <h2
+                    class="text-xl font-bold text-primary-700 mb-2"
+                  >
+                    Appricity
+                  </h2>
+                  <p
+                    class="text-primary-500 text-sm mb-4"
+                  >
+                    便利なツールを気軽に共有できる、温かいキュレーションプラットフォーム
+                  </p>
+                  <div
+                    class="flex flex-wrap gap-2 mb-4"
+                  >
+                    <span
+                      class="px-2 py-1 bg-secondary-100 text-primary-700 text-xs font-medium rounded"
                     >
-                      便利なツールを気軽に共有できる、温かいキュレーションプラットフォーム
-                    </p>
+                      Next.js
+                    </span>
+                    <span
+                      class="px-2 py-1 bg-secondary-100 text-primary-700 text-xs font-medium rounded"
+                    >
+                      TypeScript
+                    </span>
+                    <span
+                      class="px-2 py-1 bg-secondary-100 text-primary-700 text-xs font-medium rounded"
+                    >
+                      Tailwind CSS
+                    </span>
+                    <span
+                      class="px-2 py-1 bg-secondary-100 text-primary-700 text-xs font-medium rounded"
+                    >
+                      +1 more
+                    </span>
                   </div>
-                </a>
+                  <div
+                    class="flex justify-between items-center"
+                  >
+                    <a
+                      class="inline-flex items-center p-2 text-sm font-medium text-center text-white bg-primary-900 rounded-lg hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 transition-colors"
+                      href="/projects/appricity"
+                    >
+                      詳細を見る
+                      <svg
+                        aria-hidden="true"
+                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="text-primary-700 hover:text-primary-900 text-sm font-medium"
+                      href="https://appricity.vercel.app/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      サービスを見る
+                    </a>
+                  </div>
+                </div>
               </div>
               <div
-                class="flex flex-col gap-4 p-4 shadow-md hover:shadow-lg"
+                class="bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
               >
-                <a
-                  href="projects/nekometry"
+                <div
+                  class="h-48 border-b border-secondary-100 rounded-t-lg overflow-hidden bg-secondary-50"
                 >
-                  <h3
-                    class="text-primary-700 text-lg font-medium mb-2"
-                  >
-                    Nekometry
-                  </h3>
                   <img
-                    alt="Nekometry"
-                    class="w-full h-auto rounded-lg "
+                    alt="Nekometry のプロジェクト画像"
+                    class="w-full h-full object-cover"
                     src="/src/assets/images/nekometry.jpg"
                   />
-                  <div>
-                    <p
-                      class="text-primary-900 text-sm font-normal py-2"
+                </div>
+                <div
+                  class="p-6"
+                >
+                  <h2
+                    class="text-xl font-bold text-primary-700 mb-2"
+                  >
+                    Nekometry
+                  </h2>
+                  <p
+                    class="text-primary-500 text-sm mb-4"
+                  >
+                    ペットの健康管理を支援するWebアプリケーション
+                  </p>
+                  <div
+                    class="flex flex-wrap gap-2 mb-4"
+                  >
+                    <span
+                      class="px-2 py-1 bg-secondary-100 text-primary-700 text-xs font-medium rounded"
                     >
-                      ペットの健康管理を支援するWebアプリケーション
-                    </p>
+                      Vite
+                    </span>
+                    <span
+                      class="px-2 py-1 bg-secondary-100 text-primary-700 text-xs font-medium rounded"
+                    >
+                      Vike
+                    </span>
+                    <span
+                      class="px-2 py-1 bg-secondary-100 text-primary-700 text-xs font-medium rounded"
+                    >
+                      React 19
+                    </span>
+                    <span
+                      class="px-2 py-1 bg-secondary-100 text-primary-700 text-xs font-medium rounded"
+                    >
+                      +5 more
+                    </span>
                   </div>
-                </a>
+                  <div
+                    class="flex justify-between items-center"
+                  >
+                    <a
+                      class="inline-flex items-center p-2 text-sm font-medium text-center text-white bg-primary-900 rounded-lg hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 transition-colors"
+                      href="/projects/nekometry"
+                    >
+                      詳細を見る
+                      <svg
+                        aria-hidden="true"
+                        class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="text-primary-700 hover:text-primary-900 text-sm font-medium"
+                      href="https://nekometry.web.app/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      ツールを使う
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
