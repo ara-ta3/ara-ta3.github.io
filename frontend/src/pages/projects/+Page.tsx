@@ -6,6 +6,20 @@ import type { Project } from "@/types/project";
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   return (
     <div className="bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+      <div className="h-48 border-b border-secondary-100 rounded-t-lg overflow-hidden bg-secondary-50">
+        {project.imageUrl ? (
+          <img
+            src={project.imageUrl}
+            alt={`${project.title} のプロジェクト画像`}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <div
+            aria-label="画像未設定"
+            className="w-full h-full border-2 border-dashed border-secondary-200"
+          />
+        )}
+      </div>
       <div className="p-6">
         <h2 className="text-xl font-bold text-primary-700 mb-2">
           {project.title}
