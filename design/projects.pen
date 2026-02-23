@@ -1,0 +1,446 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "ug0Fu",
+      "x": 0,
+      "y": 0,
+      "name": "ProjectsPage",
+      "width": 1440,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": [
+        16,
+        160
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "No9kO",
+          "name": "ProjectsContent960",
+          "width": 960,
+          "layout": "vertical",
+          "gap": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "a995L",
+              "name": "ProjectsTitleWrap",
+              "width": "fill_container",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ECqlt",
+                  "name": "ProjectsTitle",
+                  "fill": "#134E4A",
+                  "content": "個人開発",
+                  "fontFamily": "Inter",
+                  "fontSize": 40,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bx9Lk",
+              "name": "ProjectsGrid",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "z1uCM",
+                  "name": "ProjectsLeftCol",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "PfkRF",
+                      "name": "ProjectCardAppricity",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#E2E8F0"
+                      },
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "W8XtV",
+                          "name": "ProjectImage",
+                          "fill": "#F8FAFC",
+                          "width": "fill_container",
+                          "height": 190
+                        },
+                        {
+                          "type": "frame",
+                          "id": "MZY9Q",
+                          "name": "ProjectBody",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 12,
+                          "padding": 16,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Wr8yY",
+                              "name": "p1title",
+                              "fill": "#0F766E",
+                              "content": "Appricity",
+                              "fontFamily": "Inter",
+                              "fontSize": 24,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "5dWaJ",
+                              "name": "p1desc",
+                              "fill": "#14B8A6",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "便利なツールを気軽に共有できる、温かいキュレーションプラットフォーム",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "LYkVF",
+                              "name": "p1tech",
+                              "fill": "#334155",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Next.js / TypeScript / Tailwind CSS +1 more",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "c3UUK",
+                              "name": "ProjectActions",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "LS71I",
+                                  "name": "DetailButton",
+                                  "fill": "#134E4A",
+                                  "cornerRadius": 8,
+                                  "padding": [
+                                    8,
+                                    12
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "w4QH4",
+                                      "name": "p1btnText",
+                                      "fill": "#FFFFFF",
+                                      "content": "詳細を見る",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 12,
+                                      "fontWeight": "600"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "xJVFN",
+                                  "name": "p1link",
+                                  "fill": "#0F766E",
+                                  "content": "サービスを見る",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "grjLr",
+                      "name": "ProjectCardPersonalWebsite",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#E2E8F0"
+                      },
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "dBwaA",
+                          "name": "ProjectImageWrap",
+                          "width": "fill_container",
+                          "height": 190,
+                          "fill": "#F8FAFC",
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "id": "FyL0Z",
+                              "name": "NoImageBorder",
+                              "fill": "#F8FAFC",
+                              "width": 420,
+                              "height": 140,
+                              "stroke": {
+                                "thickness": 2,
+                                "fill": "#CBD5E1"
+                              }
+                            },
+                            {
+                              "type": "text",
+                              "id": "s3gJs",
+                              "name": "p3imgText",
+                              "fill": "#64748B",
+                              "content": "画像未設定",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "CqMQg",
+                          "name": "ProjectBody",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 12,
+                          "padding": 16,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "NXFGN",
+                              "name": "p3title",
+                              "fill": "#0F766E",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "個人ウェブサイト(ara-ta3.github.io)",
+                              "fontFamily": "Inter",
+                              "fontSize": 22,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Nu5mH",
+                              "name": "p3desc",
+                              "fill": "#14B8A6",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Vite+Vikeを使用したSSGによる個人ポートフォリオサイト",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "guJRu",
+                              "name": "p3tech",
+                              "fill": "#334155",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Vite / Vike / React 19 / TypeScript +3 more",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "mc8l8",
+                              "name": "ProjectActions",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "e6xIf",
+                                  "name": "DetailButton",
+                                  "fill": "#134E4A",
+                                  "cornerRadius": 8,
+                                  "padding": [
+                                    8,
+                                    12
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "GQjCg",
+                                      "name": "p3btnText",
+                                      "fill": "#FFFFFF",
+                                      "content": "詳細を見る",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 12,
+                                      "fontWeight": "600"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "lKjer",
+                                  "name": "p3link",
+                                  "fill": "#0F766E",
+                                  "content": "サイトを見る",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AWBoY",
+                  "name": "ProjectsRightCol",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "t0ivh",
+                      "name": "ProjectCardNekometry",
+                      "clip": true,
+                      "width": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#E2E8F0"
+                      },
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "id": "XXakT",
+                          "name": "ProjectImage",
+                          "fill": "#F8FAFC",
+                          "width": "fill_container",
+                          "height": 190
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Xf2Ma",
+                          "name": "ProjectBody",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 12,
+                          "padding": 16,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Efhj1",
+                              "name": "p2title",
+                              "fill": "#0F766E",
+                              "content": "Nekometry",
+                              "fontFamily": "Inter",
+                              "fontSize": 24,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "CdENf",
+                              "name": "p2desc",
+                              "fill": "#14B8A6",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "ペットの健康管理を支援するWebアプリケーション",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "yWHmI",
+                              "name": "p2tech",
+                              "fill": "#334155",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Vite / Vike / React 19 / TypeScript +4 more",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "ms13N",
+                              "name": "ProjectActions",
+                              "width": "fill_container",
+                              "justifyContent": "space_between",
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "CEcVt",
+                                  "name": "DetailButton",
+                                  "fill": "#134E4A",
+                                  "cornerRadius": 8,
+                                  "padding": [
+                                    8,
+                                    12
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "id": "E2JuW",
+                                      "name": "p2btnText",
+                                      "fill": "#FFFFFF",
+                                      "content": "詳細を見る",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 12,
+                                      "fontWeight": "600"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "V4E66",
+                                  "name": "p2link",
+                                  "fill": "#0F766E",
+                                  "content": "ツールを使う",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

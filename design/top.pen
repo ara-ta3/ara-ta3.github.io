@@ -1,0 +1,943 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "WMs8P",
+      "x": 0,
+      "y": 0,
+      "name": "TopPage",
+      "width": 1440,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 32,
+      "padding": [
+        16,
+        160
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "U8Jzv",
+          "name": "TopContent960",
+          "width": 960,
+          "layout": "vertical",
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "am6em",
+              "name": "ProfileSection",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "OotdK",
+                  "name": "ProfileAvatar",
+                  "fill": "#CCFBF1",
+                  "width": 128,
+                  "height": 128,
+                  "stroke": {
+                    "thickness": 4,
+                    "fill": "#99F6E4"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "TAsjj",
+                  "name": "ProfileName",
+                  "fill": "#0F766E",
+                  "content": "ara-ta3",
+                  "fontFamily": "Inter",
+                  "fontSize": 32,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "vDLiu",
+                  "name": "ProfileDesc",
+                  "fill": "#134E4A",
+                  "textGrowth": "fixed-width",
+                  "width": 680,
+                  "content": "Scala、TypeScript、Goなどの型付言語が好きなWebエンジニアです。",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                },
+                {
+                  "type": "frame",
+                  "id": "qOYyV",
+                  "name": "ProfileSocialRow",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "4QsUR",
+                      "name": "SocialX",
+                      "width": 72,
+                      "height": 64,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#E2E8F0"
+                      },
+                      "layout": "vertical",
+                      "gap": 4,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yMVLm",
+                          "name": "btnXText",
+                          "fill": "#0F766E",
+                          "content": "X",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rb1RP",
+                      "name": "SocialGitHub",
+                      "width": 72,
+                      "height": 64,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#E2E8F0"
+                      },
+                      "layout": "vertical",
+                      "gap": 4,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "TW7WS",
+                          "name": "btnGhText",
+                          "fill": "#0F766E",
+                          "content": "GitHub",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "NhSjR",
+                      "name": "SocialZenn",
+                      "width": 72,
+                      "height": 64,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#E2E8F0"
+                      },
+                      "layout": "vertical",
+                      "gap": 4,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "i2EaZ",
+                          "name": "btnZennText",
+                          "fill": "#0F766E",
+                          "content": "Zenn",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wM1Oa",
+                      "name": "SocialBlog",
+                      "width": 72,
+                      "height": 64,
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#E2E8F0"
+                      },
+                      "layout": "vertical",
+                      "gap": 4,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MfmHE",
+                          "name": "btnBlogText",
+                          "fill": "#0F766E",
+                          "content": "ブログ",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cbkRD",
+              "name": "TopProjectsSection",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "1SZi8",
+                  "name": "TopProjectsHeading",
+                  "fill": "#0F766E",
+                  "content": "個人開発",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "169Rh",
+                  "name": "TopProjectsCols",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ckMtr",
+                      "name": "TopProjectColLeft",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "5tXcX",
+                          "name": "TopProjectCardAppricity",
+                          "clip": true,
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#E2E8F0"
+                          },
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "id": "jrh92",
+                              "name": "CardImage",
+                              "fill": "#F8FAFC",
+                              "width": "fill_container",
+                              "height": 180
+                            },
+                            {
+                              "type": "frame",
+                              "id": "EzSPw",
+                              "name": "CardBody",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 10,
+                              "padding": 16,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "oxNVJ",
+                                  "name": "c1title",
+                                  "fill": "#0F766E",
+                                  "content": "Appricity",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 22,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "eWRTD",
+                                  "name": "c1desc",
+                                  "fill": "#14B8A6",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "便利なツールを気軽に共有できる、温かいキュレーションプラットフォーム",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "su73S",
+                                  "name": "c1tech",
+                                  "fill": "#334155",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Next.js / TypeScript / Tailwind CSS +1",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "QHLmx",
+                                  "name": "CardActions",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "pWjPa",
+                                      "name": "DetailButton",
+                                      "fill": "#134E4A",
+                                      "cornerRadius": 8,
+                                      "gap": 8,
+                                      "padding": [
+                                        8,
+                                        12
+                                      ],
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "AEnxW",
+                                          "name": "c1buttonText",
+                                          "fill": "#FFFFFF",
+                                          "content": "詳細を見る",
+                                          "fontFamily": "Inter",
+                                          "fontSize": 12,
+                                          "fontWeight": "600"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "a7pUF",
+                                      "name": "c1link",
+                                      "fill": "#0F766E",
+                                      "content": "サービスを見る",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 12,
+                                      "fontWeight": "600"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "9bWe0",
+                      "name": "TopProjectColRight",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "qHTsc",
+                          "name": "TopProjectCardNekometry",
+                          "clip": true,
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#E2E8F0"
+                          },
+                          "layout": "vertical",
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "id": "nG9oP",
+                              "name": "CardImage",
+                              "fill": "#F8FAFC",
+                              "width": "fill_container",
+                              "height": 180
+                            },
+                            {
+                              "type": "frame",
+                              "id": "3j7jV",
+                              "name": "CardBody",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 10,
+                              "padding": 16,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "xlXer",
+                                  "name": "c2title",
+                                  "fill": "#0F766E",
+                                  "content": "Nekometry",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 22,
+                                  "fontWeight": "700"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "fApCi",
+                                  "name": "c2desc",
+                                  "fill": "#14B8A6",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "ペットの健康管理を支援するWebアプリケーション",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "LE90e",
+                                  "name": "c2tech",
+                                  "fill": "#334155",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Vite / Vike / React 19 +5",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "1JSJE",
+                                  "name": "CardActions",
+                                  "width": "fill_container",
+                                  "justifyContent": "space_between",
+                                  "alignItems": "center",
+                                  "children": [
+                                    {
+                                      "type": "frame",
+                                      "id": "zt3x4",
+                                      "name": "DetailButton",
+                                      "fill": "#134E4A",
+                                      "cornerRadius": 8,
+                                      "gap": 8,
+                                      "padding": [
+                                        8,
+                                        12
+                                      ],
+                                      "children": [
+                                        {
+                                          "type": "text",
+                                          "id": "hNHAQ",
+                                          "name": "c2buttonText",
+                                          "fill": "#FFFFFF",
+                                          "content": "詳細を見る",
+                                          "fontFamily": "Inter",
+                                          "fontSize": 12,
+                                          "fontWeight": "600"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "text",
+                                      "id": "gKQQm",
+                                      "name": "c2link",
+                                      "fill": "#0F766E",
+                                      "content": "ツールを使う",
+                                      "fontFamily": "Inter",
+                                      "fontSize": 12,
+                                      "fontWeight": "600"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "z0gCg",
+              "name": "TopArticlesSection",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "snLHl",
+                  "name": "TopArticlesHead",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "5w28W",
+                      "name": "TopArticlesHeading",
+                      "fill": "#0F766E",
+                      "content": "最新記事",
+                      "fontFamily": "Inter",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "g60Zv",
+                      "name": "TopAllArticlesButton",
+                      "fill": "#F0FDFA",
+                      "cornerRadius": 8,
+                      "gap": 8,
+                      "padding": [
+                        8,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "akuYV",
+                          "name": "allButtonText",
+                          "fill": "#0F766E",
+                          "content": "すべて見る",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QnDDw",
+                          "name": "allButtonArrow",
+                          "fill": "#0F766E",
+                          "content": "→",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "0yIRy",
+                  "name": "TopArticlesCols",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "2mDCm",
+                      "name": "TopArticleColLeft",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "n69GR",
+                          "name": "TopArticleCard1",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#E2E8F0"
+                          },
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "cornerRadius": 8,
+                              "id": "5lpiD",
+                              "name": "ArticleThumb",
+                              "fill": "#F1F5F9",
+                              "width": "fill_container",
+                              "height": 120
+                            },
+                            {
+                              "type": "text",
+                              "id": "ESHH8",
+                              "name": "a1title",
+                              "fill": "#0F766E",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 42,
+                              "content": "Scala 2.13で Scalafix カスタムルールを使い...",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "rrM6H",
+                              "name": "a1snippet",
+                              "fill": "#14B8A6",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 36,
+                              "content": "はじめに この記事は Scala Advent Calendar 2025 の 15 日目の記事です。",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "KwG3S",
+                              "name": "a1meta",
+                              "fill": "#64748B",
+                              "content": "Zenn • 2025-12-14",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "RLqUw",
+                          "name": "TopArticleCard2",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#E2E8F0"
+                          },
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "cornerRadius": 8,
+                              "id": "94gYj",
+                              "name": "ArticleThumb",
+                              "fill": "#F1F5F9",
+                              "width": "fill_container",
+                              "height": 120
+                            },
+                            {
+                              "type": "text",
+                              "id": "TIee4",
+                              "name": "a2title",
+                              "fill": "#0F766E",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 42,
+                              "content": "Scala 3 + JMH を最短でセットアップする...",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "m0TeY",
+                              "name": "a2snippet",
+                              "fill": "#14B8A6",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 36,
+                              "content": "この記事は Scala Advent Calendar 2025 の 7 日目です。",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Caabj",
+                              "name": "a2meta",
+                              "fill": "#64748B",
+                              "content": "Zenn • 2025-12-07",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "OIlUO",
+                          "name": "TopArticleCard3",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#E2E8F0"
+                          },
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "cornerRadius": 8,
+                              "id": "7uUCK",
+                              "name": "ArticleThumb",
+                              "fill": "#F1F5F9",
+                              "width": "fill_container",
+                              "height": 120
+                            },
+                            {
+                              "type": "text",
+                              "id": "s3fu0",
+                              "name": "a3title",
+                              "fill": "#0F766E",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 42,
+                              "content": "2025買ってよかったアイテム｜生活が確実にラクに...",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "KqM88",
+                              "name": "a3snippet",
+                              "fill": "#14B8A6",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 36,
+                              "content": "今年も気づけばあれこれ買い物をしていました。",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "iXE1n",
+                              "name": "a3meta",
+                              "fill": "#64748B",
+                              "content": "はてなブログ • 2025-12-06",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TQqbQ",
+                      "name": "TopArticleColRight",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pEBGd",
+                          "name": "TopArticleCard4",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#E2E8F0"
+                          },
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "cornerRadius": 8,
+                              "id": "OK0Wa",
+                              "name": "ArticleThumb",
+                              "fill": "#F1F5F9",
+                              "width": "fill_container",
+                              "height": 120
+                            },
+                            {
+                              "type": "text",
+                              "id": "yygG0",
+                              "name": "a4title",
+                              "fill": "#0F766E",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 42,
+                              "content": "猫の餌のカロリー計算を出来るサービスNekometry...",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "OnWuF",
+                              "name": "a4snippet",
+                              "fill": "#14B8A6",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 36,
+                              "content": "個人開発についての Advent Calendar 2025 の4日目です。",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "E8COq",
+                              "name": "a4meta",
+                              "fill": "#64748B",
+                              "content": "はてなブログ • 2025-12-03",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "T4y1P",
+                          "name": "TopArticleCard5",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#E2E8F0"
+                          },
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "cornerRadius": 8,
+                              "id": "wEwkm",
+                              "name": "ArticleThumb",
+                              "fill": "#F1F5F9",
+                              "width": "fill_container",
+                              "height": 120
+                            },
+                            {
+                              "type": "text",
+                              "id": "ghOoj",
+                              "name": "a5title",
+                              "fill": "#0F766E",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 42,
+                              "content": "2025年読んだ本で思い出深い推しの本...",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "afbec",
+                              "name": "a5snippet",
+                              "fill": "#14B8A6",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 36,
+                              "content": "今年の読書振り返りも兼ねてまとめた記事です。",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ZIcv8",
+                              "name": "a5meta",
+                              "fill": "#64748B",
+                              "content": "はてなブログ • 2025-12-02",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Rl5JC",
+                          "name": "TopArticleCard6",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF",
+                          "cornerRadius": 12,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "#E2E8F0"
+                          },
+                          "layout": "vertical",
+                          "gap": 8,
+                          "padding": 12,
+                          "children": [
+                            {
+                              "type": "rectangle",
+                              "cornerRadius": 8,
+                              "id": "9WAU1",
+                              "name": "ArticleThumb",
+                              "fill": "#F1F5F9",
+                              "width": "fill_container",
+                              "height": 120
+                            },
+                            {
+                              "type": "text",
+                              "id": "duq1a",
+                              "name": "a6title",
+                              "fill": "#0F766E",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 42,
+                              "content": "2025年11月に読んだ＆読んでいる本たち",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "NBwEz",
+                              "name": "a6snippet",
+                              "fill": "#14B8A6",
+                              "textGrowth": "fixed-width-height",
+                              "width": "fill_container",
+                              "height": 36,
+                              "content": "会社の読書会で読んだ本を中心に整理した記事です。",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tmfMz",
+                              "name": "a6meta",
+                              "fill": "#64748B",
+                              "content": "はてなブログ • 2025-12-02",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
