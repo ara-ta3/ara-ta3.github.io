@@ -22,6 +22,7 @@ build:
 	$(MAKE) $(DIST_DIR)/client/robots.txt
 	touch $(DIST_DIR)/client/.nojekyll
 	cp -r $(WEB_DIR)/resources/cat $(DIST_DIR)/client/cat
+	$(MAKE) marp
 
 deploy:
 	$(PNPM) exec gh-pages -d $(DIST_DIR)
