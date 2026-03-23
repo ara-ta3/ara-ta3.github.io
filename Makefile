@@ -2,6 +2,8 @@ WEB_DIR=frontend
 DIST_DIR=$(WEB_DIR)/dist
 
 PNPM=pnpm
+MARP=$(PNPM) exec marp
+MARP_THEME_SET=--theme-set ./slides/themes/ara-ta3.css
 
 install:
 	$(PNPM) install
@@ -21,6 +23,9 @@ build:
 	$(MAKE) $(DIST_DIR)/client/robots.txt
 	touch $(DIST_DIR)/client/.nojekyll
 	cp -r $(WEB_DIR)/resources/cat $(DIST_DIR)/client/cat
+	cp -r $(WEB_DIR)/resources/assets $(DIST_DIR)/client/assets
+	$(MAKE) marp
+	$(MAKE) marp/image
 
 deploy:
 	$(PNPM) exec gh-pages -d $(DIST_DIR)
@@ -64,3 +69,21 @@ $(DIST_DIR)/client/sitemap.xml: $(DIST_DIR)/client/sitemap
 
 $(DIST_DIR)/client/robots.txt:
 	cp -f ./$(WEB_DIR)/resources/robots.txt $@
+
+slides:
+	mkdir -p $(DIST_DIR)/client/slides
+
+slides/assets:
+	mkdir -p $(DIST_DIR)/client/slides/assets
+
+marp: slides
+	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides
+
+marp/image: slides/assets
+	$(MARP) --input-dir ./slides --output $(DIST_DIR)/client/slides/assets --image png
+
+marp/watch: slides
+	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides --watch
+
+marp/server: slides
+	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --server

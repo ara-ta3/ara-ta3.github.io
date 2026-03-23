@@ -1,0 +1,278 @@
+/* @theme ara-ta3 */
+
+@import 'default';
+
+:root {
+  --ara-color-primary-50: #f0fdfa;
+  --ara-color-primary-100: #ccfbf1;
+  --ara-color-primary-200: #99f6e4;
+  --ara-color-primary-300: #5eead4;
+  --ara-color-primary-500: #14b8a6;
+  --ara-color-primary-700: #0f766e;
+  --ara-color-primary-900: #134e4a;
+  --ara-color-secondary-100: #f1f5f9;
+  --ara-color-secondary-500: #64748b;
+  --ara-color-secondary-700: #334155;
+  --ara-color-secondary-900: #0f172a;
+  --ara-color-base: #ffffff;
+  --ara-color-base-800: #1f2937;
+  --ara-color-background: #f0fdfa;
+  --ara-slide-side-padding: 76px;
+  --ara-slide-bottom-padding: 68px;
+  --ara-slide-title-top: 40px;
+  --ara-slide-title-height: 56px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  font-family: 'Inter', 'Aptos', 'Helvetica Neue', Arial, sans-serif;
+  color: var(--ara-color-base-800);
+  background:
+    radial-gradient(circle at top right, rgb(94 234 212 / 0.2), transparent 28%),
+    linear-gradient(
+      135deg,
+      var(--ara-color-background) 0%,
+      var(--ara-color-base) 58%,
+      var(--ara-color-secondary-100) 100%
+    );
+  padding:
+    var(--ara-slide-title-top)
+    var(--ara-slide-side-padding)
+    var(--ara-slide-bottom-padding);
+  line-height: 1.45;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(
+    90deg,
+    var(--ara-color-primary-700) 0%,
+    var(--ara-color-primary-300) 100%
+  );
+}
+
+section::after {
+  color: var(--ara-color-primary-700);
+  font-size: 0.6em;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--ara-color-secondary-900);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+section > h1:first-child {
+  margin: 0;
+  padding-bottom: 0.22em;
+  border-bottom: 2px solid rgb(15 118 110 / 0.3);
+  line-height: 1.12;
+}
+
+h1 {
+  color: var(--ara-color-primary-900);
+}
+
+p,
+li {
+  color: var(--ara-color-base-800);
+}
+
+strong,
+em {
+  color: var(--ara-color-primary-900);
+}
+
+ul li::marker,
+ol li::marker {
+  color: var(--ara-color-primary-700);
+  font-weight: 700;
+}
+
+a {
+  color: var(--ara-color-primary-700);
+  text-decoration-color: rgb(15 118 110 / 0.35);
+}
+
+blockquote {
+  border-left: 6px solid var(--ara-color-primary-300);
+  background: rgb(255 255 255 / 0.72);
+  color: var(--ara-color-secondary-700);
+  padding: 0.7em 1em;
+}
+
+code {
+  background: rgb(15 23 42 / 0.08);
+  color: var(--ara-color-primary-900);
+  border-radius: 0.3em;
+  padding: 0.15em 0.35em;
+}
+
+pre {
+  border: 1px solid rgb(15 23 42 / 0.08);
+  border-radius: 18px;
+  box-shadow: 0 18px 42px rgb(15 23 42 / 0.08);
+}
+
+pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+table th {
+  background: var(--ara-color-primary-700);
+  color: var(--ara-color-base);
+}
+
+table td {
+  background: rgb(255 255 255 / 0.78);
+}
+
+table tr:nth-child(even) td {
+  background: rgb(241 245 249 / 0.85);
+}
+
+section.lead {
+  justify-content: center;
+  text-align: left;
+}
+
+section.lead h1 {
+  font-size: 2.2em;
+  line-height: 1.05;
+  margin-bottom: 0.35em;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+section.lead p,
+section.lead strong {
+  color: var(--ara-color-secondary-700);
+}
+
+/*
+ * Classmethod theme inspired base slide layout for regular slides.
+ * Marp viewer injects a later rule for:
+ *   div#\:\$p > svg > foreignObject > section
+ * so we override it by using a more specific selector instead of !important.
+ */
+div#\:\$p > svg > foreignObject > section:not(.lead) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 18px var(--ara-slide-side-padding) var(--ara-slide-bottom-padding);
+}
+
+div#\:\$p > svg > foreignObject > section:not(.lead) > h1:first-child {
+  position: static;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 0 0.6em;
+  padding: 0 0 0.28em;
+  border-bottom: 2px solid rgb(15 118 110 / 0.3);
+  font-size: 1.72em;
+  letter-spacing: -0.04em;
+}
+
+div#\:\$p > svg > foreignObject > section:not(.lead) > h1:first-child::after {
+  content: none;
+}
+
+div#\:\$p > svg > foreignObject > section:not(.lead) > h1:first-child + * {
+  margin-top: 0;
+}
+
+section.lead.lead-profile {
+  text-align: left;
+}
+
+section.lead.lead-profile .lead-profile-body {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  align-items: center;
+  min-height: 72%;
+}
+
+section.lead.lead-profile .lead-copy {
+  width: 100%;
+  max-width: none;
+  padding-right: 20px;
+}
+
+section.lead.lead-profile .lead-tagline {
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-weight: 600;
+  margin: 0 0 20px;
+  color: var(--ara-color-secondary-700);
+}
+
+section.lead.lead-profile .lead-date {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ara-color-primary-700);
+}
+
+section.lead.lead-profile .lead-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  text-align: center;
+  gap: 1px;
+}
+
+section.lead.lead-profile .lead-aside img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid rgb(255 255 255 / 0.95);
+  box-shadow: 0 18px 48px rgb(15 23 42 / 0.16);
+}
+
+section.lead.lead-profile .lead-name,
+section.lead.lead-profile .lead-bio,
+section.lead.lead-profile .lead-link {
+  margin: 0;
+}
+
+section.lead.lead-profile .lead-name {
+  font-size: 0.95em;
+  font-weight: 800;
+  color: var(--ara-color-secondary-900);
+  margin-top: 0;
+}
+
+section.lead.lead-profile .lead-bio {
+  font-size: 0.72em;
+  line-height: 1;
+  color: var(--ara-color-secondary-700);
+}
+
+section.lead.lead-profile .lead-link {
+  line-height: 1;
+}
+
+section.lead.lead-profile .lead-link a {
+  font-size: 0.82em;
+  font-weight: 700;
+}
