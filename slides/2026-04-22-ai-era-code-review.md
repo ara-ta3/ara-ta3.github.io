@@ -7,11 +7,24 @@ title: AI時代のコードレビュー
 description: AI Agent時代にコードレビューが担う役割を整理する
 ---
 
+<!-- _class: lead lead-profile -->
 # AI時代のコードレビュー
 
-2026-04-22
-
-ara_ta3
+<div class="lead-profile-body">
+  <div class="lead-copy">
+    <p class="lead-tagline">レビューを減らす話ではなく、<br />役割を分解して再配置する話</p>
+    <p class="lead-date">2026-04-22</p>
+  </div>
+  <div class="lead-aside">
+    <img src="./assets/ara_ta3-avatar.jpeg" alt="ara_ta3 avatar" />
+    <p class="lead-name">ara_ta3</p>
+    <p class="lead-bio">Scalaが好きなエンジニア</p>
+    <p class="lead-bio">サポーターズCTO</p>
+    <p class="lead-bio">スプラの最大XPは2630です。</p>
+    <p class="lead-link"><a href="https://x.com/ara_ta3">X / @ara_ta3</a></p>
+    <p class="lead-link"><a href="https://zenn.dev/ara_ta3">Zenn / @ara_ta3</a></p>
+  </div>
+</div>
 
 ---
 
