@@ -21,11 +21,13 @@
   --ara-slide-bottom-padding: 68px;
   --ara-slide-title-top: 40px;
   --ara-slide-title-height: 56px;
-  --ara-slide-title-gap: 16px;
+  --ara-slide-title-gap: 2px;
 }
 
 section {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   position: relative;
   font-family: 'Inter', 'Aptos', 'Helvetica Neue', Arial, sans-serif;
   color: var(--ara-color-base-800);
@@ -38,12 +40,14 @@ section {
       var(--ara-color-secondary-100) 100%
     );
   padding:
-    calc(
-      var(--ara-slide-title-top) + var(--ara-slide-title-height) + var(--ara-slide-title-gap)
-    )
+    var(--ara-slide-title-top)
     var(--ara-slide-side-padding)
     var(--ara-slide-bottom-padding);
   line-height: 1.45;
+}
+
+section:not(.lead) {
+  padding-top: 18px;
 }
 
 section::before {
@@ -79,16 +83,8 @@ h6 {
 section > h1:first-child,
 section > h2:first-child,
 section > h3:first-child {
-  position: absolute;
-  top: var(--ara-slide-title-top);
-  left: var(--ara-slide-side-padding);
-  right: var(--ara-slide-side-padding);
-  display: flex;
-  align-items: flex-end;
-  box-sizing: border-box;
   margin: 0;
-  min-height: var(--ara-slide-title-height);
-  padding-bottom: 0.18em;
+  padding-bottom: 0.22em;
   border-bottom: 2px solid rgb(15 118 110 / 0.3);
   line-height: 1.12;
 }
@@ -96,13 +92,7 @@ section > h3:first-child {
 section:not(.lead) > h1:first-child::after,
 section:not(.lead) > h2:first-child::after,
 section:not(.lead) > h3:first-child::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -2px;
-  height: 2px;
-  background: rgb(15 118 110 / 0.3);
+  content: none;
 }
 
 h1 {
@@ -112,6 +102,7 @@ h1 {
 section:not(.lead) > h1:first-child {
   font-size: 1.72em;
   letter-spacing: -0.04em;
+  margin-bottom: 0.72em;
 }
 
 h2 {
@@ -187,11 +178,20 @@ section.lead h1 {
   font-size: 2.2em;
   line-height: 1.05;
   margin-bottom: 0.35em;
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 section.lead p,
 section.lead strong {
   color: var(--ara-color-secondary-700);
+}
+
+section:not(.lead) > h1:first-child + p,
+section:not(.lead) > h1:first-child + ul,
+section:not(.lead) > h1:first-child + ol,
+section:not(.lead) > h1:first-child + blockquote {
+  margin-top: 0;
 }
 
 section.lead.lead-profile {
