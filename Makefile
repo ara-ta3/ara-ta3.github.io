@@ -23,7 +23,6 @@ build:
 	$(MAKE) $(DIST_DIR)/client/robots.txt
 	touch $(DIST_DIR)/client/.nojekyll
 	cp -r $(WEB_DIR)/resources/cat $(DIST_DIR)/client/cat
-	cp -r $(WEB_DIR)/resources/assets $(DIST_DIR)/client/assets
 	$(MAKE) marp
 	$(MAKE) marp/image
 
