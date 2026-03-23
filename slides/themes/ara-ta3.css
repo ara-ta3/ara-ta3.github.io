@@ -93,24 +93,9 @@ section > h3:first-child {
   line-height: 1.12;
 }
 
-section:not(.lead) > h2:first-of-type,
-section:not(.lead) > h3:first-of-type {
-  position: absolute;
-  top: var(--ara-slide-title-top);
-  left: var(--ara-slide-side-padding);
-  right: var(--ara-slide-side-padding);
-  display: flex;
-  align-items: flex-end;
-  box-sizing: border-box;
-  margin: 0;
-  min-height: var(--ara-slide-title-height);
-  padding-bottom: 0.18em;
-  border-bottom: 2px solid rgb(15 118 110 / 0.3);
-  line-height: 1.12;
-}
-
-section:not(.lead) > h2:first-of-type::after,
-section:not(.lead) > h3:first-of-type::after {
+section:not(.lead) > h1:first-child::after,
+section:not(.lead) > h2:first-child::after,
+section:not(.lead) > h3:first-child::after {
   content: '';
   position: absolute;
   left: 0;
@@ -122,6 +107,11 @@ section:not(.lead) > h3:first-of-type::after {
 
 h1 {
   color: var(--ara-color-primary-900);
+}
+
+section:not(.lead) > h1:first-child {
+  font-size: 1.72em;
+  letter-spacing: -0.04em;
 }
 
 h2 {
