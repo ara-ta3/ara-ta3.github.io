@@ -78,4 +78,4 @@ marp/watch: slides
 	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides --watch
 
 marp/server: slides
-	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --watch --server
+	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --server
