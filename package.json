@@ -14,5 +14,8 @@
     "ignoredBuiltDependencies": [
       "esbuild"
     ]
+  },
+  "dependencies": {
+    "@marp-team/marp-cli": "^4.3.1"
   }
 }

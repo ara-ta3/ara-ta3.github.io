@@ -2,6 +2,7 @@ WEB_DIR=frontend
 DIST_DIR=$(WEB_DIR)/dist
 
 PNPM=pnpm
+MARP=$(PNPM) exec marp
 
 install:
 	$(PNPM) install
@@ -64,3 +65,16 @@ $(DIST_DIR)/client/sitemap.xml: $(DIST_DIR)/client/sitemap
 
 $(DIST_DIR)/client/robots.txt:
 	cp -f ./$(WEB_DIR)/resources/robots.txt $@
+
+slides:
+	mkdir -p $(DIST_DIR)/client/slides
+
+marp: slides
+	$(MARP) --input-dir ./slides --output $(DIST_DIR)/client/slides
+
+marp/watch: slides
+	$(MARP) --input-dir ./slides --output $(DIST_DIR)/client/slides --watch
+
+marp/server: slides
+	$(MARP) --input-dir ./slides --watch --server
+
