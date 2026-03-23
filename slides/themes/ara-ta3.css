@@ -218,7 +218,7 @@ section.lead.lead-profile .lead-aside {
   justify-content: center;
   justify-self: center;
   text-align: center;
-  gap: 8px;
+  gap: 1px;
 }
 
 section.lead.lead-profile .lead-aside img {
@@ -240,15 +240,20 @@ section.lead.lead-profile .lead-name {
   font-size: 0.95em;
   font-weight: 800;
   color: var(--ara-color-secondary-900);
+  margin-top: 0;
 }
 
 section.lead.lead-profile .lead-bio {
   font-size: 0.72em;
-  line-height: 1.35;
+  line-height: 1;
   color: var(--ara-color-secondary-700);
 }
 
+section.lead.lead-profile .lead-link {
+  line-height: 1;
+}
+
 section.lead.lead-profile .lead-link a {
-  font-size: 0.85em;
+  font-size: 0.82em;
   font-weight: 700;
 }
