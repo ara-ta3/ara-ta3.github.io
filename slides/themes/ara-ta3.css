@@ -89,8 +89,35 @@ section > h3:first-child {
   margin: 0;
   min-height: var(--ara-slide-title-height);
   padding-bottom: 0.18em;
-  border-bottom: 2px solid rgb(15 118 110 / 0.18);
+  border-bottom: 2px solid rgb(15 118 110 / 0.3);
   line-height: 1.12;
+}
+
+section:not(.lead) > h2:first-of-type,
+section:not(.lead) > h3:first-of-type {
+  position: absolute;
+  top: var(--ara-slide-title-top);
+  left: var(--ara-slide-side-padding);
+  right: var(--ara-slide-side-padding);
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  margin: 0;
+  min-height: var(--ara-slide-title-height);
+  padding-bottom: 0.18em;
+  border-bottom: 2px solid rgb(15 118 110 / 0.3);
+  line-height: 1.12;
+}
+
+section:not(.lead) > h2:first-of-type::after,
+section:not(.lead) > h3:first-of-type::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: rgb(15 118 110 / 0.3);
 }
 
 h1 {
