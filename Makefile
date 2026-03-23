@@ -3,6 +3,7 @@ DIST_DIR=$(WEB_DIR)/dist
 
 PNPM=pnpm
 MARP=$(PNPM) exec marp
+MARP_THEME_SET=--theme-set ./slides/themes/ara-ta3.css
 
 install:
 	$(PNPM) install
@@ -71,11 +72,10 @@ slides:
 	mkdir -p $(DIST_DIR)/client/slides
 
 marp: slides
-	$(MARP) --input-dir ./slides --output $(DIST_DIR)/client/slides
+	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides
 
 marp/watch: slides
-	$(MARP) --input-dir ./slides --output $(DIST_DIR)/client/slides --watch
+	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides --watch
 
 marp/server: slides
-	$(MARP) --input-dir ./slides --watch --server
-
+	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --watch --server

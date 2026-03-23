@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: default
+theme: ara-ta3
 paginate: true
 size: 16:9
 title: AI時代のコードレビュー
