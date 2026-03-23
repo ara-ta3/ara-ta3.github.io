@@ -28,7 +28,19 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
-  font-family: 'Inter', 'Aptos', 'Helvetica Neue', Arial, sans-serif;
+  font-family:
+    'Inter',
+    'Hiragino Sans',
+    'Hiragino Kaku Gothic ProN',
+    'Yu Gothic',
+    'YuGothic',
+    'Noto Sans JP',
+    'Noto Sans CJK JP',
+    'Meiryo',
+    'Aptos',
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
   color: var(--ara-color-base-800);
   background:
     radial-gradient(circle at top right, rgb(94 234 212 / 0.2), transparent 28%),

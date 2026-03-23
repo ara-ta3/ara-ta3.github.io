@@ -84,7 +84,7 @@ marp: $(DIST_DIR)/client/slides $(DIST_DIR)/client/slides/assets $(DIST_DIR)/cli
 	cp -f slides/assets/ara_ta3-avatar.jpeg $(DIST_DIR)/client/slides/assets/ara_ta3-avatar.jpeg
 
 marp/image: slides/assets
-	$(MARP) --input-dir ./slides --output $(DIST_DIR)/client/slides/assets --image png
+	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides/assets --image png
 
 marp/watch: slides
 	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides --watch
