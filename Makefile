@@ -70,14 +70,19 @@ $(DIST_DIR)/client/sitemap.xml: $(DIST_DIR)/client/sitemap
 $(DIST_DIR)/client/robots.txt:
 	cp -f ./$(WEB_DIR)/resources/robots.txt $@
 
-slides:
-	mkdir -p $(DIST_DIR)/client/slides
+$(DIST_DIR)/client/slides:
+	mkdir -p $@
 
-slides/assets:
-	mkdir -p $(DIST_DIR)/client/slides/assets
+$(DIST_DIR)/client/slides/assets:
+	mkdir -p $@
 
-marp: slides
+$(DIST_DIR)/client/slides/themes:
+	mkdir -p $@
+
+marp: $(DIST_DIR)/client/slides $(DIST_DIR)/client/slides/assets $(DIST_DIR)/client/slides/themes
 	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides
+	cp -f slides/themes/ara-ta3.css $(DIST_DIR)/client/slides/themes/ara-ta3.css
+	cp -f slides/assets/ara_ta3-avatar.jpeg $(DIST_DIR)/client/slides/assets/ara_ta3-avatar.jpeg
 
 marp/image: slides/assets
 	$(MARP) --input-dir ./slides --output $(DIST_DIR)/client/slides/assets --image png
