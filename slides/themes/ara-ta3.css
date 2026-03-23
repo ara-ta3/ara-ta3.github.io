@@ -21,7 +21,6 @@
   --ara-slide-bottom-padding: 68px;
   --ara-slide-title-top: 40px;
   --ara-slide-title-height: 56px;
-  --ara-slide-title-gap: 2px;
 }
 
 section {
@@ -76,27 +75,15 @@ h6 {
   letter-spacing: -0.03em;
 }
 
-section > h1:first-child,
-section > h2:first-child,
-section > h3:first-child {
+section > h1:first-child {
   margin: 0;
   padding-bottom: 0.22em;
   border-bottom: 2px solid rgb(15 118 110 / 0.3);
   line-height: 1.12;
 }
 
-section:not(.lead) > h1:first-child::after,
-section:not(.lead) > h2:first-child::after,
-section:not(.lead) > h3:first-child::after {
-  content: none;
-}
-
 h1 {
   color: var(--ara-color-primary-900);
-}
-
-h2 {
-  color: var(--ara-color-primary-700);
 }
 
 p,
@@ -177,46 +164,36 @@ section.lead strong {
   color: var(--ara-color-secondary-700);
 }
 
-/* Classmethod theme inspired base slide layout for regular slides */
-section:not(.lead) {
+/*
+ * Classmethod theme inspired base slide layout for regular slides.
+ * Marp viewer injects a later rule for:
+ *   div#\:\$p > svg > foreignObject > section
+ * so we override it by using a more specific selector instead of !important.
+ */
+div#\:\$p > svg > foreignObject > section:not(.lead) {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  position: relative;
-  padding:
-    calc(var(--ara-slide-title-top) + var(--ara-slide-title-height) + 6px)
-    var(--ara-slide-side-padding)
-    var(--ara-slide-bottom-padding);
+  padding: 18px var(--ara-slide-side-padding) var(--ara-slide-bottom-padding);
 }
 
-section:not(.lead) > h1:first-child {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: flex-end;
-  min-height: calc(var(--ara-slide-title-top) + var(--ara-slide-title-height));
+div#\:\$p > svg > foreignObject > section:not(.lead) > h1:first-child {
+  position: static;
+  display: block;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0 var(--ara-slide-side-padding) 14px;
+  margin: 0 0 0.6em;
+  padding: 0 0 0.28em;
   border-bottom: 2px solid rgb(15 118 110 / 0.3);
   font-size: 1.72em;
   letter-spacing: -0.04em;
 }
 
-section:not(.lead) > h1:first-child::after {
-  content: '';
-  position: absolute;
-  left: var(--ara-slide-side-padding);
-  right: var(--ara-slide-side-padding);
-  bottom: -2px;
-  height: 2px;
-  background: rgb(15 118 110 / 0.3);
+div#\:\$p > svg > foreignObject > section:not(.lead) > h1:first-child::after {
+  content: none;
 }
 
-section:not(.lead) > h1:first-child + * {
-  margin-top: 0.35em;
+div#\:\$p > svg > foreignObject > section:not(.lead) > h1:first-child + * {
+  margin-top: 0;
 }
 
 section.lead.lead-profile {
