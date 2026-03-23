@@ -217,6 +217,36 @@ div#\:\$p > svg > foreignObject > section:not(.lead) > h1:first-child + * {
   margin-top: 0;
 }
 
+div#\:\$p > svg > foreignObject > section.statement:not(.lead) {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding:
+    calc(var(--ara-slide-title-top) + 24px)
+    calc(var(--ara-slide-side-padding) + 24px)
+    var(--ara-slide-bottom-padding);
+}
+
+div#\:\$p > svg > foreignObject > section.statement:not(.lead) > h1:first-child {
+  margin: 0;
+  padding: 0;
+  border-bottom: 0;
+  font-size: 2.5em;
+  line-height: 1.18;
+  letter-spacing: -0.05em;
+  max-width: 10.5em;
+}
+
+div#\:\$p > svg > foreignObject > section.statement:not(.lead) > h1:first-child + * {
+  margin-top: 0.55em;
+}
+
+div#\:\$p > svg > foreignObject > section.statement:not(.lead) p {
+  max-width: 28em;
+  color: var(--ara-color-secondary-700);
+  font-size: 1.05em;
+}
+
 section.lead.lead-profile {
   text-align: left;
 }
