@@ -48,3 +48,25 @@ frontend/
 └─ tests/ (Vitest/Playwright)
    └─ e2e/
 ```
+
+## スライドテーマのビジュアル回帰テスト
+
+`slides/themes/ara-ta3.css` の変更を検知するため、`slides/ara-ta3-theme-showcase.md` を見本スライドとして Playwright の `toHaveScreenshot` で比較している。
+
+### 実行
+
+```bash
+make test/e2e/slides           # 比較実行
+make test/e2e/slides/update    # 意図した変更に合わせて baseline を更新
+```
+
+### 注意点
+
+- baseline スナップショットは `*-chromium-linux.png` のみを保存している (CI が `ubuntu-latest` で動くため)。
+- macOS などローカルで `--update-snapshots` を実行すると別プラットフォームの PNG (`-chromium-darwin.png` など) が生成されるので、コミットする前に Linux 環境で再生成する。例えば Playwright の公式 Docker イメージを使って:
+  ```bash
+  docker run --rm -v "$PWD":/work -w /work mcr.microsoft.com/playwright:v1.58.2-jammy \
+    bash -lc "corepack enable && pnpm install && make build && make test/e2e/slides/update"
+  ```
+- アンチエイリアスの微差は `playwright.config.ts` の `toHaveScreenshot.maxDiffPixelRatio` で許容している。
+- CI が失敗した場合は `playwright-report` artifact に diff 画像が含まれているのでそこで差分を確認する。

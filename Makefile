@@ -41,11 +41,13 @@ test/watch:
 test/e2e:
 	$(PNPM) -C $(WEB_DIR) exec playwright test
 
+SLIDES_E2E_SPEC=tests/e2e/slides-visual.spec.ts
+
 test/e2e/slides:
-	$(PNPM) -C $(WEB_DIR) exec playwright test tests/e2e/slides-visual.spec.ts
+	$(PNPM) -C $(WEB_DIR) exec playwright test $(SLIDES_E2E_SPEC)
 
 test/e2e/slides/update:
-	$(PNPM) -C $(WEB_DIR) exec playwright test tests/e2e/slides-visual.spec.ts --update-snapshots
+	$(PNPM) -C $(WEB_DIR) exec playwright test $(SLIDES_E2E_SPEC) --update-snapshots
 
 test/e2e/ui:
 	$(PNPM) -C $(WEB_DIR) exec playwright test --ui
