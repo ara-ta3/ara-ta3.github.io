@@ -44,15 +44,16 @@ test/e2e:
 test/e2e/update:
 	$(PNPM) -C $(WEB_DIR) exec playwright test --update-snapshots
 
-# Linux baseline をローカル(mac など) から更新するための docker ラッパ。
-# Playwright 公式 image (ubuntu-jammy) で CI と同じ環境を再現する。
-PLAYWRIGHT_DOCKER_IMAGE=mcr.microsoft.com/playwright:v1.58.2-jammy
+# Linux baseline をローカル (mac など) から更新するための docker ラッパ。
+# frontend/tests/Dockerfile をビルドして、CI (ubuntu-latest) と同じ環境で
+# `make test/e2e/update` を走らせる。
+E2E_DOCKER_IMAGE=ara-ta3-e2e
 test/e2e/update/docker:
+	docker build -t $(E2E_DOCKER_IMAGE) $(WEB_DIR)/tests
 	docker run --rm --ipc=host \
-		-v "$(CURDIR)":/work -w /work \
+		-v "$(CURDIR)":/work \
 		-e CI=true \
-		$(PLAYWRIGHT_DOCKER_IMAGE) \
-		bash scripts/update-e2e-snapshots.sh
+		$(E2E_DOCKER_IMAGE)
 
 test/e2e/ui:
 	$(PNPM) -C $(WEB_DIR) exec playwright test --ui

@@ -64,13 +64,13 @@ make test/e2e/update     # 意図した変更に合わせて baseline を更新 
 
 baseline スナップショットは `*-chromium-linux.png` のみを commit している (CI が `ubuntu-latest` で動くため)。macOS などでローカルに `make test/e2e/update` を走らせると、その OS 用の PNG (`*-chromium-darwin.png` など) が生成されるが、それらは `frontend/tests/e2e/slides-visual.spec.ts-snapshots/.gitignore` によって commit 対象から除外されている。
 
-CI が通る baseline を生成するには Playwright 公式 Docker image を使ったラッパを叩く:
+CI が通る baseline を生成するには `frontend/tests/Dockerfile` をビルドして `make test/e2e/update` を走らせる:
 
 ```bash
 make test/e2e/update/docker
 ```
 
-内部では `mcr.microsoft.com/playwright:v1.58.2-jammy` 上で `scripts/update-e2e-snapshots.sh` が走り、CI とほぼ同じ環境で `*-chromium-linux.png` を生成する。要 Docker Desktop (または OrbStack 等)。
+`frontend/tests/Dockerfile` は Playwright 公式 image (`mcr.microsoft.com/playwright:v1.58.2-jammy`) に `make` / `fonts-noto-cjk` / Google Chrome (marp/image 用) を足しただけの薄いラッパ。要 Docker Desktop (または OrbStack 等)。
 
 ### 注意点
 
