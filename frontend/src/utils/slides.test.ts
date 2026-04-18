@@ -2,8 +2,8 @@ import { describe, expect, test } from "vitest";
 import { compareSlides, parseSlideSource, type Slide } from "@/utils/slides";
 
 describe("parseSlideSource", () => {
-  test("extracts title, description, image, and date", () => {
-    const source = `---\nmarp: true\ntitle: AI時代のコードレビュー\ndescription: AI Agent時代の話\nimage: https://example.com/cover.png\n---\n\n# 本文`;
+  test("extracts title, description, image, date, and event info", () => {
+    const source = `---\nmarp: true\ntitle: AI時代のコードレビュー\ndescription: AI Agent時代の話\nimage: https://example.com/cover.png\neventName: AI時代のコードレビューLT会\neventUrl: https://example.com/event/1\n---\n\n# 本文`;
     const slide = parseSlideSource("2026-04-22-ai-era-code-review", source);
     expect(slide).toEqual({
       slug: "2026-04-22-ai-era-code-review",
@@ -12,6 +12,8 @@ describe("parseSlideSource", () => {
       image: "https://example.com/cover.png",
       date: "2026-04-22",
       url: "/slides/2026-04-22-ai-era-code-review.html",
+      eventName: "AI時代のコードレビューLT会",
+      eventUrl: "https://example.com/event/1",
     });
   });
 

@@ -6,6 +6,8 @@ size: 16:9
 image: https://ara-ta3.github.io/slides/assets/2026-04-22-ai-era-code-review.png?v=2026032409
 title: AI時代のコードレビュー
 description: AI Agent時代にコードレビューが担う役割を整理する
+eventName: AI時代のコードレビューLT会【TOKIUM、プレイド、CARTAなどの取り組み事例】
+eventUrl: https://supporterz-seminar.connpass.com/event/388882/
 ---
 
 <style>

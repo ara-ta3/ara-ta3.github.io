@@ -8,6 +8,8 @@ export type Slide = {
   image?: string;
   date?: string;
   url: string;
+  eventName?: string;
+  eventUrl?: string;
 };
 
 const getSlidesDir = (): string => path.resolve(process.cwd(), "../slides");
@@ -45,6 +47,8 @@ export const parseSlideSource = (slug: string, source: string): Slide => {
     image: fm.image || undefined,
     date: extractDateFromFilename(slug),
     url: `/slides/${slug}.html`,
+    eventName: fm.eventName || undefined,
+    eventUrl: fm.eventUrl || undefined,
   };
 };
 

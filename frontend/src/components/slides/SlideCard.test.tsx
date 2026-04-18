@@ -4,7 +4,7 @@ import { describe, expect, test } from "vitest";
 import SlideCard from "@/components/slides/SlideCard";
 
 describe("SlideCard", () => {
-  test("renders slide with image, description, and date", () => {
+  test("renders slide with image, description, date, and event link", () => {
     const { asFragment } = render(
       <SlideCard
         slide={{
@@ -14,6 +14,8 @@ describe("SlideCard", () => {
           image: "https://example.com/thumb.png",
           date: "2026-04-22",
           url: "/slides/sample.html",
+          eventName: "サンプルイベント",
+          eventUrl: "https://example.com/event/1",
         }}
       />,
     );
