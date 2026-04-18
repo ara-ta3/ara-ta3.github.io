@@ -33,6 +33,16 @@ test.describe("パンくずリストのJSON+LDスキーマテスト", () => {
     expect(schema.itemListElement[1].name).toBe("記事一覧");
   });
 
+  test("スライド一覧ページにパンくずリストのJSON+LDスキーマが存在する", async ({
+    page,
+  }) => {
+    await page.goto("/slides/");
+
+    const schema = await getBreadcrumbSchema(page);
+    expect(schema.itemListElement.length).toBe(2);
+    expect(schema.itemListElement[1].name).toBe("スライド一覧");
+  });
+
   test("個人開発詳細ページ（personal-website）にパンくずリストのJSON+LDスキーマが存在する", async ({
     page,
   }) => {

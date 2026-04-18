@@ -3,6 +3,7 @@ import { expect, test } from "@playwright/test";
 const pages = [
   { path: "/projects/nekometry", label: "projects/nekometry" },
   { path: "/projects/personal-website", label: "projects/personal-website" },
+  { path: "/slides/", label: "slides" },
 ];
 
 test.describe("head タグの重複チェック", () => {
