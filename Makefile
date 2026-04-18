@@ -41,6 +41,20 @@ test/watch:
 test/e2e:
 	$(PNPM) -C $(WEB_DIR) exec playwright test
 
+test/e2e/update:
+	$(PNPM) -C $(WEB_DIR) exec playwright test --update-snapshots
+
+# Linux baseline をローカル (mac など) から更新するための docker ラッパ。
+# frontend/tests/Dockerfile をビルドして、CI (ubuntu-latest) と同じ環境で
+# `make test/e2e/update` を走らせる。
+E2E_DOCKER_IMAGE=ara-ta3-e2e
+test/e2e/update/docker:
+	docker build -t $(E2E_DOCKER_IMAGE) $(WEB_DIR)/tests
+	docker run --rm --ipc=host \
+		-v "$(CURDIR)":/work \
+		-e CI=true \
+		$(E2E_DOCKER_IMAGE)
+
 test/e2e/ui:
 	$(PNPM) -C $(WEB_DIR) exec playwright test --ui
 
@@ -84,7 +98,7 @@ marp: $(DIST_DIR)/client/slides $(DIST_DIR)/client/slides/assets $(DIST_DIR)/cli
 	cp -f slides/assets/ara_ta3-avatar.jpeg $(DIST_DIR)/client/slides/assets/ara_ta3-avatar.jpeg
 
 marp/image: slides/assets
-	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides/assets --image png
+	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides/assets --image png --allow-local-files
 
 marp/watch: slides
 	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides --watch
