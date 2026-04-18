@@ -1,6 +1,5 @@
 import fs from "node:fs";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 
 export type Slide = {
   slug: string;
@@ -13,8 +12,16 @@ export type Slide = {
   eventUrl?: string;
 };
 
-const getSlidesDir = (): string =>
-  path.resolve(fileURLToPath(import.meta.url), "../../../../slides");
+const getSlidesDir = (): string => {
+  const candidates = [
+    path.resolve(process.cwd(), "../slides"),
+    path.resolve(process.cwd(), "slides"),
+  ];
+  for (const candidate of candidates) {
+    if (fs.existsSync(candidate)) return candidate;
+  }
+  return candidates[0];
+};
 
 const parseFrontmatter = (source: string): Record<string, string> => {
   const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---/);
