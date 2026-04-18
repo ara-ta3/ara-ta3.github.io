@@ -1,0 +1,72 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SlideCard > renders slide with image, description, and date 1`] = `
+<DocumentFragment>
+  <a
+    href="/slides/sample.html"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <article
+      class="bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex h-full flex-col"
+    >
+      <div
+        class="w-full aspect-video bg-secondary-50 overflow-hidden"
+      >
+        <img
+          alt="サンプルスライド サムネイル"
+          class="w-full h-full object-cover"
+          src="https://example.com/thumb.png"
+        />
+      </div>
+      <div
+        class="p-5 flex flex-1 flex-col min-w-0"
+      >
+        <h2
+          class="text-xl font-bold text-primary-700 line-clamp-2 break-words"
+        >
+          サンプルスライド
+        </h2>
+        <p
+          class="text-primary-500 text-sm mt-2 line-clamp-3 break-words"
+        >
+          スライドの説明
+        </p>
+        <p
+          class="text-primary-500 text-sm mt-auto pt-4"
+        >
+          2026-04-22
+        </p>
+      </div>
+    </article>
+  </a>
+</DocumentFragment>
+`;
+
+exports[`SlideCard > renders slide without optional fields 1`] = `
+<DocumentFragment>
+  <a
+    href="/slides/minimal.html"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <article
+      class="bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex h-full flex-col"
+    >
+      <div
+        aria-label="サムネイル未設定"
+        class="w-full aspect-video border-b border-secondary-100 bg-secondary-50"
+      />
+      <div
+        class="p-5 flex flex-1 flex-col min-w-0"
+      >
+        <h2
+          class="text-xl font-bold text-primary-700 line-clamp-2 break-words"
+        >
+          最小スライド
+        </h2>
+      </div>
+    </article>
+  </a>
+</DocumentFragment>
+`;
