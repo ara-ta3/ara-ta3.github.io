@@ -15,6 +15,8 @@ const SlideCardThumbnail: React.FC<{ image?: string; title: string }> = ({
         <img
           src={image}
           alt={`${title} サムネイル`}
+          loading="lazy"
+          decoding="async"
           className="w-full h-full object-cover"
         />
       </div>
@@ -22,7 +24,7 @@ const SlideCardThumbnail: React.FC<{ image?: string; title: string }> = ({
   }
   return (
     <div
-      aria-label="サムネイル未設定"
+      aria-hidden="true"
       className="w-full aspect-video border-b border-secondary-100 bg-secondary-50"
     />
   );

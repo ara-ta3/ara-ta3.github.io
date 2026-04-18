@@ -17,6 +17,8 @@ exports[`SlideCard > renders slide with image, description, date, and event link
         <img
           alt="サンプルスライド サムネイル"
           class="w-full h-full object-cover"
+          decoding="async"
+          loading="lazy"
           src="https://example.com/thumb.png"
         />
       </div>
@@ -71,7 +73,7 @@ exports[`SlideCard > renders slide without optional fields 1`] = `
       target="_blank"
     >
       <div
-        aria-label="サムネイル未設定"
+        aria-hidden="true"
         class="w-full aspect-video border-b border-secondary-100 bg-secondary-50"
       />
     </a>

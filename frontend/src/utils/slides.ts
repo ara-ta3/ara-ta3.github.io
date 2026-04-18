@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 export type Slide = {
   slug: string;
@@ -12,7 +13,8 @@ export type Slide = {
   eventUrl?: string;
 };
 
-const getSlidesDir = (): string => path.resolve(process.cwd(), "../slides");
+const getSlidesDir = (): string =>
+  path.resolve(fileURLToPath(import.meta.url), "../../../../slides");
 
 const parseFrontmatter = (source: string): Record<string, string> => {
   const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---/);
