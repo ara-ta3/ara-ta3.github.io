@@ -1,10 +1,8 @@
 import React from "react";
-import Common from "@/components/headertags/Common";
 
 const Head: React.FC = () => {
   return (
     <>
-      <Common />
       <title>スライド一覧 | ara-ta3のページ</title>
       <meta
         name="description"
