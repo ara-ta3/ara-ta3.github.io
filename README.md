@@ -56,17 +56,23 @@ frontend/
 ### 実行
 
 ```bash
-make test/e2e/slides           # 比較実行
-make test/e2e/slides/update    # 意図した変更に合わせて baseline を更新
+make test/e2e            # 比較実行 (Playwright 全体)
+make test/e2e/update     # 意図した変更に合わせて baseline を更新 (ローカル OS の PNG が出力される)
 ```
+
+### baseline 更新 (CI と同じ Linux 環境で再生成する)
+
+baseline スナップショットは `*-chromium-linux.png` のみを commit している (CI が `ubuntu-latest` で動くため)。macOS などでローカルに `make test/e2e/update` を走らせると、その OS 用の PNG (`*-chromium-darwin.png` など) が生成されるが、それらは `frontend/tests/e2e/slides-visual.spec.ts-snapshots/.gitignore` によって commit 対象から除外されている。
+
+CI が通る baseline を生成するには Playwright 公式 Docker image を使ったラッパを叩く:
+
+```bash
+make test/e2e/update/docker
+```
+
+内部では `mcr.microsoft.com/playwright:v1.58.2-jammy` 上で `scripts/update-e2e-snapshots.sh` が走り、CI とほぼ同じ環境で `*-chromium-linux.png` を生成する。要 Docker Desktop (または OrbStack 等)。
 
 ### 注意点
 
-- baseline スナップショットは `*-chromium-linux.png` のみを保存している (CI が `ubuntu-latest` で動くため)。
-- macOS などローカルで `--update-snapshots` を実行すると別プラットフォームの PNG (`-chromium-darwin.png` など) が生成されるので、コミットする前に Linux 環境で再生成する。例えば Playwright の公式 Docker イメージを使って:
-  ```bash
-  docker run --rm -v "$PWD":/work -w /work mcr.microsoft.com/playwright:v1.58.2-jammy \
-    bash -lc "corepack enable && pnpm install && make build && make test/e2e/slides/update"
-  ```
 - アンチエイリアスの微差は `playwright.config.ts` の `toHaveScreenshot.maxDiffPixelRatio` で許容している。
-- CI が失敗した場合は `playwright-report` artifact に diff 画像が含まれているのでそこで差分を確認する。
+- CI が失敗した場合は GitHub Actions の `playwright-report` artifact に diff 画像と HTML レポートが含まれているのでそこで差分を確認する。

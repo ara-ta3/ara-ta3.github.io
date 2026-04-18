@@ -41,13 +41,18 @@ test/watch:
 test/e2e:
 	$(PNPM) -C $(WEB_DIR) exec playwright test
 
-SLIDES_E2E_SPEC=tests/e2e/slides-visual.spec.ts
+test/e2e/update:
+	$(PNPM) -C $(WEB_DIR) exec playwright test --update-snapshots
 
-test/e2e/slides:
-	$(PNPM) -C $(WEB_DIR) exec playwright test $(SLIDES_E2E_SPEC)
-
-test/e2e/slides/update:
-	$(PNPM) -C $(WEB_DIR) exec playwright test $(SLIDES_E2E_SPEC) --update-snapshots
+# Linux baseline をローカル(mac など) から更新するための docker ラッパ。
+# Playwright 公式 image (ubuntu-jammy) で CI と同じ環境を再現する。
+PLAYWRIGHT_DOCKER_IMAGE=mcr.microsoft.com/playwright:v1.58.2-jammy
+test/e2e/update/docker:
+	docker run --rm --ipc=host \
+		-v "$(CURDIR)":/work -w /work \
+		-e CI=true \
+		$(PLAYWRIGHT_DOCKER_IMAGE) \
+		bash scripts/update-e2e-snapshots.sh
 
 test/e2e/ui:
 	$(PNPM) -C $(WEB_DIR) exec playwright test --ui
