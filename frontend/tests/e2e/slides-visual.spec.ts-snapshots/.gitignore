@@ -1,0 +1,6 @@
+# CI (ubuntu-latest) で動かすため linux baseline だけを commit する
+# macOS などローカルで --update-snapshots を走らせると生成される
+# darwin / windows 向け PNG は誤って commit しないよう無視する
+*
+!.gitignore
+!*-chromium-linux.png
