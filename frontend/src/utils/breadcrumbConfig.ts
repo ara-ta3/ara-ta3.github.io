@@ -15,6 +15,10 @@ export const breadcrumbConfig: Record<string, BreadcrumbConfig> = {
     name: "記事一覧",
     parent: "/",
   },
+  "/slides/": {
+    name: "スライド一覧",
+    parent: "/",
+  },
   "/electricity/": {
     name: "電気代比較ツール",
     parent: "/",

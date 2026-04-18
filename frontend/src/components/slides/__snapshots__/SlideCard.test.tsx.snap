@@ -1,0 +1,98 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SlideCard > renders slide with image, description, date, and event link 1`] = `
+<DocumentFragment>
+  <article
+    class="bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex h-full flex-col"
+  >
+    <a
+      aria-label="サンプルスライド を開く"
+      href="/slides/sample.html"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        class="w-full aspect-video bg-secondary-50 overflow-hidden"
+      >
+        <img
+          alt="サンプルスライド サムネイル"
+          class="w-full h-full object-cover"
+          decoding="async"
+          loading="lazy"
+          src="https://example.com/thumb.png"
+        />
+      </div>
+    </a>
+    <div
+      class="p-5 flex flex-1 flex-col min-w-0"
+    >
+      <h2
+        class="text-xl font-bold text-primary-700 line-clamp-2 break-words"
+      >
+        <a
+          class="hover:underline"
+          href="/slides/sample.html"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          サンプルスライド
+        </a>
+      </h2>
+      <p
+        class="text-primary-500 text-sm mt-2 line-clamp-3 break-words"
+      >
+        スライドの説明
+      </p>
+      <a
+        class="text-primary-600 hover:text-primary-800 underline text-sm mt-3 line-clamp-2 break-words"
+        href="https://example.com/event/1"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        サンプルイベント
+      </a>
+      <p
+        class="text-primary-500 text-sm mt-auto pt-4"
+      >
+        2026-04-22
+      </p>
+    </div>
+  </article>
+</DocumentFragment>
+`;
+
+exports[`SlideCard > renders slide without optional fields 1`] = `
+<DocumentFragment>
+  <article
+    class="bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex h-full flex-col"
+  >
+    <a
+      aria-label="最小スライド を開く"
+      href="/slides/minimal.html"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        aria-hidden="true"
+        class="w-full aspect-video border-b border-secondary-100 bg-secondary-50"
+      />
+    </a>
+    <div
+      class="p-5 flex flex-1 flex-col min-w-0"
+    >
+      <h2
+        class="text-xl font-bold text-primary-700 line-clamp-2 break-words"
+      >
+        <a
+          class="hover:underline"
+          href="/slides/minimal.html"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          最小スライド
+        </a>
+      </h2>
+    </div>
+  </article>
+</DocumentFragment>
+`;
