@@ -38,6 +38,8 @@ eventUrl: https://supporterz-seminar.connpass.com/event/388882/
 
 # 目次
 
+**資料は後ほどconnpassの資料一覧に投稿します**
+
 1. 起: AI Agent開発における課題感
 2. 承: コードレビューの中身について
 3. 転: コードレビューの分解と再配置
