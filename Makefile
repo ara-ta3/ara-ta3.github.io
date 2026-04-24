@@ -92,10 +92,16 @@ $(DIST_DIR)/client/slides/assets:
 $(DIST_DIR)/client/slides/themes:
 	mkdir -p $@
 
+GTM_SNIPPET=slides/gtm-snippet.html
+
 marp: $(DIST_DIR)/client/slides $(DIST_DIR)/client/slides/assets $(DIST_DIR)/client/slides/themes
 	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides
 	cp -f slides/themes/ara-ta3.css $(DIST_DIR)/client/slides/themes/ara-ta3.css
 	cp -f slides/assets/ara_ta3-avatar.jpeg $(DIST_DIR)/client/slides/assets/ara_ta3-avatar.jpeg
+	$(MAKE) marp/gtm
+
+marp/gtm: $(GTM_SNIPPET)
+	@node scripts/inject-gtm.mjs $(GTM_SNIPPET) $(DIST_DIR)/client/slides
 
 marp/image: slides/assets
 	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides/assets --image png --allow-local-files
