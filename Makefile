@@ -92,10 +92,18 @@ $(DIST_DIR)/client/slides/assets:
 $(DIST_DIR)/client/slides/themes:
 	mkdir -p $@
 
+GTM_SNIPPET=slides/gtm-snippet.html
+
 marp: $(DIST_DIR)/client/slides $(DIST_DIR)/client/slides/assets $(DIST_DIR)/client/slides/themes
 	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides
 	cp -f slides/themes/ara-ta3.css $(DIST_DIR)/client/slides/themes/ara-ta3.css
 	cp -f slides/assets/ara_ta3-avatar.jpeg $(DIST_DIR)/client/slides/assets/ara_ta3-avatar.jpeg
+	$(MAKE) marp/gtm
+
+marp/gtm: $(GTM_SNIPPET)
+	@for f in $(DIST_DIR)/client/slides/*.html; do \
+		perl -i -p0e 'BEGIN{open F,"$(GTM_SNIPPET)"; local $$/; $$s=<F>; close F; chomp $$s} s{</head>}{$$s\n</head>}' "$$f"; \
+	done
 
 marp/image: slides/assets
 	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides/assets --image png --allow-local-files
