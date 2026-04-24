@@ -101,14 +101,7 @@ marp: $(DIST_DIR)/client/slides $(DIST_DIR)/client/slides/assets $(DIST_DIR)/cli
 	$(MAKE) marp/gtm
 
 marp/gtm: $(GTM_SNIPPET)
-	@node -e "\
-	var fs = require('fs'); \
-	var gtm = fs.readFileSync('$(GTM_SNIPPET)', 'utf8'); \
-	var dir = '$(DIST_DIR)/client/slides'; \
-	fs.readdirSync(dir).filter(function(f) { return f.endsWith('.html'); }).forEach(function(f) { \
-	  var p = dir + '/' + f; \
-	  fs.writeFileSync(p, fs.readFileSync(p, 'utf8').replace('</head>', gtm + '</head>')); \
-	});"
+	@node scripts/inject-gtm.mjs $(GTM_SNIPPET) $(DIST_DIR)/client/slides
 
 marp/image: slides/assets
 	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides/assets --image png --allow-local-files
