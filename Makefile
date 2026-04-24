@@ -101,9 +101,14 @@ marp: $(DIST_DIR)/client/slides $(DIST_DIR)/client/slides/assets $(DIST_DIR)/cli
 	$(MAKE) marp/gtm
 
 marp/gtm: $(GTM_SNIPPET)
-	@for f in $(DIST_DIR)/client/slides/*.html; do \
-		perl -i -p0e 'BEGIN{open F,"$(GTM_SNIPPET)"; local $$/; $$s=<F>; close F; chomp $$s} s{</head>}{$$s\n</head>}' "$$f"; \
-	done
+	@node -e "\
+	var fs = require('fs'); \
+	var gtm = fs.readFileSync('$(GTM_SNIPPET)', 'utf8'); \
+	var dir = '$(DIST_DIR)/client/slides'; \
+	fs.readdirSync(dir).filter(function(f) { return f.endsWith('.html'); }).forEach(function(f) { \
+	  var p = dir + '/' + f; \
+	  fs.writeFileSync(p, fs.readFileSync(p, 'utf8').replace('</head>', gtm + '</head>')); \
+	});"
 
 marp/image: slides/assets
 	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides/assets --image png --allow-local-files
