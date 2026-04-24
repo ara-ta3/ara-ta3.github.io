@@ -1,12 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-import flowbiteReactPlugin from "flowbite-react/plugin/tailwindcss";
 
 // chatgptにara-ta3のdeep researchさせて出した色合い
 export default {
   content: [
     "./index.html",
     "./src/**/*.{ts,tsx}",
-    "./node_modules/flowbite-react/dist/**/*.{js,mjs}",
   ],
   theme: {
     extend: {
@@ -48,5 +46,5 @@ export default {
       },
     },
   },
-  plugins: [flowbiteReactPlugin],
+  plugins: [],
 };

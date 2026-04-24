@@ -8,7 +8,8 @@ export default tseslint.config(
       '**/node_modules', 
       'dist', 
       '.next', 
-      'build'
+      'build',
+      '.flowbite-react'
     ],
   },
   js.configs.recommended,
