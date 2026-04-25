@@ -1,5 +1,8 @@
 import React from "react";
-import { Breadcrumb as FlowbiteBreadcrumb } from "flowbite-react";
+import {
+  Breadcrumb as FlowbiteBreadcrumb,
+  BreadcrumbItem as FlowbiteBreadcrumbItem,
+} from "flowbite-react";
 import { HiHome } from "react-icons/hi";
 import { BreadcrumbItem } from "@/hooks/useBreadcrumbs";
 
@@ -14,14 +17,14 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ items }) => {
     <nav className="mb-4">
       <FlowbiteBreadcrumb>
         {items.map((item, index) => (
-          <FlowbiteBreadcrumb.Item
+          <FlowbiteBreadcrumbItem
             key={index}
             href={item.isLast ? undefined : item.url}
             className={item.isLast ? "text-gray-500" : ""}
             icon={index === 0 ? HiHome : undefined}
           >
             {item.name}
-          </FlowbiteBreadcrumb.Item>
+          </FlowbiteBreadcrumbItem>
         ))}
       </FlowbiteBreadcrumb>
     </nav>

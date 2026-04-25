@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Table } from "flowbite-react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeadCell,
+  TableRow,
+} from "flowbite-react";
 import BreadcrumbWithSchema from "@/components/BreadcrumbWithSchema";
 import useLocalStorage from "@/hooks/useLocalStorage";
 
@@ -141,110 +148,116 @@ const ElectricityComparison: React.FC = () => {
       </h1>
       <div className="overflow-x-auto">
         <Table>
-          <Table.Head>
-            <Table.HeadCell>会社</Table.HeadCell>
-            <Table.HeadCell>
-              <button
-                type="button"
-                onClick={() =>
-                  setSort((prev) => ({
-                    key: "average",
-                    order:
-                      prev.key === "average" && prev.order === "desc"
-                        ? "asc"
-                        : "desc",
-                  }))
-                }
-              >
-                平均
-                {sort.key === "average"
-                  ? sort.order === "desc"
-                    ? "▼"
-                    : "▲"
-                  : ""}
-              </button>
-            </Table.HeadCell>
-            <Table.HeadCell>
-              <button
-                type="button"
-                onClick={() =>
-                  setSort((prev) => ({
-                    key: "median",
-                    order:
-                      prev.key === "median" && prev.order === "desc"
-                        ? "asc"
-                        : "desc",
-                  }))
-                }
-              >
-                中央値
-                {sort.key === "median"
-                  ? sort.order === "desc"
-                    ? "▼"
-                    : "▲"
-                  : ""}
-              </button>
-            </Table.HeadCell>
-            <Table.HeadCell>
-              <button
-                type="button"
-                onClick={() =>
-                  setSort((prev) => ({
-                    key: "sum",
-                    order:
-                      prev.key === "sum" && prev.order === "desc"
-                        ? "asc"
-                        : "desc",
-                  }))
-                }
-              >
-                合計
-                {sort.key === "sum" ? (sort.order === "desc" ? "▼" : "▲") : ""}
-              </button>
-            </Table.HeadCell>
-            {months.map((m) => (
-              <Table.HeadCell key={m}>{m}</Table.HeadCell>
-            ))}
-          </Table.Head>
-          <Table.Body className="divide-y">
-            <Table.Row className="bg-white">
-              <Table.Cell className="font-medium text-gray-900">
+          <TableHead>
+            <TableRow>
+              <TableHeadCell>会社</TableHeadCell>
+              <TableHeadCell>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setSort((prev) => ({
+                      key: "average",
+                      order:
+                        prev.key === "average" && prev.order === "desc"
+                          ? "asc"
+                          : "desc",
+                    }))
+                  }
+                >
+                  平均
+                  {sort.key === "average"
+                    ? sort.order === "desc"
+                      ? "▼"
+                      : "▲"
+                    : ""}
+                </button>
+              </TableHeadCell>
+              <TableHeadCell>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setSort((prev) => ({
+                      key: "median",
+                      order:
+                        prev.key === "median" && prev.order === "desc"
+                          ? "asc"
+                          : "desc",
+                    }))
+                  }
+                >
+                  中央値
+                  {sort.key === "median"
+                    ? sort.order === "desc"
+                      ? "▼"
+                      : "▲"
+                    : ""}
+                </button>
+              </TableHeadCell>
+              <TableHeadCell>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setSort((prev) => ({
+                      key: "sum",
+                      order:
+                        prev.key === "sum" && prev.order === "desc"
+                          ? "asc"
+                          : "desc",
+                    }))
+                  }
+                >
+                  合計
+                  {sort.key === "sum"
+                    ? sort.order === "desc"
+                      ? "▼"
+                      : "▲"
+                    : ""}
+                </button>
+              </TableHeadCell>
+              {months.map((m) => (
+                <TableHeadCell key={m}>{m}</TableHeadCell>
+              ))}
+            </TableRow>
+          </TableHead>
+          <TableBody className="divide-y">
+            <TableRow className="bg-white">
+              <TableCell className="font-medium text-gray-900">
                 使用量(kWh)
-              </Table.Cell>
-              <Table.Cell />
-              <Table.Cell />
-              <Table.Cell />
+              </TableCell>
+              <TableCell />
+              <TableCell />
+              <TableCell />
               {months.map((m, idx) => (
-                <Table.Cell key={m}>
+                <TableCell key={m}>
                   <input
                     type="text"
                     value={usage[m] ? String(usage[m]) : ""}
                     onChange={(e) => handleChange(idx, e.target.value)}
                     className="w-20 border rounded p-1"
                   />
-                </Table.Cell>
+                </TableCell>
               ))}
-            </Table.Row>
+            </TableRow>
             {sortedCompanies.map((c) => {
               const stats = calcStats(usageArray, c);
               return (
-                <Table.Row key={c.name} className="bg-white">
-                  <Table.Cell className="whitespace-nowrap font-medium text-gray-900">
+                <TableRow key={c.name} className="bg-white">
+                  <TableCell className="whitespace-nowrap font-medium text-gray-900">
                     {c.name}
-                  </Table.Cell>
-                  <Table.Cell>
+                  </TableCell>
+                  <TableCell>
                     {Math.round(stats.average).toLocaleString()}円
-                  </Table.Cell>
-                  <Table.Cell>
+                  </TableCell>
+                  <TableCell>
                     {Math.round(stats.median).toLocaleString()}円
-                  </Table.Cell>
-                  <Table.Cell>
+                  </TableCell>
+                  <TableCell>
                     {Math.round(stats.sum).toLocaleString()}円
-                  </Table.Cell>
+                  </TableCell>
                   {usageArray.map((u, idx) => {
                     const result = calcCharge(u, c);
                     return (
-                      <Table.Cell key={idx} className="align-top">
+                      <TableCell key={idx} className="align-top">
                         <div>{Math.round(result.total).toLocaleString()}円</div>
                         <div className="text-xs text-gray-600 space-y-1">
                           <div>
@@ -260,13 +273,13 @@ const ElectricityComparison: React.FC = () => {
                             {Math.round(result.capacity).toLocaleString()}円
                           </div>
                         </div>
-                      </Table.Cell>
+                      </TableCell>
                     );
                   })}
-                </Table.Row>
+                </TableRow>
               );
             })}
-          </Table.Body>
+          </TableBody>
         </Table>
       </div>
     </section>

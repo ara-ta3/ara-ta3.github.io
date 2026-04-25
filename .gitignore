@@ -1,6 +1,7 @@
 node_modules
 dist
 frontend/test-results
+.flowbite-react
 # make test/e2e/update/docker 実行時に docker コンテナ内の pnpm が
 # リポジトリ root に書き出すストア
 .pnpm-store

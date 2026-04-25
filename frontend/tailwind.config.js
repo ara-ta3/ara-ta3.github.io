@@ -1,9 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-const flowbite = require("flowbite-react/tailwind");
 
-// chagptにara-ta3のdeep researchさせて出した色合い
+// chatgptにara-ta3のdeep researchさせて出した色合い
 export default {
-  content: ["./index.html", "./src/**/*.{ts,tsx}", flowbite.content()],
+  content: [
+    "./index.html",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -44,5 +46,5 @@ export default {
       },
     },
   },
-  plugins: [require("flowbite/plugin"), flowbite.plugin()],
+  plugins: [],
 };
