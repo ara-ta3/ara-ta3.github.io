@@ -1,12 +1,14 @@
 import path from "path";
+import flowbiteReactPlugin from "flowbite-react/plugin/vite";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 import vike from "vike/plugin";
 import "vitest/config";
 
 export default defineConfig({
   base: "/",
-  plugins: [react(), vike()],
+  plugins: [react(), tailwindcss(), flowbiteReactPlugin(), vike()],
   ssr: {
     noExternal: [/^d3.*$/],
   },
