@@ -20,8 +20,8 @@ const Home: React.FC = () => {
           <div className="flex flex-col max-w-[960px] flex-1">
             <Profile />
             <Projects />
-            <LatestSlides slides={latestSlides} />
             <RelatedArticles articles={articles} />
+            <LatestSlides slides={latestSlides} />
           </div>
         </div>
       </div>
