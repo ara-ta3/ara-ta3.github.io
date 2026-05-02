@@ -502,6 +502,101 @@ exports[`Home Snapshot Test > render Home 1`] = `
               </a>
             </div>
           </div>
+          <div
+            class="py-4"
+            id="slides"
+          >
+            <div
+              class="flex items-center justify-between mb-4"
+            >
+              <h2
+                class="text-primary-700 text-xl font-bold px-4 py-2 "
+              >
+                最新スライド
+              </h2>
+              <a
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-primary-700 bg-primary-50 rounded-lg hover:bg-primary-100 focus:ring-4 focus:outline-none focus:ring-primary-300 transition-colors"
+                href="/slides"
+              >
+                すべて見る
+                <svg
+                  aria-hidden="true"
+                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-6"
+            >
+              <article
+                class="bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 overflow-hidden flex h-full flex-col"
+              >
+                <a
+                  aria-label="AI時代のコードレビュー を開く"
+                  href="/slides/2026-04-22-ai-era-code-review.html"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div
+                    class="w-full aspect-video bg-secondary-50 overflow-hidden"
+                  >
+                    <img
+                      alt="AI時代のコードレビュー サムネイル"
+                      class="w-full h-full object-cover"
+                      decoding="async"
+                      loading="lazy"
+                      src="https://ara-ta3.github.io/slides/assets/2026-04-22-ai-era-code-review.png"
+                    />
+                  </div>
+                </a>
+                <div
+                  class="p-5 flex flex-1 flex-col min-w-0"
+                >
+                  <h2
+                    class="text-xl font-bold text-primary-700 line-clamp-2 break-words"
+                  >
+                    <a
+                      class="hover:underline"
+                      href="/slides/2026-04-22-ai-era-code-review.html"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      AI時代のコードレビュー
+                    </a>
+                  </h2>
+                  <p
+                    class="text-primary-500 text-sm mt-2 line-clamp-3 break-words"
+                  >
+                    AI Agent時代におけるコードレビューの役割整理
+                  </p>
+                  <a
+                    class="text-primary-600 hover:text-primary-800 underline text-sm mt-3 line-clamp-2 break-words"
+                    href="https://supporterz-seminar.connpass.com/event/388882/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    AI時代のコードレビューLT会
+                  </a>
+                  <p
+                    class="text-primary-500 text-sm mt-auto pt-4"
+                  >
+                    2026-04-22
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
     </div>

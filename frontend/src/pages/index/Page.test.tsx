@@ -22,6 +22,19 @@ vi.mock("vike-react/useData", () => ({
         contentSnippet: "もう一つのテスト記事",
       },
     ],
+    latestSlides: [
+      {
+        slug: "2026-04-22-ai-era-code-review",
+        title: "AI時代のコードレビュー",
+        description: "AI Agent時代におけるコードレビューの役割整理",
+        image:
+          "https://ara-ta3.github.io/slides/assets/2026-04-22-ai-era-code-review.png",
+        date: "2026-04-22",
+        url: "/slides/2026-04-22-ai-era-code-review.html",
+        eventName: "AI時代のコードレビューLT会",
+        eventUrl: "https://supporterz-seminar.connpass.com/event/388882/",
+      },
+    ],
   }),
 }));
 
