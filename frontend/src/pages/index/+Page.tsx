@@ -1,14 +1,15 @@
 import React from "react";
 import { useData } from "vike-react/useData";
 
+import Footer from "@/components/Footer";
+import LatestSlides from "@/components/LatestSlides";
 import Profile from "@/components/Profile";
 import Projects from "@/components/Projects";
 import RelatedArticles from "@/components/RelatedArticles";
-import Footer from "@/components/Footer";
 import type { Data } from "@/pages/index/+data";
 
 const Home: React.FC = () => {
-  const { articles } = useData<Data>();
+  const { articles, latestSlides } = useData<Data>();
   return (
     <div
       className="flex size-full min-h-screen flex-col group/design-root overflow-x-hidden"
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
           <div className="flex flex-col max-w-[960px] flex-1">
             <Profile />
             <Projects />
+            <LatestSlides slides={latestSlides} />
             <RelatedArticles articles={articles} />
           </div>
         </div>
