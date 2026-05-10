@@ -5,6 +5,10 @@
   "automergeType": "pr",
   "automergeSchedule": ["at any time"],
   "timezone": "Asia/Tokyo",
+  "minimumReleaseAge": "3 days",
+  "vulnerabilityAlerts": {
+    "minimumReleaseAge": null
+  },
   "packageRules": [
     {
       "matchDatasources": ["github-releases", "github-tags"],
@@ -42,6 +46,11 @@
       "matchPackageNames": ["tailwindcss"],
       "allowedVersions": "<4.0.0",
       "groupName": "tailwindcss",
+      "matchManagers": ["npm"]
+    },
+    {
+      "matchPackageNames": ["pnpm"],
+      "allowedVersions": "<11",
       "matchManagers": ["npm"]
     }
   ]
