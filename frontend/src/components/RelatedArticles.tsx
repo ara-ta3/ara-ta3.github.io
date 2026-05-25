@@ -1,4 +1,6 @@
 import React from "react";
+import { FaPen } from "react-icons/fa";
+
 import { HeadingTitle } from "@/components/Heading";
 import ArticleCard from "@/components/articles/ArticleCard";
 import type { Article } from "@/utils/rss";
@@ -9,9 +11,9 @@ interface RelatedArticlesProps {
 
 const RelatedArticles: React.FC<RelatedArticlesProps> = ({ articles }) => {
   return (
-    <div id="articles" className="py-4">
+    <div id="articles">
       <div className="flex items-center justify-between mb-4">
-        <HeadingTitle title="最新記事" />
+        <HeadingTitle title="最新記事" icon={<FaPen />} />
         <a
           href="/articles"
           className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-primary-700 bg-primary-50 rounded-lg hover:bg-primary-100 focus:ring-4 focus:outline-none focus:ring-primary-300 transition-colors"

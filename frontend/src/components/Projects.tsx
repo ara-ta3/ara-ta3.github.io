@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCode } from "react-icons/fa";
 
 import { HeadingTitle } from "@/components/Heading";
 import ProjectCard from "@/components/project/ProjectCard";
@@ -10,9 +11,9 @@ const Projects: React.FC = () => {
   );
 
   return (
-    <div id="projects" className="py-4">
-      <HeadingTitle title="個人開発" />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div id="projects">
+      <HeadingTitle title="個人開発" icon={<FaCode />} />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
