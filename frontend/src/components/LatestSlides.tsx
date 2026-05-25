@@ -1,4 +1,6 @@
 import React from "react";
+import { FaSlideshare } from "react-icons/fa";
+
 import { HeadingTitle } from "@/components/Heading";
 import SlideCard from "@/components/slides/SlideCard";
 import type { Slide } from "@/utils/slides";
@@ -11,9 +13,9 @@ const LatestSlides: React.FC<LatestSlidesProps> = ({ slides }) => {
   if (slides.length === 0) return null;
 
   return (
-    <div id="slides" className="py-4">
+    <div id="slides">
       <div className="flex items-center justify-between mb-4">
-        <HeadingTitle title="最新スライド" />
+        <HeadingTitle title="最新スライド" icon={<FaSlideshare />} />
         <a
           href="/slides"
           className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-primary-700 bg-primary-50 rounded-lg hover:bg-primary-100 focus:ring-4 focus:outline-none focus:ring-primary-300 transition-colors"

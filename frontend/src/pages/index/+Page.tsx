@@ -8,6 +8,17 @@ import Projects from "@/components/Projects";
 import RelatedArticles from "@/components/RelatedArticles";
 import type { Data } from "@/pages/index/+data";
 
+const Section: React.FC<{
+  children: React.ReactNode;
+  className?: string;
+}> = ({ children, className = "" }) => {
+  return (
+    <section className={`px-4 py-10 ${className}`}>
+      <div className="mx-auto max-w-[960px]">{children}</div>
+    </section>
+  );
+};
+
 const Home: React.FC = () => {
   const { articles, latestSlides } = useData<Data>();
   return (
@@ -16,14 +27,18 @@ const Home: React.FC = () => {
       style={{ fontFamily: '"Work Sans", "Noto Sans", sans-serif' }}
     >
       <div className="flex h-full grow flex-col min-h-screen">
-        <div className="px-4 flex flex-1 justify-center py-4">
-          <div className="flex flex-col max-w-[960px] flex-1">
-            <Profile />
-            <Projects />
-            <RelatedArticles articles={articles} />
-            <LatestSlides slides={latestSlides} />
-          </div>
-        </div>
+        <Section>
+          <Profile />
+        </Section>
+        <Section className="bg-primary-50">
+          <Projects />
+        </Section>
+        <Section>
+          <RelatedArticles articles={articles} />
+        </Section>
+        <Section className="bg-primary-50">
+          <LatestSlides slides={latestSlides} />
+        </Section>
       </div>
       <Footer />
     </div>
