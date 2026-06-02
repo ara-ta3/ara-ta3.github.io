@@ -1,6 +1,9 @@
 {
   "name": "ara-ta3-monorepo",
   "private": true,
+  "engines": {
+    "node": "24"
+  },
   "packageManager": "pnpm@10.34.1",
   "workspaces": [
     "frontend"
