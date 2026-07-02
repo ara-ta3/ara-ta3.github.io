@@ -8,12 +8,12 @@ overrides:
   brace-expansion@^1.1.0: 5.0.6
   brace-expansion@^2.0.0: 5.0.6
   glob: 13.0.6
-  js-yaml: 4.3.0
+  js-yaml: 5.2.0
   flatted@<=3.4.1: '>=3.4.2'
   fast-uri@<=3.1.1: '>=3.1.2'
   tmp@<0.2.6: '>=0.2.6'
   ws@>=8.0.0 <8.21.0: '>=8.21.0'
-  undici@>=7.0.0 <7.28.0: 7.28.0
+  undici@>=7.0.0 <7.28.0: 8.5.0
   markdown-it@<=14.1.1: '>=14.2.0'
   '@babel/core@<=7.29.0': '>=7.29.6'
   esbuild@>=0.27.3 <0.28.1: '>=0.28.1'
@@ -2449,8 +2449,8 @@ packages:
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
-  js-yaml@4.3.0:
-    resolution: {integrity: sha512-1td788aAnnZ5qs7V2QIRl1owjtYpbKt749Y3xauqQgwIIGF/xXWz1wMTEBx5O3LK3lXLVuqXPdPxj2BoFHaW9Q==}
+  js-yaml@5.2.0:
+    resolution: {integrity: sha512-YeLUMlvR4Ou1B119LIaM0r65JvbOBooJDc9yEu0dClb/uSC5P4FrLU8OCCz/HXWvtPoIrR0dRzABTjo1sTN9Bw==}
     hasBin: true
 
   jsdom@29.1.1:
@@ -3421,9 +3421,9 @@ packages:
   undici-types@7.18.2:
     resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
 
-  undici@7.28.0:
-    resolution: {integrity: sha512-cRZYrTDwWznlnRiPjggAGxZXanty6M8RV1ff8Wm4LWXBp7/IG8v5DnOm74DtUBp9OONpK75YlPnIjQqX0dBDtA==}
-    engines: {node: '>=20.18.1'}
+  undici@8.5.0:
+    resolution: {integrity: sha512-xamtWoB1EshgjpmlXd7GGm2VfdDtw1+rD8uhry8pSNW3If6S8E0m2T2+orSKeZXEn/aPJMviCpDBA65WJt8zhg==}
+    engines: {node: '>=22.19.0'}
 
   universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
@@ -4109,7 +4109,7 @@ snapshots:
     dependencies:
       '@csstools/postcss-is-pseudo-class': 5.0.3(postcss@8.5.15)
       cssesc: 3.0.0
-      js-yaml: 4.3.0
+      js-yaml: 5.2.0
       lodash.kebabcase: 4.1.1
       markdown-it: 14.2.0
       markdown-it-front-matter: 0.2.4
@@ -5065,7 +5065,7 @@ snapshots:
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
-      js-yaml: 4.3.0
+      js-yaml: 5.2.0
       parse-json: 5.2.0
     optionalDependencies:
       typescript: 6.0.3
@@ -5947,7 +5947,7 @@ snapshots:
 
   js-tokens@4.0.0: {}
 
-  js-yaml@4.3.0:
+  js-yaml@5.2.0:
     dependencies:
       argparse: 2.0.1
 
@@ -5968,7 +5968,7 @@ snapshots:
       saxes: 6.0.0
       symbol-tree: 3.2.4
       tough-cookie: 6.0.1
-      undici: 7.28.0
+      undici: 8.5.0
       w3c-xmlserializer: 5.0.0
       webidl-conversions: 8.0.1
       whatwg-mimetype: 5.0.0
@@ -7009,7 +7009,7 @@ snapshots:
 
   undici-types@7.18.2: {}
 
-  undici@7.28.0: {}
+  undici@8.5.0: {}
 
   universalify@2.0.1: {}
 
