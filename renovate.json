@@ -52,6 +52,12 @@
       "matchPackageNames": ["pnpm"],
       "allowedVersions": "<11",
       "matchManagers": ["npm"]
+    },
+    {
+      "matchPackageNames": ["node"],
+      "matchManagers": ["npm"],
+      "versioning": "node",
+      "groupName": "node version"
     }
   ]
 }
