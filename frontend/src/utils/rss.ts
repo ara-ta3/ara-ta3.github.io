@@ -105,9 +105,11 @@ async function fetchRSSFeed(
         link: item.link || "",
         pubDate: new Date(item.pubDate || item.isoDate || ""),
         contentSnippet: item.contentSnippet || item.summary,
-        creator: item.creator || item.author,
+        creator:
+          item.creator ||
+          toNonEmptyString((item as unknown as ParserItem).author),
         source,
-        thumbnailUrl: extractThumbnailUrl(item as ParserItem),
+        thumbnailUrl: extractThumbnailUrl(item as unknown as ParserItem),
       }))
       .filter((article) => article.title && article.link);
   } catch (error) {

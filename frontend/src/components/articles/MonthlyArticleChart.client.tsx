@@ -7,6 +7,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import type { ChartOptions, TooltipItem } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import type { MonthlyStat } from "@/domains/articles/types";
 
@@ -70,7 +71,7 @@ const MonthlyArticleChartClient: React.FC<Props> = ({ stats }) => {
     ],
   };
 
-  const options = {
+  const options: ChartOptions<"bar"> = {
     responsive: true,
     maintainAspectRatio: false,
     interaction: {
@@ -83,8 +84,8 @@ const MonthlyArticleChartClient: React.FC<Props> = ({ stats }) => {
       },
       tooltip: {
         callbacks: {
-          label: (context: { dataset: { label: string }; raw: number }) =>
-            `${context.dataset.label}: ${context.raw}本`,
+          label: (context: TooltipItem<"bar">) =>
+            `${context.dataset.label}: ${context.parsed.y}本`,
         },
       },
     },
