@@ -3,13 +3,21 @@
   "extends": ["config:best-practices"],
   "automerge": true,
   "automergeType": "pr",
+  "platformAutomerge": false,
   "automergeSchedule": ["at any time"],
   "timezone": "Asia/Tokyo",
-  "minimumReleaseAge": "3 days",
   "vulnerabilityAlerts": {
     "minimumReleaseAge": null
   },
   "packageRules": [
+    {
+      "matchDatasources": ["github-releases", "github-tags"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchUpdateTypes": ["digest", "pin"],
+      "minimumReleaseAge": null
+    },
     {
       "matchDatasources": ["github-releases", "github-tags"],
       "groupName": "github actions",
