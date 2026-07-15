@@ -52,15 +52,4 @@ export const externalSlides: Slide[] = [
     eventName: "(だいたい)新卒エンジニア向け技術交流会 vol.3",
     eventUrl: "https://ngineerxiv.doorkeeper.jp/events/24857",
   },
-  {
-    slug: "slideshare-fluentd-norikra-49069441",
-    title: "fluentdとnorikraが便利そうだから使ってみようよ",
-    description: "(だいたい)新卒エンジニア向け技術交流会 vol.3 発表資料",
-    image:
-      "https://cdn.slidesharecdn.com/ss_thumbnails/darkvol3v1-150606133357-lva1-app6892-thumbnail.jpg?width=640&height=640&fit=bounds",
-    date: "2015-06-06",
-    url: "https://www.slideshare.net/slideshow/ss-49069441/49069441",
-    eventName: "(だいたい)新卒エンジニア向け技術交流会 vol.3",
-    eventUrl: "https://ngineerxiv.doorkeeper.jp/events/24857",
-  },
 ];
