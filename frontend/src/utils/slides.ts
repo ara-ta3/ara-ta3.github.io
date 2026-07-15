@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import { externalSlides } from "@/data/externalSlides";
+
 export type Slide = {
   slug: string;
   title: string;
@@ -72,12 +74,13 @@ export const getAllSlides = (): Slide[] => {
   const dir = getSlidesDir();
   const files = fs.readdirSync(dir).filter((name) => name.endsWith(".md"));
 
-  const slides = files.map((file) => {
+  const localSlides = files.map((file) => {
     const slug = file.replace(/\.md$/, "");
     const source = fs.readFileSync(path.join(dir, file), "utf-8");
     return parseSlideSource(slug, source);
   });
 
+  const slides = [...localSlides, ...externalSlides];
   slides.sort(compareSlides);
   return slides;
 };

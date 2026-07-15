@@ -13,7 +13,7 @@ const SlidesPage: React.FC = () => {
       <div className="text-center mb-6">
         <h1 className="text-3xl font-bold text-primary-900">スライド一覧</h1>
         <p className="text-primary-500 mt-2">
-          登壇・勉強会などで作成した Marp スライドをまとめています
+          登壇・勉強会などで作成したスライドをまとめています
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
