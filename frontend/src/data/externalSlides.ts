@@ -10,6 +10,7 @@ export const externalSlides: Slide[] = [
     date: "2017-10-08",
     url: "https://speakerdeck.com/ara_ta3/yun-yong-zhui-jia-kai-fa-siduraiphpapurikesiyonniwei-lai-woyu-erufang-fa",
     eventName: "PHPカンファレンス2017",
+    eventUrl: "https://phpcon.php.gr.jp/2017/",
   },
   {
     slug: "speakerdeck-anata-to-rpg",
