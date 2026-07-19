@@ -2,13 +2,9 @@ import React from "react";
 
 interface DemoButtonProps {
   demoUrl?: string;
-  buttonText?: string;
 }
 
-const DemoButton: React.FC<DemoButtonProps> = ({
-  demoUrl,
-  buttonText = "View Demo",
-}) => {
+const DemoButton: React.FC<DemoButtonProps> = ({ demoUrl }) => {
   if (!demoUrl) return null;
 
   return (
@@ -23,7 +19,7 @@ const DemoButton: React.FC<DemoButtonProps> = ({
           rel="noopener noreferrer"
           className="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary-700 text-white text-sm font-bold leading-normal hover:bg-primary-500 transition-colors"
         >
-          <span className="truncate">{buttonText}</span>
+          <span className="truncate">公開ページを見る</span>
         </a>
       </div>
     </div>

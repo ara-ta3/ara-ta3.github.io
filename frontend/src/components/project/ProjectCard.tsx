@@ -52,9 +52,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   showActions = true,
 }) => {
   return (
-    <div className="bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+    <div className="flex h-full flex-col bg-white border border-secondary-100 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
       <ProjectCardImage project={project} />
-      <div className="p-6">
+      <div className="flex flex-1 flex-col p-6">
         <h2 className="text-xl font-bold text-primary-700 mb-2">
           {project.title}
         </h2>
@@ -79,7 +79,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         )}
 
         {showActions && (
-          <div className="flex justify-between items-center">
+          <div className="mt-auto flex items-center justify-between gap-4">
             <a
               href={`/projects/${project.id}`}
               className="inline-flex items-center p-2 text-sm font-medium text-center text-white bg-primary-900 rounded-lg hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 transition-colors"
@@ -108,7 +108,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 rel="noopener noreferrer"
                 className="text-primary-700 hover:text-primary-900 text-sm font-medium"
               >
-                {project.buttonText || "Demo"}
+                公開ページを見る
               </a>
             )}
           </div>
