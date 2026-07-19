@@ -4,10 +4,14 @@ import SplatoonHighlights from "@/components/hobbies/SplatoonHighlights";
 import SplatoonRecordsTable from "@/components/hobbies/SplatoonRecordsTable";
 import SplatoonXpChart from "@/components/hobbies/SplatoonXpChart";
 import { splatoonSeasonRecords } from "@/data/splatoon";
-import { getSplatoonHighlights } from "@/domains/hobbies/splatoon";
+import {
+  buildSplatoonXpSummary,
+  getBestSplatoonRank,
+} from "@/domains/hobbies/splatoon";
 
 const HobbiesPage: React.FC = () => {
-  const highlights = getSplatoonHighlights(splatoonSeasonRecords);
+  const xpSummary = buildSplatoonXpSummary(splatoonSeasonRecords);
+  const bestRank = getBestSplatoonRank(splatoonSeasonRecords);
 
   return (
     <>
@@ -32,7 +36,7 @@ const HobbiesPage: React.FC = () => {
           </p>
         </div>
 
-        <SplatoonHighlights highlights={highlights} />
+        <SplatoonHighlights bestRank={bestRank} xpSummary={xpSummary} />
         <SplatoonXpChart records={splatoonSeasonRecords} />
         <SplatoonRecordsTable records={splatoonSeasonRecords} />
       </article>

@@ -38,7 +38,7 @@ const SplatoonXpChart: React.FC<Props> = (props) => {
     return (
       <section className="mb-10">
         <h2 className="mb-4 text-2xl font-semibold text-primary-900">
-          シーズンXP推移
+          シーズン推移
         </h2>
         <div className="rounded-lg border border-dashed border-secondary-200 bg-primary-50 p-4 text-center text-primary-500">
           ブラウザ環境でチャートを読み込み中です…

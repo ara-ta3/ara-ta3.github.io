@@ -13,7 +13,7 @@ const SplatoonRecordsTable: React.FC<Props> = ({ records }) => {
         シーズン別記録
       </h2>
       <div className="overflow-x-auto rounded-lg border border-secondary-200">
-        <table className="min-w-[1080px] border-collapse bg-white text-sm">
+        <table className="w-full min-w-[800px] border-collapse bg-white text-sm">
           <thead>
             <tr className="bg-primary-50 text-primary-900">
               <th
@@ -77,9 +77,6 @@ const SplatoonRecordsTable: React.FC<Props> = ({ records }) => {
           </tbody>
         </table>
       </div>
-      <p className="mt-2 text-xs text-secondary-500">
-        表は横にスクロールできます。
-      </p>
     </section>
   );
 };

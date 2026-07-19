@@ -30,21 +30,89 @@ export type SplatoonHighlight = {
   value: number;
 };
 
-export type SplatoonHighlights = {
-  highestXp: SplatoonHighlight;
-  bestRank: SplatoonHighlight;
+export type SplatoonHighestXpByRule = Record<SplatoonRule, SplatoonHighlight>;
+
+export type SplatoonYearlyHighestXp = {
+  year: number;
+  highestXpByRule: SplatoonHighestXpByRule;
 };
 
-export const getSplatoonHighlights = (
+export type SplatoonXpSummary = {
+  allTime: SplatoonHighestXpByRule;
+  yearly: SplatoonYearlyHighestXp[];
+};
+
+const createHighestXpByRule = (
+  record: SplatoonSeasonRecord,
+): SplatoonHighestXpByRule => ({
+  area: { season: record.season, rule: "area", value: record.results.area.xp },
+  tower: {
+    season: record.season,
+    rule: "tower",
+    value: record.results.tower.xp,
+  },
+  rainmaker: {
+    season: record.season,
+    rule: "rainmaker",
+    value: record.results.rainmaker.xp,
+  },
+  clamBlitz: {
+    season: record.season,
+    rule: "clamBlitz",
+    value: record.results.clamBlitz.xp,
+  },
+});
+
+const updateHighestXpByRule = (
+  current: SplatoonHighestXpByRule,
+  record: SplatoonSeasonRecord,
+): void => {
+  splatoonRules.forEach((rule) => {
+    if (record.results[rule].xp > current[rule].value) {
+      current[rule] = {
+        season: record.season,
+        rule,
+        value: record.results[rule].xp,
+      };
+    }
+  });
+};
+
+export const getSplatoonRecordYear = (record: SplatoonSeasonRecord): number =>
+  Number.parseInt(record.season.slice(0, 4), 10);
+
+export const buildSplatoonXpSummary = (
   records: readonly [SplatoonSeasonRecord, ...SplatoonSeasonRecord[]],
-): SplatoonHighlights => {
+): SplatoonXpSummary => {
+  const firstRecord = records[0];
+  const allTime = createHighestXpByRule(firstRecord);
+  const highestXpByYear = new Map<number, SplatoonHighestXpByRule>();
+
+  records.forEach((record) => {
+    const year = getSplatoonRecordYear(record);
+    const yearlyHighestXp = highestXpByYear.get(year);
+
+    updateHighestXpByRule(allTime, record);
+    if (yearlyHighestXp == null) {
+      highestXpByYear.set(year, createHighestXpByRule(record));
+    } else {
+      updateHighestXpByRule(yearlyHighestXp, record);
+    }
+  });
+
+  return {
+    allTime,
+    yearly: [...highestXpByYear.entries()]
+      .sort(([left], [right]) => left - right)
+      .map(([year, highestXpByRule]) => ({ year, highestXpByRule })),
+  };
+};
+
+export const getBestSplatoonRank = (
+  records: readonly [SplatoonSeasonRecord, ...SplatoonSeasonRecord[]],
+): SplatoonHighlight => {
   const firstRecord = records[0];
   const firstRule = splatoonRules[0];
-  let highestXp: SplatoonHighlight = {
-    season: firstRecord.season,
-    rule: firstRule,
-    value: firstRecord.results[firstRule].xp,
-  };
   let bestRank: SplatoonHighlight = {
     season: firstRecord.season,
     rule: firstRule,
@@ -55,15 +123,11 @@ export const getSplatoonHighlights = (
     splatoonRules.forEach((rule) => {
       const result = record.results[rule];
 
-      if (result.xp > highestXp.value) {
-        highestXp = { season: record.season, rule, value: result.xp };
-      }
-
       if (result.rank < bestRank.value) {
         bestRank = { season: record.season, rule, value: result.rank };
       }
     });
   });
 
-  return { highestXp, bestRank };
+  return bestRank;
 };
