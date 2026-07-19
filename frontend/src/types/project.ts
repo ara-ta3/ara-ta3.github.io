@@ -12,5 +12,4 @@ export interface Project {
   details: ProjectDetail[];
   imageUrl?: string;
   demoUrl?: string;
-  buttonText?: string;
 }

@@ -21,7 +21,6 @@ export const projects: Project[] = [
     ],
     imageUrl: Appricity as string,
     demoUrl: "https://appricity.vercel.app/",
-    buttonText: "サービスを見る",
   },
   {
     id: "nekometry",
@@ -48,7 +47,6 @@ export const projects: Project[] = [
     ],
     imageUrl: Nekometry as string,
     demoUrl: "https://nekometry.web.app/",
-    buttonText: "ツールを使う",
   },
   {
     id: "personal-website",
@@ -70,7 +68,5 @@ export const projects: Project[] = [
       { label: "Hosting", value: "GitHub Pages" },
       { label: "CI/CD", value: "GitHub Actions" },
     ],
-    demoUrl: "https://ara-ta3.github.io",
-    buttonText: "サイトを見る",
   },
 ];
