@@ -1,18 +1,7 @@
 import React from "react";
 import BreadcrumbWithSchema from "@/components/BreadcrumbWithSchema";
-import SplatoonHighlights from "@/components/hobbies/SplatoonHighlights";
-import SplatoonRecordsTable from "@/components/hobbies/SplatoonRecordsTable";
-import SplatoonXpChart from "@/components/hobbies/SplatoonXpChart";
-import {
-  buildSplatoonXpSummary,
-  getBestSplatoonRank,
-} from "@/domains/hobbies/splatoon";
-import { splatoonSeasonRecords } from "@/data/splatoon";
 
 const HobbiesPage: React.FC = () => {
-  const xpSummary = buildSplatoonXpSummary(splatoonSeasonRecords);
-  const bestRank = getBestSplatoonRank(splatoonSeasonRecords);
-
   return (
     <>
       <BreadcrumbWithSchema pathname="/hobbies/" />
@@ -23,23 +12,23 @@ const HobbiesPage: React.FC = () => {
         </p>
       </div>
 
-      <article>
-        <div className="mb-6">
+      <div className="grid gap-4 sm:grid-cols-2">
+        <a
+          className="group rounded-xl border border-primary-100 bg-white p-6 shadow-sm transition hover:border-primary-300 hover:shadow-md"
+          href="/hobbies/splatoon/"
+        >
           <p className="text-sm font-semibold uppercase tracking-wider text-primary-600">
             Game
           </p>
-          <h2 className="mt-1 text-3xl font-bold text-primary-900">
-            Splatoon 3
-          </h2>
-          <p className="mt-3 max-w-2xl leading-7 text-secondary-600">
-            Xマッチで遊んだ記録です。各シーズンの4ルール別の最高XPと順位を残しています。
+          <h2 className="mt-2 text-2xl font-bold text-primary-900">Splatoon</h2>
+          <p className="mt-3 leading-7 text-secondary-600">
+            Splatoon 3のXマッチで遊んだ、シーズン別の最高XPと順位の記録です。
           </p>
-        </div>
-
-        <SplatoonHighlights bestRank={bestRank} xpSummary={xpSummary} />
-        <SplatoonXpChart records={splatoonSeasonRecords} />
-        <SplatoonRecordsTable records={splatoonSeasonRecords} />
-      </article>
+          <p className="mt-4 text-sm font-semibold text-primary-600 group-hover:text-primary-700">
+            記録を見る →
+          </p>
+        </a>
+      </div>
     </>
   );
 };

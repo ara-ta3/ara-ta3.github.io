@@ -23,6 +23,10 @@ export const breadcrumbConfig: Record<string, BreadcrumbConfig> = {
     name: "趣味",
     parent: "/",
   },
+  "/hobbies/splatoon/": {
+    name: "Splatoon",
+    parent: "/hobbies/",
+  },
   "/electricity/": {
     name: "電気代比較ツール",
     parent: "/",

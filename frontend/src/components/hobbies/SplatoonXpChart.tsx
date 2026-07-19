@@ -19,7 +19,7 @@ const SplatoonXpChart: React.FC<Props> = (props) => {
 
     let mounted = true;
 
-    import("./SplatoonXpChart.client")
+    import("@/components/hobbies/SplatoonXpChart.client")
       .then((module) => {
         if (mounted) {
           setClientComponent(() => module.default);
