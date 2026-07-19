@@ -30,7 +30,7 @@ deploy:
 	$(PNPM) exec gh-pages -d $(DIST_DIR)
 
 compile:
-	$(PNPM) -C $(WEB_DIR) exec tsgo
+	$(PNPM) -C $(WEB_DIR) exec tsc
 
 test:
 	$(PNPM) -C $(WEB_DIR) exec vitest --run
