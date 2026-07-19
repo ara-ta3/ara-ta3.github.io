@@ -42,7 +42,7 @@
     "prettier": "3.9.5",
     "serve": "14.2.6",
     "tailwindcss": "4.2.4",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "typescript-eslint": "8.64.0",
     "vike": "0.4.260",
     "vike-react": "0.6.25",
