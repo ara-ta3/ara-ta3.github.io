@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
-import { splatoonSeasonRecords } from "@/data/splatoon";
 import {
   buildSplatoonXpSummary,
   getBestSplatoonRank,
 } from "@/domains/hobbies/splatoon";
+import { splatoonSeasonRecords } from "@/data/splatoon";
 
 describe("buildSplatoonXpSummary", () => {
   it("全シーズンからルール別の歴代最高XPを返す", () => {

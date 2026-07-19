@@ -3,11 +3,11 @@ import BreadcrumbWithSchema from "@/components/BreadcrumbWithSchema";
 import SplatoonHighlights from "@/components/hobbies/SplatoonHighlights";
 import SplatoonRecordsTable from "@/components/hobbies/SplatoonRecordsTable";
 import SplatoonXpChart from "@/components/hobbies/SplatoonXpChart";
-import { splatoonSeasonRecords } from "@/data/splatoon";
 import {
   buildSplatoonXpSummary,
   getBestSplatoonRank,
 } from "@/domains/hobbies/splatoon";
+import { splatoonSeasonRecords } from "@/data/splatoon";
 
 const HobbiesPage: React.FC = () => {
   const xpSummary = buildSplatoonXpSummary(splatoonSeasonRecords);

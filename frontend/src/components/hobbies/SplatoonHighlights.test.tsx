@@ -2,11 +2,11 @@ import React from "react";
 import { fireEvent, render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 import SplatoonHighlights from "@/components/hobbies/SplatoonHighlights";
-import { splatoonSeasonRecords } from "@/data/splatoon";
 import {
   buildSplatoonXpSummary,
   getBestSplatoonRank,
 } from "@/domains/hobbies/splatoon";
+import { splatoonSeasonRecords } from "@/data/splatoon";
 
 describe("SplatoonHighlights", () => {
   it("初期表示では通算を選択し、ルール別の歴代最高XPを表示する", () => {
