@@ -24,5 +24,4 @@ jobs:
           sudo tar -xzf sbt.tgz -C /usr/local
           echo "/usr/local/sbt/bin" >> $GITHUB_PATH
       - name: Compile Backend
-        run: sbt -Dsbt.supershell=false compile
-        working-directory: backend
+        run: make compile/backend

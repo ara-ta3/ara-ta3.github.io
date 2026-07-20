@@ -5,3 +5,7 @@ frontend/test-results
 # make test/e2e/update/docker 実行時に docker コンテナ内の pnpm が
 # リポジトリ root に書き出すストア
 .pnpm-store
+
+# sbt / BSP generated files
+/backend/**/target/
+/backend/.bsp/
