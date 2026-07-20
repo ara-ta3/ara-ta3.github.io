@@ -7,12 +7,6 @@ SBT=sbt
 MARP=$(PNPM) exec marp
 MARP_THEME_SET=--theme-set ./slides/themes/ara-ta3.css
 
-.PHONY: install install/playwright server server/build server/dist
-.PHONY: build build/frontend deploy compile compile/backend
-.PHONY: test test/watch test/e2e test/e2e/update test/e2e/update/docker test/e2e/ui
-.PHONY: lint lint/eslint lint/prettier lint/fix lint/eslint/fix lint/prettier/fix
-.PHONY: marp marp/gtm marp/image marp/watch marp/server
-
 install:
 	$(PNPM) install
 
