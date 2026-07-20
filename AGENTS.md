@@ -7,7 +7,7 @@
 - `ara-ta3.github.io` で公開する、ポートフォリオ・ブログ・登壇資料を含む個人サイト。
 - フロントエンドは Vike + React + TypeScript による SSG。Tailwind CSS と Flowbite React を使用する。
 - バックエンドは Scala + ZIO + zio-http。
-- GitHub Actions でテスト・ビルドを行い、`master` を GitHub Pages へデプロイする。
+- GitHub Actions でテスト・ビルドを行い、GitHub Pages へデプロイする。
 
 ## プロジェクト構成
 
