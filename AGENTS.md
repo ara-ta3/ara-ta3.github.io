@@ -1,31 +1,77 @@
 # Repository Guidelines
 
-## プロジェクト構成と配置
-- ルートは pnpm ワークスペース。フロントエンドは `frontend/`（Vike + React + TypeScript + Tailwind）、静的リソースは `frontend/resources/`（sitemap、robots、cat アセット）、ビルド成果物は `frontend/dist/` で手動編集禁止。
-- バックエンドは Scala（ZIO + zio-http）で `backend/src/main/scala/io/github/ara_ta3/Main.scala` に配置、設定は `backend/build.sbt`。
-- テスト関連は `frontend/tests/`（単体/DOM 用セットアップ）と `frontend/tests/e2e/`（Playwright）。`frontend/test-results/` は生成物。
+このファイルを AI 向けの指示の正本とする。リポジトリについてのやり取りは日本語で行う。
 
-## ビルド・開発コマンド
-- 依存導入は `pnpm install` もしくは `make install`（preinstall で pnpm のみ許可）。
-- 開発サーバーは `make server`（Vike dev）。型チェックのみは `make compile`（tsc --noEmit）。
-- 本番ビルドは `make build`：クライアントを生成し sitemap/robots/cat をコピーし `.nojekyll` を付与。
-- ビルド成果物プレビューは `make server/build`（3000 番）、デプロイは `make deploy`（gh-pages で `frontend/dist` を公開）。
+## プロジェクト概要
 
-## コーディングスタイル・命名
-- TypeScript/React は strict。`@` エイリアスで `frontend/src` を解決し、相対パス（./, ../）は lint で禁止。
-- ESLint（typescript-eslint, import/order）+ Prettier を使用。`make lint` / `make lint/fix`、`make lint/prettier` で整形。インデントは 2 スペース、import は builtin→external→internal 順。
-- Tailwind 設定は `tailwind.config.js`、設定ファイル（vite/tailwind 等）は CommonJS 風 import 例外ルールあり。
+- `ara-ta3.github.io` で公開する、ポートフォリオ・ブログ・登壇資料を含む個人サイト。
+- フロントエンドは Vike + React + TypeScript による SSG。Tailwind CSS と Flowbite React を使用する。
+- バックエンドは Scala + ZIO + zio-http。
+- GitHub Actions でテスト・ビルドを行い、`master` を GitHub Pages へデプロイする。
+
+## プロジェクト構成
+
+- ルートは pnpm workspace。
+- `frontend/`: フロントエンド。実装は `frontend/src/`、静的リソースは `frontend/resources/`、E2E テストは `frontend/tests/e2e/` に置く。
+- `frontend/dist/`: ビルド成果物。手動編集しない。
+- `backend/`: Scala バックエンド。エントリポイントは `backend/src/main/scala/io/github/ara_ta3/Main.scala`、設定は `backend/build.sbt`。
+- `slides/`: Marp の登壇資料、テーマ、アセット。
+- `scripts/`: ビルド補助スクリプト。
+
+## 正本と実行入口
+
+- AI 向けの指示は `AGENTS.md` を正本とする。他ツール向けの指示ファイルを増やす場合は、このファイルへのシンボリックリンクにする。
+- 開発・検証・ビルドの実行入口はルートの `Makefile` を正本とする。AI、ローカル開発、CI のいずれも、対応する Make target がある処理では内部の CLI を直接呼ばない。
+- 実行手順や利用ツールを変える場合は、先に Make target の実装を更新し、呼び出し側のコマンドを維持する。必要な target がない場合は、個別の場所にコマンドを複製せず Makefile に追加する。
+- 依存関係と実行環境のバージョンは `package.json`、`pnpm-workspace.yaml`、`backend/build.sbt` など各設定ファイルを正本とする。
+- CI の起動条件、権限、デプロイ先は `.github/workflows/` を正本とする。AGENTS.md には変化しやすい実装詳細を重複させない。
+
+## 開発コマンド
+
+主な安定した実行入口は以下。その他の処理は Makefile の target を確認する。
+
+```bash
+make install
+make server
+make compile
+make compile/backend
+make lint
+make lint/fix
+make test
+make test/e2e
+make build
+make server/build
+```
+
+`make deploy` は公開状態を変更するため、明示的に依頼された場合だけ実行する。
+
+## コーディング方針
+
+- TypeScript は strict を維持する。`@` alias で `frontend/src` を参照し、lint で禁止されている相対 import を追加しない。
+- ESLint と Prettier の結果を正とする。手作業でスタイルを推測せず、変更後に `make lint` を実行する。
+- `var` は使わず `const` を優先し、再代入が必要な場合だけ `let` を使う。非同期処理は Promise chain より `async` / `await` を優先する。
+- 一時的なデバッグを除き `console.log` を残さない。
+- React component は PascalCase、custom hook は `useXxx` と命名する。
+- component の責務を明確にし、JSX 内のロジックを小さく保つ。小さな変更で不要なファイル分割や抽象化を増やさない。
+- UI 変更では desktop だけでなく mobile のレスポンシブ表示も確認する。
+- Vite、Tailwind などの設定ファイルは既存の module 形式と lint 例外に従う。
 
 ## テスト方針
-- 単体/DOM テストは `make test`（Vitest、jsdom、`tests/setup.ts`）。監視実行は `make test/watch`。
-- E2E は `make install/playwright` 実行後に `make test/e2e`（`playwright.config.ts` で dev サーバーを自動起動、失敗時にスクリーンショット/動画取得）。UI 追加時は該当ページのシナリオを追加。
-- テストファイルは `tests/**/*.spec.ts` または `tests/e2e/*.spec.ts` とし、既存の JSON-LD 検証例を参考に期待値を明示。
 
-## コミット・PR ルール
-- 履歴は短い命令形英語が多い（例: `Fix lint`, `Add ...`, 依存更新は `Update ... (#123)`）。同様に 1 行で要点をまとめる。
-- PR には目的、主要変更点、実施テスト（lint/test/build）を列挙。UI 変更は差分キャプチャを添付し、関連 Issue/チケットがあればリンク。
-- CI 依存が薄いため、提出前にローカルで lint/test/build を完了すること。
+- unit / DOM テストは実装の近くに `*.test.ts` または `*.test.tsx` として置き、`make test` で実行する。
+- E2E テストは `frontend/tests/e2e/*.spec.ts` に置き、`make test/e2e` で実行する。
+- テストごとの意図と期待値を明示する。UI の挙動を追加・変更した場合は、必要に応じて対応する E2E シナリオも更新する。
+- Playwright の visual snapshot を更新する場合は、macOS 用と CI の Linux 用 baseline の違いに注意する。Linux baseline の更新には `make test/e2e/update/docker` を使える。
 
-## セキュリティ・運用メモ
-- GitHub Pages 公開が前提。`frontend/resources/sitemap.xml` と `robots.txt` をビルドに含めること、秘密情報をリポジトリに含めないこと。
-- バックエンドを動かす場合は `sbt run` など別プロセスで起動し、ポート衝突を避ける。設定値をコードベタ書きしない。
+## ビルド・運用上の注意
+
+- サイトの生成と付随リソースの配置は `make build` に集約する。生成手順を追加・変更する場合も、この target 内で完結させる。
+- 公開対象やデプロイ手順は GitHub Actions workflow を正本とし、ローカルの確認には対応する Make target を使う。
+- 秘密情報や環境固有の設定値をリポジトリへ含めない。
+- 生成物、依存パッケージ、テスト結果を手動編集しない。
+
+## コミット・PR
+
+- コミットは既存履歴に合わせ、短い命令形の英語で要点を表す。
+- PR には目的、主要な変更、実行した確認を記載する。UI 変更では必要に応じて差分画像を添える。
+- 変更範囲に応じて `make lint`、`make test`、`make build`、`make test/e2e`、`make compile/backend` を実行する。

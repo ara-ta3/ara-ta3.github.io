@@ -1,9 +1,17 @@
 WEB_DIR=frontend
+BACKEND_DIR=backend
 DIST_DIR=$(WEB_DIR)/dist
 
 PNPM=pnpm
+SBT=sbt
 MARP=$(PNPM) exec marp
 MARP_THEME_SET=--theme-set ./slides/themes/ara-ta3.css
+
+.PHONY: install install/playwright server server/build server/dist
+.PHONY: build build/frontend deploy compile compile/backend
+.PHONY: test test/watch test/e2e test/e2e/update test/e2e/update/docker test/e2e/ui
+.PHONY: lint lint/eslint lint/prettier lint/fix lint/eslint/fix lint/prettier/fix
+.PHONY: marp marp/gtm marp/image marp/watch marp/server
 
 install:
 	$(PNPM) install
@@ -15,10 +23,12 @@ server:
 	$(PNPM) -C $(WEB_DIR) exec vike dev
 
 server/build: build
+	$(MAKE) server/dist
+
+server/dist:
 	$(PNPM) -C $(WEB_DIR) exec serve dist/client -l 3000
 
-build:
-	$(PNPM) -C $(WEB_DIR) exec vike build
+build: build/frontend
 	$(MAKE) $(DIST_DIR)/client/sitemap.xml
 	$(MAKE) $(DIST_DIR)/client/robots.txt
 	touch $(DIST_DIR)/client/.nojekyll
@@ -26,11 +36,17 @@ build:
 	$(MAKE) marp
 	$(MAKE) marp/image
 
+build/frontend:
+	$(PNPM) -C $(WEB_DIR) exec vike build
+
 deploy:
 	$(PNPM) exec gh-pages -d $(DIST_DIR)
 
 compile:
 	$(PNPM) -C $(WEB_DIR) exec tsgo
+
+compile/backend:
+	cd $(BACKEND_DIR) && $(SBT) -Dsbt.supershell=false compile
 
 test:
 	$(PNPM) -C $(WEB_DIR) exec vitest --run

@@ -7,16 +7,16 @@ https://ara-ta3.github.io/
 
 フロントエンドのコードは `frontend/` ディレクトリ以下に配置されています。pnpm のワークスペース機能を利用して管理しています。
 
-バックエンドは `backend/` に Scala で置く構想がありますが、今のところやりたいことが不明確で未実装です。  
+バックエンドは `backend/` に Scala で配置しています。試験的な HTTP サーバーがあり、フロントエンドとは未連携です。
 
 ## 技術構成図
 
 ```mermaid
 graph TD
-  Dev[DEV] -->|pnpm / make build| FE[frontend/ - Vike + React + TS]
-  FE --> Dist[frontend/dist]
-  Dist -->|gh-pages へデプロイ| Pages[GitHub Pages]
-  Dev -.->|検討中| BE[backend/ - ZIO + zio-http（構想段階、未連携）]
+  Dev[DEV] -->|make build| FE[frontend/ - Vike + React + TS]
+  FE --> Dist[frontend/dist/client]
+  Dist -->|GitHub Actionsでデプロイ| Pages[GitHub Pages]
+  Dev -.->|未連携| BE[backend/ - ZIO + zio-http]
 ```
 
 ## フロントエンド構成図
