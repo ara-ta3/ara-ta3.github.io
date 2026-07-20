@@ -29,11 +29,12 @@ make build/frontend
 # 2. スライドのカードからリンクされる /slides/<slug>.html もテストするなら marp も生成しておく
 make marp
 
-# 3. dev サーバーを停止して serve に切り替え
-pkill -f 'vike dev' 2>/dev/null
-make server/dist > /tmp/serve.log 2>&1 &
+# 3. make server を起動した端末で Ctrl-C を押し、dev サーバーを停止する
 
-# 4. 動作確認
+# 4. ビルド成果物の配信サーバーを起動する
+make server/dist
+
+# 5. 別の端末から動作確認
 curl -sS --max-time 10 -w 'HTTP %{http_code}\n' http://localhost:3000/
 ```
 
