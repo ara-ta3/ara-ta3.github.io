@@ -37,7 +37,7 @@ deploy:
 	$(PNPM) exec gh-pages -d $(DIST_DIR)
 
 articles/fetch:
-	$(PNPM) exec tsx scripts/fetch-articles.ts
+	node scripts/fetch-articles.mts
 
 compile: compile/frontend compile/scripts
 
@@ -119,7 +119,7 @@ marp: $(DIST_DIR)/client/slides $(DIST_DIR)/client/slides/assets $(DIST_DIR)/cli
 	$(MAKE) marp/gtm
 
 marp/gtm: $(GTM_SNIPPET)
-	@$(PNPM) exec tsx scripts/inject-gtm.ts $(GTM_SNIPPET) $(DIST_DIR)/client/slides
+	@node scripts/inject-gtm.mts $(GTM_SNIPPET) $(DIST_DIR)/client/slides
 
 marp/image: slides/assets
 	$(MARP) --input-dir ./slides $(MARP_THEME_SET) --output $(DIST_DIR)/client/slides/assets --image png --allow-local-files

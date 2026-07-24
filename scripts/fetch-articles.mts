@@ -5,7 +5,8 @@
 // 外部 RSS / API へアクセスしない。データ更新は本スクリプト経由で行い、
 // 差分があれば CI が PR を作成する運用を想定している。
 //
-// 実行: make articles/fetch (= tsx scripts/fetch-articles.ts)
+// 実行: make articles/fetch (= node scripts/fetch-articles.mts)
+// Node.js 24 の型ストリップで .mts をそのまま実行する (tsx 等は不要)。
 
 import { writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
