@@ -36,6 +36,9 @@ build/frontend:
 deploy:
 	$(PNPM) exec gh-pages -d $(DIST_DIR)
 
+articles/fetch:
+	node scripts/fetch-articles.mjs
+
 compile:
 	$(PNPM) -C $(WEB_DIR) exec tsc
 

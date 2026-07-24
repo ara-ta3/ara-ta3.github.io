@@ -1,0 +1,34 @@
+name: Update Articles
+
+on:
+  schedule:
+    - cron: '0 20 * * *'  # 日本時間 5:00 (UTC 20:00) / Deploy より前に実行
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version-file: 'package.json'
+      - name: Fetch latest articles
+        run: make articles/fetch
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
+        with:
+          commit-message: 'chore: update articles.data.json'
+          title: 'chore: 記事データ (articles.data.json) を更新'
+          body: |
+            はてなブログ / Zenn / CARTA TECH BLOG の記事データとはてなブックマーク数を再取得しました。
+
+            この PR は `update-articles` ワークフローが自動生成しています。
+          branch: chore/update-articles
+          delete-branch: true
+          add-paths: |
+            frontend/src/domains/articles/articles.data.json

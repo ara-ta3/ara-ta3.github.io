@@ -1,4 +1,7 @@
-import { fetchAllArticlesWithLimit, type Article } from "@/utils/rss";
+import {
+  fetchAllArticlesWithLimit,
+  type Article,
+} from "@/domains/articles/articles";
 import { getAllSlides, type Slide } from "@/utils/slides";
 
 export type Data = {

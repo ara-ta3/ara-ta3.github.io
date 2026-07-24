@@ -1,6 +1,6 @@
 import React from "react";
 import ArticleCard from "@/components/articles/ArticleCard";
-import type { Article } from "@/utils/rss";
+import type { Article } from "@/domains/articles/articles";
 
 type Props = {
   articles: Article[];

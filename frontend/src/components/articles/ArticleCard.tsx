@@ -1,7 +1,7 @@
 import React from "react";
 import ArticleThumbnail from "@/components/articles/ArticleThumbnail";
 import { SOURCE_META } from "@/domains/articles/constants";
-import type { Article } from "@/utils/rss";
+import type { Article } from "@/domains/articles/articles";
 
 type ArticleCardProps = {
   article: Article;

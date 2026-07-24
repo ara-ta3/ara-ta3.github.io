@@ -1,4 +1,4 @@
-import { Article } from "@/utils/rss";
+import { Article } from "@/domains/articles/articles";
 
 export type ArticleSource = Article["source"];
 export type SourceTotals = Record<ArticleSource, number>;

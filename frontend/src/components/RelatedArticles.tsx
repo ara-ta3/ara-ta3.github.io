@@ -3,7 +3,7 @@ import { FaPen } from "react-icons/fa";
 
 import { HeadingTitle } from "@/components/Heading";
 import ArticleCard from "@/components/articles/ArticleCard";
-import type { Article } from "@/utils/rss";
+import type { Article } from "@/domains/articles/articles";
 
 interface RelatedArticlesProps {
   articles: Article[];

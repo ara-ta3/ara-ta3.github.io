@@ -1,7 +1,10 @@
 import { buildPopularArticles } from "@/domains/articles/popular.usecase";
 import { buildArticleStats } from "@/domains/articles/stats.usecase";
 import { MonthlyStat, YearlyStat } from "@/domains/articles/types";
-import { fetchAllArticlesWithLimit, type Article } from "@/utils/rss";
+import {
+  fetchAllArticlesWithLimit,
+  type Article,
+} from "@/domains/articles/articles";
 
 export type Data = {
   articles: Article[];
@@ -11,7 +14,7 @@ export type Data = {
 };
 
 export default async function data(): Promise<Data> {
-  const articles = await fetchAllArticlesWithLimit(200);
+  const articles = await fetchAllArticlesWithLimit(1000);
   const popularArticles = buildPopularArticles(articles);
   const { yearlyStats, monthlyStats } = buildArticleStats(articles, {
     monthlyMonths: 0,

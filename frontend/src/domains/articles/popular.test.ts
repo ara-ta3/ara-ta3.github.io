@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { buildPopularArticles } from "@/domains/articles/popular.usecase";
-import type { Article } from "@/utils/rss";
+import type { Article } from "@/domains/articles/articles";
 
 const createArticle = (overrides: Partial<Article>): Article => ({
   title: overrides.title ?? "title",

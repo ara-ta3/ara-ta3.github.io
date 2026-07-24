@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { ARTICLE_SOURCES, SOURCE_META } from "@/domains/articles/constants";
 import type { YearlyStat } from "@/domains/articles/types";
+
+const DEFAULT_VISIBLE_YEARS = 5;
 
 type Props = {
   stats: YearlyStat[];
@@ -20,9 +22,15 @@ const SourceBadge: React.FC<{
 );
 
 const YearlyArticleSummary: React.FC<Props> = ({ stats }) => {
+  const [expanded, setExpanded] = useState(false);
+
   if (stats.length === 0) {
     return null;
   }
+
+  const hasMore = stats.length > DEFAULT_VISIBLE_YEARS;
+  const visibleStats =
+    expanded || !hasMore ? stats : stats.slice(0, DEFAULT_VISIBLE_YEARS);
 
   return (
     <section className="mb-10">
@@ -43,7 +51,7 @@ const YearlyArticleSummary: React.FC<Props> = ({ stats }) => {
             </tr>
           </thead>
           <tbody>
-            {stats.map((stat) => (
+            {visibleStats.map((stat) => (
               <tr
                 key={stat.year}
                 className="border-t border-secondary-100 text-primary-900"
@@ -66,6 +74,20 @@ const YearlyArticleSummary: React.FC<Props> = ({ stats }) => {
           </tbody>
         </table>
       </div>
+      {hasMore && (
+        <div className="mt-3 text-center">
+          <button
+            type="button"
+            onClick={() => setExpanded((prev) => !prev)}
+            aria-expanded={expanded}
+            className="text-sm font-medium text-secondary-600 hover:text-secondary-700"
+          >
+            {expanded
+              ? "直近5年分だけ表示"
+              : `すべての年を表示（残り${stats.length - DEFAULT_VISIBLE_YEARS}年分）`}
+          </button>
+        </div>
+      )}
     </section>
   );
 };
