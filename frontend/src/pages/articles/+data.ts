@@ -1,7 +1,10 @@
 import { buildPopularArticles } from "@/domains/articles/popular.usecase";
 import { buildArticleStats } from "@/domains/articles/stats.usecase";
 import { MonthlyStat, YearlyStat } from "@/domains/articles/types";
-import { fetchAllArticlesWithLimit, type Article } from "@/utils/rss";
+import {
+  fetchAllArticlesWithLimit,
+  type Article,
+} from "@/domains/articles/articles";
 
 export type Data = {
   articles: Article[];

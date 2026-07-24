@@ -3,7 +3,7 @@ import {
   buildMonthlyStats,
   buildYearlyStats,
 } from "@/domains/articles/stats.usecase";
-import type { Article } from "@/utils/rss";
+import type { Article } from "@/domains/articles/articles";
 
 const createArticle = (overrides: Partial<Article>): Article => ({
   title: overrides.title ?? "title",

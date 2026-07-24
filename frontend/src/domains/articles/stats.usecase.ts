@@ -8,7 +8,7 @@ import {
   SourceTotals,
   YearlyStat,
 } from "@/domains/articles/types";
-import { Article } from "@/utils/rss";
+import { Article } from "@/domains/articles/articles";
 
 const createEmptyTotals = (): SourceTotals =>
   ARTICLE_SOURCES.reduce((acc, source) => {
