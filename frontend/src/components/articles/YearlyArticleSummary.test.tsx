@@ -6,7 +6,7 @@ import type { YearlyStat } from "@/domains/articles/types";
 
 const createStat = (year: number): YearlyStat => ({
   year,
-  totals: { hatena: 1, zenn: 0, carta: 0 },
+  totals: { hatena: 1, zenn: 0, company: 0 },
   sum: 1,
 });
 

@@ -5,11 +5,46 @@
 // 外部 RSS / API へアクセスしない。データ更新は本スクリプト経由で行い、
 // 差分があれば CI が PR を作成する運用を想定している。
 //
-// 実行: make articles/fetch (= node scripts/fetch-articles.mjs)
+// 実行: make articles/fetch (= node scripts/fetch-articles.mts)
+// Node.js 24 の型ストリップで .mts をそのまま実行する (tsx 等は不要)。
 
 import { writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
+
+type ArticleSource = "hatena" | "zenn" | "company";
+
+// 収集途中の記事。OGP 補完で thumbnailUrl / contentSnippet を後から埋める。
+type FetchedArticle = {
+  title: string;
+  link: string;
+  pubDate: string;
+  source: ArticleSource;
+  contentSnippet?: string;
+  thumbnailUrl?: string;
+};
+
+// articles.data.json に出力する形。任意項目は値があるときだけ含める。
+type StoredArticle = {
+  title: string;
+  link: string;
+  pubDate: string;
+  source: ArticleSource;
+  contentSnippet?: string;
+  thumbnailUrl?: string;
+  bookmarkCount?: number;
+};
+
+type ZennArticle = {
+  path: string;
+  title: string;
+  published_at: string;
+};
+
+type ZennResponse = {
+  articles?: ZennArticle[];
+  next_page: number | null;
+};
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUTPUT_PATH = resolve(
@@ -18,16 +53,19 @@ const OUTPUT_PATH = resolve(
 );
 
 const HATENA_ARCHIVE_BASE = "https://arata.hatenadiary.com/archive";
-const ZENN_API_BASE = "https://zenn.dev/api/articles?username=ara_ta3&order=latest";
+const ZENN_API_BASE =
+  "https://zenn.dev/api/articles?username=ara_ta3&order=latest";
 const HATENA_BOOKMARK_COUNT_ENDPOINT =
   "https://bookmark.hatenaapis.com/count/entries";
 const BOOKMARK_COUNT_BATCH_SIZE = 50;
 const SNIPPET_MAX_LENGTH = 140;
 const USER_AGENT = "Mozilla/5.0 (ara-ta3.github.io article fetcher)";
 
-// CARTA TECH BLOG (techblog.cartaholdings.co.jp) の id:arata3da4 名義の記事。
-// 著者ページから機械取得しづらいため、ここを正本として保持する。
-const CARTA_ARTICLES = [
+// 企業ブログ (source: "company") として扱う記事。現状は CARTA TECH BLOG
+// (techblog.cartaholdings.co.jp) の id:arata3da4 名義の記事。著者ページから
+// 機械取得しづらいため、ここを正本として保持する。今後別の企業ブログで書いた
+// 記事もここに追記すれば同じカテゴリでまとまる。
+const COMPANY_BLOG_ARTICLES: FetchedArticle[] = [
   {
     title:
       "サポーターズの「1dayスピード選考会」開発：教科書通りのスクラムから、自分たちの「型」を作るまで",
@@ -35,7 +73,7 @@ const CARTA_ARTICLES = [
     pubDate: "2025-12-05T12:05:00+09:00",
     contentSnippet:
       "「1dayスピード選考会」のシステム化という、およそ半年間のプロジェクトで実践した開発プロセスとその裏側の試行錯誤について。",
-    source: "carta",
+    source: "company",
     thumbnailUrl:
       "https://cdn-ak.f.st-hatena.com/images/fotolife/n/namu_r21/20251205/20251205121159.png",
   },
@@ -46,7 +84,7 @@ const CARTA_ARTICLES = [
     pubDate: "2025-06-11T10:56:48+09:00",
     contentSnippet:
       "AIの登場によりWebエンジニアの仕事はなくなるのかという問いに思いを馳せた記事。現役Webエンジニアやこれから目指す学生向け。",
-    source: "carta",
+    source: "company",
     thumbnailUrl:
       "https://cdn-ak.f.st-hatena.com/images/fotolife/c/carta_engineers/20250610/20250610175139.png",
   },
@@ -56,7 +94,7 @@ const CARTA_ARTICLES = [
     pubDate: "2023-12-22T16:00:00+09:00",
     contentSnippet:
       "CARTA TECH BLOG アドベントカレンダー 12/22 の記事。サポーターズで1on1イベントをフルサイクル開発した話。",
-    source: "carta",
+    source: "company",
     thumbnailUrl:
       "https://cdn-ak.f.st-hatena.com/images/fotolife/a/arata3da4/20231222/20231222154116.png",
   },
@@ -67,13 +105,16 @@ const CARTA_ARTICLES = [
     pubDate: "2016-12-11T20:25:17+09:00",
     contentSnippet:
       "VOYAGE GROUP の Advent Calendar 2016 11日目の記事。CTOからの挑戦状2016 2ndを手伝った際に書いたPythonコードの紹介。",
-    source: "carta",
+    source: "company",
     thumbnailUrl:
       "https://cdn-ak.f.st-hatena.com/images/fotolife/a/arata3da4/20161214/20161214141155.png",
   },
 ];
 
-const decodeHtmlEntities = (text) =>
+const errorMessage = (error: unknown): string =>
+  error instanceof Error ? error.message : String(error);
+
+const decodeHtmlEntities = (text: string): string =>
   text
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
@@ -82,13 +123,15 @@ const decodeHtmlEntities = (text) =>
     .replace(/&nbsp;/g, " ")
     .replace(/&amp;/g, "&");
 
-const stripTags = (html) =>
-  decodeHtmlEntities(html.replace(/<[^>]+>/g, "")).replace(/\s+/g, " ").trim();
+const stripTags = (html: string): string =>
+  decodeHtmlEntities(html.replace(/<[^>]+>/g, ""))
+    .replace(/\s+/g, " ")
+    .trim();
 
-const truncate = (text, max) =>
+const truncate = (text: string, max: number): string =>
   text.length > max ? `${text.slice(0, max)}…` : text;
 
-const fetchText = async (url) => {
+const fetchText = async (url: string): Promise<string> => {
   const response = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
   if (!response.ok) {
     throw new Error(`Failed to fetch ${url}: ${response.status}`);
@@ -97,7 +140,7 @@ const fetchText = async (url) => {
 };
 
 // はてなブログの月別/全体アーカイブ URL からエントリの投稿日時を復元する。
-const hatenaPubDate = (link, fallbackDate) => {
+const hatenaPubDate = (link: string, fallbackDate: string): string => {
   const match = link.match(
     /\/entry\/(\d{4})\/(\d{2})\/(\d{2})\/(\d{2})(\d{2})(\d{2})/,
   );
@@ -108,8 +151,8 @@ const hatenaPubDate = (link, fallbackDate) => {
   return `${fallbackDate}T00:00:00+09:00`;
 };
 
-const parseHatenaArchivePage = (html) => {
-  const articles = [];
+const parseHatenaArchivePage = (html: string): FetchedArticle[] => {
+  const articles: FetchedArticle[] = [];
   const sections = html.split('<section class="archive-entry');
   for (const section of sections.slice(1)) {
     const linkMatch = section.match(
@@ -143,8 +186,8 @@ const parseHatenaArchivePage = (html) => {
   return articles;
 };
 
-const fetchHatenaArticles = async () => {
-  const articles = [];
+const fetchHatenaArticles = async (): Promise<FetchedArticle[]> => {
+  const articles: FetchedArticle[] = [];
   let page = 1;
   // 安全のためページ数に上限を設ける。
   for (; page <= 100; page += 1) {
@@ -159,16 +202,10 @@ const fetchHatenaArticles = async () => {
   return articles;
 };
 
-const extractMeta = (html, property) => {
+const extractMeta = (html: string, property: string): string | undefined => {
   const patterns = [
-    new RegExp(
-      `<meta[^>]*property="${property}"[^>]*content="([^"]*)"`,
-      "i",
-    ),
-    new RegExp(
-      `<meta[^>]*content="([^"]*)"[^>]*property="${property}"`,
-      "i",
-    ),
+    new RegExp(`<meta[^>]*property="${property}"[^>]*content="([^"]*)"`, "i"),
+    new RegExp(`<meta[^>]*content="([^"]*)"[^>]*property="${property}"`, "i"),
   ];
   for (const pattern of patterns) {
     const match = html.match(pattern);
@@ -179,9 +216,9 @@ const extractMeta = (html, property) => {
   return undefined;
 };
 
-const fetchZennArticles = async () => {
-  const articles = [];
-  let nextUrl = ZENN_API_BASE;
+const fetchZennArticles = async (): Promise<FetchedArticle[]> => {
+  const articles: FetchedArticle[] = [];
+  let nextUrl: string | null = ZENN_API_BASE;
   while (nextUrl) {
     const response = await fetch(nextUrl, {
       headers: { "User-Agent": USER_AGENT },
@@ -189,12 +226,11 @@ const fetchZennArticles = async () => {
     if (!response.ok) {
       throw new Error(`Failed to fetch ${nextUrl}: ${response.status}`);
     }
-    const json = await response.json();
+    const json = (await response.json()) as ZennResponse;
     for (const item of json.articles ?? []) {
-      const link = `https://zenn.dev${item.path}`;
       articles.push({
         title: item.title,
-        link,
+        link: `https://zenn.dev${item.path}`,
         pubDate: new Date(item.published_at).toISOString(),
         source: "zenn",
       });
@@ -217,15 +253,17 @@ const fetchZennArticles = async () => {
         article.contentSnippet = truncate(description, SNIPPET_MAX_LENGTH);
       }
     } catch (error) {
-      console.warn(`zenn OGP 取得失敗: ${article.link}`, error.message);
+      console.warn(`zenn OGP 取得失敗: ${article.link}`, errorMessage(error));
     }
   }
   console.log(`zenn: ${articles.length} 件`);
   return articles;
 };
 
-const fetchBookmarkCounts = async (links) => {
-  const counts = {};
+const fetchBookmarkCounts = async (
+  links: string[],
+): Promise<Record<string, number>> => {
+  const counts: Record<string, number> = {};
   for (let i = 0; i < links.length; i += BOOKMARK_COUNT_BATCH_SIZE) {
     const batch = links.slice(i, i + BOOKMARK_COUNT_BATCH_SIZE);
     const query = batch
@@ -239,28 +277,32 @@ const fetchBookmarkCounts = async (links) => {
       if (!response.ok) {
         continue;
       }
-      Object.assign(counts, await response.json());
+      Object.assign(counts, (await response.json()) as Record<string, number>);
     } catch (error) {
-      console.warn("はてブ数取得失敗", error.message);
+      console.warn("はてブ数取得失敗", errorMessage(error));
     }
   }
   return counts;
 };
 
-const main = async () => {
+const main = async (): Promise<void> => {
   const [hatena, zenn] = await Promise.all([
     fetchHatenaArticles(),
     fetchZennArticles(),
   ]);
-  const articles = [...hatena, ...zenn, ...CARTA_ARTICLES];
+  const articles: FetchedArticle[] = [
+    ...hatena,
+    ...zenn,
+    ...COMPANY_BLOG_ARTICLES,
+  ];
 
   const bookmarkCounts = await fetchBookmarkCounts(
     articles.map((article) => article.link),
   );
 
-  const withCounts = articles.map((article) => {
+  const withCounts: StoredArticle[] = articles.map((article) => {
     const bookmarkCount = bookmarkCounts[article.link];
-    const normalized = {
+    const normalized: StoredArticle = {
       title: article.title,
       link: article.link,
       pubDate: article.pubDate,

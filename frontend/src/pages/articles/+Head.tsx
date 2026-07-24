@@ -6,12 +6,12 @@ export function Head() {
       <title>記事一覧 | ara-ta3のページ</title>
       <meta
         name="description"
-        content="ara-ta3の技術ブログ記事一覧。はてなブログ・Zenn・CARTA TECH BLOGで投稿した記事をまとめて表示しています。"
+        content="ara-ta3の技術ブログ記事一覧。はてなブログ・Zenn・企業ブログで投稿した記事をまとめて表示しています。"
       />
       <meta property="og:title" content="記事一覧 | ara-ta3のページ" />
       <meta
         property="og:description"
-        content="ara-ta3の技術ブログ記事一覧。はてなブログ・Zenn・CARTA TECH BLOGで投稿した記事をまとめて表示しています。"
+        content="ara-ta3の技術ブログ記事一覧。はてなブログ・Zenn・企業ブログで投稿した記事をまとめて表示しています。"
       />
       <meta property="og:type" content="website" />
     </>

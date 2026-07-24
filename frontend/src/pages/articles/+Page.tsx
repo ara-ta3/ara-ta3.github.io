@@ -17,8 +17,7 @@ const ArticlesPage: React.FC = () => {
       <div className="text-center mb-6">
         <h1 className="text-3xl font-bold text-primary-900">記事一覧</h1>
         <p className="text-primary-500 mt-2">
-          はてなブログ・Zenn・CARTA TECH BLOG
-          で投稿した記事をまとめて表示しています
+          はてなブログ・Zenn・企業ブログ で投稿した記事をまとめて表示しています
         </p>
       </div>
       <PopularArticles articles={popularArticles} />
