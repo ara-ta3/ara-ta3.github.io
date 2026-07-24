@@ -1,5 +1,6 @@
 import React from "react";
 import ArticleThumbnail from "@/components/articles/ArticleThumbnail";
+import { SOURCE_META } from "@/domains/articles/constants";
 import type { Article } from "@/utils/rss";
 
 type ArticleCardProps = {
@@ -26,18 +27,23 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
           )}
           <div className="flex items-center gap-2 text-sm mt-auto pt-4 flex-wrap">
             <span
-              className={`px-2 py-1 rounded text-xs font-medium flex-shrink-0 ${
-                article.source === "hatena"
-                  ? "bg-orange-100 text-orange-800"
-                  : "bg-blue-100 text-blue-800"
-              }`}
+              className={`px-2 py-1 rounded text-xs font-medium flex-shrink-0 ${SOURCE_META[article.source].badgeClass}`}
             >
-              {article.source === "hatena" ? "はてなブログ" : "Zenn"}
+              {SOURCE_META[article.source].label}
             </span>
             <span className="text-primary-500 flex-shrink-0">•</span>
             <span className="text-primary-500 break-words">
               {article.pubDate.toLocaleDateString("ja-JP")}
             </span>
+            {article.bookmarkCount !== undefined &&
+              article.bookmarkCount > 0 && (
+                <>
+                  <span className="text-primary-500 flex-shrink-0">•</span>
+                  <span className="px-2 py-1 rounded text-xs font-medium flex-shrink-0 bg-sky-100 text-sky-800">
+                    {article.bookmarkCount} users
+                  </span>
+                </>
+              )}
           </div>
         </div>
       </article>

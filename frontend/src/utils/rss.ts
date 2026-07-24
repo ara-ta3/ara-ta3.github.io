@@ -1,4 +1,5 @@
 import Parser from "rss-parser";
+import { CARTA_ARTICLES } from "@/domains/articles/cartaArticles";
 
 export interface Article {
   title: string;
@@ -6,8 +7,9 @@ export interface Article {
   pubDate: Date;
   contentSnippet?: string;
   creator?: string;
-  source: "hatena" | "zenn";
+  source: "hatena" | "zenn" | "carta";
   thumbnailUrl?: string;
+  bookmarkCount?: number;
 }
 
 const parser = new Parser({
@@ -118,6 +120,58 @@ async function fetchRSSFeed(
   }
 }
 
+const HATENA_BOOKMARK_COUNT_ENDPOINT =
+  "https://bookmark.hatenaapis.com/count/entries";
+const BOOKMARK_COUNT_BATCH_SIZE = 50;
+
+async function fetchBookmarkCountBatch(
+  urls: string[],
+): Promise<Record<string, number>> {
+  if (urls.length === 0) {
+    return {};
+  }
+  const query = urls.map((url) => `url=${encodeURIComponent(url)}`).join("&");
+  try {
+    const response = await fetch(`${HATENA_BOOKMARK_COUNT_ENDPOINT}?${query}`);
+    if (!response.ok) {
+      return {};
+    }
+    const json = (await response.json()) as Record<string, number>;
+    return json;
+  } catch (error) {
+    console.error("Failed to fetch Hatena bookmark counts:", error);
+    return {};
+  }
+}
+
+async function fetchBookmarkCounts(
+  urls: string[],
+): Promise<Record<string, number>> {
+  const uniqueUrls = Array.from(new Set(urls));
+  const batches: string[][] = [];
+  for (let i = 0; i < uniqueUrls.length; i += BOOKMARK_COUNT_BATCH_SIZE) {
+    batches.push(uniqueUrls.slice(i, i + BOOKMARK_COUNT_BATCH_SIZE));
+  }
+  const results = await Promise.all(batches.map(fetchBookmarkCountBatch));
+  return results.reduce<Record<string, number>>((acc, result) => {
+    return { ...acc, ...result };
+  }, {});
+}
+
+async function attachBookmarkCounts(articles: Article[]): Promise<Article[]> {
+  const counts = await fetchBookmarkCounts(
+    articles.map((article) => article.link),
+  );
+  return articles.map((article) => {
+    const fetched = counts[article.link];
+    const bookmarkCount =
+      typeof fetched === "number" ? fetched : article.bookmarkCount;
+    return bookmarkCount === undefined
+      ? article
+      : { ...article, bookmarkCount };
+  });
+}
+
 export async function fetchAllArticles(): Promise<Article[]> {
   return fetchAllArticlesWithLimit(10);
 }
@@ -131,14 +185,16 @@ export async function fetchAllArticlesWithLimit(
 
   const allArticlesArrays = await Promise.allSettled(allArticlesPromises);
 
-  const allArticles = allArticlesArrays
+  const feedArticles = allArticlesArrays
     .filter(
       (result): result is PromiseFulfilledResult<Article[]> =>
         result.status === "fulfilled",
     )
     .flatMap((result) => result.value);
 
-  return allArticles
+  const allArticles = [...feedArticles, ...CARTA_ARTICLES]
     .sort((a, b) => b.pubDate.getTime() - a.pubDate.getTime())
     .slice(0, limit);
+
+  return attachBookmarkCounts(allArticles);
 }
