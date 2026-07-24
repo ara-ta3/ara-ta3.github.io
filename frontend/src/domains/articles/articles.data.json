@@ -1,0 +1,2345 @@
+[
+  {
+    "title": "猫は同じ餌でも匂いを変えると再び食べるという研究の話を聞いた 〜猫がご飯を食べないとき、ふりかけを変えると食いつきが戻ることがあった話〜",
+    "link": "https://arata.hatenadiary.com/entry/2026/06/14/160000",
+    "pubDate": "2026-06-14T16:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "はじめに www.iwate-u.ac.jp 最近、同じ餌でも匂いを変えると猫がまた食べるようになる、という岩手大学の研究の話を見かけました。 これを見て、うちの猫がご飯を食べなくなる時期があることを思い出しました。同じご飯を出していても、ある時期になると急…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/5ff2ebaa9a34a4fd7e2793c4bf736a71b45dad64/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901386336603%2F1781420401",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "新卒で入ったCARTA HOLDINGS(VOYAGE GROUP)から転籍します ~ 思い出は遠くの日々 ~",
+    "link": "https://arata.hatenadiary.com/entry/2026/05/29/093000",
+    "pubDate": "2026-05-29T09:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "はじめに 思い出を語るだけです。この記事は人間がおーがにっくで書いています。 思い出は優しいから甘えちゃだめなんだけど、最後だからね。 全部話しておきたいんだ。 www.youtube.com これはなに？ 自分がいる子会社がカーブアウト、つまりグループから独…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/9d5b617804a7aafd2b9567095210f858c624750f/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901383053965%2F1780014600",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "組織が変わると聞いて感じた“なんかしんどい”の正体 〜予期された喪失に向き合った話〜",
+    "link": "https://arata.hatenadiary.com/entry/2026/05/09/124000",
+    "pubDate": "2026-05-09T12:40:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "はじめに 2026年4月1日、所属している子会社がホールディングスから独立することが発表されました。 この話は、もっと前の12月ごろから関係者として聞かされていました。面白そうだと思う気持ちもあれば、漠然とした不安もありました。 いろいろ咀嚼したあと…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/f42e8d64f068df12132cb5a1d9ee2a3905c7837d/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901379178591%2F1778298000",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "AI Agent時代に、コードレビューが何を担っているのかを考えたい",
+    "link": "https://zenn.dev/ara_ta3/articles/thinking-about-review-in-ai-agent-development",
+    "pubDate": "2026-03-15T13:35:02.097Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--Oxxnpj8b--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AI%2520Agent%25E6%2599%2582%25E4%25BB%25A3%25E3%2581%25AB%25E3%2580%2581%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2583%25AC%25E3%2583%2593%25E3%2583%25A5%25E3%2583%25BC%25E3%2581%258C%25E4%25BD%2595%25E3%2582%2592%25E6%258B%2585%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%2584%25E3%2582%258B%25E3%2581%25AE%25E3%2581%258B%25E3%2582%2592%25E8%2580%2583%25E3%2581%2588%25E3%2581%259F%25E3%2581%2584%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "docker-compose前提のモノレポで Codexアプリ × git-wt による並列開発を回す",
+    "link": "https://zenn.dev/ara_ta3/articles/develop-with-codex-and-git-worktrees-on-monorepo",
+    "pubDate": "2026-02-23T12:51:03.215Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--msU5-XbZ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:docker-compose%25E5%2589%258D%25E6%258F%2590%25E3%2581%25AE%25E3%2583%25A2%25E3%2583%258E%25E3%2583%25AC%25E3%2583%259D%25E3%2581%25A7%2520Codex%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%2520%25C3%2597%2520git-wt%2520%25E3%2581%25AB%25E3%2582%2588%25E3%2582%258B%25E4%25B8%25A6%25E5%2588%2597%25E9%2596%258B%25E7%2599%25BA%25E3%2582%2592%25E5%259B%259E%25E3%2581%2599%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "築10年ほどの中古戸建てでクロスの剥がれを修繕した ~ 修繕用に買ったものと参考にしたもの ~",
+    "link": "https://arata.hatenadiary.com/entry/2026/02/01/231000",
+    "pubDate": "2026-02-01T23:10:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "以前別の記事でも書いた通り中古戸建てを購入し、今その家に住んでいます。 arata.hatenadiary.com 築年数としてはおよそ10年ちょっとで、設備や内装もまだ十分きれいですが、ちょこちょこクロスが剥がれていたりする箇所がありました。 購入前のホームイン…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/36489655140d91647a4bf3af3158ce6b266ec3f1/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901350175620%2F1769958105",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2025年12月に読んだ＆読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2026/01/02/140000",
+    "pubDate": "2026-01-02T14:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書 年末休みがあったのでそこで時間を作れた。 定期的に読む時間を作れたわけじゃないので1月は引き続き習慣づけることを意識したい。 読んだ本 CTOの思考法 技術と組織を動かす意思決定・戦略・リーダーシップ CTOの思考法 技術と組織を…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/78c5be0ee656ab1caff03772123f78dccd5b70d7/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901339481402%2F1767330001",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2025年振り返りと2026年どうしようかなみたいな雑記",
+    "link": "https://arata.hatenadiary.com/entry/2025/12/28/224000",
+    "pubDate": "2025-12-28T22:40:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイル 今年も振り返りと来年について考える時間を取っていくぞい arata.hatenadiary.com 2025年の主なイベント振り返り 1月 出生時育児休業が終わる / プログラミングRustを読み終えた 猫元気 2月 メダリストの漫画や中古のマンシ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/57ea36af4ad00567a31450b49198d0c16651dd85/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901333557318%2F1766929200",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Scala 2.13で Scalafix カスタムルールを使い scala.reflect.Manifest の使用を検知する",
+    "link": "https://zenn.dev/ara_ta3/articles/scala-scalafix-detect-manifest-to-error",
+    "pubDate": "2025-12-14T15:03:13.458Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--p842ibNY--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Scala%25202.13%25E3%2581%25A7%2520Scalafix%2520%25E3%2582%25AB%25E3%2582%25B9%25E3%2582%25BF%25E3%2583%25A0%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%25AB%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%2584%2520scala.reflect.Manifest%2520%25E3%2581%25AE%25E4%25BD%25BF...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Scala 3 + JMH を最短でセットアップする ~ sbt-jmh の最小構成 ~",
+    "link": "https://zenn.dev/ara_ta3/articles/scala-simple-benchmark-with-jmh",
+    "pubDate": "2025-12-07T08:58:43.212Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--f8IKpTZT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Scala%25203%2520%252B%2520JMH%2520%25E3%2582%2592%25E6%259C%2580%25E7%259F%25AD%25E3%2581%25A7%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%25E3%2582%25A2%25E3%2583%2583%25E3%2583%2597%25E3%2581%2599%25E3%2582%258B%2520%7E%2520sbt-jmh%2520%25E3%2581%25AE%25E6%259C%2580%25E5%25B0%258F%25E6%25A7%258B%25E6%2588%2590%2520%7E%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2025買ってよかったアイテム｜生活が確実にラクになったものまとめ",
+    "link": "https://arata.hatenadiary.com/entry/2025/12/07/013500",
+    "pubDate": "2025-12-07T01:35:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は2025年に買ってよかったものアドベントカレンダーの7日目です。 adventar.org はじめに 今年も気づけばあれこれ買い物をしていました。 今年は家を買ったのもあり、でかい買い物がありましたが、日々のちょっとだけ生活を良くしてくれたものもあり…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/7f67857b5d65b4b856c4f569a1550c68dd6ce19e/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901328029738%2F1765168774",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "サポーターズの「1dayスピード選考会」開発：教科書通りのスクラムから、自分たちの「型」を作るまで",
+    "link": "https://techblog.cartaholdings.co.jp/entry/2025/12/05/120500",
+    "pubDate": "2025-12-05T12:05:00+09:00",
+    "source": "carta",
+    "contentSnippet": "「1dayスピード選考会」のシステム化という、およそ半年間のプロジェクトで実践した開発プロセスとその裏側の試行錯誤について。",
+    "thumbnailUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/n/namu_r21/20251205/20251205121159.png",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "猫の餌のカロリー計算を出来るサービスNekometry(ネコメトリー)を作ったら猫の体重が安定した",
+    "link": "https://arata.hatenadiary.com/entry/2025/12/04/000000",
+    "pubDate": "2025-12-04T00:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中犬★猫 ペットグループ この記事は「個人開発についての Advent Calendar 2025」の4日目です。 adventar.org はじめに 「Nekometry」は、猫に与えるべき餌の量を計算するというのを手軽にしたいという思いから作った個人開発のサービ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/75a5ba73af2a0a3c921d0521b3b53c71a7d784f3/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20251128%2F20251128213931.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2025年読んだ本で思い出深い推しの本 ~ 今年の読書振り返りも兼ねて ~",
+    "link": "https://arata.hatenadiary.com/entry/2025/12/03/000000",
+    "pubDate": "2025-12-03T00:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は「2025年の\"推し\"本 Advent Calendar 2025」の3日目として書かれています。 adventar.org 今年もいくつかのアドベントカレンダーを眺めていたところ、その中に「推し本」をテーマにしたものを見つけ、 せっかくなら自分も参加してみよう、と思っ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/cedbfced6540968a4501be46334f213bbd5a42c1/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901316262079%2F1765731549",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2025年11月に読んだ＆読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2025/12/02/130000",
+    "pubDate": "2025-12-02T13:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書 10月も読めず11月は会社の読書会でどうにか読めたものが1冊という感じだった。 もうちょっと読みやすい本を読むことで習慣づけることに重きを置いたほうが良いかもしれない。 読んだ本 失敗から学ぶRDBの正しい歩き方 失敗から学ぶRDB…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/ed07b86eb60d9bd72fcd840b9b5fa013913c8552/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901327804020%2F1764648001",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2025年ベストバイ！LOOKITの電動昇降デスク ~ iggy LS112とPixio PS1Sのモニタアームを添えて ~",
+    "link": "https://arata.hatenadiary.com/entry/2025/12/02/000000",
+    "pubDate": "2025-12-02T00:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は「今年のベストバイガジェット Advent Calendar 2025」の2日目として書かれています。 昨日はyoutoy (id:youtoy) さんによる「普段使いが快適でローカルLLM でも少し使える：「Apple 13インチMacBook Air（M4チップ、メ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/e82ff3fcfbe64d4ba4ecf490d467970fd42f2379/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901316248431%2F1764661093",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "猫飼い2年半が選ぶ「買ってよかった猫用品2025」~ 給水・おやつ・ストレスケア・脱走防止まで ~",
+    "link": "https://arata.hatenadiary.com/entry/2025/12/01/000000",
+    "pubDate": "2025-12-01T00:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイルランキング参加中犬★猫 ペットグループ この記事は2025年に買ってよかったものアドベントカレンダーの1日目です。 adventar.org はじめに 猫を飼い始めてから約2年半経ちました！ 今年もなんだかんだ猫様のために色々買ったの…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/fffb3d7df394cf6f3caa9cdacf03596d5bb95496/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20251129%2F20251129201625.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "やる気が出ない原因と回復方法を整理した ~ 家購入後に燃え尽きた ~",
+    "link": "https://arata.hatenadiary.com/entry/2025/11/29/090000",
+    "pubDate": "2025-11-29T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書ランキング参加中ライフスタイル はじめに つい先日まで、仕事でもプライベートでも「なんとなくやる気が出ない」という状態が続いていました。 自分は7月から10月にかけて家を購入したのですが、この期間は次のような 意思決定 や 調整…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/2e71f34af1b3b6acd82e0a2e171bc404f2cca94d/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901321599957%2F1764374402",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "MySQLで『グループごとに最新1件だけ』を取得 ~ 8.0以降で使えるウィンドウ関数でシンプルに書く ~",
+    "link": "https://zenn.dev/ara_ta3/articles/mysql-group-latest-row",
+    "pubDate": "2025-11-11T04:06:15.759Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--bLOHZyE5--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:MySQL%25E3%2581%25A7%25E3%2580%258E%25E3%2582%25B0%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2597%25E3%2581%2594%25E3%2581%25A8%25E3%2581%25AB%25E6%259C%2580%25E6%2596%25B01%25E4%25BB%25B6%25E3%2581%25A0%25E3%2581%2591%25E3%2580%258F%25E3%2582%2592%25E5%258F%2596%25E5%25BE%2597%2520%7E%25208.0%25E4%25BB%25A5%25E9%2599%258D%25E3%2581%25A7%25E4%25BD%25BF%25E3%2581%2588%25E3%2582%258B%25E3%2582%25A6%25E3%2582%25A3%25E3%2583%25B3%25E3%2583%2589%25E3%2582%25A6%25E9%2596%25A2%25E6%2595%25B0%25E3%2581%25A7%25E3%2582%25B7%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AB%25E3%2581%25AB%25E6%259B%25B8%25E3%2581%258F%2520%7E%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2年ぶりに前回の困り事を踏まえて引っ越した ~ ケーブル整理と箱の行き先管理と掃除の工夫 ~",
+    "link": "https://arata.hatenadiary.com/entry/2025/11/09/233000",
+    "pubDate": "2025-11-09T23:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイル ↓の記事にも書いた通り家を買ったので、引っ越しをしました。 arata.hatenadiary.com 2年ほど前にも引っ越しをしており、その時に感じた困り事を元にいくつか対策したので、その工夫ポイントを備忘録がてら書こうと思います…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/c36c158bd1df3f6c00ffbf83d857f15879fdac8c/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901315450952%2F1762918695",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "らくだ不動産という不動産エージェントに相談して家の購入をした ~ 家を買う流れと相談した感想にホームインスペクションを添えて ~",
+    "link": "https://arata.hatenadiary.com/entry/2025/11/04/070000",
+    "pubDate": "2025-11-04T07:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "今週のお題「最近ゲットしたもの」 せっかくなので今週のお題に沿ってみました。最近ゲットしたものは家です。 ランキング参加中ライフスタイル はじめに 家を買いました。 当時住んでいたところが数年後に取り壊す予定らしく、定期借家で借り続けていたんで…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/e1a06c0feda06ec44d3310597479ddbcd795aa02/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398535443220%2F1777137968",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "AQUAのドラム式洗濯機が異臭と共にEd2のエラーコードが出て洗濯できなくなってしまった ~ 1週間くらいの期間で修理してもらった備忘録 ~",
+    "link": "https://arata.hatenadiary.com/entry/2025/10/10/210000",
+    "pubDate": "2025-10-10T21:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイル はじめに AQUAのドラム式洗濯機を使っているのですが、突然Ed2というエラーコードが出てしまい、乾燥はおろか洗濯までできなくなりました。 結局、修理に来てもらって1週間以内くらいに動くように戻ったんですが、その時の備…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/cd1e90a49b8d127c9136592b971c214aabe61e53/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802888565282365744%2F1764865303",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2025年9月に読んだ＆読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2025/10/10/170000",
+    "pubDate": "2025-10-10T17:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書 7月8月は全然進まなかった。 少し本を読もうという気持ちが離れているようにも思うので気持ちと向き合うを大事にして継続していきたい。 引っ越し周りが落ち着いたらまた開始できる気がするのでがんばるぞい。 読んだ本 マンガでやさし…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/d80bf98542f49af6a4228f7f0c2e2ce3db08f584/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802888565282131805%2F1760083200",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "背中に出来た粉瘤を除去する手術を受けてきた ~ 抜糸までの流れと費用と痛みなどの感想 ~",
+    "link": "https://arata.hatenadiary.com/entry/2025/09/18/221000",
+    "pubDate": "2025-09-18T22:10:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "はじめに 2021年頃に背中に粉瘤が出来ていることが判明していました。 粉瘤は、ググったときに出てきたAI曰く 「皮膚の下に袋状の構造ができて、その中に角質や皮脂などの老廃物が溜まる良性の皮下腫瘍」 で、何もないとただ大きめなニキビみたいにみえるも…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/5a34eb75e36acf3f21f69aded760277a32f572da/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802888565226745537%2F1758457680",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "ベルーナ株主優待の日本酒、2025年3月分は“深山淡雪”が届いた（日本酒コース）",
+    "link": "https://arata.hatenadiary.com/entry/2025/09/07/090000",
+    "pubDate": "2025-09-07T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "はじめに ランキング参加中ライフスタイルランキング参加中株主優待 お酒を送ってもらう株主優待がないかを調べていたところ、ベルーナの株を100株保有していると日本酒をもらえるということを知りました。 100株以上500株未満では1000円分の、通信販売割引…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/5a2cc57f13031b343d0e2dc5100c166b38da248e/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398563690056%2F1764661120",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "MySQLで中央値を取得するSQLを書く",
+    "link": "https://zenn.dev/ara_ta3/articles/mysql-median-sql",
+    "pubDate": "2025-09-05T14:10:33.941Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--lj4DqSWz--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:MySQL%25E3%2581%25A7%25E4%25B8%25AD%25E5%25A4%25AE%25E5%2580%25A4%25E3%2582%2592%25E5%258F%2596%25E5%25BE%2597%25E3%2581%2599%25E3%2582%258BSQL%25E3%2582%2592%25E6%259B%25B8%25E3%2581%258F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "PythonのProtocolとdependency-injectorでDIする",
+    "link": "https://zenn.dev/ara_ta3/articles/python-protocol-getting-started",
+    "pubDate": "2025-07-25T04:24:56.047Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--kznMW7Ua--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Python%25E3%2581%25AEProtocol%25E3%2581%25A8dependency-injector%25E3%2581%25A7DI%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "2025年6月に読んだ＆読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2025/07/01/100000",
+    "pubDate": "2025-07-01T10:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書 一定のペースを取り戻しつつあるので、このまま継続していきたい。 とはいえAI Agentを使った趣味開発が楽しすぎて時間が取れないので意識して取っていきたい。 意識して取っていくというか、読書に対する楽しさを思い出して開発より上…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/269090ccf1c5870fc8a38f949b569603d66d7505/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398484083044%2F1762734074",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Supabaseをローカルで動かしてタスクを表示するサンプルアプリをvite+reactで表示する",
+    "link": "https://zenn.dev/ara_ta3/articles/typescript-supabase-getting-started",
+    "pubDate": "2025-06-28T17:47:25.619Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--g3EpXmGT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Supabase%25E3%2582%2592%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E3%2581%25A7%25E5%258B%2595%25E3%2581%258B%25E3%2581%2597%25E3%2581%25A6%25E3%2582%25BF%25E3%2582%25B9%25E3%2582%25AF%25E3%2582%2592%25E8%25A1%25A8%25E7%25A4%25BA%25E3%2581%2599%25E3%2582%258B%25E3%2582%25B5%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AB%25E3%2582%25A2%25E3%2583%2597%25E3%2583%25AA%25E3%2582%2592vite%252Breact%25E3%2581%25A7%25E8%25A1%25A8%25E7%25A4%25BA%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "entrコマンドでファイル変更をトリガーに処理を自動化する",
+    "link": "https://zenn.dev/ara_ta3/articles/entr-watch-files-and-run-commands",
+    "pubDate": "2025-06-22T02:22:12.603Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--Gzdm5InV--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:entr%25E3%2582%25B3%25E3%2583%259E%25E3%2583%25B3%25E3%2583%2589%25E3%2581%25A7%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E5%25A4%2589%25E6%259B%25B4%25E3%2582%2592%25E3%2583%2588%25E3%2583%25AA%25E3%2582%25AC%25E3%2583%25BC%25E3%2581%25AB%25E5%2587%25A6%25E7%2590%2586%25E3%2582%2592%25E8%2587%25AA%25E5%258B%2595%25E5%258C%2596%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "AIの登場によりWebエンジニアの仕事はなくなるのか - Coding with AI: The End of Software Development as We Know Itを見て",
+    "link": "https://techblog.cartaholdings.co.jp/entry/will-emergence-aI-eliminate-jobs-web-engineers",
+    "pubDate": "2025-06-11T10:56:48+09:00",
+    "source": "carta",
+    "contentSnippet": "AIの登場によりWebエンジニアの仕事はなくなるのかという問いに思いを馳せた記事。現役Webエンジニアやこれから目指す学生向け。",
+    "thumbnailUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/carta_engineers/20250610/20250610175139.png",
+    "bookmarkCount": 66
+  },
+  {
+    "title": "Claude Code Actionでコマンド実行するためのallowed_tools設定例",
+    "link": "https://zenn.dev/ara_ta3/articles/claude-code-actions-allowed-tools",
+    "pubDate": "2025-06-03T01:04:52.501Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--eFuXM1Mb--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Claude%2520Code%2520Action%25E3%2581%25A7%25E3%2582%25B3%25E3%2583%259E%25E3%2583%25B3%25E3%2583%2589%25E5%25AE%259F%25E8%25A1%258C%25E3%2581%2599%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AEallowed_tools%25E8%25A8%25AD%25E5%25AE%259A%25E4%25BE%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "2025年5月に読んだ＆読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2025/06/01/210000",
+    "pubDate": "2025-06-01T21:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書 4月は風邪をがっつり引いてしまい生活するのに必死だったので諦めてしまった。 arata.hatenadiary.com 5月からペースを戻そうとしているので頑張っていきたい。 読んだ本 Tidy First? Tidy First? ―個人で実践する経験主義…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/3f42f185c6dd91cb04ad25a32a0e3399dee25f8e/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398443147570%2F1762734087",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "スマホから家庭内ネットワークのOpenHandsにアクセス出来るようにしてスマホからAIエージェントに指示を出せるようにした",
+    "link": "https://zenn.dev/ara_ta3/articles/network-secure-local-access-dnsmasq-mkcert",
+    "pubDate": "2025-05-18T04:32:46.433Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--V0zquWCq--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2582%25B9%25E3%2583%259E%25E3%2583%259B%25E3%2581%258B%25E3%2582%2589%25E5%25AE%25B6%25E5%25BA%25AD%25E5%2586%2585%25E3%2583%258D%25E3%2583%2583%25E3%2583%2588%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%25E3%2581%25AEOpenHands%25E3%2581%25AB%25E3%2582%25A2%25E3%2582%25AF%25E3%2582%25BB%25E3%2582%25B9%25E5%2587%25BA%25E6%259D%25A5%25E3%2582%258B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2581%2597%25E3%2581%25A6%25E3%2582%25B9%25E3%2583%259E%25E3%2583%259B%25E3%2581%258B%25E3%2582%2589AI%25E3%2582%25A8%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%25B3%25E3%2583%2588%25E3%2581%25AB%25E6%258C%2587%25E7%25A4%25BA%25E3%2582%2592%25E5%2587%25BA%25E3%2581%259B%25E3%2582%258B...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Vikeを使ってVite+TypeScript+Reactの動的ルーティングのページにメタ情報を含めてSSGする",
+    "link": "https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-with-dynamic-routing",
+    "pubDate": "2025-05-13T14:29:44.268Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--okjhbXjO--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Vike%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6Vite%252BTypeScript%252BReact%25E3%2581%25AE%25E5%258B%2595%25E7%259A%2584%25E3%2583%25AB%25E3%2583%25BC%25E3%2583%2586%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E3%2581%25AE%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B8%25E3%2581%25AB%25E3%2583%25A1%25E3%2582%25BF%25E6%2583%2585%25E5%25A0%25B1%25E3%2582%2592%25E5%2590%25AB%25E3%2582%2581%25E3%2581%25A6SSG%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "カタルシス効果が逆効果…？ストレスや怒りを発散すると悪化すると聞いて調べた備忘録",
+    "link": "https://arata.hatenadiary.com/entry/2025/05/12/120000",
+    "pubDate": "2025-05-12T12:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書ランキング参加中ライフスタイル 面倒くさがりの自分がおもしろいほどやる気になる本という本を読んでいて、 ストレスが溜まったときに吐き出して発散することが逆効果という話を聞いて、 な、なんだってーーーってなってしまったので、…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/5f7911e9dafd46aae5d28f658ae01d35d0120983/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189080323958%2F1764661131",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2024年に引き続き2025年も4月に風邪でダウンした私の対策と反省備忘録",
+    "link": "https://arata.hatenadiary.com/entry/2025/05/11/153000",
+    "pubDate": "2025-05-11T15:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイル はじめに：またしても4月に風邪を引いた話 去年に引き続き、2025年もまた4月に風邪を引いてしまいました。この時期の体調不良が恒例化しつつあり、なんとか改善したいと考えています。 とはいえ風邪を引いてしまったものは仕…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/400b5727d2d3398add7c5d226d9cef4df7136ffe/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398423061276%2F1746953925",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "OpenHandsのUIにnginx+mkcertでhttpsでアクセス出来るようにする",
+    "link": "https://zenn.dev/ara_ta3/articles/openhands-nginx-settings",
+    "pubDate": "2025-05-09T23:38:56.482Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--JaxUK4yd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OpenHands%25E3%2581%25AEUI%25E3%2581%25ABnginx%252Bmkcert%25E3%2581%25A7https%25E3%2581%25A7%25E3%2582%25A2%25E3%2582%25AF%25E3%2582%25BB%25E3%2582%25B9%25E5%2587%25BA%25E6%259D%25A5%25E3%2582%258B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "家のネットワーク内で.localドメインをhttpsで通信できるようにmkcertで証明書の設定をする",
+    "link": "https://zenn.dev/ara_ta3/articles/mkcert-local-domain-https",
+    "pubDate": "2025-05-09T03:26:26.358Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--yy5BagdW--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%25AE%25B6%25E3%2581%25AE%25E3%2583%258D%25E3%2583%2583%25E3%2583%2588%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%25E5%2586%2585%25E3%2581%25A7.local%25E3%2583%2589%25E3%2583%25A1%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%2592https%25E3%2581%25A7%25E9%2580%259A%25E4%25BF%25A1%25E3%2581%25A7%25E3%2581%258D%25E3%2582%258B%25E3%2582%2588%25E3%2581%2586%25E3%2581%25ABmkcert%25E3%2581%25A7%25E8%25A8%25BC%25E6%2598%258E%25E6%259B%25B8%25E3%2581%25AE%25E8%25A8%25AD%25E5%25AE%259A%25E3%2582%2592%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "UbuntuにOllamaとOpen WebUIをインストールして、ChatGPT風のローカル対話環境を構築する",
+    "link": "https://zenn.dev/ara_ta3/articles/ollama-openwebui-getting-started",
+    "pubDate": "2025-05-07T12:30:28.237Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--d0jNSPgv--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Ubuntu%25E3%2581%25ABOllama%25E3%2581%25A8Open%2520WebUI%25E3%2582%2592%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25B9%25E3%2583%2588%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%2597%25E3%2581%25A6%25E3%2580%2581ChatGPT%25E9%25A2%25A8%25E3%2581%25AE%25E3%2583%25AD%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25AB%25E5%25AF%25BE%25E8%25A9%25B1%25E7%2592%25B0%25E5%25A2%2583%25E3%2582%2592%25E6%25A7%258B%25E7%25AF%2589%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "2025年3月に読んだ＆読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2025/04/12/124500",
+    "pubDate": "2025-04-12T12:45:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書 3月は色々忙しすぎて1冊どうにか読めたくらいだった。 ポジティブに捉えれば忙しい中で1冊読めただし、ネガティブに捉えれば時間を作りきれなかったと思う。 仕事と子育てが体力的にきついので、どうにか最低限を維持しつつポジティブ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/ac1fe1eda9a0aecc82d620336e74a1e8f8204471/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398342113945%2F1762734113",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "ScalaTestのtaggedAsでmultiarg infix syntax ... deprecatedという警告が出る",
+    "link": "https://zenn.dev/ara_ta3/articles/scala-tagged-as-warning-in-scalatest",
+    "pubDate": "2025-04-11T04:47:18.842Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--f6w4Ppar--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ScalaTest%25E3%2581%25AEtaggedAs%25E3%2581%25A7multiarg%2520infix%2520syntax%2520...%2520deprecated%25E3%2581%25A8%25E3%2581%2584...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "M4 Mac miniでUGREENのキャプチャボードをOBS経由で使ってゲーム配信をする",
+    "link": "https://arata.hatenadiary.com/entry/2025/03/07/120000",
+    "pubDate": "2025-03-07T12:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイル はじめに M4 Mac miniを購入して仕事やら趣味の開発で使っているんですが、Apple Siliconに移行したことで、以前使っていたIntel Mac用のキャプチャボードが使えなくなってしまいました。 そこで、M4 Mac miniで使える…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/15105b8521af0c3920d4f845714435fc3c6ef1b4/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398334244954%2F1773010643",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Prismaを使って既存のテーブルスキーマからコードを生成する",
+    "link": "https://zenn.dev/ara_ta3/articles/prisma-generate-code-from-tables",
+    "pubDate": "2025-02-11T05:10:25.392Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--EseRIWeT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Prisma%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E6%2597%25A2%25E5%25AD%2598%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AB%25E3%2582%25B9%25E3%2582%25AD%25E3%2583%25BC%25E3%2583%259E%25E3%2581%258B%25E3%2582%2589%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2025年1月に読んだ＆読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2025/02/01/173000",
+    "pubDate": "2025-02-01T17:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書 12月から読んでいたプログラミングRustがあったり、1月前半は休みだったりしたのでそれなりに進んだ気がする。 年明け一発目なのもあり勢いよく読めているので継続していきたい。 読んだ本 プログラミングRust プログラミングRust 第2…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/32f5a1a56a58b4f89199530c9985e8d7d39c4779/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398323391299%2F1762818832",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "猫にあげる1日の餌のカロリー量とフードのグラム数を計算出来るツールを書いた",
+    "link": "https://arata.hatenadiary.com/entry/2025/01/09/174000",
+    "pubDate": "2025-01-09T17:40:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイルランキング参加中犬★猫 ペットグループ 背景 猫がご飯を全然食べずに順調に痩せていってしまったので、ウェットフードやドライフードやおやつなどの複数種類のご飯を合わせたときに必要な食事量はどれくらいにすべきなのかに…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/18f8712ee36dda891cfdd1a950f6bb59c06d768b/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398316808354%2F1762734234",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2024年12月に読んだ＆読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2025/01/04/170000",
+    "pubDate": "2025-01-04T17:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書ランキング参加中雑談 出生時育児休業+有給で育児中だったのであまり読めなかったが、マネジメントなどではなくプログラミング言語などの狭義の技術についての本が読みたかったので良い時間になったと思う。 子どもを抱っこで寝かしつけ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/a1356aab399614ca5e58f02981ecfd05c2cede8a/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398317267302%2F1762818843",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Vikeを使ってVite+TypeScript+ReactのページをSSGする",
+    "link": "https://zenn.dev/ara_ta3/articles/typescript-vike-ssg-getting-started",
+    "pubDate": "2024-12-28T06:02:18.207Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--PrVbjdzF--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Vike%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6Vite%252BTypeScript%252BReact%25E3%2581%25AE%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%2592SSG%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2024年振り返りと2025年どうしようかなみたいな雑記",
+    "link": "https://arata.hatenadiary.com/entry/2024/12/27/181000",
+    "pubDate": "2024-12-27T18:10:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "今週のお題「2024こんな年だった・2025こんな年にしたい」 ランキング参加中ライフスタイル 去年から振り返りと目標考えようと思ったので今年もやっていくぞい arata.hatenadiary.com 2024年の主なイベント振り返り 1月 会社のお金で草津旅行 / ドラム式洗…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/f3c406d038cd3cb63e9c5a919f5316de990cfa00/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398302589940%2F1735463417",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Rustのclapでcliのコマンドやオプションをenumで取得する",
+    "link": "https://zenn.dev/ara_ta3/articles/rust-cli-with-clap-bind-enum",
+    "pubDate": "2024-12-19T07:00:13.123Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--o8ObMBBw--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Rust%25E3%2581%25AEclap%25E3%2581%25A7cli%25E3%2581%25AE%25E3%2582%25B3%25E3%2583%259E%25E3%2583%25B3%25E3%2583%2589%25E3%2582%2584%25E3%2582%25AA%25E3%2583%2597%25E3%2582%25B7%25E3%2583%25A7%25E3%2583%25B3%25E3%2582%2592enum%25E3%2581%25A7%25E5%258F%2596%25E5%25BE%2597%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "プログラミングRust 7章を参考に複数種類のエラーをハンドリングする",
+    "link": "https://zenn.dev/ara_ta3/articles/rust-handle-multiple-errors",
+    "pubDate": "2024-12-15T08:03:25.551Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--acIa80O_--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2583%2597%25E3%2583%25AD%25E3%2582%25B0%25E3%2583%25A9%25E3%2583%259F%25E3%2583%25B3%25E3%2582%25B0Rust%25207%25E7%25AB%25A0%25E3%2582%2592%25E5%258F%2582%25E8%2580%2583%25E3%2581%25AB%25E8%25A4%2587%25E6%2595%25B0%25E7%25A8%25AE%25E9%25A1%259E%25E3%2581%25AE%25E3%2582%25A8%25E3%2583%25A9%25E3%2583%25BC%25E3%2582%2592%25E3%2583%258F%25E3%2583%25B3%25E3%2583%2589%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25B0%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Batsを使ってシェルスクリプトをテストする",
+    "link": "https://zenn.dev/ara_ta3/articles/shell-script-test-with-bats",
+    "pubDate": "2024-12-12T05:11:27.224Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--uykTVhoQ--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Bats%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2582%25B7%25E3%2582%25A7%25E3%2583%25AB%25E3%2582%25B9%25E3%2582%25AF%25E3%2583%25AA%25E3%2583%2597%25E3%2583%2588%25E3%2582%2592%25E3%2583%2586%25E3%2582%25B9%25E3%2583%2588%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "2024年の買ってよかったものリスト ~ PC周辺・ガジェット・食・運動グッズ ~",
+    "link": "https://arata.hatenadiary.com/entry/2024/12/05/070000",
+    "pubDate": "2024-12-05T07:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイル この記事は買って良かったもの Advent Calendar 2024の7日目の記事です。 今年も色々買ったので便利だったものを簡単な感想と共にお送りします！ adventar.org PC周辺 ケーブル整理の味方 Ankerのドッキングステーショ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/f8bc037623c6c70d679cc9bb16a811153bd39b31/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398300880398%2F1766340315",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "SteelSeriesのゲーミングヘッドセットArctis Nova Pro Wirelessのススメ ~ Astro A50のリセットに疲れたあなたへ ~",
+    "link": "https://arata.hatenadiary.com/entry/2024/12/02/000000",
+    "pubDate": "2024-12-02T00:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は今年のベストバイガジェット Advent Calendar 2024の2日目として書かれています。 adventar.org ランキング参加中ライフスタイル 昨日はyou (id:youtoy)さんの「モノ作り活動での体験型展示で大活躍！：『太鼓の達人専用コントローラー…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/d5476f139f572dec072b23fd66e3d1d15fb2033e/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398300896362%2F1764661176",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2024年買ってよかったおすすめ猫グッズ",
+    "link": "https://arata.hatenadiary.com/entry/2024/12/01/000000",
+    "pubDate": "2024-12-01T00:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイルランキング参加中犬★猫 ペットグループ この記事は買って良かったもの Advent Calendar 2024の1日目の記事です。 買ってよかったもの Advent Calendar 2024 - Adventar 昨年から猫を飼い始めて1年半ほど経…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/643adb8f2bf9da881f636c9c14a0fbd286d3de52/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20241102%2F20241102231533.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2024年11月に読んだ＆読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2024/11/29/180000",
+    "pubDate": "2024-11-29T18:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書 会社でオライリーラーニングの契約が始まったのでそのあたりで読みたかった本を読んでいた。 子どもが産まれたのもありさらっと全体を読むに留めたのでまた読み返したい。 12月は育児休業する予定なので読める限り読んでいきたい。 読…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/07abf19fdbbed764a2b7d219f9dc001b9d33b5c4/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398307119240%2F1733349751",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "コスパの良い電動ミルでデカフェのコーヒー豆を挽いて一日にコーヒーをたくさん飲む",
+    "link": "https://arata.hatenadiary.com/entry/2024/11/08/170000",
+    "pubDate": "2024-11-08T17:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイル 私は普段シロカのコーン式全自動コーヒーメーカーカフェばこPROを使っていて、一日にコーヒーをたくさん飲みたいと思っているのですが、カフェイン取りすぎると夜眠れなくなるのであまり飲めませんでした。 ただ、カフェイン…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/809c152c7b44da9a79834727a92a047ab3449341/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398301251488%2F1764661192",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "tblsを使ってMySQLの複数テーブルについてのドキュメントを生成する",
+    "link": "https://zenn.dev/ara_ta3/articles/tbls-getting-started",
+    "pubDate": "2024-11-04T06:32:19.074Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--k6tp3kvd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:tbls%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6MySQL%25E3%2581%25AE%25E8%25A4%2587%25E6%2595%25B0%25E3%2583%2586%25E3%2583%25BC%25E3%2583%2596%25E3%2583%25AB%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25E3%2581%25AE%25E3%2583%2589%25E3%2582%25AD%25E3%2583%25A5%25E3%2583%25A1%25E3%2583%25B3%25E3%2583%2588%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "UGREENのトランスミッターを使ってオーディオジャック経由でPlayStation Portalの音声を手持ちのBluetoothイヤホンから聞く",
+    "link": "https://arata.hatenadiary.com/entry/2024/11/04/100000",
+    "pubDate": "2024-11-04T10:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイルランキング参加中ゲームブログやってる人の集まり場！ ちょっと前にPS PortalがAmazonで当たってしまったのでDQ3も出るしSwitchよりロード早いし買うか〜〜〜って思って買っていました。 その際に手持ちのイヤホンで音を聞く…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/f4e5e1f1af91e1304bf8b7c079beec40917d61be/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802418398301252107%2F1764661199",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "OpenAPI generatorでTypeScriptとScalaのコードを生成してデータのやりとりをする",
+    "link": "https://zenn.dev/ara_ta3/articles/openapi-generate-scala-and-typescript",
+    "pubDate": "2024-10-27T09:33:43.034Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--Tw-7aMlM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:OpenAPI%2520generator%25E3%2581%25A7TypeScript%25E3%2581%25A8Scala%25E3%2581%25AE%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2597%25E3%2581%25A6%25E3%2583%2587%25E3%2583%25BC%25E3%2582%25BF%25E3%2581%25AE%25E3%2582%2584%25E3%2582%258A%25E3%2581%25A8%25E3%2582%258A%25E3%2582%2592%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2024年9月に読んだ＆読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2024/10/06/151000",
+    "pubDate": "2024-10-06T15:10:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書 どうにか体力が戻り始めたので読む時間を取れるようになってきた。 習慣化が消えてしまっているので習慣化するところから頑張りたい。 読んだ本 9月の読書メーター読んだ本の数：2読んだページ数：503ナイス数：0人を動かす 改訂文庫版…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/3ae3991dc605038a9023259bf61c55751890db1d/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802340630910007464%2F1730687034",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "ScalaTestのEitherValuesでvalueに誤ったアクセスをしたら不意にNotAllowedExceptionで怒られた話",
+    "link": "https://zenn.dev/ara_ta3/articles/scala-test-not-allowed-exception-in-eithervalues",
+    "pubDate": "2024-09-30T15:07:56.344Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--WHpkori7--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ScalaTest%25E3%2581%25AEEitherValues%25E3%2581%25A7value%25E3%2581%25AB%25E8%25AA%25A4%25E3%2581%25A3%25E3%2581%259F%25E3%2582%25A2%25E3%2582%25AF%25E3%2582%25BB%25E3%2582%25B9%25E3%2582%2592%25E3%2581%2597%25E3%2581%259F%25E3%2582%2589%25E4%25B8%258D%25E6%2584%258F%25E3%2581%25ABNotAllowedExce...%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2024年8月に読んだ＆読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2024/09/02/235000",
+    "pubDate": "2024-09-02T23:50:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書 体力がなさすぎて7月8月全然読めなかった。 どうにか毎週0.1章だけは必ず読むを繰り返して進捗しているけど、劇的に進むことがないのでどこかで強く進めたい。 読んだ本 Scala初心者が知るべき68のこと [asin:B0DCMQCTPQ:detail] Ki…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/1cebe3a84bbde048866c698531c2d999e781b21b/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6802340630903385901%2F1730687049",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "jq -nと--argでJSONを生成し、SlackにWebhook経由でメッセージを送信する",
+    "link": "https://zenn.dev/ara_ta3/articles/send-incoming-webhook-with-jq",
+    "pubDate": "2024-08-10T15:02:32.634Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--9LvQSzVA--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:jq%2520-n%25E3%2581%25A8--arg%25E3%2581%25A7JSON%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2597%25E3%2580%2581Slack%25E3%2581%25ABWebhook%25E7%25B5%258C%25E7%2594%25B1%25E3%2581%25A7%25E3%2583%25A1%25E3%2583%2583%25E3%2582%25BB%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%2592%25E9%2580%2581%25E4%25BF%25A1%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "楽天の株主優待でSIMカードをもらったのでRakuten WiFi Pocket 2cに挿して使う ~ 他の選択肢の検討と選択 ~",
+    "link": "https://arata.hatenadiary.com/entry/2024/07/04/100000",
+    "pubDate": "2024-07-04T10:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "楽天の株主優待でSIMカードをもらったので、Rakuten WiFi Pocket 2cに挿して使ってみた感想と他のポケットWiFiの検討についてです",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/32524b7041eefd661efd2346e232498eee3f8673/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189112705078%2F1773011083",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "SESAME 5 ProとSESAMEタッチProとオーダーメイドの特殊アダプターでドアノブ型の家の鍵をスマートロック化した話",
+    "link": "https://arata.hatenadiary.com/entry/2024/07/03/113000",
+    "pubDate": "2024-07-03T11:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイル タイトル通り家の鍵をSESAME Proにして、指紋認証やスマホで鍵を開けられるようになりました。 ずっとやりたいなと思ってたんですが、鍵のタイプに対応するアダプタが特殊アダプタのみだったので、めんどくさくなっていまし…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/617a62c6584735a7bba2fad596964a3bd8956256/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189112844901%2F1764661666",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2024年6月に読んだ＆読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2024/07/01/231000",
+    "pubDate": "2024-07-01T23:10:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書ランキング参加中雑談 6月はペースを取り戻しつつあった。終盤だけだけど。 気を抜くと全然読めてないなってなっているのでうまく自分のペースをコントロールしていきたい。 読んだ本 読み手につたわる文章 - テクニカルライティング bo…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/7d6d8f1b0cf96616e73af1203d65b16e8feb4839/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189117988858%2F1721128766",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "ScalaのsortedやsortByで降順にする",
+    "link": "https://zenn.dev/ara_ta3/articles/scala-order-descending",
+    "pubDate": "2024-06-21T04:29:40.820Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--GHtgV5f8--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Scala%25E3%2581%25AEsorted%25E3%2582%2584sortBy%25E3%2581%25A7%25E9%2599%258D%25E9%25A0%2586%25E3%2581%25AB%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Scala3の新機能で個人的に使いそうなもののメモたち",
+    "link": "https://zenn.dev/ara_ta3/articles/scala3-my-favorite-features",
+    "pubDate": "2024-06-16T16:36:25.707Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--NGRousoT--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Scala3%25E3%2581%25AE%25E6%2596%25B0%25E6%25A9%259F%25E8%2583%25BD%25E3%2581%25A7%25E5%2580%258B%25E4%25BA%25BA%25E7%259A%2584%25E3%2581%25AB%25E4%25BD%25BF%25E3%2581%2584%25E3%2581%259D%25E3%2581%2586%25E3%2581%25AA%25E3%2582%2582%25E3%2581%25AE%25E3%2581%25AE%25E3%2583%25A1%25E3%2583%25A2%25E3%2581%259F%25E3%2581%25A1%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "デオトイレはお湯で洗って大丈夫？ぬるま湯は何度か調べてみた",
+    "link": "https://arata.hatenadiary.com/entry/2024/06/08/154500",
+    "pubDate": "2024-06-08T15:45:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "はじめに 猫を飼っていて、ユニ・チャームのデオトイレを利用しており、結構汚れてきたなと思ったんだけど、プラスチック製なのでお湯とか大丈夫なのかな？と思ったときに調べたときの備忘録です。 デオトイレ本体セット [約1か月分 猫砂・シート付] 猫用ト…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/e5358bcab7767f22bed25454742095d506e4db37/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901359390526%2F1772253371",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2024年5月に読んだ&読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2024/06/08/141500",
+    "pubDate": "2024-06-08T14:15:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "4月は1ヶ月まるまる風邪を引いてダウンしてたので何も読む余力がなかった・・・ 5月から取り戻したかったけど病み上がり+仕事で捗らなかったので6月からは頑張りたい。 ランキング参加中読書ランキング参加中雑談 読んだ本 話し方で得する人・損する人 話し…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/3bbcd587a8d3d7d98f053f0325f2dc54272d04cf/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189112692996%2F1720718055",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "MacBook Pro 16インチが入るリュックを比較 ~ Incase City Compact Backpackを選んだ理由 ~",
+    "link": "https://arata.hatenadiary.com/entry/2024/05/26/143000",
+    "pubDate": "2024-05-26T14:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "はじめに MacBookProの16インチを持って出社するためのリュックが欲しくて調べたときの備忘録です。最終的に4月にincaseのCity Compact Backpackを購入しました。 インケース バックパック シティコレクション City Collection Comp…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/a3117253dd6ab081bc5e1dd22ebb25e1d700b1b8/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901359390521%2F1772253236",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2024年3月に読んだ&読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2024/04/14/160000",
+    "pubDate": "2024-04-14T16:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "もう3月が終わってからかなり経ってしまった。 4月初めには出そうと思ったけど、1週間ほぼほぼダウンし続けるくらいのつらい風邪を引いたりしてしまったので仕方なし。 ランキング参加中読書ランキング参加中雑談 読んだ本 図解目標管理入門 図解 目標管理入…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/b096391422bcfff61cbed375b347d080cc16d7d4/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189096697267%2F1720718085",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "ddc.vimをdein.vimでインストールしてvimで補完が効くように設定する",
+    "link": "https://zenn.dev/ara_ta3/articles/vim-dcc-getting-started",
+    "pubDate": "2024-04-11T08:38:29.969Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--qU7Bcf7j--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:ddc.vim%25E3%2582%2592dein.vim%25E3%2581%25A7%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25B9%25E3%2583%2588%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%2597%25E3%2581%25A6vim%25E3%2581%25A7%25E8%25A3%259C%25E5%25AE%258C%25E3%2581%258C%25E5%258A%25B9%25E3%2581%258F%25E3%2582%2588%25E3%2581%2586%25E3%2581%25AB%25E8%25A8%25AD%25E5%25AE%259A%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2024年2月に読んだ&読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2024/03/03/150000",
+    "pubDate": "2024-03-03T15:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "2月はまじで進まなかった。 仕事のパフォーマンスを上げる動きをしたのでプライベートはかなり犠牲になった感じがある。 うまくバランスを取っていきたいし、そもそも読みたい本をもう一度なんで読みたいかとセットで考えてモチベーションを保っていきたい。…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/dbf59e12019cc40770ebe6a417479ab2837ce549/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189086006630%2F1720718120",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "猫アレルギーの原因と対策まとめ｜Fel d1とは？発症を防ぐ方法を調べてみた",
+    "link": "https://arata.hatenadiary.com/entry/2024/02/25/141000",
+    "pubDate": "2024-02-25T14:10:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "はじめに 人間に起こる猫アレルギーが発症したら嫌だなーと思って調べた備忘録です。 猫アレルギーの原因 猫の唾液に含まれる「Fel d1」（フェル ディ ワン）という物質が原因らしい。唾液なので、毛づくろいによって毛に付き、それらが空中を浮遊し、体内に…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/b3ff15539f1e9b26f20e55b238a66f91821fb790/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901359390511%2F1772253688",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "マイナンバーカード電子証明書の更新は想像より簡単だった：市役所での流れと必要な準備",
+    "link": "https://arata.hatenadiary.com/entry/2024/02/14/090000",
+    "pubDate": "2024-02-14T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中雑談 またいつか行くことになりそうな気がするので、備忘録的なメモです。 マイナンバーカードの更新について 更新の流れ 電子証明書の有効期限通知書 役所に行って更新する まとめ マイナンバーカードの更新について この記事執筆時点だと…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/3ab5d30a9c2c285c5eca6bb369db6f74a86276f1/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189081525443%2F1757224299",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "ソーダストリームのボトル収納に困っているならボトルスタッキングマットがおすすめ",
+    "link": "https://arata.hatenadiary.com/entry/2024/02/13/233000",
+    "pubDate": "2024-02-13T23:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ソーダストリームのボトルの話 その昔、ソーダストリームという炭酸メーカーを買ってハイボールを作るのに利用しています。炭酸水のゴミが出なくなったもの最高でめちゃくちゃ重宝しているのですが、ソーダストリームの専用ボトルを冷蔵庫で入れていると転が…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/a9eb8286311bcaf7036400adf8da344f8e031e35/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901359390506%2F1772253037",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "キッチンの蛍光灯の電気がつくのが遅い？点灯管交換で解消",
+    "link": "https://arata.hatenadiary.com/entry/2024/02/05/020000",
+    "pubDate": "2024-02-05T02:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "はじめに 前に住んでいたところでキッチンの蛍光灯は点くは点くけど、めちゃくちゃ時間がかかるという事象に悩んでいました。 そんなときにぐぐったらここにたどり着いた。 blog.livedoor.jp 私は始めに「まー蛍光灯を替えたらいいんだろうな」と思っていた…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/b85578c106720c1df9104d4aac6fdbf2910312f2/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17179246901359390499%2F1772253042",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2024年1月に読んだ&読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2024/02/03/123000",
+    "pubDate": "2024-02-03T12:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "今年も備忘録として読んだ本をまとめていくぞい。 初めたばかりのときほど読めてはいないんだけど、継続できてるので良しとしようと思えてきた。 ランキング参加中読書ランキング参加中雑談 読んだ本 面倒くさがりの自分がおもしろいほどやる気になる本 気に…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/2f150c0b01e1d6c63ea74fc95a312532e827e37e/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189073074937%2F1762734119",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2023年12月に読んだ&読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2024/01/05/230000",
+    "pubDate": "2024-01-05T23:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中読書 12月も備忘録として読んだ本をまとめていくぞい。 12月もなんだかんだあまり読めなかった・・・ 読書習慣を取り戻すために仕組みを戻していきたい。 読み終えた本 うまくいっている人の考え方 いいなーって思ったやつのピックアップ 第…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/8cd18b30ee163dcb80d08d063dff7c2f9252949e/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189069068848%2F1762734123",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2023年振り返りと2024年どうしようかなみたいな雑記",
+    "link": "https://arata.hatenadiary.com/entry/2023/12/30/145000",
+    "pubDate": "2023-12-30T14:50:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中雑談・日記を書きたい人のグループランキング参加中雑談 ちゃんと定期的に振り返って改善していくようにしたいなと思ったので、今年の振り返りと来年どうしたいかを考えようかなと思いました。 実は数年前にはちゃんとやってたんですけど、…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/39cca34f192e8053562776e0f035e244e4efc6c8/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189065765667%2F1703998657",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "サポーターズで1on1イベントをフルサイクル開発した話",
+    "link": "https://techblog.cartaholdings.co.jp/entry/2023/12/22/160000",
+    "pubDate": "2023-12-22T16:00:00+09:00",
+    "source": "carta",
+    "contentSnippet": "CARTA TECH BLOG アドベントカレンダー 12/22 の記事。サポーターズで1on1イベントをフルサイクル開発した話。",
+    "thumbnailUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/arata3da4/20231222/20231222154116.png",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "Netdataのstream機能でネットワーク内の親機にメトリクスを送る",
+    "link": "https://zenn.dev/ara_ta3/articles/netdata-getting-started",
+    "pubDate": "2023-12-16T15:26:00.713Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--7SZ9y58d--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Netdata%25E3%2581%25AEstream%25E6%25A9%259F%25E8%2583%25BD%25E3%2581%25A7%25E3%2583%258D%25E3%2583%2583%25E3%2583%2588%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%25E5%2586%2585%25E3%2581%25AE%25E8%25A6%25AA%25E6%25A9%259F%25E3%2581%25AB%25E3%2583%25A1%25E3%2583%2588%25E3%2583%25AA%25E3%2582%25AF%25E3%2582%25B9%25E3%2582%2592%25E9%2580%2581%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "AppleScriptでデフォルトブラウザを変更する",
+    "link": "https://zenn.dev/ara_ta3/articles/applescript-changes-default-browser",
+    "pubDate": "2023-12-16T15:26:00.233Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--6HhXnsOe--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:AppleScript%25E3%2581%25A7%25E3%2583%2587%25E3%2583%2595%25E3%2582%25A9%25E3%2583%25AB%25E3%2583%2588%25E3%2583%2596%25E3%2583%25A9%25E3%2582%25A6%25E3%2582%25B6%25E3%2582%2592%25E5%25A4%2589%25E6%259B%25B4%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2023年 猫初心者が飼うにあたって買ってよかった、効果が見合わなかった猫グッズ",
+    "link": "https://arata.hatenadiary.com/entry/2023/12/10/000000",
+    "pubDate": "2023-12-10T00:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中雑談ランキング参加中犬★猫 ペットグループ この記事は買って良かったもの Advent Calendar 2023の10日目の記事です。 adventar.org 9日目はまくさんによる、2023年買ってよかったもの（女性・社会人2年目）でした。 チェキプリンター…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/fb4b829a857f1fbc3bf258087b8175379a5ff373/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20231116%2F20231116003045.jpg",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2023年使って捗っているObsidianのプラグインたち",
+    "link": "https://arata.hatenadiary.com/entry/2023/12/09/000000",
+    "pubDate": "2023-12-09T00:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中雑談ランキング参加中雑談・日記を書きたい人のグループ この記事はObsidian Advent Calendar 2023の9日目の記事です。 adventar.org 昨日は hann-solo さんによるObsidian探検記：おすすめ機能・プラグイン・ツール…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/9f1c0c6695f49c3cc50325bb1cda8f111e66aa36/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F820878482960459526%2F1764661234",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "ファイザー製ワクチンの4回目を受けたときの副反応体験の備忘録",
+    "link": "https://arata.hatenadiary.com/entry/2023/12/04/190000",
+    "pubDate": "2023-12-04T19:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "12月外出が増えそうなので打っておくかと思ってうちに行ったときの備忘録です。 モデルナ×3の後にファイザーでした。 副反応はファイザーの方が軽い印象があるので出来るならそっちにしようと思って選んだ感じでした。 約1年半ぶりのワクチンなので症状どう…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/b0e94f54b3c96c68cb8017cc35e7b1ea2b78d8b5/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189064059492%2F1702113533",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Goの設定ライブラリのviperで.envファイルから設定を取得する",
+    "link": "https://zenn.dev/ara_ta3/articles/golang-viper-reading-env",
+    "pubDate": "2023-12-03T02:01:23.957Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--pMJyCnmd--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Go%25E3%2581%25AE%25E8%25A8%25AD%25E5%25AE%259A%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%2596%25E3%2583%25A9%25E3%2583%25AA%25E3%2581%25AEviper%25E3%2581%25A7.env%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25A4%25E3%2583%25AB%25E3%2581%258B%25E3%2582%2589%25E8%25A8%25AD%25E5%25AE%259A%25E3%2582%2592%25E5%258F%2596%25E5%25BE%2597%25E3%2581%2599%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "引っ越しがあった今年2023年に買ってよかったもの振り返り",
+    "link": "https://arata.hatenadiary.com/entry/2023/12/03/000000",
+    "pubDate": "2023-12-03T00:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中雑談 この記事は買って良かったもの Advent Calendar 2023の3日目の記事です。 adventar.org 2日目はRyoMurakamiさんの買ってよかったものin Advent Calendarでした。 Shokzの骨伝導イヤホンは私も使ってい…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/11d26377c555706580e6fee352892b3d2bbefc20/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189059039917%2F1764661254",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "2023年11月に読んだ&読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2023/12/02/110000",
+    "pubDate": "2023-12-02T11:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "11月も備忘録として読んだ本をまとめていくぞい。 とはいえ11月は忙しすぎて読む時間をあまり取れなかったので(言い訳)、 現実を見つめて12月の頑張る糧にしたい。 読み終えた本 科学的に自分を思い通りに動かすセルフコントロール大全 学びがあった話たち …",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/d41af0cfbdb7e2c99db75081e83e295f144d30a1/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189061557576%2F1762734127",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2023年10月に読んだ&読んでいる本たち",
+    "link": "https://arata.hatenadiary.com/entry/2023/10/29/123000",
+    "pubDate": "2023-10-29T12:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "昔から知識を得ている時間が好きだったので、今年は本を読む習慣を増やそうと思っていました。そこで、kindle unlimitedにある本を雑に読んだ備忘録として書いていこうかなって思っています。 いい本もあれば何の中身もねぇ！みたいな本もあるので、まあサク…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/63272ef02fd06b1479e5b0480b17889b416f2276/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6801883189053282030%2F1762734169",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2023年にiettyで物件探してサカイ引越センターのスタンダードプランで全部丸投げで引っ越しした話",
+    "link": "https://arata.hatenadiary.com/entry/2023/08/22/093000",
+    "pubDate": "2023-08-22T09:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイル タイトル通りiettyというサービスを使って物件を探して決めてサカイ引越センターで引っ越ししました。 実施したのは5月終盤で、それほど繁忙期ではない時期かなとは思います。 その時の備忘録をメモがてら書いておこうという…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/19932fb2a097fd94943b9c23f466b3ec33bdb969/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F820878482938137137%2F1762698850",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "数年前、突発性難聴にかかった時の話",
+    "link": "https://arata.hatenadiary.com/entry/2022/12/13/182120",
+    "pubDate": "2022-12-13T18:21:20+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は難聴Advent Calendar 2022の14日の記事です。 なんか会社のチームメイトが作ったので昔自分が突発性難聴になったときの話を備忘録的に書こうかなと思いました。 adventar.org もし今耳の調子が悪くてまだ病院行っていない人がこの記事を見ている場…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/b23125e954c2501237af07c62323c8332423fdf5/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F4207112889944537181%2F1702113695",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "食べ物からふるさと納税まで2022年買ってよかったもの振り返り",
+    "link": "https://arata.hatenadiary.com/entry/2022/12/12/180000",
+    "pubDate": "2022-12-12T18:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中雑談ランキング参加中雑談・日記を書きたい人のグループ 今年結構色々買ったなぁと思ったので何買ったかを振り返って、 来年も買いたい物は買おうという気持ちから振り返ることにしました。 せっかくなのでアドベントカレンダーにしました。…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/a726dfbe0288027e5a4ee594b892adc6b48608d3/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F4207112889944325782%2F1764661688",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "Rustのgoogle/arghライブラリで引数をstructにbindする",
+    "link": "https://arata.hatenadiary.com/entry/2022/05/02/150000",
+    "pubDate": "2022-05-02T15:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "GWにRustを触り始めたら楽しくなってきました。 新しい言語を触るのはやはり楽しいです。 今回はなんやかんやするコマンドを作ろうと思って、 引数をいい感じにしてくれるライブラリないかなと思って調べてたら、 googleのarghというライブラリがあったので…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/4fc8b92e49c46d3765e53c98594093ff0acce041/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F13574176438088243879%2F1757180064",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "モデルナ製ワクチンの3回目を受けたときの副反応体験の備忘録",
+    "link": "https://arata.hatenadiary.com/entry/2022/04/03/230224",
+    "pubDate": "2022-04-03T23:02:24+09:00",
+    "source": "hatena",
+    "contentSnippet": "職域摂取でワクチンの3回目を受けられたので、その時の体験をメモっておこうと思います。 色々な反応があるようですが、自分は今回かなり軽めでした。 1、2回目モデルナで、今回3回目もモデルナ製にしました。 理由はタイミングがよかったから以外特にありま…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/10a1c63549e7430a1f799adedf3895696ac2a0ff/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F13574176438079552495%2F1702112440",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Tobii EyeTracker5を使ってゲームを見てる視線をOBS上に表示する",
+    "link": "https://arata.hatenadiary.com/entry/2021/09/21/141344",
+    "pubDate": "2021-09-21T14:13:44+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中ライフスタイルランキング参加中Splatoon 誕生日にTobii EyeTracker5をプレゼントしてもらえたので、それの設定方法のメモです。 Windowsでしか動きませんが、Mac mini(2018)のBootcamp上のWindows 10 Pro上で…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/8ddfa63fa7b254766d1b65a358199a885ed18131/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F13574176438014089848%2F1764661262",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Sentry JavaScript SDKでUser Feedbackウィジェットを使ってみる",
+    "link": "https://zenn.dev/ara_ta3/articles/sentry-report-javascript-sdk",
+    "pubDate": "2021-08-10T15:03:25.671Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--KdxYdheM--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Sentry%2520JavaScript%2520SDK%25E3%2581%25A7User%2520Feedback%25E3%2582%25A6%25E3%2582%25A3%25E3%2582%25B8%25E3%2582%25A7%25E3%2583%2583%25E3%2583%2588%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6%25E3%2581%25BF%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "モデルナ製ワクチンの2回目を受けて微熱や筋肉痛の副反応が出たのでその備忘録",
+    "link": "https://arata.hatenadiary.com/entry/2021/08/08/161209",
+    "pubDate": "2021-08-08T16:12:09+09:00",
+    "source": "hatena",
+    "contentSnippet": "会社からの案内があってモデルナ製のコロナワクチンを受けてきました。 1回目は腕が痛いなーくらいしか起こらず、シュッと終わったんですが、 1万人程度の自衛隊の方々対象にした接種後の調査によると、 2回目では78.4%が2日目に37.5度以上の発熱があると聞…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/7d4b3ef2ad6188d225e410c20f217e8b5d2e7892/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F26006613795056190%2F1702113603",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Scala Meterを使ってScalaコードのベンチマークを測る",
+    "link": "https://zenn.dev/ara_ta3/articles/scala-meter-getting-started",
+    "pubDate": "2021-05-18T14:48:36.700Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--7-zCVF-A--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Scala%2520Meter%25E3%2582%2592%25E4%25BD%25BF%25E3%2581%25A3%25E3%2581%25A6Scala%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25AE%25E3%2583%2599%25E3%2583%25B3%25E3%2583%2581%25E3%2583%259E%25E3%2583%25BC%25E3%2582%25AF%25E3%2582%2592%25E6%25B8%25AC%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "スパッタリー使いの自分が意識してることを整理してみる会",
+    "link": "https://arata.hatenadiary.com/entry/2020/12/12/224535",
+    "pubDate": "2020-12-12T22:45:35+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中Splatoonランキング参加中ゲームブログやってる人の集まり場！ こんにちは、サイバーパンク2077を始めたりオクトパストラベラー大陸の覇者やったりで忙しいAratoonです。 この記事はSplathon vol.2 Advent Calendar 2020の1…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/a561f29ff7d75dc5d366fdf3c3122e65e1da7fb8/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F26006613664108539%2F1717875582",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "運転免許証更新が見合わされてる期間に免許が失効してしまって失効手続きをしてきた話",
+    "link": "https://arata.hatenadiary.com/entry/2020/07/22/191002",
+    "pubDate": "2020-07-22T19:10:02+09:00",
+    "source": "hatena",
+    "contentSnippet": "ちょうどいい時期に期限が切れてしまい失効手続きをしてきました。 失効手続きは免許センターでしか行えず、ゴールド免許も普通の免許に戻ってしまい悲しみに暮れるので、ちゃんと有効期限以内に手続きをしましょう・・・ 延長手続きを行っていれば、その延…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/bef13317648c9ede279237a65b4e006d408cf464/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F26006613602201830%2F1702124347",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "SwiftでJSON文字列をStructのEnumやDate型にbindする",
+    "link": "https://arata.hatenadiary.com/entry/2020/07/08/220121",
+    "pubDate": "2020-07-08T22:01:21+09:00",
+    "source": "hatena",
+    "contentSnippet": "こんにちは、最近Swiftをやっていて、Scalaのコレクション操作が欲しくなってよくないなってなっています。 API等でJSON文字列を受け取って特定のオブジェクトなどにデータを入れたいみたいなのはよくあることだと思うのですが、 Swiftでやったのは初だった…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/d51e7728b37bea19762796d5c2d0191ace9e6a52/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F26006613595695313%2F1757179964",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "AstroゲーミングヘッドセットA50の電源が不具合でつかなくて困った話",
+    "link": "https://arata.hatenadiary.com/entry/2020/04/26/175024",
+    "pubDate": "2020-04-26T17:50:24+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中Splatoonランキング参加中スプラトゥーン好きのグループ!! 無線のゲーミングヘッドセットのAstro A50を買って使っているんですが、それが電源がつかなくなり困りました。 ぐぐったら初期化っぽい方法を書いてくれている人がいて、すごく助か…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/020b36a4b9d9f34a6ee92ff14d77c21f8209e605/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F26006613488673218%2F1733065695",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "JupyterLab上でjupyter-lspを使って補完してもらう",
+    "link": "https://arata.hatenadiary.com/entry/2020/02/21/130231",
+    "pubDate": "2020-02-21T13:02:31+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中プログラミング jupyter全然触ってなかったらjupyter labってのが出ててへーってなったりしてました。 Tabとか押したら補完してくれるんですが、もっとリッチにできないかなーと思ってらLanguageServerのextensionがあったので、今回は…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/d68c74d3a603a632990efa248f4417d37dfa7afd/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F26006613517098375%2F1757179964",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "localstack上でSQS->Lambda(Scala製)の連携を動かしてみる",
+    "link": "https://arata.hatenadiary.com/entry/2019/12/20/231848",
+    "pubDate": "2019-12-20T23:18:48+09:00",
+    "source": "hatena",
+    "contentSnippet": "開発時にlocalstackをAmazon Resourceのモックとして使っていて、 前試してなんか動かなかったんだけど、ちゃんとやったら動いたのでそのメモです。 github.com localstack上のSQSにメッセージを送ったら、localstack上でmapping…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/a2113800237eb1dd8937e3b2d4e904d7843ab792/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F26006613487082690%2F1757180064",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "私のスプラトゥーンを脅かすゲームたち",
+    "link": "https://arata.hatenadiary.com/entry/2019/12/06/000500",
+    "pubDate": "2019-12-06T00:05:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事はSplathon Advent Calendar 2019 - Adventarの6日目の記事です adventar.org 昨日は社畜さんが プラベはいいぞ - 畜log という記事を書いてくれました。 自分もプラベちょいちょい参加していて、XP2500, 2600↑…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/0ce04686acbcd3d4784ce34bbd181388604b9724/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F26006613474805843%2F1764661280",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "Splathon Ladder#3 にAjitoonで参加してきた",
+    "link": "https://arata.hatenadiary.com/entry/2019/09/05/191108",
+    "pubDate": "2019-09-05T19:11:08+09:00",
+    "source": "hatena",
+    "contentSnippet": "こんにちは、Dungeon Warfare2というゲームに時間を溶かしまくっています。 経験値稼ぎしてたらレベル5000（カンスト）いきました。 スマホ版もあるよ！ はい。 さて、Splathonというコミュニティで行われたLadder#3の振り返りです。 とりあえずの感想を伝え…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/e6ad86037480e3ad93c4fa3f0cc0e884c4f18c21/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F26006613419453408%2F1764661284",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Travis CIからSlackに通知できなくて困った",
+    "link": "https://arata.hatenadiary.com/entry/2019/07/16/202556",
+    "pubDate": "2019-07-16T20:25:56+09:00",
+    "source": "hatena",
+    "contentSnippet": "個人のレポジトリからタイトル通り通知させようとしたら全然できなくて困った話です。 結論Slackのドキュメントが少し古いのか間違っていて、 .travis.ymlに生成される設定が間違ったものになってしまうことが原因でした。 Slackの設定(間違ってるやつ) Trav…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "ScalikeJDBCでMySQLにREPLACE INTOのクエリを投げるだけ",
+    "link": "https://arata.hatenadiary.com/entry/2019/06/14/195901",
+    "pubDate": "2019-06-14T19:59:01+09:00",
+    "source": "hatena",
+    "contentSnippet": "こんばんは、普段ScalaでMySQL用のライブラリにScalikJDBCを利用していて、 QueryDSLをよく使ったりしているんですが、 ふとMySQL固有のクエリを使いたくなった時に、テーブル名やカラム名はべた書きではなく、 case classに定義しているものを使いたい…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Splathon#10にAjitoonで参加してきた感想",
+    "link": "https://arata.hatenadiary.com/entry/2019/05/06/151431",
+    "pubDate": "2019-05-06T15:14:31+09:00",
+    "source": "hatena",
+    "contentSnippet": "Splatoonの記事しか書かないエンジニアです。こんにちは。 GW入ってターミナル触ってなかったんですが、さっきdockerコマンド叩きました。 令和元年の5/1にSplathonの第10回目のイベントがあって参加してきました。 9回目の記事もあるのでぜひ見てもらえたら…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/d52b1408b31db67df277f23fb357470d2ba258fc/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20190505%2F20190505225307.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Splathon#9にAjitoonで参加してきた感想と今までの振り返り",
+    "link": "https://arata.hatenadiary.com/entry/2019/02/26/000701",
+    "pubDate": "2019-02-26T00:07:01+09:00",
+    "source": "hatena",
+    "contentSnippet": "こんばんは、ここのところSplatoonの記事しか書いてませんが、エンジニアです。 最近はScalaを書いています。本当です。信じてください。 さて、先日24日(日)にSplathonの第9回目のイベントがあってそれに参加してきた感想メモろうかなと思いました。 Splath…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/f7a77ffc6054554d2421db7d6cd773d0ba96cab6/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17680117126980328859%2F1764661773",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "Splatoonの企業対抗戦やってるコミュニティに入ったらすごく楽しかった話",
+    "link": "https://arata.hatenadiary.com/entry/2018/12/09/192146",
+    "pubDate": "2018-12-09T19:21:46+09:00",
+    "source": "hatena",
+    "contentSnippet": "これは Splathon Advent Calendar 2018 - Adventar の9日目の記事です。 なんでもどうぞってことだったのでSplathonの思い出を語ろうと思います。 Splathonってなんだろうとか、コミュニティ楽しそうとか、チーム組んで戦うのが楽しそう…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/b86b77fe2e75b362394101506c3e4bb115b91dcc/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F10257846132682600916%2F1764661789",
+    "bookmarkCount": 25
+  },
+  {
+    "title": "Splatoon2から始めてウデマエXまで行くときにやったりしたことの備忘録",
+    "link": "https://arata.hatenadiary.com/entry/2018/12/01/215637",
+    "pubDate": "2018-12-01T21:56:37+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事はSplatoon Advent Calendarの1日目として書かれています。 勢いで作ったら結構埋まっててとても嬉しいですｗ adventar.org なにを書こうか悩んだんですが、 Splatoon2が発売されてからウデマエX行くまでを振り返って、 自分がどうやって…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/05ff1507bd3a7fe945eb22291e92967ccc28ad28/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F10257846132677143641%2F1764661865",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "Scala製ValidationライブラリのAccordを触るぞい",
+    "link": "https://arata.hatenadiary.com/entry/2018/09/01/184510",
+    "pubDate": "2018-09-01T18:45:10+09:00",
+    "source": "hatena",
+    "contentSnippet": "最近Scalaのコードを書いててフレームワークに付随しないタイプのValidationのライブラリなんか無いかなー と探していたらAccordというものを見つけたので触ってみた備忘録です。 http://wix.github.io/accord/index.html 準備 検証用…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "PHPのプロファイリングが出来るblackfireでPOSTリクエストもプロファイルする",
+    "link": "https://arata.hatenadiary.com/entry/2018/06/30/142342",
+    "pubDate": "2018-06-30T14:23:42+09:00",
+    "source": "hatena",
+    "contentSnippet": "以前blackfireを試したんですが、そのときはブラウザでページを開いて、 chrome extentionでプロファイリングしてました。 なのでGET以外のリクエストがプロファイルやりづらく、 もうちょっといいやり方無いかなと思って探してみました。 以前の話 arata.ha…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/537777de294ae9c7a12d5faf84fcaed8df2de5ab/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F10257846132596052852%2F1764661317",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "scalikejdbcを使ってMySQLにクエリを投げるだけのメモ",
+    "link": "https://arata.hatenadiary.com/entry/2018/05/10/212432",
+    "pubDate": "2018-05-10T21:24:32+09:00",
+    "source": "hatena",
+    "contentSnippet": "久しぶりにScalaを触ってMySQLにクエリを投げたいだけなんだけど、 それすらもぱっとは思い出せなかったので備忘録として書いとこうと思います。 scalikedjbc github.com 検証用レポジトリはこちら。 make run で多分動きます。 github.com …",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "PHPのjson_encodeで空オブジェクトを出力する",
+    "link": "https://arata.hatenadiary.com/entry/2018/03/27/153123",
+    "pubDate": "2018-03-27T15:31:23+09:00",
+    "source": "hatena",
+    "contentSnippet": "phpで空オブジェクトを出力したくなって、 おもむろに json_encode([]); とやったら空配列になってしまいました。 $php -a Interactive shell php > echo json_encode([]); [] さてどうしたものかと思ってふと浮かん…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "API BlueprintとdrakovとdreddでAPIドキュメントを書きつつモックサーバを立ててさらにテストを走らせる",
+    "link": "https://arata.hatenadiary.com/entry/2018/03/22/204723",
+    "pubDate": "2018-03-22T20:47:23+09:00",
+    "source": "hatena",
+    "contentSnippet": "タイトルの通りのことをやってみました。 どんな時にテストがコケるか等の精査が出来てないのでまた続きを書くことになりそうですが、 とりあえずやってみたメモです。 API Blueprint? API Blueprintはmarkdown形式でドキュメントを書けるweb APIのドキ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/b14f528982251ed72bf4e8897a0ccd1fc647afd8/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F17391345971628330822%2F1757180064",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "monologで例外のstack traceをいい感じに表示する",
+    "link": "https://arata.hatenadiary.com/entry/2018/03/16/212448",
+    "pubDate": "2018-03-16T21:24:48+09:00",
+    "source": "hatena",
+    "contentSnippet": "普段phpでログを出力するのにmonologを使っていて、 開発時にはdocker-composeでサーバを起動してログを標準出力に出したりしています。 開発時に例外が発生したタイミングでmonolog経由でエラーログを出しているのですが、 stack traceが1行に表示され…",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "travis上でdockerのmysqlを使ったらCan't connect to MySQL serverと言われてハマった",
+    "link": "https://arata.hatenadiary.com/entry/2018/03/08/211114",
+    "pubDate": "2018-03-08T21:11:14+09:00",
+    "source": "hatena",
+    "contentSnippet": "travisでdocker container上のmysqlに接続しようとしたらなぜか接続できずハマりました。 最終的な原因は $HOME/.my.cnf に設定が上書きされてたのという点でした。 検証用にちょろっと書いたレポジトリはこちら github.com travis上で…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2017年振り返りと2018年どうしようかなみたいな雑記",
+    "link": "https://arata.hatenadiary.com/entry/2017/12/31/200220",
+    "pubDate": "2017-12-31T20:02:20+09:00",
+    "source": "hatena",
+    "contentSnippet": "なんとなく振り返ります 今年は 1月に突発性難聴になり、 2月は知り合いの結婚式で仙台に行き、 3月は一緒にコミュニティ運営してて海外に行ってる親友の結婚式に行き、 5月最後に会社のチームで合宿に行き、 techlog.voyagegroup.com 6月に1dayのインターン…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "MacのFinderとかIntellijのOpen Projectでdot directoryを表示させる",
+    "link": "https://arata.hatenadiary.com/entry/2017/12/19/183634",
+    "pubDate": "2017-12-19T18:36:34+09:00",
+    "source": "hatena",
+    "contentSnippet": "GolandでGoのProjectを開こうとしたんですが、 $GOPATHが .go になっていて、 Openしようとしてもどうやって選択すればいいかわかりませんでした。 Golandでプロジェクトを開こうとしている時の状態 困って inttelij dot directory …",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/c25067120e2a529c8ef7b9557e7242cda97d1ade/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20171219%2F20171219183118.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "私とSplatoon2",
+    "link": "https://arata.hatenadiary.com/entry/2017/12/19/090000",
+    "pubDate": "2017-12-19T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事はDark - Developers at Real Kommunity Advent Calendar 2017の1日目の記事として書かれています。 Splatoon最高なんでみなさんやりましょう。 今何日目だと思ってるのかという問に対しては黙秘させて頂ければ幸いでござ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/ca3225063743a2978b6fb93784ca8ed0e1a2925c/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20171219%2F20171219015950.jpg",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "webpackでERROR in Entry module not found: Error: Can't resolve 'babel' と言われて怒られた",
+    "link": "https://arata.hatenadiary.com/entry/2017/11/29/191950",
+    "pubDate": "2017-11-29T19:19:50+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中プログラミング 久しぶりにwebpackを触ったらタイトル通り怒られてしまったので その時調べたメモです。 エラー内容について webpack.config.jsの様子(before) webpack.config.jsの様子(after) 実行後エラーがなくなっ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/8aa625e40c578676be1856de81b42e477c2dd111/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F8599973812322181452%2F1769837065",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "terraformを使ってさくらのクラウド上にサーバを立ち上げる",
+    "link": "https://arata.hatenadiary.com/entry/2017/10/27/210241",
+    "pubDate": "2017-10-27T21:02:41+09:00",
+    "source": "hatena",
+    "contentSnippet": "ISUCON7予選と同じ環境を立ち上げたいなーと思ってsakura cloudのterraformを触ってみたのでそのメモです。 第一歩目として単にサーバを立ち上げて見ました。 さくらのクラウドユーザコミュニティによる公認ツールがあるようなのでそれを使いました。 github…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "ISUCON7で予選落ちしてきた",
+    "link": "https://arata.hatenadiary.com/entry/2017/10/24/193112",
+    "pubDate": "2017-10-24T19:31:12+09:00",
+    "source": "hatena",
+    "contentSnippet": "去年同様に id:hoto17296 と id:jp_taku2 と一緒にDarkというチームで出てきました。 結果は26772点！ 去年は0点で、26722 / 0 = ∞(?)倍のスコアなのでこれこそ圧倒的成長ですね！ arata.hatenadiary.com 最終的なラン…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/030b3884d90de80fb1086c4bbdb7f47ef8ddb3ab/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "PHPのプロファイリングが出来るblackfireを試してみた",
+    "link": "https://arata.hatenadiary.com/entry/2017/10/16/090000",
+    "pubDate": "2017-10-16T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "またもやISUCONで使おうと思ってblackfireをいうものを試してみました。 有料な機能も結構ありますが、 無料で使える機能でもどのメソッドがどれくらいの回数呼ばれてるのかとか、 どれくらいの割合を使っているのかとかがわかって便利でした。 blackfire.io…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/15f9d91dd86fcf407c6af47933f740d931fbfb48/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20171016%2F20171016021538.png",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "phpredisをPHP7系で触るためにやったこと",
+    "link": "https://arata.hatenadiary.com/entry/2017/10/15/205301",
+    "pubDate": "2017-10-15T20:53:01+09:00",
+    "source": "hatena",
+    "contentSnippet": "ISUCONでredis使おうと思った時にPHPからredis触ったこと無いなということに気がついたので、 触れる用にphpredisを試してみた備忘録です。 利用したPHPのversionは 7.1.10 です。 php -v PHP 7.1.10 (cli) (built: …",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "terraform v0.8.8からv0.10.3に移行した時remote state周りでやったことメモ",
+    "link": "https://arata.hatenadiary.com/entry/2017/08/31/220245",
+    "pubDate": "2017-08-31T22:02:45+09:00",
+    "source": "hatena",
+    "contentSnippet": "気がついたらterraformのバージョンが上がってました。 使ってた時は0.8.xだった気がしたけど、 この前見たら0.10.xになってて、なるほど〜となりました。 細かいCHANGE LOGは terraform/CHANGELOG.md at master · hashic…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Golangのsqlxでテーブルをjoinした結果をstructにbindする",
+    "link": "https://arata.hatenadiary.com/entry/2017/08/31/201940",
+    "pubDate": "2017-08-31T20:19:40+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中プログラミング ちょい前に簡単なSQLをstructにbindしたり、 IN句を使ったりしたやつは書いたんですが、 joinした時とか、structがstructを持ってる場合、 dbタグをどうやってbindするんだろうと思ったら、 友人が記事見つけてくれたので試…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/4b07fe6ea7f5c373d90b0bac91d341d2b7815381/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F8599973812293728386%2F1764661351",
+    "bookmarkCount": 5
+  },
+  {
+    "title": "docker-composeでmysqlにmigrationかけたい時にconnection refusedで失敗したときの対応",
+    "link": "https://arata.hatenadiary.com/entry/2017/08/16/201940",
+    "pubDate": "2017-08-16T20:19:40+09:00",
+    "source": "hatena",
+    "contentSnippet": "開発環境にdocker-composeを使っていて、 テーブルスキーマのマイグレーションをしようとしたらconnection refusedと言われて困った時の対処法です。 結論はマイグレーションをかける側はmysqlが立ち上がるまで待ちましょうという感じです。 (素のSQLでD…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/b6df7b78f308d6ae655313eddfd390e8dbb24aef/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F8599973812289323451%2F1757180014",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "redashで操作履歴とか見れる画面がなかなか見つからなくて困った話",
+    "link": "https://arata.hatenadiary.com/entry/2017/07/15/165127",
+    "pubDate": "2017-07-15T16:51:27+09:00",
+    "source": "hatena",
+    "contentSnippet": "redash便利ですよね。 色んなデータソースに対してクエリを発行できて、 それを可視化できて、共有できる。 とても便利。 redash.io 便利なので会社で使おうと思った時、 誰がどんなクエリ発行したのかとか見れたらいいなぁと思ってそんな画面を探していまし…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/bb9379cd3fbf1af9f9f2d4a22e903089b6b1140f/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F8599973812279873711%2F1757180064",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "ファイルの変更を検知してなんらかのコマンドを走らせるreflexが便利",
+    "link": "https://arata.hatenadiary.com/entry/2017/06/22/201909",
+    "pubDate": "2017-06-22T20:19:09+09:00",
+    "source": "hatena",
+    "contentSnippet": "ファイル変更があったらテストを流すとかいろんなライブラリありますが、 言語に依存しないやつないかなぁと思って探してたらgo製のものがありました。 github.com go製なのでbinaryが配布されていればそれを持ってくればすぐ使えますね そう思っている時期…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/ddcbe29d6f1e4a1f5eb340ead2b8efc9846531ae/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20170622%2F20170622201242.png",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "今更ながらRetryするGolangのpackage書いてみた",
+    "link": "https://arata.hatenadiary.com/entry/2017/06/06/090000",
+    "pubDate": "2017-06-06T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "何番煎じかわからないですが、かいてみました。 呼び出し方がretry.Retryってなってなんかびみょ・・・ github.com 使い方 retry.Retryの第三引数の実装にリトライがありえる処理を書く感じです。 errorが返った場合にはretry.Retryの第一引数に…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/030b3884d90de80fb1086c4bbdb7f47ef8ddb3ab/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "GolangのsqlxでIN句が使いたかったので調べたメモ",
+    "link": "https://arata.hatenadiary.com/entry/2017/06/05/202015",
+    "pubDate": "2017-06-05T20:20:15+09:00",
+    "source": "hatena",
+    "contentSnippet": "Golangでバッチを最近書いてるんですが、 sqlxを使っていて、 IN句のprepared statmentどうやって使うんだろうと思ったので調べたときのメモです。 準備 とても適当なテーブルを用意します。 idとnameをカラムにもつhogeというテーブルです。 3件適当な…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/128d51fffa9730f673c3af3bbe204dd494803f2a/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F10328749687260551460%2F1757179965",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "PHPStormを使っている時にCannot resolve file 'xxxxx.js' と怒られる",
+    "link": "https://arata.hatenadiary.com/entry/2017/05/23/202542",
+    "pubDate": "2017-05-23T20:25:42+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中プログラミング PHPStormでテンプレートをいじっている時に、 scriptファイルのパスを指定したらタイトルの通りに怒られてしまったのでその対処方法を探しました。 イメージはこんな感じです。 検証に使ったレポジトリはこちらです。 github…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/074168b42884181f16d75c3a041a477cdd1a65e5/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F10328749687251545897%2F1757179965",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "golangでSQLを投げて返ってきた結果をstructにbindしたい",
+    "link": "https://arata.hatenadiary.com/entry/2017/05/18/220354",
+    "pubDate": "2017-05-18T22:03:54+09:00",
+    "source": "hatena",
+    "contentSnippet": "クエリを投げた結果のデータをいい感じのstructにbindしたいなと思ってやり方を探してました。 いい感じのないかなと思って探したら下記のライブラリを見つけたのでそれを触ったメモです。 github.com テーブル準備 適当なテーブルを作ります。 idとnameしか…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/a3e80a9b6f587bd7d56feaeaea4a942cf131f41f/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F10328749687248385235%2F1757179965",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "PHPのビルトインサーバっぽく開発しつつhttpsアクセスをしたくなったときにしたこと",
+    "link": "https://arata.hatenadiary.com/entry/2017/05/16/200159",
+    "pubDate": "2017-05-16T20:01:59+09:00",
+    "source": "hatena",
+    "contentSnippet": "最近Mockアプリケーションを作るときにAPIサーバを一旦雑に作りたくて、 phpを使っているんですが、ローカルの開発環境をhttpsにしているため、XMLHttpRequestを投げようとした際に、 Mixed Content: The page at 'https://xxx…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/ab955d949a38171381e81629500a4b355f789a0e/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F10328749687247140547%2F1771647432",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "Slack内でActiveなユーザ数をMackerelのサービスメトリックで表示してみた",
+    "link": "https://arata.hatenadiary.com/entry/2017/03/27/093000",
+    "pubDate": "2017-03-27T09:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "コミュニティでSlackを使ってるんですが、どれくらいの人が普段見てるんだろうと思って可視化してみました。 計測したい数は今User Presenceがactiveなユーザ数です。 api.slack.com Mackerelのサービスメトリックがカジュアルに使えてとても便利なの…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/030b3884d90de80fb1086c4bbdb7f47ef8ddb3ab/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 8
+  },
+  {
+    "title": "2016年振り返りと2017年どうしようかなみたいな雑記",
+    "link": "https://arata.hatenadiary.com/entry/2016/12/31/130000",
+    "pubDate": "2016-12-31T13:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "なんとなく振り返って、来年の自分が一年前に何を思っていたかをまとめるだけの記事です。 去年の日記みてとりあえず大変な一年だったとか言ってるけど結局今年も大変だった気がする。 人生がカラフルに色づいていて楽しい arata.hatenadiary.com ■去年書い…",
+    "bookmarkCount": 4
+  },
+  {
+    "title": "大体新卒(?)コミュニティDarkでやってるtips集",
+    "link": "https://arata.hatenadiary.com/entry/2016/12/19/230000",
+    "pubDate": "2016-12-19T23:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は IT勉強会/コミュニティ運営 Advent Calendar 2016 の19日目として書かれてます。 qiita.com こんばんは。Darkの運営をやってるうちの一人 ara_ta3 です。 せっかくわがままを言って空けていただいたのに遅れてしまって大変申し訳無い…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/030b3884d90de80fb1086c4bbdb7f47ef8ddb3ab/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "CTOからの挑戦状2016 2ndを手伝った際に書いたPythonコードを晒してみる。",
+    "link": "https://techblog.cartaholdings.co.jp/entry/2016/12/11/202517",
+    "pubDate": "2016-12-11T20:25:17+09:00",
+    "source": "carta",
+    "contentSnippet": "VOYAGE GROUP の Advent Calendar 2016 11日目の記事。CTOからの挑戦状2016 2ndを手伝った際に書いたPythonコードの紹介。",
+    "thumbnailUrl": "https://cdn-ak.f.st-hatena.com/images/fotolife/a/arata3da4/20161214/20161214141155.png",
+    "bookmarkCount": 8
+  },
+  {
+    "title": "Github管理しているmackerelの監視ルールが変更されたらJenkinsからPRを投げる",
+    "link": "https://arata.hatenadiary.com/entry/2016/12/11/090000",
+    "pubDate": "2016-12-11T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "こちらの記事はMackerel Advent Calendarの11日目の記事として書いています。 qiita.com mackerelを使って監視ルールをバージョン管理して、もし差分があったら自動でGithubにPRを投げるみたいなものを作った時の話です。 こちらの記事を見てい…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/030b3884d90de80fb1086c4bbdb7f47ef8ddb3ab/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 20
+  },
+  {
+    "title": "Raspberry Pi + hubot + IRKitで家電操作して日々を過ごす",
+    "link": "https://arata.hatenadiary.com/entry/2016/12/10/080000",
+    "pubDate": "2016-12-10T08:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は Raspberry Pi Advent Calendar 2016 の10日目として書かれています。 www.adventar.org こんにちは ara_ta3 です。 Raspberry Piを気分で買ってあまり色々やるぞ思ってから長い日が経っています。 かなり何…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/030b3884d90de80fb1086c4bbdb7f47ef8ddb3ab/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn.blog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "hubot-characterというpluginを使ってSlack上でレムと戯れる",
+    "link": "https://arata.hatenadiary.com/entry/2016/12/02/080000",
+    "pubDate": "2016-12-02T08:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中プログラミング この記事は Re:ゼロから始める Advent Calendar 2016 - Adventar の2日目として書かれています。 www.adventar.org ネタバレを含むので見ていない方はamazon prime videoで見れるので是非…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/46044274a3f262af1b5d2b3c333145c2fd658756/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fs%2Fshanonim%2F20161201%2F20161201002434.gif",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "Pythonからはじめる数学入門を読んだ",
+    "link": "https://arata.hatenadiary.com/entry/2016/10/13/080000",
+    "pubDate": "2016-10-13T08:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "Pythonからはじめる数学入門を一応読み終えたので感想を書いてみました Pythonからはじめる数学入門作者:アミット・サハ,黒川利明オライリージャパンAmazon jupyter使いながら進めていったのでかなりはかどりました レポジトリはこちら github.com どんな本…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/96e1d6d9221b8f06725f52ff589c9a2a3da44851/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F51EOjTDqZPL._SL500_.jpg",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "ISUCON6 オンライン予選に出て惨敗してきました。",
+    "link": "https://arata.hatenadiary.com/entry/2016/09/18/184046",
+    "pubDate": "2016-09-18T18:40:46+09:00",
+    "source": "hatena",
+    "contentSnippet": "9/17(土) にISUCON6の予選に出てきました。 isucon.net 最終結果は0点です。ただただ悲しいです。 予選前に3年目で本選行けないなんてエンジニアじゃないとか言いましたが、 生きていて大変申し訳ないです(´；ω；｀)ｳｯ… 僕らのチームのピークは一番最初に回…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/1db3fa36eda4c4b56a0fcbfc429b0f98ccb098da/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20160918%2F20160918173026.png",
+    "bookmarkCount": 6
+  },
+  {
+    "title": "Gotanda.js#4 in Retty でLTしてきました #gotandajs",
+    "link": "https://arata.hatenadiary.com/entry/2016/06/06/080000_1",
+    "pubDate": "2016-06-06T08:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "6/3にGotanda.jsというイベントがあり、そこでLTしてきました。 gotandajs.connpass.com イベント全体を通した内容などはこちらの記事にまとめられていました。 （私の資料次の日にあげたので見つからなくてすみません・・・ www.chirashiura…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/6ecd5eed2bc1f5abc1fcbbf668aa72968e430fc1/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fblog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 4
+  },
+  {
+    "title": "(だいたい)新卒エンジニア向け技術交流会vol.7 を実施した話",
+    "link": "https://arata.hatenadiary.com/entry/2016/06/06/080000",
+    "pubDate": "2016-06-06T08:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "6/4にこんなイベントが有りました。 dark.connpass.com 参加者 34名 出席者 30名で参加率88%でした。わりと高め＼＼\\ ٩( 'ω' )و //／／ ありがとうございます！ 【参加された方々へ】 Slackの方にもぜひぜひ参加してください。 認証情報わから…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/6ecd5eed2bc1f5abc1fcbbf668aa72968e430fc1/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fblog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Domain Driven Design Quickly Onlineを読む #2",
+    "link": "https://arata.hatenadiary.com/entry/2016/05/25/201201",
+    "pubDate": "2016-05-25T20:12:01+09:00",
+    "source": "hatena",
+    "contentSnippet": "www.infoq.com を読みます。 1章 Domain Driven Design Quickly Onlineを読む #1 - 日頃の行い 章ごとに雑なメモとして解説などではなく、思ったことを淡々と書いていくつもりです。 2章 ユビキタス言語 共通言語の必要性 前章おさら…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/2e0b9ef135ee1b414fb5a71d2c95baef2a5f2a3e/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6653812171397709741%2F1757180084",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "Domain Driven Design Quickly Onlineを読む #1",
+    "link": "https://arata.hatenadiary.com/entry/2016/05/20/201827",
+    "pubDate": "2016-05-20T20:18:27+09:00",
+    "source": "hatena",
+    "contentSnippet": "DDDの本を読もうと思ったけど、先が長くて意志の強さが足りそうにないので、こちらから読んでいくことにしました。 章ごとに雑なメモとして解説などではなく、思ったことを淡々と書いていくつもりです。 www.infoq.com 1章 ドメイン駆動設計とは何か メモ ソ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/eec5c6ea80a238f340467c7fb5011c0ecbec3546/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6653812171397119526%2F1757180084",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "sbtを使ってGoogleAppEngineにScalaのコードで書いたアプリケーションをデプロイするの巻",
+    "link": "https://arata.hatenadiary.com/entry/2016/03/26/190000",
+    "pubDate": "2016-03-26T19:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "GoogleAppEngine for Javaはありますが、JavaではなくScalaで書きたいので、Scalaでデプロイ出来ないかなと色々探してみました。 cloud.google.com やること やることは簡単です。 sbt-appengine-plugin導入 appe…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/6ecd5eed2bc1f5abc1fcbbf668aa72968e430fc1/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fblog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "#ScalaMatsuri 2016 に参加してきました。",
+    "link": "https://arata.hatenadiary.com/entry/2016/01/31/213010",
+    "pubDate": "2016-01-31T21:30:10+09:00",
+    "source": "hatena",
+    "contentSnippet": "2016/01/30 ~ 31で行われたScalaMatsuriに行ってきました。 scalamatsuri.org 去年からしっかりScala触るようになったので、前回よりは内容がわかるようになった気がしました。 体調悪くて1日目の午後から行きました。 見逃してしまったのは、ニ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/7c0f57f8fdf6d423496330decfb5b40504d4786a/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20160131%2F20160131194714.jpg",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "hubot-mojiという雑なhubot pluginを作ってみた。",
+    "link": "https://arata.hatenadiary.com/entry/2016/01/17/170526",
+    "pubDate": "2016-01-17T17:05:26+09:00",
+    "source": "hatena",
+    "contentSnippet": "Slack内でEmojiで文字を表示して遊んでるシーンがあったので、それをpluginにしてみました。 どういう遊びかわからないと思うので貼っておくと、イメージはこんな感じです。 使い方 インストール $npm install --save hubot-moji 使い方 主な用途…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/0edeeb6a64d39c04bddedbae153d85cbfe82fb48/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20160117%2F20160117165317.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "npm linkというコマンドを知った。",
+    "link": "https://arata.hatenadiary.com/entry/2016/01/17/010830",
+    "pubDate": "2016-01-17T01:08:30+09:00",
+    "source": "hatena",
+    "contentSnippet": "nodeのなんらかのモジュールを作ろうとしていて、実際に他のライブラリから呼んで動くかどうか確認したい時ありませんか。 私は毎度package.jsonに \"hoge\" : \"https://github.com/foo/bar.git\" みたいな書き方できるので、github上…",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "2015年振り返りと2016年どうしようかなみたいな雑記",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/31/215543",
+    "pubDate": "2015-12-31T21:55:43+09:00",
+    "source": "hatena",
+    "contentSnippet": "なんとなく振り返って、来年したいこと考えようかなみたいな感じです。 とりあえず大変な一年でした。救われたのはDarkのコミュニティがあったこと。 旅行とか 京都旅行 バスケサークル合宿@伊豆長岡 バスケサークル合宿@山中湖 Darkイベント もくもく会 計1…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/6ecd5eed2bc1f5abc1fcbbf668aa72968e430fc1/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fblog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "mongooseのconnection周りでちょっとハマったからメモる",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/31/172501",
+    "pubDate": "2015-12-31T17:25:01+09:00",
+    "source": "hatena",
+    "contentSnippet": "スクレイピングのストレージにMongoDBをなんとなく使っていて、その時にnodejsからmongooseを使ってデータを突っ込んでます。 その時になぜか固まってしまったので、原因を追ってみました。 Mongoose ODM v4.3.4 事象 connection生成して、Mo…",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "【ポエム】まったく！いい１年だった！！！",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/25/235500",
+    "pubDate": "2015-12-25T23:55:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は Dark - Developers at Real Kommunity Advent Calendar 2015 - Adventar の25日目として書かれています。 なんとなく雑にまとめです。 去年も今年もクリスマスは地雷を踏んで最高でした。 なので、タイトルはこ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/c071585a815ca34070995c5dace13afe7dc03b6c/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20151226%2F20151226003211.jpg",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "PHP(Laravel)製TaskRunner「Envoy」を試してみた",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/20/231409",
+    "pubDate": "2015-12-20T23:14:09+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は PHP - Qiita Advent Calendar 2015 - Qiita の20日分として書かれています。 個人的な開発でLaravel製マイクロフレームワークLumenを利用しているので、デプロイ等に使えないかと思いLaravel製のTask Runner「…",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "【日記】せっかくだからDarkでどんなイベントしたかを振り返ってみようかなと思った",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/17/214757",
+    "pubDate": "2015-12-17T21:47:57+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は Dark - Developers at Real Kommunity Advent Calendar 2015 - Adventar の17日目として書かれています。 こんにちは。https://twitter.com/ara_ta3 です。 Darkのコミュニティ…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Slackのメッセージ数の増減をgrowthforecastで見てみる。",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/16/205929",
+    "pubDate": "2015-12-16T20:59:29+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は Dark - Developers at Real Kommunity Advent Calendar 2015 - Adventar の16日目として書かれています。 あと少しで埋まるはずや！ DarkのコミュニティではSlackを利用してるのですが、 ray とい…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/a891e1548c139d586cdb39476c6f4f79bbf1f639/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20151216%2F20151216204401.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "(だいたい)新卒エンジニア向け技術交流会vol.5 を実施した話",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/14/090000",
+    "pubDate": "2015-12-14T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は Dark - Developers at Real Kommunity Advent Calendar 2015 - Adventar の14日目として書かれています。12/12にこんなイベントが有りました。ngineerxiv.doorkeeper.jpdark.c…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/6ecd5eed2bc1f5abc1fcbbf668aa72968e430fc1/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fblog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Laravel製マイクロフレームワークLumenを使おうとして困ったこととその解決策",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/13/224738",
+    "pubDate": "2015-12-13T22:47:38+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中プログラミングこの記事はLaravelアドベントカレンダーの13日目として書かれています。 www.adventar.org最近Laravel製のマイクロフレームワークLumenを使って個人的な開発をしています。 その時にこれしたいんだけど、どうやるの？みたいな…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/c9cbf518ca9f550b2175b72648b3d8d93a9871e4/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6653458415127649859%2F1764661442",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "AJITOの利用は用法用量を守って正しくお楽しみください。",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/12/110000",
+    "pubDate": "2015-12-12T11:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は#ajitingアドベントカレンダーの12日目として書かれています。 主に日記というか特に意味を成さないポエムです。www.adventar.org唐突ですが休日（特に土曜日）って大体昼まで寝て、夜までぐうたら過ごして、あれ、今日何やってたんだっけみたいに…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/6ecd5eed2bc1f5abc1fcbbf668aa72968e430fc1/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fblog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "【ポエム】Darkのコミュニティの現状とかそれに対する気持ちとか",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/10/004618",
+    "pubDate": "2015-12-10T00:46:18+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は Dark - Developers at Real Kommunity Advent Calendar 2015 - Adventar の10日目として書かれています。こんにちは。https://twitter.com/ara_ta3 です。 今日は技術的な話は出てこ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/cfb56670b5087b962905a977a9b9362c8268fce3/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20151210%2F20151210003331.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "サークルの雑務をしてくれるマネージャーbotが欲しくなりますよね。",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/09/090000",
+    "pubDate": "2015-12-09T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "このブログはVOYAGE GROUPのアドベントカレンダー9日目として書かれています。 techlog.voyagegroup.com こんにちは @ara_ta3 です。 突然ですが、VOYAGE GROUPにはサークルという制度(?)があります。 詳しくはこちらとか。 cul…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/6ecd5eed2bc1f5abc1fcbbf668aa72968e430fc1/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fblog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "Darkを支える技術 #3 テスト編",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/08/090000",
+    "pubDate": "2015-12-08T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は Dark - Developers at Real Kommunity Advent Calendar 2015 - Adventar の8日目として書かれています。こんにちは。https://twitter.com/ara_ta3 です。 もうちっとだけ続くんじゃ。…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/e7c243ddae2b07c64c1fb46a1ee43bd7b45e79c3/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20151207%2F20151207204130.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Darkを支える技術 #2 Hubotの死活管理について",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/07/090000",
+    "pubDate": "2015-12-07T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は Dark - Developers at Real Kommunity Advent Calendar 2015 - Adventar の7日目として書かれています。こんにちは。たなあら (@ara_ta3) | Twitter です。 Darkのアドベントカレンダー…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Hubotによるポエム、猫、それはまさにすばらしきこのせかい。",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/06/093000",
+    "pubDate": "2015-12-06T09:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事はChatOps - Qiita Advent Calendar 2015 - Qiitaの6日目として書かれています。こんにちは @ara_ta3 です。 私は Dark - Developers at Real Kommunity | Doorkeeper というコミ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/6ecd5eed2bc1f5abc1fcbbf668aa72968e430fc1/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fblog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "EmbulkでGoogleFormに投稿されたデータをMySQLに吐き出すだけ。",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/05/180321",
+    "pubDate": "2015-12-05T18:03:21+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事はEmbulk - Qiita Advent Calendar 2015 - Qiita の5日目として書かれています。qiita.comこんばんは @ara_ta3 です。 この前GoogleFormから投稿されたデータをMySQLに突っ込んで集計したいという思いがあっ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/5e02200636dd4150bfa23c9c1bc3a328e8951511/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6653586347146155113%2F1764661480",
+    "bookmarkCount": 4
+  },
+  {
+    "title": "Darkを支える技術 #1 Slackでユーザを招待する編",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/05/090000",
+    "pubDate": "2015-12-05T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は Dark - Developers at Real Kommunity Advent Calendar 2015 - Adventar の5日目として書かれています。こんばんは。たなあら (@ara_ta3) | Twitter です。 Darkのアドベントカレンダー…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/0fac2b34453a29787b778751beb45bf5b50c9f1e/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20151130%2F20151130235708.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Slackに新しいチャンネルができたら、特定のチャンネルに通知を送るスクリプトを組んでみた。",
+    "link": "https://arata.hatenadiary.com/entry/2015/12/04/090000",
+    "pubDate": "2015-12-04T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事はSlack Advent Calendar 2015の4日目として書かれています。qiita.comこんにちは@ara_ta3です。 自分が属してるDarkというコミュニティでSlackを利用しているのですが、なにかおもしろいチャンネルができても気が付けないことがあるの…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/6ecd5eed2bc1f5abc1fcbbf668aa72968e430fc1/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fblog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.png",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "ScalaからBigQueryのAPI叩いてみた時の備忘録",
+    "link": "https://arata.hatenadiary.com/entry/2015/11/11/073000",
+    "pubDate": "2015-11-11T07:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "ScalaでBigQuery叩いてた時の備忘録です。 使ったレポジトリはここgithub.com この後の話の流れ 準備 (認証) クエリを叩く ハマったこと 1. 準備 BigQueryを外から叩くためにとりあえず認証が必要です。 今回はサービスアカウントを利用して叩いてみまし…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/b1fbe765519735cd0080413d3f8b1971d74caede/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fblog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.gif",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "献本頂いたのでPythonライブラリ厳選レシピを読んでみた。",
+    "link": "https://arata.hatenadiary.com/entry/2015/10/19/090000",
+    "pubDate": "2015-10-19T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "Pythonライブラリ厳選レシピの献本頂いたので、読んでみました。 gihyo.jp ちょうどPyConJP2015が終わってPython触ろうかなと思った時期に届きました。 タイミングバッチリでした。 内容 本のはじめに書いてありましたが、Python3.4向けで、動作環境は3…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/b1fbe765519735cd0080413d3f8b1971d74caede/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fblog.st-hatena.com%2Fimages%2Ftheme%2Fog-image-1500.gif",
+    "bookmarkCount": 6
+  },
+  {
+    "title": "(今更の)ISUCON 5オンライン予選に参加して来ました",
+    "link": "https://arata.hatenadiary.com/entry/2015/10/16/090000",
+    "pubDate": "2015-10-16T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "既に１ヶ月が経とうとしてるけどISUCONに出た時の思い出です。 9/27(日)にISUCONのオンライン予選にチーム「dark」として参加してきました。 darkの由来は Dark - Developers at Real Kommunity | Doorkeeper です 一…",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "embulkのpluginをScalaで作ってみようと思った時の備忘録",
+    "link": "https://arata.hatenadiary.com/entry/2015/09/24/090000",
+    "pubDate": "2015-09-24T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "Embulkのpluginを書いてみようかなと思ったんですが、せっかくならScalaで書いてみようかなと思ってその時の備忘録です。 1. 概要 Embulkはこんな感じ（雑github.com pluginはJavaかRubyで書けるようです。 Javaで書けるので、Scalaで…",
+    "bookmarkCount": 5
+  },
+  {
+    "title": "kataribeをnginxのアクセスログ解析に使ってみた備忘録",
+    "link": "https://arata.hatenadiary.com/entry/2015/09/22/183000",
+    "pubDate": "2015-09-22T18:30:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "isuconの準備中にkataribeという単語を聞いて、さらに下記の資料を参考にしていたらkataribeが現れたのでちょっと触ってみようと思いました。ISUCONの勝ち方 YAPC::Asia Tokyo 2015 | PPTやったことはnginx, kataribeのインス…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/d806764bb5abfceeec38630489f3d4b8fe4acb71/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6653458415122253905%2F1757180110",
+    "bookmarkCount": 5
+  },
+  {
+    "title": "(だいたい)新卒エンジニア向け技術交流会vol.4 を実施して話したという話",
+    "link": "https://arata.hatenadiary.com/entry/2015/09/16/130000",
+    "pubDate": "2015-09-16T13:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "9/19(土)にこんなイベントがありました。ngineerxiv.doorkeeper.jp今回シルバーウィーク前だし、そんなに人来ないかもしれないから発表するって言っておこうって思ったら結構発表者多くなってびっくりでしたｗ 今回はScala.jsがネタにあふれて面白そうだった…",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "PHPのLumenフレームワークでテンプレートエンジンとしてtwigを利用する",
+    "link": "https://arata.hatenadiary.com/entry/2015/09/07/080000",
+    "pubDate": "2015-09-07T08:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "Laravel製のマイクロフレームワークLumenにちょっと触ってみました。 その時にテンプレートエンジンにTwigは使えないのかなぁと思ったので色々試してみた時の話です。Lumen - PHP Micro-Framework By Laravellumen.laravel.co…",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "その昔にSlack Real Time Messagingのfluent plugin gemを公開してみていた。",
+    "link": "https://arata.hatenadiary.com/entry/2015/08/18/090000",
+    "pubDate": "2015-08-18T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "すんごい昔にgemfileを公開したっていう記事を中途半端に書いてました・・・ｗ 中途半端になってしまったので、この後どうするかとか書いておこうかなと思います。Slack Real Time Messaging APIのfluent pluginを作ってみた話 - 日頃の行いar…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "GoogleBigQueryとSlackHistoryのpluginを触ってEmbulkにちょっとだけ入門してみた。",
+    "link": "https://arata.hatenadiary.com/entry/2015/08/17/090000",
+    "pubDate": "2015-08-17T09:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "Embulk触ってみたいと思いつつ時が流れていたので、Embulkを使って個人で利用しているSlackの過去のチャットをBigQueryにでも流し込んでみようかなとふと思ったのでやってみようとしました。 やってみようと・・・したんです・・・ｗ※最終的に書き込みは成功…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Vue.jsに入門しようと思ってScala.jsでVue.jsのサンプル書いてみた。",
+    "link": "https://arata.hatenadiary.com/entry/2015/08/07/215021",
+    "pubDate": "2015-08-07T21:50:21+09:00",
+    "source": "hatena",
+    "contentSnippet": "会社のインターンでVue.jsを利用するんですが、去年も触ったけど、やっぱりちゃんとサンプルを動かしてみないといけないなと思って写経してみました。 サンプルはこちらのページを利用しました。 日本語ページ去年はなかった気がしますが、今は日本語で読め…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/27d5243c8a12bdc2e0c793689bb3cd6420a07082/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20150807%2F20150807214153.png",
+    "bookmarkCount": 13
+  },
+  {
+    "title": "コマンドラインロシアンルーレットをDockerでやってみた話",
+    "link": "https://arata.hatenadiary.com/entry/2015/06/28/213054",
+    "pubDate": "2015-06-28T21:30:54+09:00",
+    "source": "hatena",
+    "contentSnippet": "昔こんな記事を書いていたことを思い出した。コマンドラインロシアンルーレットを試してみる環境を作ったというくだらない話。 - 日頃の行いarata.hatenadiary.comせっかくDocker触ったのでDockerでもやってみた。 Dockerレポジトリはここtarata/c…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "MacでDockerインストールして遊んだメモ",
+    "link": "https://arata.hatenadiary.com/entry/2015/06/28/153638",
+    "pubDate": "2015-06-28T15:36:38+09:00",
+    "source": "hatena",
+    "contentSnippet": "Dockerで遊んでみた時のメモ。 httpd動かしただけ。 エラー出て躓いた部分とかも書いてる。 1.MacにDockerをインストール 事前にVirtualBoxのインストールが必要 $brew install docker $brew install boot2docker…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "mackerelを利用してhubotが死んだ時に気がつくようにした",
+    "link": "https://arata.hatenadiary.com/entry/2015/06/23/005339",
+    "pubDate": "2015-06-23T00:53:39+09:00",
+    "source": "hatena",
+    "contentSnippet": "趣味でhubotいじったりしてるんですが、たまに死んでる時があります。 Slackでコマンド打って何も返ってこないと切なくなるので、 死んだ時に死んでしまうとは情けないと言えるようにしたいというのが今回の目的です。 突然の死の原因 ログを見るとこんな感…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/9239a275636af04633151e636f34d8c594bac89b/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20150623%2F20150623003900.png",
+    "bookmarkCount": 5
+  },
+  {
+    "title": "(だいたい)新卒エンジニア向け技術交流会vol.3 で話してきたという話",
+    "link": "https://arata.hatenadiary.com/entry/2015/06/14/024036",
+    "pubDate": "2015-06-14T02:40:36+09:00",
+    "source": "hatena",
+    "contentSnippet": "6/6(土)にこんなイベントがありました。(だいたい)新卒エンジニア向け技術交流会 vol.3ngineerxiv.doorkeeper.jp(だいたい)という名前はなぜついたのでしょうか。 こちらをみると3月までのイベントは「新卒」になってますね。 あ・・・←そのイベントの運営…",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "vim7.4で.shファイルを編集しようとしたらエラーが出た話",
+    "link": "https://arata.hatenadiary.com/entry/2015/06/02/004019",
+    "pubDate": "2015-06-02T00:40:19+09:00",
+    "source": "hatena",
+    "contentSnippet": "久しぶりにvagrant内にあるvimでhoge.shというファイルを編集しようとしたらエラーが出た。 \"path/to/hoge.sh\" 0L, 0C Error detected while processing /usr/local/share/vim/vim74/synt…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "fluentdのout exec pluginの使い方がわからなかったから色々試してみた",
+    "link": "https://arata.hatenadiary.com/entry/2015/05/20/215651",
+    "pubDate": "2015-05-20T21:56:51+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中プログラミングタイトルの通り fluentdのout exec pluginを試してみました。http://docs.fluentd.org/articles/out_execdocs.fluentd.orgリンクが切れていたので追記です。 docs.fluent…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/51375ffac68c378455df113451411443d4553b96/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn.image.st-hatena.com%2Fimage%2Fsquare%2Fadad63b72f1d6545b2ba2538c3fc2923b2fd5989%2Fbackend%3Dimagemagick%3Bheight%3D80%3Bversion%3D1%3Bwidth%3D80%2Fhttps%253A%252F%252Fcdn.blog.st-hatena.com%252Fimages%252Fcircle%252Fofficial-circle-icon%252Fcomputers.gif",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "Slack Real Time Messaging APIのfluent pluginを作ってみた話",
+    "link": "https://arata.hatenadiary.com/entry/2015/05/09/205147",
+    "pubDate": "2015-05-09T20:51:47+09:00",
+    "source": "hatena",
+    "contentSnippet": "Embulkのfilter pluginを作ってみようと思ったんですが その前にfluentdのpluginを作ってみました。 こちらです。 一応動くかと・・・github.comSlack RTM(Real Time Messaging)のメッセージをfluentdで取得してく…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/28286baa66035c6e7f553b8876929bf5c89a7d3d/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F8454420450093958479%2F1757180100",
+    "bookmarkCount": 29
+  },
+  {
+    "title": "ScalaをItamaeでインストールするだけ",
+    "link": "https://arata.hatenadiary.com/entry/2015/05/07/001754",
+    "pubDate": "2015-05-07T00:17:54+09:00",
+    "source": "hatena",
+    "contentSnippet": "昔Scalaをyum installしようとしたら2.9系統が入ったので（下記参考）ScalaをyumでInstallして、開発環境を作ってみた。 - 日頃の行いarata.hatenadiary.com 楽ちんに最新版をインストールするのめんどいなと思い、 Itamaeに慣れる…",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "MongoDBでArbiterをSecondaryにしたくなったときにする方法",
+    "link": "https://arata.hatenadiary.com/entry/2015/05/05/032758",
+    "pubDate": "2015-05-05T03:27:58+09:00",
+    "source": "hatena",
+    "contentSnippet": "みなさんこんばんは。 brew installするとmongoの3系統が入るようになったんだなぁと 老害気分を感じてしまいました。 そんなにMongoDB詳しくないんですけどね。 概要 今日はArbiterとして登録してしまったレプリカセットを Secondaryにする方法を探し…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/51375ffac68c378455df113451411443d4553b96/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fcdn.image.st-hatena.com%2Fimage%2Fsquare%2Fadad63b72f1d6545b2ba2538c3fc2923b2fd5989%2Fbackend%3Dimagemagick%3Bheight%3D80%3Bversion%3D1%3Bwidth%3D80%2Fhttps%253A%252F%252Fcdn.blog.st-hatena.com%252Fimages%252Fcircle%252Fofficial-circle-icon%252Fcomputers.gif",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "LumenというLaravel製マイクロフレームワーク(？)をSilexとSlimと比較してみた",
+    "link": "https://arata.hatenadiary.com/entry/2015/04/16/003802",
+    "pubDate": "2015-04-16T00:38:02+09:00",
+    "source": "hatena",
+    "contentSnippet": "LumenというLaravelのコンポーネントを利用したフレームワークが出たので、ちょっと触ってみました。Lumen - PHP Micro-Framework By Laravellumen.laravel.comLumenはSilexやSlimに比べてREQUESTS PER…",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "fluentdのhttp-pluginを試してみただけの日記",
+    "link": "https://arata.hatenadiary.com/entry/2015/04/15/010945",
+    "pubDate": "2015-04-15T01:09:45+09:00",
+    "source": "hatena",
+    "contentSnippet": "風邪でお酒が飲めなくてむしゃくしゃしてやってます← fluentdで何か入力を受け取って、それをhttpでどこかに飛ばすということをしてみようと思います。 fluent output httpとぐぐったらそれっぽいものが！github.com流れはこちら 1. fluentd +…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/aca593c9ef94d5ae17e6e448e7f6f6d3ca448261/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F8454420450091523629%2F1760416734",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "fluentdのformatを設定してみただけの日記",
+    "link": "https://arata.hatenadiary.com/entry/2015/04/14/233422",
+    "pubDate": "2015-04-14T23:34:22+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中プログラミングMacでfluentdを動かしてみようと思って動かしてみました。 dummerというダミーログを作ってくれるツールを利用しています。github.com 動かしてみた流れ fluentd + dummer ( dummy log generator …",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/b4971d6a327024317bccd9945970bd2de1084e85/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F8454420450091513812%2F1757180036",
+    "bookmarkCount": 8
+  },
+  {
+    "title": "ScalaでDynamoDBに接続するためにAWS SDKを利用してみた時の話",
+    "link": "https://arata.hatenadiary.com/entry/2015/04/11/213037",
+    "pubDate": "2015-04-11T21:30:37+09:00",
+    "source": "hatena",
+    "contentSnippet": "ScalaでJavaのAWS SDKを使ってDynamoDBを利用した時のメモ 本番ではDynamoDBの本物を利用してましたが、ここではDynamoDB Localを利用します。 Java製のAWS SDKをScalaから利用しています。作業したgithubのレポジトリはこちら…",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "ScalaのTestツールScalaTestを使ってみた。",
+    "link": "https://arata.hatenadiary.com/entry/2015/02/12/000747",
+    "pubDate": "2015-02-12T00:07:47+09:00",
+    "source": "hatena",
+    "contentSnippet": "みなさん、こんばんは。 昨日書いたこちらの記事同様Scala書くのが最近とても楽しいので、Scala関連の記事を書こうと思います。ScalaでTestを書こうと思って、とりあえず出てきたScalaTestというものを試してみました。 （SEO高そうですね使ってみた感想とし…",
+    "bookmarkCount": 8
+  },
+  {
+    "title": "Scalaのjson変換ツールspray-jsonを試してみた。",
+    "link": "https://arata.hatenadiary.com/entry/2015/02/11/015916",
+    "pubDate": "2015-02-11T01:59:16+09:00",
+    "source": "hatena",
+    "contentSnippet": "Scalaがとても楽しいので、spray-jsonによるScalaコード内でオブジェクトのjson変換を試してみました。 spray/spray-json spray/spray-json · GitHub基本的に上記のレポジトリのコードを元にしました。 Scalaのオブジェクト…",
+    "bookmarkCount": 4
+  },
+  {
+    "title": "秘密鍵にパスワード設定してる状態で自動的にgit cloneしたいそんな時の対処方法",
+    "link": "https://arata.hatenadiary.com/entry/2015/01/12/010931",
+    "pubDate": "2015-01-12T01:09:31+09:00",
+    "source": "hatena",
+    "contentSnippet": "こんばんは。 今日はVagrant＋シェルスクリプトでアプリケーションの実行環境の作成してる時に困った話をします 環境作成にchefやpuppet, ansibleを使わずシェルスクリプトを使っているのですが、アプリケーションをgit cloneする時に Are you sure…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/bd13e46f3bf3ac7df1734bd270c61c66a0c989f0/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F8454420450079972548%2F1757180129",
+    "bookmarkCount": 5
+  },
+  {
+    "title": "年末暇だからAceの独自Syntax Highlightを試してみた。",
+    "link": "https://arata.hatenadiary.com/entry/2014/12/31/234922",
+    "pubDate": "2014-12-31T23:49:22+09:00",
+    "source": "hatena",
+    "contentSnippet": "こんばんは、 @ara_ta3 です。 もうすぐ2014年も終わりますね。 実家が快適すぎて、新年に社会復帰できるか心配です。 さて、年末の大掃除で「はてブのあとで読む」と、「feedlyのSaved For Later」の整理したら、休み中にやろうと思ってたことが結構たまっ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/de71b11f2af15835febf0f6b2cf3fd529e2f62fb/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F8454420450078594464%2F1769837322",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2014年を振り返って",
+    "link": "https://arata.hatenadiary.com/entry/2014/12/28/233106",
+    "pubDate": "2014-12-28T23:31:06+09:00",
+    "source": "hatena",
+    "contentSnippet": "振り返ってみた。 色々あったなぁー 引きこもりのわりに色んな人に会った気がする。 イベントに誘ってくれたみなさまありがとうござます。 仕事は来年もきっと大変だろうから頑張りまっす。manaveeはちゃんと時間を考えて使わないと厳しいとわかったので、来…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Vue.jsとjQueryを使った時の違いについて考えてみる。",
+    "link": "https://arata.hatenadiary.com/entry/2014/12/23/040507",
+    "pubDate": "2014-12-23T04:05:07+09:00",
+    "source": "hatena",
+    "contentSnippet": "この記事は Vue.js Advent Calendar 2014 - Qiita の21日分として書かれています。Vue.js Advent Calendar 2014 - Qiitaめっちゃ遅れました。すみません(´・ω・｀)今、管理画面にVue.jsを使うか、React.j…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/b6f08717a5e93b7eeb1a56fcfcf176ecb485cce4/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20141223%2F20141223022101.png",
+    "bookmarkCount": 7
+  },
+  {
+    "title": "MongoDBでシャーディングを試してみるの巻",
+    "link": "https://arata.hatenadiary.com/entry/2014/12/14/003249",
+    "pubDate": "2014-12-14T00:32:49+09:00",
+    "source": "hatena",
+    "contentSnippet": "みなさんこんにちは、@ara_ta3です。 この記事はMongoDB Advent Calendar 2014 - Qiita の13日目として書かれてます。MongoDB Advent Calendar 2014 - Qiita private DMPの開発にMongoDBを利…",
+    "bookmarkCount": 4
+  },
+  {
+    "title": "寒くてやる気が出ないそんなあなたに、熱いメッセージと共にやりたいことリストを通知しよう。",
+    "link": "https://arata.hatenadiary.com/entry/2014/12/09/131458",
+    "pubDate": "2014-12-09T13:14:58+09:00",
+    "source": "hatena",
+    "contentSnippet": "みなさん、こんばんは。 @tana_ra です。この記事は VOYAGE GROUP エンジニアブログ : Advent Calendar 2014 の9日目として書かれています。やりたいことはたくさんあったはずなのに気がついたら前日とかでした。あ、そっか、今やりたいこと全部織り…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/5c8be9316c6460d669bfeceb89c82ac47dd3b54d/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20141209%2F20141209020757.png",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "サーバの監視用にxymonを試してみる。",
+    "link": "https://arata.hatenadiary.com/entry/2014/11/28/130807",
+    "pubDate": "2014-11-28T13:08:07+09:00",
+    "source": "hatena",
+    "contentSnippet": "みなさん、こんにちは。 @ara_ta3 です。この前VoyageGroupのSunriseというインターンに中の人として参加しました。 ２年前参加した時、ゴミ未満でしたが、ある程度知識がついていてよかったです。 ただ、ある程度はわかってきたとはいえ、インフラ力が明ら…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/badf54c4962d1ea467d5d37ca91d158dd1023918/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F8454420450074956816%2F1769836769",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "ScalaをyumでInstallして、開発環境を作ってみた。",
+    "link": "https://arata.hatenadiary.com/entry/2014/10/30/225115",
+    "pubDate": "2014-10-30T22:51:15+09:00",
+    "source": "hatena",
+    "contentSnippet": "みなさん、こんばんは。 @tana_ra です。最近なにかブログを書こうと思うと、 ふとScalaで何かしたいと思うほどにScalaを書きたい気持ちが強くなっています。 病気ですね。ほんとはPlay Frameworkでなにかする記事を書こうと思ったんですが、 眠いので少し時…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "MongoDBのInitial Syncを試してみた。",
+    "link": "https://arata.hatenadiary.com/entry/2014/10/12/184337",
+    "pubDate": "2014-10-12T18:43:37+09:00",
+    "source": "hatena",
+    "contentSnippet": "みなさんこんばんは。 遂に同期とリレーブログを始めることにしました。 酒呑みたちのリレーブログ - はてなブログ グループ酒呑みたちのリレーブログというわりとひどいタイトルにしたのに誰も文句言いいませんでした。 みんな自覚しているようです。さて、…",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "PHP製マイクロフレームワークSlimで404ページ500ページを表示させるだけ",
+    "link": "https://arata.hatenadiary.com/entry/2014/08/02/194704",
+    "pubDate": "2014-08-02T19:47:04+09:00",
+    "source": "hatena",
+    "contentSnippet": "タイトルの通りの事をしようとしていたら 404ページの内容を考え始め 気がついたらBLEACHを読んでいました。 いつからコードを書いていると錯覚していたのでしょう。 さて、Slimでエラーハンドリング試してみました。 ドキュメントが完璧だったので特に面白…",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "コマンドラインロシアンルーレットを試してみる環境を作ったというくだらない話。",
+    "link": "https://arata.hatenadiary.com/entry/2014/07/14/002441",
+    "pubDate": "2014-07-14T00:24:41+09:00",
+    "source": "hatena",
+    "contentSnippet": "風邪を引いてお酒が飲めないのでむしゃくしゃして作りました。 コマンドラインロシアンルーレットを行うだけのレポジトリです。GitHub - ara-ta3/Command-Line-Russian-Roulette: コマンドラインロシアンルーレットするためだけのレポジトリ1日に１…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "MongoDBでレプリカセットを試してみた。",
+    "link": "https://arata.hatenadiary.com/entry/2014/07/08/231518",
+    "pubDate": "2014-07-08T23:15:18+09:00",
+    "source": "hatena",
+    "contentSnippet": "仕事でMongoDBを利用しているので、ちょっと遊びに作ってみました。tarata/mongo-replication-try · GitHubレプリカセットをPRIMARY / SECONDARY / ARBITERそれぞれ１台で組んで コピーされてるか見たり、PRIMARYを…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Browserifyを試してみた。",
+    "link": "https://arata.hatenadiary.com/entry/2014/05/09/012323",
+    "pubDate": "2014-05-09T01:23:23+09:00",
+    "source": "hatena",
+    "contentSnippet": "最近vue.jsで遊んでいて、 そのexampleページの最後にBrowserifyというのがあったので、試してみました。 vue.js exampleページ Project Boilerplate - vue.jsBrowserify Browserify一言で言うと「jsをマ…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "component jsを試してみた。",
+    "link": "https://arata.hatenadiary.com/entry/2014/05/07/005935",
+    "pubDate": "2014-05-07T00:59:35+09:00",
+    "source": "hatena",
+    "contentSnippet": "component.jsをやってみようと思ってgithubに行ったら getting startedがあったのでやってみました。レポジトリ component/component · GitHubGetting Started guide/component/getting-st…",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "twigテンプレートエンジンでvue.jsを使うとデリミタがコンフリクトする。",
+    "link": "https://arata.hatenadiary.com/entry/2014/04/26/224836",
+    "pubDate": "2014-04-26T22:48:36+09:00",
+    "source": "hatena",
+    "contentSnippet": "silex+twigでvue.jsを使ってみようと思ったら '{{ message }}' がtwigのdelimiterとして認識されてしまってエラーになった。twigとは Homepage - Twig - The flexible, fast, and secure PHP…",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "vue.jsで\"Uncaught TypeError: Cannot read property 'tagName' of null \"",
+    "link": "https://arata.hatenadiary.com/entry/2014/04/26/011516",
+    "pubDate": "2014-04-26T01:15:16+09:00",
+    "source": "hatena",
+    "contentSnippet": "vue.jsで遊んでたらエラーが出ました。 Uncaught TypeError: Cannot read property 'tagName' of null こんなん。 とりあえずググります。jsのエラーだしなー出ないよなー と思ったら出ました(・∀・)@vuejs Tryi…",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "気分でMVVMライブラリ（？）のvue.jsを試してみた。",
+    "link": "https://arata.hatenadiary.com/entry/2014/04/24/232935",
+    "pubDate": "2014-04-24T23:29:35+09:00",
+    "source": "hatena",
+    "contentSnippet": "文章にするとなんか捗るなと気がついたので書こうと思います。vue.jsという存在をさっき知り やりたいなーって思ってもどうせ一生やらないので今試してみようと思いました← vue.jsとは vue.jsVue.jsは軽量なMVVMライブラリらしいです。（以下より引用） 軽量…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "パッケージマネージャーbowerを試してみた。",
+    "link": "https://arata.hatenadiary.com/entry/2014/04/24/230703",
+    "pubDate": "2014-04-24T23:07:03+09:00",
+    "source": "hatena",
+    "contentSnippet": "bowerが便利そうと思ってはや数週間 久しぶりに飲まずに帰ったので試してみました。 bowerとは Bower - A package manager for the web簡単に言うとjsのパッケージ管理ツールです。 $bower install jquery $bower …",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Mavericksでvagrant upに失敗した",
+    "link": "https://arata.hatenadiary.com/entry/2014/04/20/133411",
+    "pubDate": "2014-04-20T13:34:11+09:00",
+    "source": "hatena",
+    "contentSnippet": "以前の記事（http://arata.hatenadiary.com/entry/2014/04/17/215022） を試そうとしたら失敗した(´・ω・｀)VirtualBox：4.2.x Vagrant：1.5.3エラー内容 There was an error while …",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Vagrantでchefもpuppetも使わない",
+    "link": "https://arata.hatenadiary.com/entry/2014/04/17/215022",
+    "pubDate": "2014-04-17T21:50:22+09:00",
+    "source": "hatena",
+    "contentSnippet": "chefとか使おうとしたんですが、なんかやりたいことはそんな複雑じゃないのになんでこんなことしてるんだろう。。。 となったので、やめました。 普通にコマンド走らせてyum installします。まずは準備です。 cd /path/to/vagrant vagrant init v…",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "composer installでgitのtagを指定する",
+    "link": "https://arata.hatenadiary.com/entry/2014/03/05/205625",
+    "pubDate": "2014-03-05T20:56:25+09:00",
+    "source": "hatena",
+    "contentSnippet": "cakephpの2.0.5をcomposerでinstallしようとしたらなんか上手く行かなかったので 自分で追加しました。 ついでにcomposer.jsonの使い方のメモとして残そうと思います。 composer.json { \"repositories\": [ { \"typ…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Frameworkで遊ぶ",
+    "link": "https://arata.hatenadiary.com/entry/2014/02/23/015637",
+    "pubDate": "2014-02-23T01:56:37+09:00",
+    "source": "hatena",
+    "contentSnippet": "最近いろんなフレームワークに触ってみようと思っていろんなものに触っています。 具体例としてコードを書いています。 phpくらいしか触らなかったせいでplayフレームワークで色々困ったので 言語が変わった時俺はどんなところで困るのか試してみようと思い…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2013年を振り返って",
+    "link": "https://arata.hatenadiary.com/entry/2013/12/31/235007",
+    "pubDate": "2013-12-31T23:50:07+09:00",
+    "source": "hatena",
+    "contentSnippet": "2013年なにがあったのかあまり思い出せないので振り返ろうと思います。 1月 就業型実践育成プログラム「Guild」｜VOYAGE GROUP インターンシップ 東京Ruby会議10 #tkrk10 - Regional RubyKaigi 会期：2013/01/13(日)〜14…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/2912907615297cb3934f6756f725cb755423a844/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20140101%2F20140101000348.jpg",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "play frameworkで java.lang.NoClassDefFoundError: scala/StringContext",
+    "link": "https://arata.hatenadiary.com/entry/2013/12/14/175630",
+    "pubDate": "2013-12-14T17:56:30+09:00",
+    "source": "hatena",
+    "contentSnippet": "Scala Play Frameworkでエラーが発生したちょいちょいハマったからメモ sbt 0.13.0以上でplay実行したら実行できなかった件 java.lang.NoClassDefFoundError: scala/StringContext at sbt.Comma…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Scala ORマッパー Slickを使ってみた。",
+    "link": "https://arata.hatenadiary.com/entry/2013/12/08/213304",
+    "pubDate": "2013-12-08T21:33:04+09:00",
+    "source": "hatena",
+    "contentSnippet": "現実逃避のためにScalaのORマッパーを使ってみおうと思ってSlick使ってみた。 環境 Mac OS X scala 2.10.3 sbt 0.13.0 Slick公式サイトのDocument読んでやりますた。 Slick自体はScalaのversionが2.10移行でないと…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Sublime Text 2から sbt コマンドを扱う",
+    "link": "https://arata.hatenadiary.com/entry/2013/12/08/165323",
+    "pubDate": "2013-12-08T16:53:23+09:00",
+    "source": "hatena",
+    "contentSnippet": "現実逃避のためScalaを勉強しようと思い SublimeTextからScalaをsbtでコンパイルしたいと思いました。利用したのは jarhart/SublimeSBT · GitHubとても簡単ですｗ1. いつも通り Command Paletta [Ctrl|Command…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/6a3feb6706bbc70d175cdb8a1ef6d6c933695dad/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20131208%2F20131208164813.png",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "olleh wifiのすすめ@韓国",
+    "link": "https://arata.hatenadiary.com/entry/2013/11/28/171512",
+    "pubDate": "2013-11-28T17:15:12+09:00",
+    "source": "hatena",
+    "contentSnippet": "国際学会の発表で韓国ソウルに４日間ほど行ってきました。 そこで困るのがwifi環境 ネットがないと生きていけない人間なので ネット環境どうしようと思い、事前にググったら色々見つかりました1. wifi端末のレンタル 2. プリペイド式wifiの利用がありました…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Git Bashでコピペができない #ショートカット #コピー&ペースト",
+    "link": "https://arata.hatenadiary.com/entry/2013/10/03/194753",
+    "pubDate": "2013-10-03T19:47:53+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中プログラミングwindowsでgit操作を行う時はgit bashを使っています。 これで例えばorigin 先をコピーして貼り付けたい時があると思うのですが、 タブを右クリック 編集(E) 貼り付け(P) で今までしてたけど Insertボタン で解決された。い…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/6722c82c578a4d815389ff7adfc2f97d439de0a6/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F11696248318758377380%2F1757180064",
+    "bookmarkCount": 6
+  },
+  {
+    "title": "Eclipse「強制終了ばかりする人私嫌いッ！」 .snap「残像だ」",
+    "link": "https://arata.hatenadiary.com/entry/2013/10/03/185147",
+    "pubDate": "2013-10-03T18:51:47+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中プログラミングEclipseがmacで起動しなくなりました。 ２度あることは３度あるということですね、はい。/path/to/WORKSPACE/.metadata/.log を見ると !ENTRY org.eclipse.cdt.codan.ui.cxx 4 0…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/5676d0c387eb3e15df87ad7097b249851b4ec226/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F11696248318758374466%2F1757179965",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "node.jsのライブラリzombie.jsでステータス 400 以上は標準エラー出力が出てしまう",
+    "link": "https://arata.hatenadiary.com/entry/2013/09/19/211019",
+    "pubDate": "2013-09-19T21:10:19+09:00",
+    "source": "hatena",
+    "contentSnippet": "node.jsを使う機会があって、zombie.jsで、あるページにアクセスした時、404のページに飛ぶはずってテストを書く予定だった。すごく使いやすいからみんな使うといいと思う(すてま インストールも簡単。zombie.jsが実行ファイルだとして、 /path/to/zombi…",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "playframeworkでheaderの操作 - Access-Control-Allow-Origin",
+    "link": "https://arata.hatenadiary.com/entry/2013/09/19/201649",
+    "pubDate": "2013-09-19T20:16:49+09:00",
+    "source": "hatena",
+    "contentSnippet": "playframeworkで作成したWEBページに他のドメインのサイトからajaxでデータを取得しようとした時いつも通り「Access-Control-Allow-Origin」に引っかかった。結論から言えばResponse headerを Access-Control-Allo…",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "Chrome Extension でデバッグを行う",
+    "link": "https://arata.hatenadiary.com/entry/2013/09/07/033906",
+    "pubDate": "2013-09-07T03:39:06+09:00",
+    "source": "hatena",
+    "contentSnippet": "chrome拡張機能でデバッグを行うためのメモ！ 右上のあのアイコンをクリックしたときに現れるhtmlファイルをページで見ること出来るみたいです。/path/to/popup.html ってやつを表示する設定 つまり { \"manifest_version\": 2, \"name\"…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/132551e89f9a114f8dc2a7342c75f983455a9b4b/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20130907%2F20130907033800.png",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "Evernoteで日記",
+    "link": "https://arata.hatenadiary.com/entry/2013/09/05/041535",
+    "pubDate": "2013-09-05T04:15:35+09:00",
+    "source": "hatena",
+    "contentSnippet": "すごく欲しいなー 作ろうかなーって思ってたら出来ていた件Evernoteで日記ほんとどうでもいいことはこっちで書いていこうと思う。 初期設定の時点でEvernoteのどのブックを対象とするかを選ぶ publishedタグを付ける postach.io のページでsyncを行う。 …",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "play frameworkを他の環境で使ったら動かなかった。 play frameworkのversionが異なる編",
+    "link": "https://arata.hatenadiary.com/entry/2013/08/23/233530",
+    "pubDate": "2013-08-23T23:35:30+09:00",
+    "source": "hatena",
+    "contentSnippet": "sbtのversionを直したのに(´・ω・｀) playが上手く行かなかった・・・(´・ω・｀) [info] Loading project definition from /path/to/project [warn] module not found: play#sbt-…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "play frameworkを他の環境で使ったら動かなかった。 sbtのversionが異なる編",
+    "link": "https://arata.hatenadiary.com/entry/2013/08/23/232838",
+    "pubDate": "2013-08-23T23:28:38+09:00",
+    "source": "hatena",
+    "contentSnippet": "エラー内容 Getting org.scala-sbt sbt 0.11.3 ... :: problems summary :: :::: WARNINGS module not found: org.scala-sbt#sbt;0.11.3 ==== local: tried…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Hello Chrome Extension",
+    "link": "https://arata.hatenadiary.com/entry/2013/08/05/182532",
+    "pubDate": "2013-08-05T18:25:32+09:00",
+    "source": "hatena",
+    "contentSnippet": "Chrome Extensionに触ってみた！ 用意するもの google chrome 開発用のディレクトリ すること manifest,jsonの作成 htmlの準備(optional) chromeで試す！ 以上！！まずは、manifest,json { \"manifest…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/c19224be0227118dfc5f4a8e9399e8d838185ae2/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20130805%2F20130805182200.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "SublimeText「どうせvimちゃんとすぐよりを戻すんでしょ！もうサイドバー見せてあげない！」",
+    "link": "https://arata.hatenadiary.com/entry/2013/07/11/013315",
+    "pubDate": "2013-07-11T01:33:15+09:00",
+    "source": "hatena",
+    "contentSnippet": "Sublime Text2のサイドバーが真っ黒になりました。 バグりました(´・ω・｀)ｗそして、タブを移動しようとすると変な感じになります。 文字がダブってる(´・ω・｀)ｗ何をしたか！？ 何事もなかった環境のSettingをコピペした。 何事もなかった環境のKey Mappi…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/7f0266c5d0733f4eb6a6c843e6a9e7d8f2652340/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20130710%2F20130710091705.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Markdown の プレビュー を愛しのSublime Text 2で行う。",
+    "link": "https://arata.hatenadiary.com/entry/2013/07/08/215025",
+    "pubDate": "2013-07-08T21:50:25+09:00",
+    "source": "hatena",
+    "contentSnippet": "遂に、SublimeTextのライセンス買いました。 無料で永遠と使うのも申し訳無くなってきたってのと、ガッツリSublimeを使おうという意思の現れです＼(^o^)／ んで色々とpluginいじってたんですが、ふと、README.mdとかをプレビューしたいなーって思ったら あっ…",
+    "bookmarkCount": 3
+  },
+  {
+    "title": "play framework で java.io.IOException: No such file or directory",
+    "link": "https://arata.hatenadiary.com/entry/2013/06/24/193319",
+    "pubDate": "2013-06-24T19:33:19+09:00",
+    "source": "hatena",
+    "contentSnippet": "puppetでインストールしたplay framework 2.0.4さんが起動してくれなかった(´・ω・｀) java.io.IOException: No such file or directory at java.io.UnixFileSystem.createFileE…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Play Framework で POST されたデータを受け取る。",
+    "link": "https://arata.hatenadiary.com/entry/2013/06/09/004556",
+    "pubDate": "2013-06-09T00:45:56+09:00",
+    "source": "hatena",
+    "contentSnippet": "play framework 2.0.4 でPOSTデータを受け取ってみました。参考にしたのは、ここ (たぶんここでだいたい解決されると・・・ｗ)ただ、Modelから作ったFormでbindFromRequest.getは出来なかった(´・ω・｀) なんでか調査したいところ。 流…",
+    "bookmarkCount": 4
+  },
+  {
+    "title": "Int does not take parameters",
+    "link": "https://arata.hatenadiary.com/entry/2013/06/09/000204",
+    "pubDate": "2013-06-09T00:02:04+09:00",
+    "source": "hatena",
+    "contentSnippet": "なんかエラーが良く出るから確認してみた。 ここをちょっとだけ参考にしました。 http://d.hatena.ne.jp/plasticscafe/20100713/1278993562 (ワタシが今適当なことを言ってても、ここの人のせいじゃありません。) case class …",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Play Framework のテンプレートで includeする",
+    "link": "https://arata.hatenadiary.com/entry/2013/06/05/134951",
+    "pubDate": "2013-06-05T13:49:51+09:00",
+    "source": "hatena",
+    "contentSnippet": "play framework 2.0.4でincludeを行うのはどうすればいいのかなーって思ってたら簡単だったので書いておこうと思った。Play Frameworkのドキュメント(日本語版)に書いてある関数(メソッド？)はどれを呼び出すのかなと思ってたので試してみた。 <h1>…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Eclipse 「 import してるくせに使わないって可哀想だと思わないの？」",
+    "link": "https://arata.hatenadiary.com/entry/2013/05/26/164137",
+    "pubDate": "2013-05-26T16:41:37+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中プログラミング インポートされた hogehoge は 1 度も使用されていません。 よくある注意の奴ですね。 Eclipseさんには長年お世話になってるんですけど、１個ずつ消すという愚かな行為をしていました。「Ctrl-Shift-O」 で未使用import文を…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/f3feb36aaecfb8715ad0f70fefec561ab2babc74/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F11696248318753903304%2F1757179965",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "Eclipse「私なんかより Android Studioちゃんの方が良いっていうのね！もう知らない！」",
+    "link": "https://arata.hatenadiary.com/entry/2013/05/20/175804",
+    "pubDate": "2013-05-20T17:58:04+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中プログラミングまたもや、Eclipseたんがツン状態に入りました。 Android Studioに移行しようとしたのが、気に食わなかったそうです。JAVA_WORKSPACE/.metadata/.log 見てね♪だってさ。Eclipse JUNO Windows…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/db3649c07580e73bf879127e57bccb323a676900/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F11696248318753661755%2F1757179965",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Scala Play Framework のmain.scala.html #3",
+    "link": "https://arata.hatenadiary.com/entry/2013/05/20/014356",
+    "pubDate": "2013-05-20T01:43:56+09:00",
+    "source": "hatena",
+    "contentSnippet": "・ controller ・ viewsの1ファイル ・ viewsのmain(テンプレート) の関係がわかったので書いておこうと思う。 package controllers import play.api._ import play.api.mvc._ object Appl…",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "Sublime text 2 を仮想環境内の開発環境のエディタとして使う。 #1 導入編",
+    "link": "https://arata.hatenadiary.com/entry/2013/05/06/155103",
+    "pubDate": "2013-05-06T15:51:03+09:00",
+    "source": "hatena",
+    "contentSnippet": "Sublime Text 2を利用したらすごくよかったので、仮想環境内のvimに変えて利用することを考えた。開発時の簡単な流れは、 仮想環境内の開発環境ディレクトリとクライアントPC内のディレクトリを同期する。 Sublime Textで変更する 仮想環境内でgitのcommit…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/6542a2f8f5ceae24d65ab02cb3e0a6ed9bbf37ae/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20130506%2F20130506150023.png",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "このアイテムはシェアできません。 無効なURLのリンクです。",
+    "link": "https://arata.hatenadiary.com/entry/2013/05/03/003003",
+    "pubDate": "2013-05-03T00:30:03+09:00",
+    "source": "hatena",
+    "contentSnippet": "友人のサイトをFacebook(以下FB)でシェアしようとしたら何もでなくて、 FBメッセージに書こうとしたらこんなんが出た。 このアイテムはシェアできません。 無効なURLのリンクです。 原因は <html xmlns:fb=\"hogehoge\"> <head> ・ ・ ・ <…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/f993ee9378b7f7d068a9e0128478af7365936a0a/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20130503%2F20130503001111.jpg",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "fuelphp Error - invalid data source name in COREPATH/classes/database/pdo/connection.php on line 94",
+    "link": "https://arata.hatenadiary.com/entry/2013/04/21/225000",
+    "pubDate": "2013-04-21T22:50:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "こいつが起きたときはDBの設定の問題(見りゃわかるか(´・ω・｀)ｗ)。94行目だと指定したDB名が存在してないときに起こった。 array( 'connection' => array( 'dsn' => 'mysql:host=localhost;dbname=fuel_sa…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "tmux 便利!",
+    "link": "https://arata.hatenadiary.com/entry/2013/04/20/233259",
+    "pubDate": "2013-04-20T23:32:59+09:00",
+    "source": "hatena",
+    "contentSnippet": "tmuxと押すだけで画面の分割ができるtmux 超便利！すごくわかりやすい説明！簡単な操作方法 分割 Ctrl + b → % 横２つに分割 Ctrl + b → \" 縦２つに分割 移動 Ctrl + b → 矢印 １画面内の移動 終了 Ctrl + b → x 分割された部分 …",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "チューター生活終了のお知らせ withどっきり",
+    "link": "https://arata.hatenadiary.com/entry/2013/02/25/012149",
+    "pubDate": "2013-02-25T01:21:49+09:00",
+    "source": "hatena",
+    "contentSnippet": "ついに学生生活で約４年ほど働いたチューター生活が終わった。 最後の最後にサプライズを用意してくれた。 その昔、誕生日サプライズで一度巧妙に仕組まれた二段階ドッキリをくらい 二度とだまされないと誓ったあの日から ついに！ この日が来た。このサプラ…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "openrdf-sesame のインストール",
+    "link": "https://arata.hatenadiary.com/entry/2013/02/22/225256",
+    "pubDate": "2013-02-22T22:52:56+09:00",
+    "source": "hatena",
+    "contentSnippet": "とりあえずopen-sesame.war をwebappsに置いたが、即エラー＼(^o^)／ javax.servlet.ServletException: サーブレット openrdf-http-server のServlet.init()が例外を投げました org.apach…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Tomcatさんどこにいるのですか。",
+    "link": "https://arata.hatenadiary.com/entry/2013/02/22/220809",
+    "pubDate": "2013-02-22T22:08:09+09:00",
+    "source": "hatena",
+    "contentSnippet": "Scientific Linux 6.3でTomcatを動かそうとして、なぜかTomcat Managerが使えなかったから原因を探ってみた。 とりあえずインストール sudo yum install tomcat6 tomcat6-webapps tomcat6-admin-w…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/8f7393f849e3f909e45b9b32e6fe9f412b4f55a8/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20130222%2F20130222220320.jpg",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "silexをロリポップで使おうとしたら躓いた。",
+    "link": "https://arata.hatenadiary.com/entry/2013/02/21/235621",
+    "pubDate": "2013-02-21T23:56:21+09:00",
+    "source": "hatena",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "酔っ払った勢いで学生期のチューター(バイト)生活を振り返る。",
+    "link": "https://arata.hatenadiary.com/entry/2013/02/18/025025",
+    "pubDate": "2013-02-18T02:50:25+09:00",
+    "source": "hatena",
+    "contentSnippet": "そろそろ最後のバイトになると思うので、約4年続いた予備校でのチューター生活を振り返ろうと思う。 とりあえず酔っ払った勢いで １年毎の思い出 覚えている主にした仕事 学んだこと 良かった点 悪かった点 的な感じで振り返ろうと思う。書いている時のテン…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Scala Play Framework で Response 「application/json」",
+    "link": "https://arata.hatenadiary.com/entry/2013/02/15/195452",
+    "pubDate": "2013-02-15T19:54:52+09:00",
+    "source": "hatena",
+    "contentSnippet": "scala Play Framework で json形式レスポンスを返したかったから調べたら簡単だったｗ app/controllers/Application.scala object Application extends Controller { def index = …",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/63a7200251507bceb3db23bf82329e20da35a047/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20130215%2F20130215195156.jpg",
+    "bookmarkCount": 1
+  },
+  {
+    "title": "Scala Play Framework のmain.scala.html #2",
+    "link": "https://arata.hatenadiary.com/entry/2013/02/09/224532",
+    "pubDate": "2013-02-09T22:45:32+09:00",
+    "source": "hatena",
+    "contentSnippet": "ScalaのフレームワークPlay Frameworkで遊んでるけど仕組みが未だによくわからないからメモを書きまくる。 app/views/main.scala.html @(title: String)(content: Html)(footer: Html) <html> <…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Scala Play Framework のmain.scala.html #1",
+    "link": "https://arata.hatenadiary.com/entry/2013/02/09/041345",
+    "pubDate": "2013-02-09T04:13:45+09:00",
+    "source": "hatena",
+    "contentSnippet": "main.scala.htmlとindex.scala.htmlってなんで２つも存在してるのだろうと思ってた。 main.scala.html @(title: String)(content: Html) <html> <head> <title>@title</title> …",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Scala play frameworkをEclipse Junoで使ってみた。",
+    "link": "https://arata.hatenadiary.com/entry/2013/02/09/031227",
+    "pubDate": "2013-02-09T03:12:27+09:00",
+    "source": "hatena",
+    "contentSnippet": "play new sample_scala play eclipsify→Eclipseで既存アプリケーションのimport即エラー(´・ω・｀)org.scala-ide.sdt.core (943) 自動的に有効化している間にエラーが発生しました。Scalaを開こうとするたび…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/c9cd6467438994c34e673f514233116e775123f4/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20130209%2F20130209030534.jpg",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "先生のつっこみ",
+    "link": "https://arata.hatenadiary.com/entry/2013/02/08/233714",
+    "pubDate": "2013-02-08T23:37:14+09:00",
+    "source": "hatena",
+    "contentSnippet": "この前サービス・イノベーションってやつでインターンシップ報告をした。サービスマーケティングの5Dの項目から分析して書いた。んで、突っ込まれたところが共感性。 ユーザのニーズに合ってるかどうかの部分ってどう考えたんだっけ的なところを分析して書い…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "FFFTPでVMplayerにファイルを送る。",
+    "link": "https://arata.hatenadiary.com/entry/2013/02/08/233539",
+    "pubDate": "2013-02-08T23:35:39+09:00",
+    "source": "hatena",
+    "contentSnippet": "正直VMware toolsで共有すればいいんだけどね。sudo yum -y install vsftpd sudo chkconfig vsftpd on sudo service vsftpd startでとりあえずftp接続はできる。こんな感じにすればファイルを簡単に共有…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/44b489fcd65bc5ac356b88b193d874ab4c60926a/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20130208%2F20130208233807.png",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Eclipse「最近かまってくれないから起動してあげない」",
+    "link": "https://arata.hatenadiary.com/entry/2013/02/08/221133",
+    "pubDate": "2013-02-08T22:11:33+09:00",
+    "source": "hatena",
+    "contentSnippet": "ランキング参加中プログラミング Eclipseを起動しようとしたら、なぜかできなかった。JAVA_WORKSPACE/.metadata/.log 見てね♪だってさ。Eclipse JUNO Windows7 64bit以下エラー内容 !ENTRY org.eclipse.osg…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/0910f3ed8956bb668a9dbab2ec59ae302940df4b/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F6435922169448804972%2F1757179964",
+    "bookmarkCount": 2
+  },
+  {
+    "title": "scalaのエラー",
+    "link": "https://arata.hatenadiary.com/entry/2013/01/30/232500",
+    "pubDate": "2013-01-30T23:25:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "scalaを言われたとおりに普通に実行してみた。 そしたらこんなエラーが(´・ω・｀) ちなみにコマンドplay new homepage [enter] アプリの名前はhomepageでおｋ？ [1] コードの種類は？ [enter] have fun! だってさcd home…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/ba7dab76969ab0644fe781fd784458752ca58d4f/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20130129%2F20130129222101.jpg",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "今年の目標",
+    "link": "https://arata.hatenadiary.com/entry/2013/01/27/230904",
+    "pubDate": "2013-01-27T23:09:04+09:00",
+    "source": "hatena",
+    "contentSnippet": "だらだら過ごさないように目標を決めたほうがいいと思った。 趣味を見つける。 ピアノでクロノトリガーの曲かFFの曲を楽譜見ずに弾けるようにする。 何よりピアノを弾く。 phpのフレームワークにいくつか触る。 scalaを書く。 pythonを書く。 FF10やりたい。…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "思い出は優しいから甘えちゃだめなの",
+    "link": "https://arata.hatenadiary.com/entry/2012/11/09/033001",
+    "pubDate": "2012-11-09T03:30:01+09:00",
+    "source": "hatena",
+    "contentSnippet": "VoyageGroupのインターンTreasureでのEnding的なものでGReeeeNの「pride」が流れて、俺はこの曲が大好きになった。 動画付きだとこの曲はただの神曲になるなーって勝手に思う今日このごろ やっぱあのインターン行ってよかったなって思う今日このごろ。",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "ELLEGARDENの良さと・今日の出来事に対する酔っぱらいによる意見",
+    "link": "https://arata.hatenadiary.com/entry/2012/11/04/054456",
+    "pubDate": "2012-11-04T05:44:56+09:00",
+    "source": "hatena",
+    "contentSnippet": "最近youtubeでELLEGARDENばっか聴いてる。 ELLEGARDENが大好きで、すごく好きなのがMissingという曲 こんなやつ(ステマ でも歌詞の意味がどうしてもわからなくて、他の人の意見見てみたいと思ってぐぐってみた。 たどり着いたのがここ ---以下引用--- …",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/373ea56a107e72814193d3dcd831c9ceb35c32c1/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fecx.images-amazon.com%2Fimages%2FI%2F61EKxemdenL.jpg",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Sunriseってインターン",
+    "link": "https://arata.hatenadiary.com/entry/2012/10/26/031633",
+    "pubDate": "2012-10-26T03:16:33+09:00",
+    "source": "hatena",
+    "contentSnippet": "100万人が使うWEBサービスを想像せよ。 いやーインフラの知識が・・・(´・ω・｀) ロードバランサとか存在すら知らんかったし(´・ω・｀)ｗ ただ、ちゃんと仕組みからボトルネックとか考えていくとどこに負担がかかるからどうにかしないとねとかわかる。 んで…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "2012/10/13",
+    "link": "https://arata.hatenadiary.com/entry/2012/10/13/220601",
+    "pubDate": "2012-10-13T22:06:01+09:00",
+    "source": "hatena",
+    "contentSnippet": "今日はねこまんまでMA8のお話をしてきた。 今後の話を考えるとちょい大変そう。 まぁなんとかなるっしょｗ 今日やったのは 今後の話 さくらVPS レシピの作成 かな。 さくらVPSの設定がだるい。 とりあえずメモ程度にauthorized_keysに複数の公開鍵を設定する…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Virtual Boxが起動しなかった。",
+    "link": "https://arata.hatenadiary.com/entry/2012/10/12/151120",
+    "pubDate": "2012-10-12T15:11:20+09:00",
+    "source": "hatena",
+    "contentSnippet": "エラー内容 仮想マシン\"XXX\"のセッションを開けませんでした。 VT-x is being used by another hypervisor. (VERR_VMX_IN_VMX_ROOT_MODE). VirtualBox can't operate in VMX root…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/bab07ef2ca01f0a57d04a7fe7bb330364ba6a110/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F12704591929891106868%2F1760415755",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Macbook Air",
+    "link": "https://arata.hatenadiary.com/entry/2012/10/10/140233",
+    "pubDate": "2012-10-10T14:02:33+09:00",
+    "source": "hatena",
+    "contentSnippet": "ついに・・・ あの重いProたんから解放です(´・ω・｀)ｗ これで持ち運びができるようになった(・∀・) たくさん外に出かけようと思うｗ",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/f0a076f5c39b51050cf215ce1eef8bd6b3bb6c95/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20121010%2F20121010132042.jpg",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "BUMP API for Android",
+    "link": "https://arata.hatenadiary.com/entry/2012/10/08/213704",
+    "pubDate": "2012-10-08T21:37:04+09:00",
+    "source": "hatena",
+    "contentSnippet": "BUMP APIってのがあったので、使ってみた。 (まぁ「みた」って言ってるけど今後も使う(´・ω・｀)ｗ) とりあえずすること、 BUMP APIの登録 BUMP APIのダウンロード Androidのプロジェクト作成(Eclipseでやった) Libの設定(APIの設定) コ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/b2e5413f023d459daa89751650a401b0237350a1/backend=imagemagick;height=500;quality=80;version=1;width=500/http%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fa%2Farata3da4%2F20121008%2F20121008210856.jpg",
+    "bookmarkCount": 4
+  },
+  {
+    "title": "2012/10/08",
+    "link": "https://arata.hatenadiary.com/entry/2012/10/08/025443",
+    "pubDate": "2012-10-08T02:54:43+09:00",
+    "source": "hatena",
+    "contentSnippet": "今日はG2Kのメンバーで会議をしてきた。 決まったことは、MA8に出すアプリの概要とその分担。 俺はAndroidになった。 とりあえず、明日は久しぶりにJAVAを書きたい。 最近コード書いてないし、がんばろうかな。 あ、あと高橋メソッドジェネレータなるものが…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "楽器は歌う-ピアノの演奏を聴く",
+    "link": "https://arata.hatenadiary.com/entry/2012/10/08/024225",
+    "pubDate": "2012-10-08T02:42:25+09:00",
+    "source": "hatena",
+    "contentSnippet": "その昔音楽の先生が言ってた気がする。 「伴奏の時はピアノが歌ってるから静かに聴くんだ。」 って これはたしかにそうだなって4歳の頃からピアノをやっていた(やらされていた)私はそう思うのです。 やらされていたとか書いたけど、ピアノの先生がゲーム好き…",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "サガ・フロンティア2-音楽-",
+    "link": "https://arata.hatenadiary.com/entry/2012/10/07/230047",
+    "pubDate": "2012-10-07T23:00:47+09:00",
+    "source": "hatena",
+    "contentSnippet": "良いBGM(Theme)を聞いてハマったゲーム サガ・フロンティア2 (まぁ半年たってクリアしてないけど) その戦闘BGMをピアノで弾いた奴があって、後半で感動して涙した。",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "初投稿",
+    "link": "https://arata.hatenadiary.com/entry/2012/10/06/110354",
+    "pubDate": "2012-10-06T11:03:54+09:00",
+    "source": "hatena",
+    "contentSnippet": "なんとなくきままに投稿して行こうと思う^q^",
+    "bookmarkCount": 0
+  }
+]
