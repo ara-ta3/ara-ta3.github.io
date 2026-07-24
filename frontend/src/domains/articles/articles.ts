@@ -6,14 +6,14 @@ export interface Article {
   pubDate: Date;
   contentSnippet?: string;
   creator?: string;
-  source: "hatena" | "zenn" | "carta";
+  source: "hatena" | "zenn" | "company";
   thumbnailUrl?: string;
   bookmarkCount?: number;
 }
 
 type StoredArticle = Omit<Article, "pubDate"> & { pubDate: string };
 
-// articles.data.json は scripts/fetch-articles.mjs が生成する正本データ。
+// articles.data.json は scripts/fetch-articles.ts が生成する正本データ。
 // ビルド時は外部 RSS / API へアクセスせず、この JSON を読み込む。
 const STORED_ARTICLES: Article[] = (articlesData as StoredArticle[])
   .map((article) => ({ ...article, pubDate: new Date(article.pubDate) }))

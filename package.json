@@ -10,5 +10,10 @@
   ],
   "dependencies": {
     "@marp-team/marp-cli": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.3",
+    "tsx": "4.23.1",
+    "typescript": "npm:@typescript/typescript6@6.0.2"
   }
 }

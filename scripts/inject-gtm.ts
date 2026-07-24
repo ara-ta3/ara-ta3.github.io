@@ -4,7 +4,7 @@ import { join } from "node:path";
 const [snippetPath, slidesDir] = process.argv.slice(2);
 
 if (!snippetPath || !slidesDir) {
-  console.error("Usage: node scripts/inject-gtm.mjs <snippet> <slides-dir>");
+  console.error("Usage: tsx scripts/inject-gtm.ts <snippet> <slides-dir>");
   process.exit(1);
 }
 

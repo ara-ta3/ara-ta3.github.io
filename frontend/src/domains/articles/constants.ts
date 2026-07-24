@@ -1,6 +1,6 @@
 import { ArticleSource } from "@/domains/articles/types";
 
-export const ARTICLE_SOURCES: ArticleSource[] = ["hatena", "zenn", "carta"];
+export const ARTICLE_SOURCES: ArticleSource[] = ["hatena", "zenn", "company"];
 
 type SourceMeta = {
   label: string;
@@ -19,8 +19,8 @@ export const SOURCE_META: Record<ArticleSource, SourceMeta> = {
     badgeClass: "bg-blue-100 text-blue-800",
     chartColor: "rgba(59, 130, 246, 0.7)",
   },
-  carta: {
-    label: "CARTA TECH BLOG",
+  company: {
+    label: "企業ブログ",
     badgeClass: "bg-emerald-100 text-emerald-800",
     chartColor: "rgba(16, 185, 129, 0.7)",
   },
