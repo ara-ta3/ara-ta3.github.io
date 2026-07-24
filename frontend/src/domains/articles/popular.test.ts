@@ -23,16 +23,17 @@ describe("buildPopularArticles", () => {
     expect(result.map((article) => article.link)).toEqual(["b", "c"]);
   });
 
-  it("最小ブックマーク数未満の記事を除外する", () => {
+  it("最小ブックマーク数(既定2)未満の記事を除外する", () => {
     const articles = [
       createArticle({ link: "a", bookmarkCount: 0 }),
-      createArticle({ link: "b", bookmarkCount: undefined }),
-      createArticle({ link: "c", bookmarkCount: 1 }),
+      createArticle({ link: "b", bookmarkCount: 1 }),
+      createArticle({ link: "c", bookmarkCount: undefined }),
+      createArticle({ link: "d", bookmarkCount: 2 }),
     ];
 
     const result = buildPopularArticles(articles);
 
-    expect(result.map((article) => article.link)).toEqual(["c"]);
+    expect(result.map((article) => article.link)).toEqual(["d"]);
   });
 
   it("同数の場合は新しい記事を優先する", () => {

@@ -9,7 +9,7 @@ export const buildPopularArticles = (
   articles: Article[],
   options: PopularArticlesOptions = {},
 ): Article[] => {
-  const { limit = 6, minBookmarks = 1 } = options;
+  const { limit = 6, minBookmarks = 2 } = options;
 
   return articles
     .filter((article) => (article.bookmarkCount ?? 0) >= minBookmarks)
