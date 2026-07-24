@@ -3,11 +3,13 @@ import { useData } from "vike-react/useData";
 import BreadcrumbWithSchema from "@/components/BreadcrumbWithSchema";
 import ArticleCard from "@/components/articles/ArticleCard";
 import MonthlyArticleChart from "@/components/articles/MonthlyArticleChart";
+import PopularArticles from "@/components/articles/PopularArticles";
 import YearlyArticleSummary from "@/components/articles/YearlyArticleSummary";
 import type { Data } from "@/pages/articles/+data";
 
 const ArticlesPage: React.FC = () => {
-  const { articles, yearlyStats, monthlyStats } = useData<Data>();
+  const { articles, popularArticles, yearlyStats, monthlyStats } =
+    useData<Data>();
 
   return (
     <>
@@ -15,9 +17,11 @@ const ArticlesPage: React.FC = () => {
       <div className="text-center mb-6">
         <h1 className="text-3xl font-bold text-primary-900">記事一覧</h1>
         <p className="text-primary-500 mt-2">
-          はてなブログとZennで投稿した記事をまとめて表示しています
+          はてなブログ・Zenn・CARTA TECH BLOG
+          で投稿した記事をまとめて表示しています
         </p>
       </div>
+      <PopularArticles articles={popularArticles} />
       <YearlyArticleSummary stats={yearlyStats} />
       <MonthlyArticleChart stats={monthlyStats} />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -9,6 +9,7 @@ import {
 } from "chart.js";
 import type { ChartOptions, TooltipItem } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import { ARTICLE_SOURCES, SOURCE_META } from "@/domains/articles/constants";
 import type { MonthlyStat } from "@/domains/articles/types";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
@@ -53,22 +54,13 @@ const MonthlyArticleChartClient: React.FC<Props> = ({ stats }) => {
   const labels = selectedStats.map((stat) => stat.label);
   const data = {
     labels,
-    datasets: [
-      {
-        label: "はてなブログ",
-        data: selectedStats.map((stat) => stat.totals.hatena),
-        backgroundColor: "rgba(249, 115, 22, 0.7)",
-        borderRadius: 6,
-        stack: "total",
-      },
-      {
-        label: "Zenn",
-        data: selectedStats.map((stat) => stat.totals.zenn),
-        backgroundColor: "rgba(59, 130, 246, 0.7)",
-        borderRadius: 6,
-        stack: "total",
-      },
-    ],
+    datasets: ARTICLE_SOURCES.map((source) => ({
+      label: SOURCE_META[source].label,
+      data: selectedStats.map((stat) => stat.totals[source]),
+      backgroundColor: SOURCE_META[source].chartColor,
+      borderRadius: 6,
+      stack: "total",
+    })),
   };
 
   const options: ChartOptions<"bar"> = {
