@@ -15,6 +15,7 @@ import type {
   SplatoonSeasonRecord,
 } from "@/domains/hobbies/splatoon";
 import {
+  formatSplatoonSeasonPeriod,
   splatoonRuleLabels,
   splatoonRules,
   summarizeSplatoonTargetAchievement,
@@ -83,7 +84,10 @@ const SplatoonXpChartClient: React.FC<Props> = ({ records }) => {
     borderDash: [6, 4],
   };
   const data = {
-    labels: records.map((record) => record.season),
+    labels: records.map((record) => {
+      const period = formatSplatoonSeasonPeriod(record.season);
+      return period == null ? [record.season] : [record.season, period];
+    }),
     datasets: hasTarget ? [...ruleDatasets, targetDataset] : ruleDatasets,
   };
   const achievementSummary =

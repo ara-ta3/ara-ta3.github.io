@@ -30,7 +30,40 @@ export type SplatoonHighlight = {
   value: number;
 };
 
+export type SplatoonBestRank = {
+  season: string;
+  rule: SplatoonRule;
+  rank: number;
+  xp: number;
+};
+
 export type SplatoonHighestXpByRule = Record<SplatoonRule, SplatoonHighlight>;
+
+const splatoonSeasonStartMonths = {
+  春: 3,
+  夏: 6,
+  秋: 9,
+  冬: 12,
+} as const;
+
+type SplatoonSeasonName = keyof typeof splatoonSeasonStartMonths;
+
+export const formatSplatoonSeasonPeriod = (season: string): string | null => {
+  const matched = /^(\d{4})([春夏秋冬])/.exec(season);
+
+  if (matched == null) {
+    return null;
+  }
+
+  const year = Number.parseInt(matched[1], 10);
+  const startMonth =
+    splatoonSeasonStartMonths[matched[2] as SplatoonSeasonName];
+  const isAcrossYears = startMonth === 12;
+  const endYear = isAcrossYears ? year + 1 : year;
+  const endMonth = isAcrossYears ? 2 : startMonth + 2;
+
+  return `${year}年${startMonth}月〜${endYear}年${endMonth}月`;
+};
 
 export type SplatoonYearlyHighestXp = {
   year: number;
@@ -126,21 +159,27 @@ export const summarizeSplatoonTargetAchievement = (
 
 export const getBestSplatoonRank = (
   records: readonly [SplatoonSeasonRecord, ...SplatoonSeasonRecord[]],
-): SplatoonHighlight => {
+): SplatoonBestRank => {
   const firstRecord = records[0];
   const firstRule = splatoonRules[0];
-  let bestRank: SplatoonHighlight = {
+  let bestRank: SplatoonBestRank = {
     season: firstRecord.season,
     rule: firstRule,
-    value: firstRecord.results[firstRule].rank,
+    rank: firstRecord.results[firstRule].rank,
+    xp: firstRecord.results[firstRule].xp,
   };
 
   records.forEach((record) => {
     splatoonRules.forEach((rule) => {
       const result = record.results[rule];
 
-      if (result.rank < bestRank.value) {
-        bestRank = { season: record.season, rule, value: result.rank };
+      if (result.rank < bestRank.rank) {
+        bestRank = {
+          season: record.season,
+          rule,
+          rank: result.rank,
+          xp: result.xp,
+        };
       }
     });
   });

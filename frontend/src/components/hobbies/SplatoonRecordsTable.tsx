@@ -1,6 +1,10 @@
 import React from "react";
 import type { SplatoonSeasonRecord } from "@/domains/hobbies/splatoon";
-import { splatoonRuleLabels, splatoonRules } from "@/domains/hobbies/splatoon";
+import {
+  formatSplatoonSeasonPeriod,
+  splatoonRuleLabels,
+  splatoonRules,
+} from "@/domains/hobbies/splatoon";
 
 type Props = {
   records: readonly SplatoonSeasonRecord[];
@@ -57,6 +61,9 @@ const SplatoonRecordsTable: React.FC<Props> = ({ records }) => {
               >
                 <th className="whitespace-nowrap border-r border-secondary-200 px-4 py-3 text-left font-medium text-secondary-900">
                   {record.season}
+                  <span className="block text-xs font-normal text-secondary-500">
+                    {formatSplatoonSeasonPeriod(record.season)}
+                  </span>
                 </th>
                 {splatoonRules.flatMap((rule) => [
                   <td
