@@ -34,6 +34,21 @@ describe("SplatoonHighlights", () => {
     expect(screen.getByText("2615.2")).toBeInTheDocument();
   });
 
+  it("歴代最高順位はそのときのXPとシーズンの年月を表示する", () => {
+    render(
+      <SplatoonHighlights
+        bestRank={getBestSplatoonRank(splatoonSeasonRecords)}
+        xpSummary={buildSplatoonXpSummary(splatoonSeasonRecords)}
+      />,
+    );
+
+    expect(screen.getByText("2,380位")).toBeInTheDocument();
+    expect(screen.getByText("XP 2615.2")).toBeInTheDocument();
+    expect(
+      screen.getAllByText("2023年3月〜2023年5月").length,
+    ).toBeGreaterThanOrEqual(1);
+  });
+
   it("2025年を選択すると選択状態とルール別最高XPを切り替える", () => {
     render(
       <SplatoonHighlights

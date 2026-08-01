@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import type {
-  SplatoonHighlight,
+  SplatoonBestRank,
   SplatoonXpSummary,
 } from "@/domains/hobbies/splatoon";
-import { splatoonRuleLabels, splatoonRules } from "@/domains/hobbies/splatoon";
+import {
+  formatSplatoonSeasonPeriod,
+  splatoonRuleLabels,
+  splatoonRules,
+} from "@/domains/hobbies/splatoon";
 
 type Props = {
   xpSummary: SplatoonXpSummary;
-  bestRank: SplatoonHighlight;
+  bestRank: SplatoonBestRank;
 };
 
 type SelectedPeriod = "all" | number;
@@ -72,6 +76,9 @@ const SplatoonHighlights: React.FC<Props> = ({ xpSummary, bestRank }) => {
               <p className="mt-2 text-sm text-secondary-600">
                 {selectedHighestXp[rule].season}
               </p>
+              <p className="text-xs text-secondary-500">
+                {formatSplatoonSeasonPeriod(selectedHighestXp[rule].season)}
+              </p>
             </div>
           ))}
         </div>
@@ -80,10 +87,16 @@ const SplatoonHighlights: React.FC<Props> = ({ xpSummary, bestRank }) => {
       <section className="rounded-xl border border-secondary-200 bg-secondary-50 p-5">
         <p className="text-sm font-semibold text-secondary-600">歴代最高順位</p>
         <p className="mt-2 text-3xl font-bold text-secondary-900">
-          {bestRank.value.toLocaleString("ja-JP")}位
+          {bestRank.rank.toLocaleString("ja-JP")}位
+        </p>
+        <p className="mt-1 text-lg font-semibold text-secondary-700">
+          XP {bestRank.xp.toFixed(1)}
         </p>
         <p className="mt-2 text-sm text-secondary-600">
           {bestRank.season}・{splatoonRuleLabels[bestRank.rule]}
+        </p>
+        <p className="text-xs text-secondary-500">
+          {formatSplatoonSeasonPeriod(bestRank.season)}
         </p>
       </section>
     </div>

@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import type { SplatoonSeasonRecord } from "@/domains/hobbies/splatoon";
 import {
   buildSplatoonXpSummary,
+  formatSplatoonSeasonPeriod,
   getBestSplatoonRank,
   summarizeSplatoonTargetAchievement,
 } from "@/domains/hobbies/splatoon";
@@ -67,14 +68,39 @@ describe("buildSplatoonXpSummary", () => {
 });
 
 describe("getBestSplatoonRank", () => {
-  it("全シーズン・全ルールから最高順位を返す", () => {
+  it("全シーズン・全ルールから最高順位とそのときのXPを返す", () => {
     const bestRank = getBestSplatoonRank(splatoonSeasonRecords);
 
     expect(bestRank).toEqual({
       season: "2023春 Fresh Season",
       rule: "clamBlitz",
-      value: 2380,
+      rank: 2380,
+      xp: 2615.2,
     });
+  });
+});
+
+describe("formatSplatoonSeasonPeriod", () => {
+  it("春・夏・秋のシーズンは同じ年の3か月を返す", () => {
+    expect(formatSplatoonSeasonPeriod("2023春 Fresh Season")).toBe(
+      "2023年3月〜2023年5月",
+    );
+    expect(formatSplatoonSeasonPeriod("2023夏 Sizzle Season")).toBe(
+      "2023年6月〜2023年8月",
+    );
+    expect(formatSplatoonSeasonPeriod("2023秋 Dizzle Season")).toBe(
+      "2023年9月〜2023年11月",
+    );
+  });
+
+  it("冬のシーズンは翌年2月までを返す", () => {
+    expect(formatSplatoonSeasonPeriod("2022冬 Chill Season")).toBe(
+      "2022年12月〜2023年2月",
+    );
+  });
+
+  it("形式が一致しない場合は null を返す", () => {
+    expect(formatSplatoonSeasonPeriod("Unknown Season")).toBeNull();
   });
 });
 
