@@ -53,6 +53,29 @@ describe("SplatoonXpChartClient", () => {
     );
   });
 
+  it("目標XPを入力すると目標線と達成シーズン数を表示する", () => {
+    fireEvent.change(screen.getByLabelText("目標のルール"), {
+      target: { value: "tower" },
+    });
+    fireEvent.change(screen.getByLabelText("目標のXP"), {
+      target: { value: "2400" },
+    });
+
+    expect(screen.getByTestId("chart-values")).toHaveTextContent(
+      "2379.6|2432.8|2565.3|2447.6|2400",
+    );
+    expect(
+      screen.getByText("ヤグラで目標XPに到達したシーズン: 1 / 1"),
+    ).toBeInTheDocument();
+    expect(screen.getByText("2022冬 Chill Season")).toBeInTheDocument();
+  });
+
+  it("順位を表示している間は目標XPの入力欄を表示しない", () => {
+    fireEvent.click(screen.getByRole("button", { name: "順位" }));
+
+    expect(screen.queryByLabelText("目標のXP")).not.toBeInTheDocument();
+  });
+
   it("順位を選択すると選択状態と4ルールの表示値を切り替える", () => {
     fireEvent.click(screen.getByRole("button", { name: "順位" }));
 

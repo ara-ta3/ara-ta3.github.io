@@ -108,6 +108,22 @@ export const buildSplatoonXpSummary = (
   };
 };
 
+export type SplatoonTargetAchievement = {
+  achievedSeasons: readonly string[];
+  totalSeasons: number;
+};
+
+export const summarizeSplatoonTargetAchievement = (
+  records: readonly SplatoonSeasonRecord[],
+  rule: SplatoonRule,
+  targetXp: number,
+): SplatoonTargetAchievement => ({
+  achievedSeasons: records
+    .filter((record) => record.results[rule].xp >= targetXp)
+    .map((record) => record.season),
+  totalSeasons: records.length,
+});
+
 export const getBestSplatoonRank = (
   records: readonly [SplatoonSeasonRecord, ...SplatoonSeasonRecord[]],
 ): SplatoonHighlight => {
