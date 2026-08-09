@@ -26,7 +26,6 @@ build: build/frontend
 	$(MAKE) $(DIST_DIR)/client/sitemap.xml
 	$(MAKE) $(DIST_DIR)/client/robots.txt
 	touch $(DIST_DIR)/client/.nojekyll
-	cp -r $(WEB_DIR)/resources/cat $(DIST_DIR)/client/cat
 	$(MAKE) marp
 	$(MAKE) marp/image
 

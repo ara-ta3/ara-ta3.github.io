@@ -25,7 +25,7 @@ graph TD
 frontend/
 ├─ package.json
 ├─ vite.config.ts
-├─ resources/ (sitemap・robots・cat assets)
+├─ resources/ (sitemap・robots)
 ├─ src/
 │  ├─ pages/ (Vike ルーティング)
 │  │  ├─ +Layout.tsx
@@ -33,11 +33,9 @@ frontend/
 │  │  ├─ +config.ts
 │  │  ├─ index/
 │  │  ├─ articles/
-│  │  ├─ projects/
+│  │  └─ projects/
 │  │  │  ├─ +Page.tsx
 │  │  │  └─ @id/ (+Page.tsx, +onBeforePrerenderStart.ts など)
-│  │  ├─ schedules/
-│  │  └─ electricity/
 │  ├─ components/ (project/headertags/articles など UI)
 │  ├─ data/
 │  ├─ assets/
