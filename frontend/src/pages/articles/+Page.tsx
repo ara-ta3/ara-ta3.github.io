@@ -20,9 +20,9 @@ const ArticlesPage: React.FC = () => {
           はてなブログ・Zenn・企業ブログ で投稿した記事をまとめて表示しています
         </p>
       </div>
-      <PopularArticles articles={popularArticles} />
       <YearlyArticleSummary stats={yearlyStats} />
       <MonthlyArticleChart stats={monthlyStats} />
+      <PopularArticles articles={popularArticles} />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {articles.map((article) => (
           <ArticleCard key={article.link} article={article} />
