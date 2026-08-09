@@ -27,14 +27,6 @@ export const breadcrumbConfig: Record<string, BreadcrumbConfig> = {
     name: "Splatoon",
     parent: "/hobbies/",
   },
-  "/electricity/": {
-    name: "電気代比較ツール",
-    parent: "/",
-  },
-  "/schedules/": {
-    name: "スケジュール管理",
-    parent: "/",
-  },
 };
 
 export const getDynamicBreadcrumbConfig = (
