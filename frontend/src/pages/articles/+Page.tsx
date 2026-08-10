@@ -23,16 +23,24 @@ const ArticlesPage: React.FC = () => {
       <YearlyArticleSummary stats={yearlyStats} />
       <MonthlyArticleChart stats={monthlyStats} />
       <PopularArticles articles={popularArticles} />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {articles.map((article) => (
-          <ArticleCard key={article.link} article={article} />
-        ))}
-      </div>
-      {articles.length === 0 && (
-        <div className="text-center py-8">
-          <p className="text-primary-500">記事が見つかりませんでした。</p>
+      <section className="mb-10">
+        <h2 className="text-2xl font-semibold text-primary-900 mb-1">
+          すべての記事
+        </h2>
+        <p className="text-primary-500 text-sm mb-4">
+          新しい順に{articles.length}本
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {articles.map((article) => (
+            <ArticleCard key={article.link} article={article} />
+          ))}
         </div>
-      )}
+        {articles.length === 0 && (
+          <div className="text-center py-8">
+            <p className="text-primary-500">記事が見つかりませんでした。</p>
+          </div>
+        )}
+      </section>
     </>
   );
 };

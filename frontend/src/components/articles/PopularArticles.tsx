@@ -12,7 +12,7 @@ const PopularArticles: React.FC<Props> = ({ articles }) => {
   }
 
   return (
-    <section className="mb-10">
+    <section className="mb-10 rounded-lg border border-secondary-100 bg-secondary-50 p-5">
       <h2 className="text-2xl font-semibold text-primary-900 mb-1">
         よく読まれた記事
       </h2>
