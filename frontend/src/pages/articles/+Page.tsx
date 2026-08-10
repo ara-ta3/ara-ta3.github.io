@@ -24,12 +24,12 @@ const ArticlesPage: React.FC = () => {
       <MonthlyArticleChart stats={monthlyStats} />
       <PopularArticles articles={popularArticles} />
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-primary-900 mb-1">
+        <h2 className="text-2xl font-semibold text-primary-900 mb-4 flex items-center gap-3">
           すべての記事
+          <span className="text-primary-500 text-sm font-medium">
+            {articles.length}本
+          </span>
         </h2>
-        <p className="text-primary-500 text-sm mb-4">
-          新しい順に{articles.length}本
-        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {articles.map((article) => (
             <ArticleCard key={article.link} article={article} />
