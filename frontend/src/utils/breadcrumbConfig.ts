@@ -48,6 +48,7 @@ export const getDynamicBreadcrumbConfig = (
       const projects = [
         { id: "appricity", title: "Appricity" },
         { id: "nekometry", title: "Nekometry" },
+        { id: "kurashilab", title: "Kurashi Lab" },
         {
           id: "personal-website",
           title: "個人ウェブサイト(ara-ta3.github.io)",

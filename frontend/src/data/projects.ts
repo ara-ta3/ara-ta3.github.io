@@ -1,6 +1,7 @@
 import type { Project } from "@/types/project";
 import Appricity from "@/assets/images/appricity.png";
 import Nekometry from "@/assets/images/nekometry.jpg";
+import KurashiLab from "@/assets/images/kurashilab.png";
 
 export const projects: Project[] = [
   {
@@ -47,6 +48,29 @@ export const projects: Project[] = [
     ],
     imageUrl: Nekometry as string,
     demoUrl: "https://nekometry.web.app/",
+  },
+  {
+    id: "kurashilab",
+    title: "Kurashi Lab",
+    description: "暮らしに関する数字をシミュレーションできるWebサービス",
+    overview:
+      "Kurashi Lab（暮らしラボ）は、生活に関係するデータを集め、自分の条件を入力することで『自分の場合はどうなるのか』を試せるWebサービスです。将来のお金を見える化するライフプランと、電気料金プランの比較をシミュレーションできます。",
+    technologies: [
+      "Scala.js",
+      "scalajs-react",
+      "Vite",
+      "Tailwind CSS",
+      "Cloudflare Pages",
+      "Terraform",
+    ],
+    details: [
+      { label: "Project Type", value: "暮らしのシミュレーションツール" },
+      { label: "Hosting", value: "Cloudflare Pages" },
+      { label: "CI/CD", value: "GitHub Actions" },
+      { label: "対象ユーザ", value: "暮らしのお金を試算したい人" },
+    ],
+    imageUrl: KurashiLab as string,
+    demoUrl: "https://kurashilab.pages.dev/",
   },
   {
     id: "personal-website",
