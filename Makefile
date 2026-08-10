@@ -2,6 +2,7 @@ WEB_DIR=frontend
 DIST_DIR=$(WEB_DIR)/dist
 
 PNPM=pnpm
+TSC=tsc6
 MARP=$(PNPM) exec marp
 MARP_THEME_SET=--theme-set ./slides/themes/ara-ta3.css
 
@@ -42,7 +43,7 @@ compile/frontend:
 	$(PNPM) -C $(WEB_DIR) exec tsc
 
 compile/scripts:
-	$(PNPM) exec tsc -p scripts/tsconfig.json
+	$(PNPM) exec $(TSC) -p scripts/tsconfig.json
 
 test:
 	$(PNPM) -C $(WEB_DIR) exec vitest --run
