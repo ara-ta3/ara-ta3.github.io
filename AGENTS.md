@@ -6,7 +6,6 @@
 
 - `ara-ta3.github.io` で公開する、ポートフォリオ・ブログ・登壇資料を含む個人サイト。
 - フロントエンドは Vike + React + TypeScript による SSG。Tailwind CSS と Flowbite React を使用する。
-- バックエンドは Scala + ZIO + zio-http。
 - GitHub Actions でテスト・ビルドを行い、GitHub Pages へデプロイする。
 
 ## プロジェクト構成
@@ -14,7 +13,6 @@
 - ルートは pnpm workspace。
 - `frontend/`: フロントエンド。実装は `frontend/src/`、静的リソースは `frontend/resources/`、E2E テストは `frontend/tests/e2e/` に置く。
 - `frontend/dist/`: ビルド成果物。手動編集しない。
-- `backend/`: Scala バックエンド。エントリポイントは `backend/src/main/scala/io/github/ara_ta3/Main.scala`、設定は `backend/build.sbt`。
 - `slides/`: Marp の登壇資料、テーマ、アセット。
 - `scripts/`: ビルド補助スクリプト。
 
@@ -24,7 +22,7 @@
 - 開発・検証・ビルドの実行入口はルートの `Makefile` を正本とする。AI、ローカル開発、CI のいずれも、対応する Make target がある処理では内部の CLI を直接呼ばない。
 - 実行手順や利用ツールを変える場合は、先に Make target の実装を更新し、呼び出し側のコマンドを維持する。必要な target がない場合は、個別の場所にコマンドを複製せず Makefile に追加する。
 - Make target に `.PHONY` は原則として付けない。同名のファイルやディレクトリと衝突する場合だけ使用する。
-- 依存関係と実行環境のバージョンは `package.json`、`pnpm-workspace.yaml`、`backend/build.sbt` など各設定ファイルを正本とする。
+- 依存関係と実行環境のバージョンは `package.json`、`pnpm-workspace.yaml` など各設定ファイルを正本とする。
 - CI の起動条件、権限、デプロイ先は `.github/workflows/` を正本とする。AGENTS.md には変化しやすい実装詳細を重複させない。
 
 ## 開発コマンド
@@ -35,7 +33,6 @@
 make install
 make server
 make compile
-make compile/backend
 make lint
 make lint/fix
 make test
@@ -75,4 +72,4 @@ make server/build
 
 - コミットは既存履歴に合わせ、短い命令形の英語で要点を表す。
 - PR には目的、主要な変更、実行した確認を記載する。UI 変更では必要に応じて差分画像を添える。
-- 変更範囲に応じて `make lint`、`make test`、`make build`、`make test/e2e`、`make compile/backend` を実行する。
+- 変更範囲に応じて `make lint`、`make test`、`make build`、`make test/e2e` を実行する。
