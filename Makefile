@@ -1,9 +1,7 @@
 WEB_DIR=frontend
-BACKEND_DIR=backend
 DIST_DIR=$(WEB_DIR)/dist
 
 PNPM=pnpm
-SBT=sbt
 MARP=$(PNPM) exec marp
 MARP_THEME_SET=--theme-set ./slides/themes/ara-ta3.css
 
@@ -45,9 +43,6 @@ compile/frontend:
 
 compile/scripts:
 	$(PNPM) exec tsc -p scripts/tsconfig.json
-
-compile/backend:
-	cd $(BACKEND_DIR) && $(SBT) -Dsbt.supershell=false compile
 
 test:
 	$(PNPM) -C $(WEB_DIR) exec vitest --run
