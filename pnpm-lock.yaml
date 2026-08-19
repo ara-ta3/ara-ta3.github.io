@@ -20,6 +20,7 @@ overrides:
   esbuild@>=0.27.3 <0.28.1: '>=0.28.1'
   nanoid@<3.3.17: '>=3.3.17 <7'
   puppeteer-core@<25.0.0: '>=25.7.0 <26'
+  deepmerge-ts@<8.0.0: '>=8.0.0 <9'
 
 importers:
 
@@ -1810,8 +1811,8 @@ packages:
   deep-is@0.1.4:
     resolution: {integrity: sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==}
 
-  deepmerge-ts@7.1.5:
-    resolution: {integrity: sha512-HOJkrhaYsweh+W+e74Yn7YStZOilkoPb6fycpwNLKzSPtruFs48nYis0zy5yJz1+ktUhHxoRDJ27RQAWLIJVJw==}
+  deepmerge-ts@8.0.1:
+    resolution: {integrity: sha512-szCXE7YLCvLKR9bFPJcvsezOShdalctSvrgN/LM/QGUEPZQajwjmsMObZ6/DuANT5lxzM/wtO8Feubwdkz8myA==}
     engines: {node: '>=16.0.0'}
 
   define-data-property@1.1.4:
@@ -5103,7 +5104,7 @@ snapshots:
 
   deep-is@0.1.4: {}
 
-  deepmerge-ts@7.1.5: {}
+  deepmerge-ts@8.0.1: {}
 
   define-data-property@1.1.4:
     dependencies:
@@ -5536,7 +5537,7 @@ snapshots:
       chokidar: 4.0.3
       comment-json: 4.5.1
       debounce: 3.0.0
-      deepmerge-ts: 7.1.5
+      deepmerge-ts: 8.0.1
       klona: 2.0.6
       magic-string: 0.30.21
       oxc-parser: 0.112.0(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)
