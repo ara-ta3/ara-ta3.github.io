@@ -5,6 +5,8 @@ paginate: true
 size: 16:9
 title: ara-ta3 Marpスライドテーマ見本 | レイアウト・配色・コンポーネント
 description: ara-ta3のMarpテーマで利用できるタイトル、本文、引用、コード、表、まとめページのレイアウトと配色を確認できる見本スライドです
+listTitle: ara-ta3 スライドテーマ見本
+listDescription: ara-ta3 の Marp テーマで使える基本レイアウトをまとめた見本スライド
 ---
 
 <style>
