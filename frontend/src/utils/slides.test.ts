@@ -33,6 +33,23 @@ describe("parseSlideSource", () => {
     expect(slide.title).toBe("quoted title");
     expect(slide.description).toBe("single quoted");
   });
+
+  test("uses list metadata without changing the slide HTML metadata", () => {
+    const source = `---\ntitle: SEO title\ndescription: SEO description\nlistTitle: 一覧タイトル\nlistDescription: 一覧の説明\n---`;
+
+    const slide = parseSlideSource("slug", source);
+
+    expect(slide).toEqual({
+      slug: "slug",
+      title: "一覧タイトル",
+      description: "一覧の説明",
+      image: undefined,
+      date: undefined,
+      url: "/slides/slug.html",
+      eventName: undefined,
+      eventUrl: undefined,
+    });
+  });
 });
 
 describe("compareSlides", () => {

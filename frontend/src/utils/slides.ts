@@ -53,8 +53,8 @@ export const parseSlideSource = (slug: string, source: string): Slide => {
   const fm = parseFrontmatter(source);
   return {
     slug,
-    title: fm.title || slug,
-    description: fm.description || undefined,
+    title: fm.listTitle || fm.title || slug,
+    description: fm.listDescription || fm.description || undefined,
     image: fm.image || undefined,
     date: extractDateFromFilename(slug),
     url: `/slides/${slug}.html`,
