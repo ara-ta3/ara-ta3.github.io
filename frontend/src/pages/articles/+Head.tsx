@@ -1,18 +1,16 @@
 import React from "react";
 
 export function Head() {
+  const title = "技術記事一覧 | ara-ta3の個人サイト";
+  const description =
+    "ara-ta3がはてなブログ、Zenn、企業ブログなどで公開した技術記事の一覧です。Scala、TypeScript、開発組織やコードレビューに関する記事をまとめています。";
+
   return (
     <>
-      <title>記事一覧 | ara-ta3のページ</title>
-      <meta
-        name="description"
-        content="ara-ta3の技術ブログ記事一覧。はてなブログ・Zenn・企業ブログで投稿した記事をまとめて表示しています。"
-      />
-      <meta property="og:title" content="記事一覧 | ara-ta3のページ" />
-      <meta
-        property="og:description"
-        content="ara-ta3の技術ブログ記事一覧。はてなブログ・Zenn・企業ブログで投稿した記事をまとめて表示しています。"
-      />
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
     </>
   );

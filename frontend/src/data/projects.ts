@@ -76,6 +76,8 @@ export const projects: Project[] = [
     id: "personal-website",
     title: "個人ウェブサイト(ara-ta3.github.io)",
     description: "Vite+Vikeを使用したSSGによる個人ポートフォリオサイト",
+    metaDescription:
+      "ara-ta3の個人ポートフォリオサイトです。Vite、Vike、React、TypeScriptによるSSG構成で、技術記事、登壇資料、個人開発、趣味の記録を公開しています。",
     overview:
       "このサイトは個人のポートフォリオを紹介する気持ちを持ちながら、フロントエンドの技術をお試しするページです。",
     technologies: [

@@ -9,19 +9,17 @@ const Head: React.FC = () => {
     return null;
   }
 
+  const title = "個人開発一覧 | ara-ta3の個人サイト";
+  const description =
+    "ara-ta3が開発したWebアプリケーションやツールの一覧です。使用技術、開発の背景、主な機能、公開先をプロジェクトごとに紹介しています。";
+
   return (
     <>
       <Common />
-      <title>個人開発一覧 | ara-ta3.github.io</title>
-      <meta
-        name="description"
-        content="開発した個人開発の一覧。Webアプリケーション、ツール、ライブラリなど様々な技術を活用した開発事例をご紹介。"
-      />
-      <meta property="og:title" content="個人開発一覧 | ara-ta3.github.io" />
-      <meta
-        property="og:description"
-        content="開発した個人開発の一覧。Webアプリケーション、ツール、ライブラリなど様々な技術を活用した開発事例をご紹介。"
-      />
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://ara-ta3.github.io/projects" />
     </>
