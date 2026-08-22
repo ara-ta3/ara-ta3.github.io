@@ -1,4 +1,6 @@
 import React from "react";
+import { JsonLd } from "react-schemaorg";
+import type { BreadcrumbList, WithContext } from "schema-dts";
 import { BreadcrumbItem } from "@/hooks/useBreadcrumbs";
 
 interface BreadcrumbSchemaProps {
@@ -10,7 +12,7 @@ const BreadcrumbSchema: React.FC<BreadcrumbSchemaProps> = ({ items }) => {
 
   const baseUrl = "https://ara-ta3.github.io";
 
-  const breadcrumbSchema = {
+  const breadcrumbSchema: WithContext<BreadcrumbList> = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: items.map((item, index) => ({
@@ -21,14 +23,7 @@ const BreadcrumbSchema: React.FC<BreadcrumbSchemaProps> = ({ items }) => {
     })),
   };
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify(breadcrumbSchema),
-      }}
-    />
-  );
+  return <JsonLd<BreadcrumbList> item={breadcrumbSchema} />;
 };
 
 export default BreadcrumbSchema;

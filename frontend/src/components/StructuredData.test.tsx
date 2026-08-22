@@ -37,4 +37,33 @@ describe("StructuredData", () => {
       },
     });
   });
+
+  test("type未指定時はWebPageを1つのJSON-LDへ出力する", () => {
+    const { container } = render(
+      <StructuredData
+        data={{
+          title: "記事",
+          description: "記事の説明",
+          url: "https://ara-ta3.github.io/articles/example",
+        }}
+      />,
+    );
+
+    const scripts = container.querySelectorAll(
+      'script[type="application/ld+json"]',
+    );
+    expect(scripts).toHaveLength(1);
+    expect(JSON.parse(scripts[0].textContent ?? "")).toEqual({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "記事",
+      description: "記事の説明",
+      url: "https://ara-ta3.github.io/articles/example",
+      isPartOf: {
+        "@type": "WebSite",
+        name: "ara-ta3の個人サイト",
+        url: "https://ara-ta3.github.io",
+      },
+    });
+  });
 });
