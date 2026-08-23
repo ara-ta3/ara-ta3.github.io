@@ -3,6 +3,11 @@ export interface ProjectDetail {
   value: string;
 }
 
+export interface ProjectSocialLink {
+  label: "Instagram" | "X";
+  url: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -13,4 +18,5 @@ export interface Project {
   details: ProjectDetail[];
   imageUrl?: string;
   demoUrl?: string;
+  socialLinks?: ProjectSocialLink[];
 }

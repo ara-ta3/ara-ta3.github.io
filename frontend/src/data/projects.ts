@@ -48,6 +48,9 @@ export const projects: Project[] = [
     ],
     imageUrl: Nekometry as string,
     demoUrl: "https://nekometry.web.app/",
+    socialLinks: [
+      { label: "Instagram", url: "https://www.instagram.com/nekometry/" },
+    ],
   },
   {
     id: "kurashilab",
@@ -71,6 +74,7 @@ export const projects: Project[] = [
     ],
     imageUrl: KurashiLab as string,
     demoUrl: "https://kurashilab.pages.dev/",
+    socialLinks: [{ label: "X", url: "https://x.com/KurashiLabWeb" }],
   },
   {
     id: "personal-website",
