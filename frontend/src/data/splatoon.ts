@@ -130,4 +130,13 @@ export const splatoonSeasonRecords: readonly [
       clamBlitz: { xp: 2249.9, rank: 23950 },
     },
   },
+  {
+    season: "2026夏 Sizzle Season",
+    results: {
+      area: { xp: 2329.9, rank: 21164 },
+      tower: { xp: 2309.4, rank: 88175 },
+      rainmaker: { xp: 2601.3, rank: 16634 },
+      clamBlitz: { xp: 2372.2, rank: 36304 },
+    },
+  },
 ];

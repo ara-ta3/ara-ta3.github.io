@@ -30,7 +30,7 @@ describe("SplatoonHighlights", () => {
     ).toEqual(["通算", "2022", "2023", "2024", "2025", "2026"]);
     expect(screen.getByText("2566.0")).toBeInTheDocument();
     expect(screen.getByText("2630.1")).toBeInTheDocument();
-    expect(screen.getByText("2565.3")).toBeInTheDocument();
+    expect(screen.getByText("2601.3")).toBeInTheDocument();
     expect(screen.getByText("2615.2")).toBeInTheDocument();
   });
 

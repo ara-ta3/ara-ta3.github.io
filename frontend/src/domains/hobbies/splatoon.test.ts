@@ -24,9 +24,9 @@ describe("buildSplatoonXpSummary", () => {
         value: 2630.1,
       },
       rainmaker: {
-        season: "2022冬 Chill Season",
+        season: "2026夏 Sizzle Season",
         rule: "rainmaker",
-        value: 2565.3,
+        value: 2601.3,
       },
       clamBlitz: {
         season: "2023春 Fresh Season",
