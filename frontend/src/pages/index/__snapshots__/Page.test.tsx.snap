@@ -360,7 +360,7 @@ exports[`Home Snapshot Test > render Home 1`] = `
                     </a>
                     <a
                       class="text-primary-700 hover:text-primary-900 text-sm font-medium"
-                      href="https://nekometry.web.app/"
+                      href="https://nekometry.com/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
@@ -444,7 +444,7 @@ exports[`Home Snapshot Test > render Home 1`] = `
                     </a>
                     <a
                       class="text-primary-700 hover:text-primary-900 text-sm font-medium"
-                      href="https://kurashilab.pages.dev/"
+                      href="https://kurashilab.app/"
                       rel="noopener noreferrer"
                       target="_blank"
                     >

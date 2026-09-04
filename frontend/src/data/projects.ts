@@ -47,7 +47,7 @@ export const projects: Project[] = [
       { label: "対象ユーザ", value: "猫の飼い主" },
     ],
     imageUrl: Nekometry as string,
-    demoUrl: "https://nekometry.web.app/",
+    demoUrl: "https://nekometry.com/",
     socialLinks: [
       { label: "Instagram", url: "https://www.instagram.com/nekometry/" },
     ],
@@ -73,7 +73,7 @@ export const projects: Project[] = [
       { label: "対象ユーザ", value: "暮らしのお金を試算したい人" },
     ],
     imageUrl: KurashiLab as string,
-    demoUrl: "https://kurashilab.pages.dev/",
+    demoUrl: "https://kurashilab.app/",
     socialLinks: [{ label: "X", url: "https://x.com/KurashiLabWeb" }],
   },
   {
