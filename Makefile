@@ -48,6 +48,9 @@ compile/scripts:
 test:
 	$(PNPM) -C $(WEB_DIR) exec vitest --run
 
+test/update:
+	$(PNPM) -C $(WEB_DIR) exec vitest --run --update
+
 test/watch:
 	$(PNPM) -C $(WEB_DIR) exec vitest --watch
 
