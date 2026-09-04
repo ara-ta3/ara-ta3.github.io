@@ -74,7 +74,7 @@ export const projects: Project[] = [
     ],
     imageUrl: KurashiLab as string,
     demoUrl: "https://kurashilab.app/",
-    socialLinks: [{ label: "X", url: "https://x.com/KurashiLabWeb" }],
+    socialLinks: [{ label: "X", url: "https://x.com/KurashiLabApp" }],
   },
   {
     id: "personal-website",
