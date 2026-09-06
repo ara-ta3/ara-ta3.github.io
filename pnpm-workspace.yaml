@@ -19,5 +19,6 @@ overrides:
   'puppeteer-core@<25.0.0': '>=25.7.0 <26'
   'deepmerge-ts@<8.0.0': '>=8.0.0 <9'
 
-ignoredBuiltDependencies:
-  - esbuild
+allowBuilds:
+  esbuild: false
+  unrs-resolver: false

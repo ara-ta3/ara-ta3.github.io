@@ -1,6 +1,6 @@
 # Playwright の baseline snapshot を CI (ubuntu-latest) と同じ Linux 環境で再生成するための image。
 # mac などローカル環境から `make test/e2e/update/docker` 経由で使う想定。
-FROM mcr.microsoft.com/playwright:v1.58.2-jammy
+FROM mcr.microsoft.com/playwright:v1.62.1-jammy
 
 # - make: Makefile から build を走らせるため
 # - fonts-noto-cjk: 日本語 (スライド本文) を描画するため

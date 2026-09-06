@@ -80,7 +80,14 @@ lint/eslint:
 lint/prettier:
 	$(PNPM) -C $(WEB_DIR) exec prettier --check 'src/**/*.{ts,tsx,json,css}' 'tests/**/*.{ts,json}'
 
-lint: lint/eslint lint/prettier
+# E2E image の Playwright は frontend/package.json の @playwright/test を単一の情報源とする。
+lint/e2e/image:
+	@expected="$$(node -p "require('./$(WEB_DIR)/package.json').devDependencies['@playwright/test']")"; \
+		actual="$$(sed -n 's|^FROM mcr.microsoft.com/playwright:v\([^-]*\)-.*|\1|p' $(WEB_DIR)/tests/Dockerfile)"; \
+		test "$$expected" = "$$actual" \
+		|| { echo "$(WEB_DIR)/tests/Dockerfile の playwright image ($$actual) が @playwright/test ($$expected) と一致していません" >&2; exit 1; }
+
+lint: lint/eslint lint/prettier lint/e2e/image
 
 lint/eslint/fix:
 	$(PNPM) -C $(WEB_DIR) exec eslint . --fix
