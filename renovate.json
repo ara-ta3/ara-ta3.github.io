@@ -26,7 +26,13 @@
     {
       "matchPackageNames": ["*"],
       "matchManagers": ["npm"],
-      "groupName": "npm packages"
+      "groupName": "npm packages",
+      "minimumReleaseAge": "1 day"
+    },
+    {
+      "description": "Playwright は frontend/package.json の @playwright/test を単一の情報源とし、E2E image の tag も同時に更新する",
+      "matchPackageNames": ["@playwright/test", "mcr.microsoft.com/playwright"],
+      "groupName": "playwright"
     },
     {
       "matchPackageNames": ["@vitest/ui", "vitest"],
@@ -58,11 +64,19 @@
     },
     {
       "matchPackageNames": ["pnpm"],
-      "allowedVersions": "<11",
-      "matchManagers": ["npm"]
+      "matchManagers": ["npm"],
+      "groupName": "pnpm"
     },
     {
-      "matchPackageNames": ["node"],
+      "description": "pnpm の major 更新は設定移行 (pnpm-workspace.yaml など) を伴うため手動でマージする",
+      "matchPackageNames": ["pnpm"],
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    },
+    {
+      "description": "Node のバージョンは package.json の engines.node を単一の情報源とし、CI はそこから読む",
+      "matchDepNames": ["node"],
       "matchManagers": ["npm"],
       "versioning": "node",
       "groupName": "node version"
