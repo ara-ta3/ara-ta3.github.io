@@ -129,7 +129,7 @@ importers:
     dependencies:
       '@marp-team/marp-cli':
         specifier: ^4.3.1
-        version: 4.5.0(@typescript/typescript6@6.0.2)(supports-color@7.2.0)
+        version: 4.5.1(@typescript/typescript6@6.0.2)(supports-color@7.2.0)
     devDependencies:
       '@types/node':
         specifier: 24.13.3
@@ -701,8 +701,8 @@ packages:
   '@kurkle/color@0.3.4':
     resolution: {integrity: sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==}
 
-  '@marp-team/marp-cli@4.5.0':
-    resolution: {integrity: sha512-ZOd9eVwxqx1yL6S6OpEkYKnOTeeWbVCSJaOx8e5lUCcA8jGf7NJU2XkDMkvDTk0wvxwhIdda8zriunhau+Gmrg==}
+  '@marp-team/marp-cli@4.5.1':
+    resolution: {integrity: sha512-KwjfXZpABRjSivsHOD0pIsOmODxgQFwc3AHjlnFUKCsSZX5U4erHmm4GWd1K7l2NATLvtrGw29At89Tar/cS4g==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -4251,7 +4251,7 @@ snapshots:
 
   '@kurkle/color@0.3.4': {}
 
-  '@marp-team/marp-cli@4.5.0(@typescript/typescript6@6.0.2)(supports-color@7.2.0)':
+  '@marp-team/marp-cli@4.5.1(@typescript/typescript6@6.0.2)(supports-color@7.2.0)':
     dependencies:
       '@marp-team/marp-core': 4.4.0
       '@marp-team/marpit': 3.2.3
