@@ -1,5 +1,13 @@
 [
   {
+    "title": "Obscure Test を Working Memory から考える",
+    "link": "https://zenn.dev/ara_ta3/articles/thinking-about-obscure-test-with-working-memory",
+    "pubDate": "2026-09-21T10:58:31.344Z",
+    "source": "zenn",
+    "thumbnailUrl": "https://res.cloudinary.com/zenn/image/upload/s--zixmT-sy--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:Obscure%2520Test%2520%25E3%2582%2592%2520Working%2520Memory%2520%25E3%2581%258B%25E3%2582%2589%25E8%2580%2583%25E3%2581%2588%25E3%2582%258B%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:ara_ta3%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdGF0aWMuemVubi5zdHVkaW8vdXNlci11cGxvYWQvYXZhdGFyLzIwMmNmMDMwYzUuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png?_a=BACMTiAE",
+    "bookmarkCount": 0
+  },
+  {
     "title": "無料で個人開発するためにOracle CloudのGitHub Actionsランナーを監視する",
     "link": "https://zenn.dev/ara_ta3/articles/monitor-oracle-cloud-github-actions-runners",
     "pubDate": "2026-09-20T14:39:50.106Z",
