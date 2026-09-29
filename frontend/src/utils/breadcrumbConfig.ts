@@ -46,9 +46,9 @@ export const getDynamicBreadcrumbConfig = (
     // 個人開発名を動的に取得
     const getProjectName = (id: string): string => {
       const projects = [
-        { id: "appricity", title: "Appricity" },
         { id: "nekometry", title: "Nekometry" },
         { id: "kurashilab", title: "Kurashi Lab" },
+        { id: "appricity", title: "Appricity" },
         {
           id: "personal-website",
           title: "個人ウェブサイト(ara-ta3.github.io)",

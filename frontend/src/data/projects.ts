@@ -1,28 +1,9 @@
 import type { Project } from "@/types/project";
-import Appricity from "@/assets/images/appricity.png";
 import Nekometry from "@/assets/images/nekometry.jpg";
 import KurashiLab from "@/assets/images/kurashilab.png";
+import Appricity from "@/assets/images/appricity.png";
 
 export const projects: Project[] = [
-  {
-    id: "appricity",
-    title: "Appricity",
-    description:
-      "便利なツールを気軽に共有できる、温かいキュレーションプラットフォーム",
-    overview:
-      "Appricity（アプリシティ）は、あなたの『これいいよ』を誰かに届けるためのツール共有サービスです。冬の日の柔らかな日差し（Apricity）のように、日常を少し温かく便利にする発見を循環させることを目指しています。",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    details: [
-      {
-        label: "Project Type",
-        value: "ツール共有キュレーションプラットフォーム",
-      },
-      { label: "Hosting", value: "Vercel" },
-      { label: "対象ユーザ", value: "便利なツールを探す/共有したい人" },
-    ],
-    imageUrl: Appricity as string,
-    demoUrl: "https://appricity.vercel.app/",
-  },
   {
     id: "nekometry",
     title: "Nekometry",
@@ -75,6 +56,25 @@ export const projects: Project[] = [
     imageUrl: KurashiLab as string,
     demoUrl: "https://kurashilab.app/",
     socialLinks: [{ label: "X", url: "https://x.com/KurashiLabApp" }],
+  },
+  {
+    id: "appricity",
+    title: "Appricity",
+    description:
+      "便利なツールを気軽に共有できる、温かいキュレーションプラットフォーム",
+    overview:
+      "Appricity（アプリシティ）は、あなたの『これいいよ』を誰かに届けるためのツール共有サービスです。冬の日の柔らかな日差し（Apricity）のように、日常を少し温かく便利にする発見を循環させることを目指しています。",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    details: [
+      {
+        label: "Project Type",
+        value: "ツール共有キュレーションプラットフォーム",
+      },
+      { label: "Hosting", value: "Vercel" },
+      { label: "対象ユーザ", value: "便利なツールを探す/共有したい人" },
+    ],
+    imageUrl: Appricity as string,
+    demoUrl: "https://appricity.vercel.app/",
   },
   {
     id: "personal-website",
