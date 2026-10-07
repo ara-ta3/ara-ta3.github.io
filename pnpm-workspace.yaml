@@ -19,6 +19,8 @@ overrides:
   'puppeteer-core@<25.0.0': '>=25.7.0 <26'
   'deepmerge-ts@<8.0.0': '>=8.0.0 <9'
   '@xmldom/xmldom@<0.9.12': '>=0.9.12 <0.10'
+  'source-map-js@>=1.0.0 <1.2.2': '>=1.2.2 <2'
+  'compression@<1.8.2': '>=1.8.2 <2'
 
 allowBuilds:
   esbuild: false
