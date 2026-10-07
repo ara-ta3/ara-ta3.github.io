@@ -3,7 +3,7 @@
   "extends": ["config:best-practices"],
   "automerge": true,
   "automergeType": "pr",
-  "platformAutomerge": false,
+  "platformAutomerge": true,
   "automergeSchedule": ["at any time"],
   "timezone": "Asia/Tokyo",
   "vulnerabilityAlerts": {
