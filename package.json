@@ -4,7 +4,7 @@
   "engines": {
     "node": "24"
   },
-  "packageManager": "pnpm@12.10.1",
+  "packageManager": "pnpm@12.11.2",
   "workspaces": [
     "frontend"
   ],
@@ -12,7 +12,7 @@
     "@marp-team/marp-cli": "^4.3.1"
   },
   "devDependencies": {
-    "@types/node": "24.19.1",
+    "@types/node": "24.19.2",
     "typescript": "npm:@typescript/typescript6@6.0.2"
   }
 }
