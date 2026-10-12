@@ -1,6 +1,6 @@
 import js from '@eslint/js';
 import tseslint from 'typescript-eslint';
-import importPlugin from 'eslint-plugin-import';
+import { importX } from 'eslint-plugin-import-x';
 
 export default tseslint.config(
   {
@@ -16,7 +16,7 @@ export default tseslint.config(
   ...tseslint.configs.recommended,
   {
     plugins: {
-      import: importPlugin,
+      'import-x': importX,
     },
     rules: {
       '@typescript-eslint/no-unused-vars': 'error',
@@ -32,7 +32,7 @@ export default tseslint.config(
           ]
         }
       ],
-      'import/order': ['error', {
+      'import-x/order': ['error', {
         'newlines-between': 'ignore',
         groups: [
           'builtin',
