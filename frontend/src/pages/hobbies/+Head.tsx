@@ -12,7 +12,7 @@ const Head: React.FC = () => {
 
   const title = "趣味の記録 | ara-ta3の個人サイト";
   const description =
-    "ara-ta3が好きなゲームや、継続している遊びの記録をまとめたページです。現在はSplatoon 3のXマッチにおけるシーズン別の最高XPと順位を掲載しています。";
+    "ara-ta3が好きなゲームや、継続している趣味の記録をまとめたページです。Splatoon 3のプレイ記録と水泳の記録を掲載しています。";
 
   return (
     <>
