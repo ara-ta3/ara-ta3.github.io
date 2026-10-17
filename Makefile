@@ -5,6 +5,7 @@ PNPM=pnpm
 TSC=tsc6
 MARP=$(PNPM) exec marp
 MARP_THEME_SET=--theme-set ./slides/themes/ara-ta3.css
+SERVER_ARGS?=--host 0.0.0.0
 
 install:
 	$(PNPM) install
@@ -13,7 +14,7 @@ install/playwright:
 	$(PNPM) -C $(WEB_DIR) exec playwright install
 
 server:
-	$(PNPM) -C $(WEB_DIR) exec vike dev
+	$(PNPM) -C $(WEB_DIR) exec vike dev $(SERVER_ARGS)
 
 server/build: build
 	$(MAKE) server/dist
