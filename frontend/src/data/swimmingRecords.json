@@ -1,4 +1,12 @@
 {
+  "raceResults": [
+    {
+      "id": "freestyle-50m-1",
+      "date": "2026-10-18",
+      "event": "50m 自由形",
+      "timeSeconds": 48.4
+    }
+  ],
   "records": [
     {
       "id": "2026-10-16",

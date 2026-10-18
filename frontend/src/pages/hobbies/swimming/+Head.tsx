@@ -3,7 +3,7 @@ import React from "react";
 const Head: React.FC = () => {
   const title = "水泳の記録 | ara-ta3の個人サイト";
   const description =
-    "泳いだ日や距離、メモを記録し、月ごと・年ごとの水泳距離を振り返るページです。";
+    "記録会の種目・タイムと、日々泳いだ距離やメモを掲載しています。月ごと・年ごとの水泳距離も振り返れます。";
 
   return (
     <>
