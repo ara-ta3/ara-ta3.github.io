@@ -8,7 +8,7 @@ const SwimmingPage: React.FC = () => (
     <div className="mb-8 text-center">
       <h1 className="text-3xl font-bold text-primary-900">水泳の記録</h1>
       <p className="mt-2 text-primary-500">
-        泳いだ日と距離を記録して、月ごと・年ごとの積み重ねを振り返ります
+        日々泳いだ距離と、記録会でのタイムを残しています
       </p>
     </div>
     <SwimmingRecordBook />

@@ -5,6 +5,14 @@ export type SwimmingRecord = {
   note: string;
 };
 
+export type SwimmingRaceResult = {
+  id: string;
+  date?: string;
+  meetName?: string;
+  event: string;
+  timeSeconds: number;
+};
+
 export type SwimmingMonthSummary = {
   year: number;
   month: number;

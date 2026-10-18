@@ -1,5 +1,8 @@
 import React from "react";
-import type { SwimmingRecord } from "@/domains/hobbies/swimming";
+import type {
+  SwimmingRaceResult,
+  SwimmingRecord,
+} from "@/domains/hobbies/swimming";
 import {
   buildSwimmingSummary,
   formatSwimmingDate,
@@ -9,6 +12,8 @@ import {
 import swimmingRecordsData from "@/data/swimmingRecords.json";
 
 const records: readonly SwimmingRecord[] = swimmingRecordsData.records;
+const raceResults: readonly SwimmingRaceResult[] =
+  swimmingRecordsData.raceResults;
 
 const SwimmingRecordBook: React.FC = () => {
   const summary = buildSwimmingSummary(records);
@@ -34,6 +39,46 @@ const SwimmingRecordBook: React.FC = () => {
 
   return (
     <div className="space-y-10">
+      {raceResults.length > 0 && (
+        <section aria-labelledby="swimming-race-results">
+          <h2
+            className="mb-4 text-2xl font-semibold text-primary-900"
+            id="swimming-race-results"
+          >
+            記録会の結果
+          </h2>
+          <ul className="grid gap-4 sm:grid-cols-2">
+            {raceResults.map((result) => (
+              <li
+                className="rounded-xl border border-primary-200 bg-primary-50 p-5 sm:p-6"
+                key={result.id}
+              >
+                <h3 className="text-lg font-semibold text-primary-900">
+                  {result.event}
+                </h3>
+                <p className="mt-3 text-4xl font-bold tabular-nums text-primary-900">
+                  {result.timeSeconds}
+                  <span className="ml-1 text-lg font-medium">秒</span>
+                </p>
+                {result.meetName && (
+                  <p className="mt-3 text-sm text-secondary-600">
+                    {result.meetName}
+                  </p>
+                )}
+                {result.date && (
+                  <time
+                    className="mt-2 block text-sm text-secondary-600"
+                    dateTime={result.date}
+                  >
+                    {formatSwimmingDate(result.date)}
+                  </time>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <section aria-label="距離のまとめ" className="grid gap-3 sm:grid-cols-3">
         {highlights.map((highlight) => (
           <div
