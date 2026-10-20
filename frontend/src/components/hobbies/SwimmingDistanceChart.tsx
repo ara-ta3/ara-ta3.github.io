@@ -36,7 +36,7 @@ const SwimmingDistanceChart: React.FC<Props> = (props) => {
   ) : (
     <div className="flex h-[340px] items-center justify-center text-sm text-secondary-500">
       {loadFailed
-        ? "グラフを読み込めませんでした。下の一覧で距離と回数を確認できます。"
+        ? "グラフを読み込めませんでした。ページを再読み込みしてください。"
         : "グラフを読み込み中です…"}
     </div>
   );

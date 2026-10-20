@@ -3,11 +3,11 @@ import { render } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 import SwimmingDistanceChartClient from "@/components/hobbies/SwimmingDistanceChart.client";
 
-const { renderBar } = vi.hoisted(() => ({ renderBar: vi.fn() }));
+const { renderChart } = vi.hoisted(() => ({ renderChart: vi.fn() }));
 
 vi.mock("react-chartjs-2", () => ({
-  Bar: (props: unknown) => {
-    renderBar(props);
+  Chart: (props: unknown) => {
+    renderChart(props);
     return <canvas />;
   },
 }));
@@ -30,7 +30,7 @@ describe("SwimmingDistanceChartClient", () => {
       />,
     );
 
-    expect(renderBar).toHaveBeenLastCalledWith(
+    expect(renderChart).toHaveBeenLastCalledWith(
       expect.objectContaining({
         data: {
           labels: [
@@ -49,7 +49,9 @@ describe("SwimmingDistanceChartClient", () => {
           ],
           datasets: [
             expect.objectContaining({
-              label: "2026年",
+              type: "bar",
+              yAxisID: "y",
+              label: "2026年 距離",
               data: [
                 0,
                 null,
@@ -65,13 +67,40 @@ describe("SwimmingDistanceChartClient", () => {
                 null,
               ],
             }),
+            expect.objectContaining({
+              type: "line",
+              label: "2026年 回数",
+              yAxisID: "yCount",
+              data: [
+                1,
+                null,
+                1,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+              ],
+              spanGaps: false,
+            }),
           ],
         },
         options: expect.objectContaining({
           scales: expect.objectContaining({
             y: expect.objectContaining({
+              position: "left",
               beginAtZero: true,
               title: { display: true, text: "距離 (m)" },
+            }),
+            yCount: expect.objectContaining({
+              position: "right",
+              beginAtZero: true,
+              title: { display: true, text: "回数 (回)" },
+              ticks: { precision: 0 },
             }),
           }),
         }),
@@ -79,7 +108,7 @@ describe("SwimmingDistanceChartClient", () => {
     );
   });
 
-  it("年ごとの距離を別々の棒として古い年から表示する", () => {
+  it("年ごとの距離と回数を古い年から別々の系列で表示する", () => {
     render(
       <SwimmingDistanceChartClient
         yearly={[
@@ -103,12 +132,14 @@ describe("SwimmingDistanceChartClient", () => {
       />,
     );
 
-    expect(renderBar).toHaveBeenLastCalledWith(
+    expect(renderChart).toHaveBeenLastCalledWith(
       expect.objectContaining({
         data: expect.objectContaining({
           datasets: [
             expect.objectContaining({
-              label: "2025年",
+              type: "bar",
+              yAxisID: "y",
+              label: "2025年 距離",
               data: [
                 null,
                 null,
@@ -125,13 +156,53 @@ describe("SwimmingDistanceChartClient", () => {
               ],
             }),
             expect.objectContaining({
-              label: "2026年",
+              type: "line",
+              label: "2025年 回数",
+              yAxisID: "yCount",
+              data: [
+                null,
+                null,
+                null,
+                null,
+                1,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+              ],
+            }),
+            expect.objectContaining({
+              type: "bar",
+              yAxisID: "y",
+              label: "2026年 距離",
               data: [
                 null,
                 null,
                 null,
                 null,
                 2000,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+              ],
+            }),
+            expect.objectContaining({
+              type: "line",
+              label: "2026年 回数",
+              yAxisID: "yCount",
+              data: [
+                null,
+                null,
+                null,
+                null,
+                1,
                 null,
                 null,
                 null,
