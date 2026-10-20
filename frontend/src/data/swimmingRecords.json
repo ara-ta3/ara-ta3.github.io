@@ -19,6 +19,126 @@
       "date": "2026-10-09",
       "distanceMeters": 1250,
       "note": "50m×7 1m20sをこなせた"
+    },
+    {
+      "id": "2026-10-02",
+      "date": "2026-10-02",
+      "distanceMeters": 1200,
+      "note": ""
+    },
+    {
+      "id": "2026-09-22",
+      "date": "2026-09-22",
+      "distanceMeters": 1150,
+      "note": ""
+    },
+    {
+      "id": "2026-09-15",
+      "date": "2026-09-15",
+      "distanceMeters": 1200,
+      "note": ""
+    },
+    {
+      "id": "2026-09-11",
+      "date": "2026-09-11",
+      "distanceMeters": 1200,
+      "note": ""
+    },
+    {
+      "id": "2026-09-01",
+      "date": "2026-09-01",
+      "distanceMeters": 1250,
+      "note": ""
+    },
+    {
+      "id": "2026-08-25",
+      "date": "2026-08-25",
+      "distanceMeters": 1200,
+      "note": ""
+    },
+    {
+      "id": "2026-08-18",
+      "date": "2026-08-18",
+      "distanceMeters": 1200,
+      "note": ""
+    },
+    {
+      "id": "2026-08-10",
+      "date": "2026-08-10",
+      "distanceMeters": 1150,
+      "note": ""
+    },
+    {
+      "id": "2026-08-04",
+      "date": "2026-08-04",
+      "distanceMeters": 1300,
+      "note": "50m×7 1m20sのサイクルで6サイクル目の途中で足ついた"
+    },
+    {
+      "id": "2026-07-28",
+      "date": "2026-07-28",
+      "distanceMeters": 1150,
+      "note": ""
+    },
+    {
+      "id": "2026-07-21",
+      "date": "2026-07-21",
+      "distanceMeters": 1100,
+      "note": ""
+    },
+    {
+      "id": "2026-07-14",
+      "date": "2026-07-14",
+      "distanceMeters": 1100,
+      "note": ""
+    },
+    {
+      "id": "2026-06-30",
+      "date": "2026-06-30",
+      "distanceMeters": 1050,
+      "note": ""
+    },
+    {
+      "id": "2026-06-23",
+      "date": "2026-06-23",
+      "distanceMeters": 950,
+      "note": ""
+    },
+    {
+      "id": "2026-06-16",
+      "date": "2026-06-16",
+      "distanceMeters": 850,
+      "note": ""
+    },
+    {
+      "id": "2026-06-09",
+      "date": "2026-06-09",
+      "distanceMeters": 800,
+      "note": ""
+    },
+    {
+      "id": "2026-06-02",
+      "date": "2026-06-02",
+      "distanceMeters": 750,
+      "note": ""
+    },
+    {
+      "id": "2026-05-26",
+      "date": "2026-05-26",
+      "distanceMeters": 850,
+      "note": ""
+    },
+    {
+      "id": "2026-05-19",
+      "date": "2026-05-19",
+      "distanceMeters": 850,
+      "note": ""
+    },
+    {
+      "id": "2026-05-12",
+      "date": "2026-05-12",
+      "distanceMeters": 700,
+      "note": ""
     }
   ]
 }
