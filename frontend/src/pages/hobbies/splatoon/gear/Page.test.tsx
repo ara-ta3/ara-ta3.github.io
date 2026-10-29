@@ -8,7 +8,7 @@ describe("SplatoonGearPage", () => {
     window.history.replaceState(null, "", window.location.pathname);
   });
 
-  it("最初の構成だけを表示し、未装備を含む全26種類を並べる", () => {
+  it("最初の構成の0以外のギアパワーだけを表示する", () => {
     render(<SplatoonGearPage />);
 
     expect(screen.getAllByRole("article")).toHaveLength(1);
@@ -16,13 +16,18 @@ describe("SplatoonGearPage", () => {
     expect(
       within(article).getByRole("heading", { level: 2 }),
     ).toHaveTextContent("オーダーマニューバー レプリカ");
-    expect(within(article).getAllByRole("term")).toHaveLength(26);
+    expect(within(article).getAllByRole("term")).toHaveLength(9);
     expect(
-      within(article).getByText("インク効率アップ（メイン）").parentElement,
-    ).toHaveTextContent("インク効率アップ（メイン）0.0");
+      within(article).queryByText("インク効率アップ（メイン）"),
+    ).not.toBeInTheDocument();
     expect(
       within(article).getByText("復活時間短縮").parentElement,
     ).toHaveTextContent("復活時間短縮1.2");
+    expect(
+      within(screen.getByRole("region", { name: /フク専用/ })).getByText(
+        "なし",
+      ),
+    ).toBeInTheDocument();
   });
 
   it("ボタンを押すと画像とギアパワーが選択した構成に切り替わる", () => {
@@ -50,9 +55,14 @@ describe("SplatoonGearPage", () => {
     expect(
       within(article).getByText("イカダッシュ速度アップ").parentElement,
     ).toHaveTextContent("イカダッシュ速度アップ1.5");
+    expect(within(article).queryByText("復活時間短縮")).not.toBeInTheDocument();
+    expect(within(article).getAllByRole("term")).toHaveLength(7);
     expect(
-      within(article).getByText("復活時間短縮").parentElement,
-    ).toHaveTextContent("復活時間短縮0.0");
+      within(screen.getByRole("region", { name: /アタマ専用/ })).getByText(
+        "なし",
+      ),
+    ).toBeInTheDocument();
+    expect(screen.getAllByRole("region")).toHaveLength(4);
   });
 
   it("ハッシュ付きURLを開くと指定された構成を表示する", () => {
