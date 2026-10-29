@@ -23,6 +23,11 @@ describe("SplatoonGearPage", () => {
     expect(
       within(article).getByText("復活時間短縮").parentElement,
     ).toHaveTextContent("復活時間短縮1.2");
+    expect(
+      within(screen.getByRole("region", { name: /フク専用/ })).getByText(
+        "なし",
+      ),
+    ).toBeInTheDocument();
   });
 
   it("ボタンを押すと画像とギアパワーが選択した構成に切り替わる", () => {
@@ -78,8 +83,11 @@ describe("SplatoonGearPage", () => {
       screen.queryByText("インク効率アップ（メイン）"),
     ).not.toBeInTheDocument();
     expect(
-      screen.queryByRole("region", { name: /アタマ専用/ }),
-    ).not.toBeInTheDocument();
+      within(screen.getByRole("region", { name: /アタマ専用/ })).getByText(
+        "なし",
+      ),
+    ).toBeInTheDocument();
+    expect(screen.getAllByRole("region")).toHaveLength(4);
   });
 
   it("ハッシュ付きURLを開くと指定された構成を表示する", () => {

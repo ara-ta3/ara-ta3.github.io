@@ -9,19 +9,17 @@ const SplatoonGearPage: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [showAllPowers, setShowAllPowers] = useState(false);
   const memo = splatoonGearMemos[selectedIndex];
-  const visiblePowerGroups = splatoonGearPowerGroups
-    .map((group) => ({
-      ...group,
-      powers: group.powers.filter(
-        (name) =>
-          showAllPowers ||
-          memo.powers.some(
-            ([powerName, main, sub]) =>
-              powerName === name && (main > 0 || sub > 0),
-          ),
-      ),
-    }))
-    .filter((group) => group.powers.length > 0);
+  const visiblePowerGroups = splatoonGearPowerGroups.map((group) => ({
+    ...group,
+    powers: group.powers.filter(
+      (name) =>
+        showAllPowers ||
+        memo.powers.some(
+          ([powerName, main, sub]) =>
+            powerName === name && (main > 0 || sub > 0),
+        ),
+    ),
+  }));
 
   useEffect(() => {
     const syncSelectionFromHash = () => {
@@ -172,32 +170,38 @@ const SplatoonGearPage: React.FC = () => {
                       {group.id === "common" ? "全ての部位" : "メインのみ"}
                     </span>
                   </h4>
-                  <dl
-                    className={
-                      group.id === "common" ? "grid gap-x-5 sm:grid-cols-2" : ""
-                    }
-                  >
-                    {group.powers.map((name) => {
-                      const power = memo.powers.find(
-                        ([powerName]) => powerName === name,
-                      );
-                      const main = power?.[1] ?? 0;
-                      const sub = power?.[2] ?? 0;
-                      const isUnused = main === 0 && sub === 0;
+                  {group.powers.length === 0 ? (
+                    <p className="py-1.5 text-xs text-gray-400 lg:py-0">なし</p>
+                  ) : (
+                    <dl
+                      className={
+                        group.id === "common"
+                          ? "grid gap-x-5 sm:grid-cols-2"
+                          : ""
+                      }
+                    >
+                      {group.powers.map((name) => {
+                        const power = memo.powers.find(
+                          ([powerName]) => powerName === name,
+                        );
+                        const main = power?.[1] ?? 0;
+                        const sub = power?.[2] ?? 0;
+                        const isUnused = main === 0 && sub === 0;
 
-                      return (
-                        <div
-                          key={name}
-                          className={`flex items-baseline justify-between gap-2 border-b border-primary-100 py-1.5 lg:py-0 ${isUnused ? "text-gray-400" : "text-primary-900"}`}
-                        >
-                          <dt className="text-xs">{name}</dt>
-                          <dd className="shrink-0 text-sm font-bold tabular-nums">
-                            {main}.{sub}
-                          </dd>
-                        </div>
-                      );
-                    })}
-                  </dl>
+                        return (
+                          <div
+                            key={name}
+                            className={`flex items-baseline justify-between gap-2 border-b border-primary-100 py-1.5 lg:py-0 ${isUnused ? "text-gray-400" : "text-primary-900"}`}
+                          >
+                            <dt className="text-xs">{name}</dt>
+                            <dd className="shrink-0 text-sm font-bold tabular-nums">
+                              {main}.{sub}
+                            </dd>
+                          </div>
+                        );
+                      })}
+                    </dl>
+                  )}
                 </section>
               ))}
             </div>
