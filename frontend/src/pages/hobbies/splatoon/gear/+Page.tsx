@@ -8,6 +8,14 @@ import {
 const SplatoonGearPage: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const memo = splatoonGearMemos[selectedIndex];
+  const visiblePowerGroups = splatoonGearPowerGroups.map((group) => ({
+    ...group,
+    powers: group.powers.filter((name) =>
+      memo.powers.some(
+        ([powerName, main, sub]) => powerName === name && (main > 0 || sub > 0),
+      ),
+    ),
+  }));
 
   useEffect(() => {
     const syncSelectionFromHash = () => {
@@ -40,7 +48,7 @@ const SplatoonGearPage: React.FC = () => {
           カムバックなどの専用ギアパワーも、メイン1個を「1.0」と表記します。
         </p>
         <p>
-          全26種類を共通の順序で並べ、付けていないものは「0.0」と表記します。
+          装備しているギアパワーだけを表示します。部位ごとの専用ギアパワーがない場合は「なし」と表記します。
         </p>
         <p>
           記録日：<time dateTime="2026-10-29">2026年10月29日</time>
@@ -119,7 +127,7 @@ const SplatoonGearPage: React.FC = () => {
               </span>
             </h3>
             <div className="grid gap-3 sm:grid-cols-3">
-              {splatoonGearPowerGroups.map((group) => (
+              {visiblePowerGroups.map((group) => (
                 <section
                   key={group.id}
                   aria-labelledby={`gear-group-${group.id}`}
@@ -134,32 +142,37 @@ const SplatoonGearPage: React.FC = () => {
                       {group.id === "common" ? "全ての部位" : "メインのみ"}
                     </span>
                   </h4>
-                  <dl
-                    className={
-                      group.id === "common" ? "grid gap-x-5 sm:grid-cols-2" : ""
-                    }
-                  >
-                    {group.powers.map((name) => {
-                      const power = memo.powers.find(
-                        ([powerName]) => powerName === name,
-                      );
-                      const main = power?.[1] ?? 0;
-                      const sub = power?.[2] ?? 0;
-                      const isUnused = main === 0 && sub === 0;
+                  {group.powers.length === 0 ? (
+                    <p className="py-1.5 text-xs text-gray-400 lg:py-0">なし</p>
+                  ) : (
+                    <dl
+                      className={
+                        group.id === "common"
+                          ? "grid gap-x-5 sm:grid-cols-2"
+                          : ""
+                      }
+                    >
+                      {group.powers.map((name) => {
+                        const power = memo.powers.find(
+                          ([powerName]) => powerName === name,
+                        );
+                        const main = power?.[1] ?? 0;
+                        const sub = power?.[2] ?? 0;
 
-                      return (
-                        <div
-                          key={name}
-                          className={`flex items-baseline justify-between gap-2 border-b border-primary-100 py-1.5 lg:py-0 ${isUnused ? "text-gray-400" : "text-primary-900"}`}
-                        >
-                          <dt className="text-xs">{name}</dt>
-                          <dd className="shrink-0 text-sm font-bold tabular-nums">
-                            {main}.{sub}
-                          </dd>
-                        </div>
-                      );
-                    })}
-                  </dl>
+                        return (
+                          <div
+                            key={name}
+                            className="flex items-baseline justify-between gap-2 border-b border-primary-100 py-1.5 text-primary-900 lg:py-0"
+                          >
+                            <dt className="text-xs">{name}</dt>
+                            <dd className="shrink-0 text-sm font-bold tabular-nums">
+                              {main}.{sub}
+                            </dd>
+                          </div>
+                        );
+                      })}
+                    </dl>
+                  )}
                 </section>
               ))}
             </div>
