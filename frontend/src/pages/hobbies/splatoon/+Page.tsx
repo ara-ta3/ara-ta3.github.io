@@ -1,5 +1,5 @@
 import React from "react";
-import BreadcrumbWithSchema from "@/components/BreadcrumbWithSchema";
+import SplatoonHeader from "@/components/hobbies/SplatoonHeader";
 import SplatoonHighlights from "@/components/hobbies/SplatoonHighlights";
 import SplatoonRecordsTable from "@/components/hobbies/SplatoonRecordsTable";
 import SplatoonXpChart from "@/components/hobbies/SplatoonXpChart";
@@ -15,13 +15,7 @@ const SplatoonPage: React.FC = () => {
 
   return (
     <>
-      <BreadcrumbWithSchema pathname="/hobbies/splatoon/" />
-      <div className="mb-10 text-center">
-        <h1 className="text-3xl font-bold text-primary-900">Splatoon</h1>
-        <p className="mt-2 text-primary-500">
-          Splatoonシリーズで遊んだ記録をまとめています
-        </p>
-      </div>
+      <SplatoonHeader activePage="records" />
 
       <article>
         <div className="mb-6">
