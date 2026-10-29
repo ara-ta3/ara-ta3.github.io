@@ -56,32 +56,7 @@ describe("SplatoonGearPage", () => {
       within(article).getByText("イカダッシュ速度アップ").parentElement,
     ).toHaveTextContent("イカダッシュ速度アップ1.5");
     expect(within(article).queryByText("復活時間短縮")).not.toBeInTheDocument();
-  });
-
-  it("すべて表示は構成を切り替えても維持され、0以外表示に戻せる", () => {
-    render(<SplatoonGearPage />);
-
-    fireEvent.click(screen.getByRole("button", { name: "すべて" }));
-
-    expect(screen.getAllByRole("term")).toHaveLength(26);
-    expect(
-      screen.getByText("インク効率アップ（メイン）").parentElement,
-    ).toHaveTextContent("インク効率アップ（メイン）0.0");
-
-    fireEvent.click(screen.getByRole("button", { name: "05 .52ガロン" }));
-
-    expect(screen.getAllByRole("term")).toHaveLength(26);
-    expect(screen.getByRole("button", { name: "すべて" })).toHaveAttribute(
-      "aria-pressed",
-      "true",
-    );
-
-    fireEvent.click(screen.getByRole("button", { name: "0以外" }));
-
-    expect(screen.getAllByRole("term")).toHaveLength(7);
-    expect(
-      screen.queryByText("インク効率アップ（メイン）"),
-    ).not.toBeInTheDocument();
+    expect(within(article).getAllByRole("term")).toHaveLength(7);
     expect(
       within(screen.getByRole("region", { name: /アタマ専用/ })).getByText(
         "なし",

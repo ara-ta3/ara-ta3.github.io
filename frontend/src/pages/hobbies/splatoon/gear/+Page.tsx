@@ -7,17 +7,13 @@ import {
 
 const SplatoonGearPage: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [showAllPowers, setShowAllPowers] = useState(false);
   const memo = splatoonGearMemos[selectedIndex];
   const visiblePowerGroups = splatoonGearPowerGroups.map((group) => ({
     ...group,
-    powers: group.powers.filter(
-      (name) =>
-        showAllPowers ||
-        memo.powers.some(
-          ([powerName, main, sub]) =>
-            powerName === name && (main > 0 || sub > 0),
-        ),
+    powers: group.powers.filter((name) =>
+      memo.powers.some(
+        ([powerName, main, sub]) => powerName === name && (main > 0 || sub > 0),
+      ),
     ),
   }));
 
@@ -52,7 +48,7 @@ const SplatoonGearPage: React.FC = () => {
           カムバックなどの専用ギアパワーも、メイン1個を「1.0」と表記します。
         </p>
         <p>
-          初期表示は0以外のギアパワーのみです。「すべて」に切り替えると全26種類を表示し、付けていないものは「0.0」と表記します。
+          装備しているギアパワーだけを表示します。部位ごとの専用ギアパワーがない場合は「なし」と表記します。
         </p>
         <p>
           記録日：<time dateTime="2026-10-29">2026年10月29日</time>
@@ -124,36 +120,12 @@ const SplatoonGearPage: React.FC = () => {
             </figcaption>
           </figure>
           <div>
-            <div className="mb-1 flex flex-wrap items-center justify-between gap-2">
-              <h3 className="text-sm font-bold text-primary-900">
-                ギアパワー合計{" "}
-                <span className="font-normal text-secondary-600">
-                  （メイン.サブ）
-                </span>
-              </h3>
-              <div
-                role="group"
-                aria-label="ギアパワーの表示"
-                className="flex rounded border border-primary-200 text-xs"
-              >
-                <button
-                  type="button"
-                  aria-pressed={!showAllPowers}
-                  onClick={() => setShowAllPowers(false)}
-                  className={`cursor-pointer px-2 py-1 ${!showAllPowers ? "bg-primary-700 text-white" : "text-primary-700 hover:bg-primary-50"}`}
-                >
-                  0以外
-                </button>
-                <button
-                  type="button"
-                  aria-pressed={showAllPowers}
-                  onClick={() => setShowAllPowers(true)}
-                  className={`cursor-pointer px-2 py-1 ${showAllPowers ? "bg-primary-700 text-white" : "text-primary-700 hover:bg-primary-50"}`}
-                >
-                  すべて
-                </button>
-              </div>
-            </div>
+            <h3 className="mb-1 text-sm font-bold text-primary-900">
+              ギアパワー合計{" "}
+              <span className="font-normal text-secondary-600">
+                （メイン.サブ）
+              </span>
+            </h3>
             <div className="grid gap-3 sm:grid-cols-3">
               {visiblePowerGroups.map((group) => (
                 <section
@@ -186,12 +158,11 @@ const SplatoonGearPage: React.FC = () => {
                         );
                         const main = power?.[1] ?? 0;
                         const sub = power?.[2] ?? 0;
-                        const isUnused = main === 0 && sub === 0;
 
                         return (
                           <div
                             key={name}
-                            className={`flex items-baseline justify-between gap-2 border-b border-primary-100 py-1.5 lg:py-0 ${isUnused ? "text-gray-400" : "text-primary-900"}`}
+                            className="flex items-baseline justify-between gap-2 border-b border-primary-100 py-1.5 text-primary-900 lg:py-0"
                           >
                             <dt className="text-xs">{name}</dt>
                             <dd className="shrink-0 text-sm font-bold tabular-nums">
