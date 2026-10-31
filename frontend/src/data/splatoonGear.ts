@@ -3,6 +3,7 @@ import dualiesSwim from "@/assets/images/splatoon/splatoon2.png";
 import nzap from "@/assets/images/splatoon/splatoon3.png";
 import slosher from "@/assets/images/splatoon/splatoon4.png";
 import gal from "@/assets/images/splatoon/splatoon5.png";
+import splatling from "@/assets/images/splatoon/splatoon6.png";
 
 export const splatoonGearPowerGroups = [
   {
@@ -140,6 +141,21 @@ export const splatoonGearMemos: readonly GearMemo[] = [
       ["スペシャル減少量ダウン", 0, 1],
       ["スーパージャンプ時間短縮", 0, 1],
       ["相手インク影響軽減", 0, 1],
+      ["サブ影響軽減", 0, 1],
+    ],
+  },
+  {
+    id: "splatling",
+    weapon: "オーダースピナー レプリカ",
+    variant: "ヒト移動速度アップ",
+    image: splatling,
+    powers: [
+      ["ヒト移動速度アップ", 2, 0],
+      ["対物攻撃力アップ", 1, 0],
+      ["相手インク影響軽減", 0, 3],
+      ["スペシャル性能アップ", 0, 2],
+      ["アクション強化", 0, 2],
+      ["スーパージャンプ時間短縮", 0, 1],
       ["サブ影響軽減", 0, 1],
     ],
   },
