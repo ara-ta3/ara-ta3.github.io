@@ -79,6 +79,30 @@ describe("SplatoonGearPage", () => {
     );
   });
 
+  it("オーダースピナー レプリカの構成を表示する", () => {
+    window.history.replaceState(null, "", "#splatling");
+
+    render(<SplatoonGearPage />);
+
+    const article = screen.getByRole("article");
+    expect(
+      within(article).getByRole("heading", { level: 2 }),
+    ).toHaveTextContent("オーダースピナー レプリカ");
+    expect(within(article).getByRole("img")).toHaveAttribute(
+      "src",
+      expect.stringContaining("splatoon6.png"),
+    );
+    expect(
+      within(article).getByText("ヒト移動速度アップ").parentElement,
+    ).toHaveTextContent("ヒト移動速度アップ2.0");
+    expect(
+      within(screen.getByRole("region", { name: /クツ専用/ })).getByText(
+        "対物攻撃力アップ",
+      ).parentElement,
+    ).toHaveTextContent("対物攻撃力アップ1.0");
+    expect(within(article).getAllByRole("term")).toHaveLength(7);
+  });
+
   it("履歴移動などでハッシュが変わると表示を同期する", () => {
     window.history.replaceState(null, "", "#52gal");
     render(<SplatoonGearPage />);
