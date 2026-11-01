@@ -1,5 +1,23 @@
 [
   {
+    "title": "NDIで作る、Macユーザーのゲーム配信環境 ~ MacのDiscord・マイク音声とTobii Eye TrackerをWindowsのOBSでまとめる ~",
+    "link": "https://arata.hatenadiary.com/entry/2026/11/01/170000",
+    "pubDate": "2026-11-01T17:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "はじめに 普段はMacでDiscordを使いつつ、ゲームをしています。 SteelSeriesのヘッドセットをMacに接続し、ゲーム音はSteelSeriesのDACという台に音声を入力して、通話音声と一緒に聞いています。 ゲームを配信するだけならMacでもWindowsでも良い…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/1e138207eae0122c1c1fe9e82ca2d7bfa3234ca6/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F14945776032044252543%2F1793521680",
+    "bookmarkCount": 0
+  },
+  {
+    "title": "Arctis Nova Proのマイクが破れたので補修してみたが失敗した ~ 新モデルへの買い替えを検討する ~",
+    "link": "https://arata.hatenadiary.com/entry/2026/11/01/150000",
+    "pubDate": "2026-11-01T15:00:00+09:00",
+    "source": "hatena",
+    "contentSnippet": "はじめに SteelSeriesのゲーミングヘッドセット「Arctis Nova Pro」を使っているのですが、マイク部分のカバーが破れてしまいました。 SteelSeries ゲーミングヘッドセット ヘッドホン Arctis Nova Pro Wireless 軽量 無線 ワイ…",
+    "thumbnailUrl": "https://cdn.image.st-hatena.com/image/scale/4dbb9e42d648b4a86da54893c754c9eb7ea38bd5/backend=imagemagick;height=500;quality=80;version=1;width=500/https%3A%2F%2Fogimage.blog.st-hatena.com%2F12704591929891012463%2F14729835035332063554%2F1793514389",
+    "bookmarkCount": 0
+  },
+  {
     "title": "Obscure Test を Working Memory から考える",
     "link": "https://zenn.dev/ara_ta3/articles/thinking-about-obscure-test-with-working-memory",
     "pubDate": "2026-09-21T10:58:31.344Z",
