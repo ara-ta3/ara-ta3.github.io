@@ -295,11 +295,11 @@ importers:
         specifier: 8.72.1
         version: 8.72.1(@typescript/typescript6@6.0.2)(eslint@10.14.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)
       vike:
-        specifier: 0.4.269
-        version: 0.4.269(react-streaming@0.4.23(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(srvx@1.0.8)(vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0))
+        specifier: 0.4.270
+        version: 0.4.270(react-streaming@0.4.23(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(srvx@1.0.8)(vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0))
       vike-react:
         specifier: 0.6.32
-        version: 0.6.32(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(vike@0.4.269(react-streaming@0.4.23(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(srvx@1.0.8)(vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0)))
+        version: 0.6.32(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(vike@0.4.270(react-streaming@0.4.23(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(srvx@1.0.8)(vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0)))
       vite:
         specifier: 8.3.6
         version: 8.3.6(@types/node@26.6.6)(jiti@2.7.0)
@@ -3065,8 +3065,8 @@ packages:
       react-dom: '>=19'
       vike: '>=0.4.250'
 
-  vike@0.4.269:
-    resolution: {integrity: sha512-KCAchEgVMpOQFqvbTN7rZkz39ikLQoGdsu3ukv1HnTfWUAOGXQvfuchB3PJ975FCB8eNtbiHdIq8DfQ8il2Dfw==}
+  vike@0.4.270:
+    resolution: {integrity: sha512-gRzXeQeIqTBYwUTx81y7UHduh8jAE4rCGaIYnJGNe9LrUMqdg1PYI6Uf3tZellGuuv9BDrUqsNURFS9mrsNzdQ==}
     engines: {node: '>=20.19.0'}
     hasBin: true
     peerDependencies:
@@ -5718,14 +5718,14 @@ snapshots:
 
   verkit@0.5.0: {}
 
-  vike-react@0.6.32(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(vike@0.4.269(react-streaming@0.4.23(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(srvx@1.0.8)(vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0))):
+  vike-react@0.6.32(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(vike@0.4.270(react-streaming@0.4.23(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(srvx@1.0.8)(vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0))):
     dependencies:
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
       react-streaming: 0.4.23(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
-      vike: 0.4.269(react-streaming@0.4.23(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(srvx@1.0.8)(vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0))
+      vike: 0.4.270(react-streaming@0.4.23(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(srvx@1.0.8)(vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0))
 
-  vike@0.4.269(react-streaming@0.4.23(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(srvx@1.0.8)(vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0)):
+  vike@0.4.270(react-streaming@0.4.23(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(srvx@1.0.8)(vite@8.3.6(@types/node@26.6.6)(jiti@2.7.0)):
     dependencies:
       '@babel/core': 8.0.10
       '@babel/types': 7.29.11
