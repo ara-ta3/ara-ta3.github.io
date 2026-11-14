@@ -283,8 +283,8 @@ importers:
         specifier: 3.10.1
         version: 3.10.1
       serve:
-        specifier: 14.2.7
-        version: 14.2.7(supports-color@7.2.0)
+        specifier: 14.2.8
+        version: 14.2.8(supports-color@7.2.0)
       tailwindcss:
         specifier: 4.2.4
         version: 4.2.4
@@ -2811,8 +2811,8 @@ packages:
     resolution: {integrity: sha512-KDj11HScOaLmrPxl70KYNW1PksP4Nb/CLL2yvC+Qd2kHMPEEpfc4Re2e4FOay+bC/+XQl/7zAcWON3JVo5v3KQ==}
     engines: {node: '>= 0.8.0'}
 
-  serve@14.2.7:
-    resolution: {integrity: sha512-mTJ9LAyBwHhO2T/PNaI0oWxmKl7FFuJ+ZEHKL1rRO69fWV1Y4qcsFB3gpuD2HfHvJCwvJq5ChibjjAGe0wc0vw==}
+  serve@14.2.8:
+    resolution: {integrity: sha512-7or7YqR3zXwHhiBGj40l9yODyQY146O+hXKaEAfQYQkcvHtMDdX95K96xr50qL9EjXScyYVJb1NIgVE8F0i5cA==}
     engines: {node: '>= 14'}
     hasBin: true
 
@@ -5461,7 +5461,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  serve@14.2.7(supports-color@7.2.0):
+  serve@14.2.8(supports-color@7.2.0):
     dependencies:
       '@zeit/schemas': 2.36.0
       ajv: 8.18.0
