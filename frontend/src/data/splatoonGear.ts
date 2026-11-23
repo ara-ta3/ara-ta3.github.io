@@ -4,6 +4,8 @@ import nzap from "@/assets/images/splatoon/splatoon3.png";
 import slosher from "@/assets/images/splatoon/splatoon4.png";
 import gal from "@/assets/images/splatoon/splatoon5.png";
 import splatling from "@/assets/images/splatoon/splatoon6.png";
+import dappleDualiesNouveau from "@/assets/images/splatoon/splatoon7.png";
+import splashOMatic from "@/assets/images/splatoon/splatoon8.png";
 
 export const splatoonGearPowerGroups = [
   {
@@ -55,6 +57,7 @@ type GearMemo = {
   id: string;
   weapon: string;
   variant: string;
+  recordedOn: string;
   image: string;
   powers: readonly (readonly [
     name: GearPowerName,
@@ -68,6 +71,7 @@ export const splatoonGearMemos: readonly GearMemo[] = [
     id: "dualies-respawn",
     weapon: "オーダーマニューバー レプリカ",
     variant: "復活時間短縮",
+    recordedOn: "2026-10-29",
     image: dualiesRespawn,
     powers: [
       ["復活時間短縮", 1, 2],
@@ -85,6 +89,7 @@ export const splatoonGearMemos: readonly GearMemo[] = [
     id: "dualies-swim",
     weapon: "オーダーマニューバー レプリカ",
     variant: "イカダッシュ速度アップ",
+    recordedOn: "2026-10-29",
     image: dualiesSwim,
     powers: [
       ["イカダッシュ速度アップ", 1, 2],
@@ -101,6 +106,7 @@ export const splatoonGearMemos: readonly GearMemo[] = [
     id: "nzap85",
     weapon: "N-ZAP85",
     variant: "サブ性能アップ",
+    recordedOn: "2026-10-29",
     image: nzap,
     powers: [
       ["サブ性能アップ", 1, 0],
@@ -117,6 +123,7 @@ export const splatoonGearMemos: readonly GearMemo[] = [
     id: "slosher",
     weapon: "オーダースロッシャー レプリカ",
     variant: "イカダッシュ速度アップ",
+    recordedOn: "2026-10-29",
     image: slosher,
     powers: [
       ["イカダッシュ速度アップ", 1, 2],
@@ -133,6 +140,7 @@ export const splatoonGearMemos: readonly GearMemo[] = [
     id: "52gal",
     weapon: ".52ガロン",
     variant: "イカダッシュ速度アップ・アクション強化",
+    recordedOn: "2026-10-29",
     image: gal,
     powers: [
       ["イカダッシュ速度アップ", 1, 5],
@@ -148,6 +156,7 @@ export const splatoonGearMemos: readonly GearMemo[] = [
     id: "splatling",
     weapon: "オーダースピナー レプリカ",
     variant: "ヒト移動速度アップ",
+    recordedOn: "2026-10-31",
     image: splatling,
     powers: [
       ["ヒト移動速度アップ", 2, 0],
@@ -156,6 +165,38 @@ export const splatoonGearMemos: readonly GearMemo[] = [
       ["スペシャル性能アップ", 0, 2],
       ["アクション強化", 0, 2],
       ["スーパージャンプ時間短縮", 0, 1],
+      ["サブ影響軽減", 0, 1],
+    ],
+  },
+  {
+    id: "dapple-dualies-nouveau",
+    weapon: "スパッタリー・ヒュー",
+    variant: "復活時間短縮",
+    recordedOn: "2026-11-23",
+    image: dappleDualiesNouveau,
+    powers: [
+      ["復活時間短縮", 1, 0],
+      ["カムバック", 1, 0],
+      ["ステルスジャンプ", 1, 0],
+      ["スーパージャンプ時間短縮", 0, 3],
+      ["イカダッシュ速度アップ", 0, 2],
+      ["スペシャル性能アップ", 0, 2],
+      ["サブ性能アップ", 0, 2],
+    ],
+  },
+  {
+    id: "splash-o-matic",
+    weapon: "シャープマーカー",
+    variant: "サブ性能アップ",
+    recordedOn: "2026-11-23",
+    image: splashOMatic,
+    powers: [
+      ["サブ性能アップ", 1, 1],
+      ["イカダッシュ速度アップ", 1, 0],
+      ["ステルスジャンプ", 1, 0],
+      ["スーパージャンプ時間短縮", 0, 3],
+      ["インク回復力アップ", 0, 2],
+      ["ヒト移動速度アップ", 0, 2],
       ["サブ影響軽減", 0, 1],
     ],
   },
