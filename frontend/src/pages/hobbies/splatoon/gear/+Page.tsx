@@ -5,6 +5,11 @@ import {
   splatoonGearPowerGroups,
 } from "@/data/splatoonGear";
 
+const recordedOnFormatter = new Intl.DateTimeFormat("ja-JP", {
+  dateStyle: "long",
+  timeZone: "UTC",
+});
+
 const SplatoonGearPage: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const memo = splatoonGearMemos[selectedIndex];
@@ -51,7 +56,10 @@ const SplatoonGearPage: React.FC = () => {
           装備しているギアパワーだけを表示します。部位ごとの専用ギアパワーがない場合は「なし」と表記します。
         </p>
         <p>
-          記録日：<time dateTime="2026-10-29">2026年10月29日</time>
+          記録日：
+          <time dateTime={memo.recordedOn}>
+            {recordedOnFormatter.format(new Date(memo.recordedOn))}
+          </time>
         </p>
       </details>
 
